@@ -1,0 +1,137 @@
+\chapter{Projekt systemu}
+\label{chap:project}
+
+
+
+\section{Wymagania funkcjonalne i niefunkcjonalne (Konrad Czarnecki)}
+Przed przystąpieniem do implementacji aplikacji edukacyjnej w formie escape roomu w środowisku rzeczywistości wirtualnej konieczne było precyzyjne określenie wymagań funkcjonalnych i niefunkcjonalnych, jakie powinna spełniać projektowana aplikacja. Zdefiniowanie wymagań pozwala na kontrolowanie procesu realizacji projektu, zapewnia jego zgodność z oczekiwaniami użytkowników końcowych oraz umożliwia przeprowadzenie testów walidacyjnych w końcowej fazie prac.
+
+
+
+\subsection{Wymagania funkcjonalne}
+
+Wymagania funkcjonalne określają, jakie działania użytkownik może wykonać w aplikacji oraz jakie funkcje powinna ona realizować. W przypadku projektowanej aplikacji escape room VR wymagania te obejmują:
+
+    Wyświetlanie wirtualnego środowiska escape roomu – Aplikacja powinna umożliwiać użytkownikowi poruszanie się po wirtualnym pokoju zagadek, obejmującym zestaw pomieszczeń związanych z różnymi działami matematyki.
+
+    Realizacja 13 zagadek matematycznych – Aplikacja musi zawierać 13 interaktywnych zagadek, po jednej dla każdego z wybranych działów matematyki: liczby rzeczywiste, wyrażenia algebraiczne, równania i nierówności, układy równań, funkcje, ciągi, trygonometria, planimetria, geometria analityczna, stereometria, kombinatoryka, rachunek prawdopodobieństwa i statystyka oraz optymalizacja i rachunek różniczkowy.
+
+    Interaktywność zagadek – Każda zagadka powinna wymagać od użytkownika aktywnej interakcji z otoczeniem wirtualnym, np. manipulowania obiektami, wpisywania odpowiedzi czy przestawiania elementów.
+
+    System weryfikacji poprawności odpowiedzi – Aplikacja powinna sprawdzać poprawność rozwiązań podawanych przez użytkownika oraz wyświetlać komunikaty informujące o sukcesie lub błędzie.
+
+    Podpowiedzi dla użytkownika – Każda zagadka powinna posiadać system podpowiedzi (tekstowych lub dźwiękowych), które użytkownik może wywołać w razie trudności z rozwiązaniem zadania.
+
+    Śledzenie postępu użytkownika – System powinien zapamiętywać, które zagadki zostały już rozwiązane, i odblokowywać dostęp do kolejnych pomieszczeń w ustalonej kolejności.
+
+    Zakończenie rozgrywki – Po rozwiązaniu wszystkich 13 zagadek aplikacja powinna wyświetlić ekran podsumowujący z informacją o ukończeniu escape roomu.
+
+    Obsługa urządzeń VR i interfejsów w Laboratorium – Aplikacja musi być kompatybilna z systemami śledzenia ruchu i projekcji wykorzystywanymi w Laboratorium Zanurzonej Wizualizacji Przestrzennej, w tym z systemami typu CAVE oraz kontrolerami ruchu.
+
+\subsection{Wymagania niefunkcjonalne}
+
+Wymagania niefunkcjonalne opisują cechy jakościowe systemu oraz warunki, jakie powinien spełniać, aby zapewnić poprawne działanie i pozytywne doświadczenia użytkowników. W kontekście projektowanej aplikacji escape room VR wymagania niefunkcjonalne obejmują:
+
+    Kompatybilność z infrastrukturą LZWP – Aplikacja musi działać poprawnie w warunkach technicznych Laboratorium Zanurzonej Wizualizacji Przestrzennej, współpracując z systemem projekcyjnym CAVE oraz wykorzystywanymi kontrolerami ruchu.
+
+    Wydajność – Aplikacja powinna działać płynnie, z minimalnym opóźnieniem renderowania obrazu i reakcji na ruchy użytkownika, zapewniając co najmniej 60 klatek na sekundę w środowisku VR.
+
+    Jakość grafiki i dźwięku – Wirtualne środowisko escape roomu powinno charakteryzować się realistyczną i spójną oprawą wizualną oraz odpowiednio dobranymi efektami dźwiękowymi wspomagającymi immersję.
+
+    Łatwość rozbudowy i modyfikacji – Struktura projektu powinna umożliwiać przyszłą rozbudowę aplikacji o nowe zagadki, pomieszczenia lub funkcjonalności bez konieczności przebudowy istniejącego kodu i modeli.
+
+    Przenośność kodu i zasobów – Wszystkie pliki źródłowe, modele oraz zasoby dźwiękowe powinny być przechowywane w repozytorium GitHub w sposób umożliwiający łatwe przenoszenie projektu pomiędzy stanowiskami roboczymi oraz serwerami laboratorium.
+
+    Dokumentacja – Projekt musi być opatrzony szczegółową dokumentacją techniczną i użytkową, opisującą strukturę aplikacji, sposób instalacji, obsługi oraz instrukcje dotyczące przyszłej rozbudowy.
+
+
+\section{Scenariusz gry (Konrad Czarnecki)}
+
+Po uruchomieniu aplikacji użytkownik znajduje się w wirtualnym holu startowym, który pełni funkcję ekranu powitalnego. W tym miejscu użytkownik może zapoznać się z zasadami działania aplikacji oraz sterowaniem w środowisku VR.
+
+W momencie rozpoczęcia gry uruchamiany jest licznik czasu, który będzie rejestrował całkowity czas potrzebny na ukończenie escape roomu. Po wybraniu opcji rozpoczęcia gry użytkownik przenosi się do pierwszego z 13 wirtualnych pomieszczeń. Każde pomieszczenie jest utrzymane w odmiennym stylu wizualnym i zawiera jedną interaktywną zagadkę matematyczną z przypisanego działu.
+
+W każdym pokoju gracz ma możliwość poruszania się po przestrzeni VR, wchodzenia w interakcje z elementami zagadki, wywoływania podpowiedzi (jeśli jest dostępna), przechodzenia do kolejnego pokoju po poprawnym rozwiązaniu zagadki.
+
+Działanie każdej zagadki może wymagać różnych form interakcji — takich jak przeciąganie obiektów, wpisywanie wyników na wirtualnej klawiaturze, wskazywanie elementów przestrzeni, czy manipulowanie wirtualnymi narzędziami (np. suwaki, przełączniki, dźwignie).
+Po rozwiązaniu ostatniej, trzynastej zagadki użytkownik zostaje przeniesiony do wirtualnego pokoju podsumowań. W tym miejscu aplikacja prezentuje takie informacje jak łączny czas ukończenia gry i liczbę wykorzystanych podpowiedzi.
+
+W przypadku przerwania rozgrywki przez użytkownika lub awarii systemu, aplikacja powinna zapewniać możliwość powrotu do holu głównego lub całkowitego zamknięcia gry bez ryzyka utraty integralności danych systemu. Rozwiązanie to gwarantuje bezpieczeństwo użytkownika oraz stabilność aplikacji w środowisku CAVE.
+
+Tak skonstruowany scenariusz rozgrywki umożliwia nie tylko wprowadzenie użytkownika w świat wirtualnej rzeczywistości, ale także zapewnia dynamiczny, uporządkowany i logiczny przebieg interakcji. Dzięki systematycznemu rozwiązywaniu zagadek i przemieszczaniu się między pokojami, aplikacja utrzymuje wysoki poziom zaangażowania i motywacji użytkowników do ukończenia całej gry.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Zagadki (Konrad Czarnecki)}
+W ramach realizacji projektu opracowano trzynaście interaktywnych zagadek matematycznych, z których każda reprezentuje inny dział matematyki nauczanej na poziomie szkoły średniej. Zagadki zostały zaprojektowane tak, aby nie tylko sprawdzać wiedzę użytkowników, ale również aktywizować ich poprzez wykorzystanie mechanik charakterystycznych dla gier logicznych i escape roomów. Dzięki zastosowaniu technologii wirtualnej rzeczywistości, gracze mogą wchodzić w bezpośrednią interakcję z otoczeniem i rozwiązywać zadania w formie angażujących, przestrzennych łamigłówek. Każde z zadań posiada unikalny scenariusz i zasady działania, dostosowane do specyfiki danego działu matematyki oraz do możliwości sprzętowych Laboratorium Zanurzonej Wizualizacji Przestrzennej. Poniżej przedstawiono szczegółowy opis wszystkich trzynastu zagadek, wraz z określeniem ich celu, przebiegu oraz warunków zakończenia.
+
+
+
+\subsection{Wyrażenia algebraiczne}
+
+Pierwsze z zadań wirtualnego escape roomu opiera się na klasycznej mechanice gry logicznej „piętnastki”, zaadaptowanej do środowiska matematycznego. Po aktywacji centralnego stołu w wirtualnym pomieszczeniu, na jego powierzchni pojawia się plansza o wymiarach 7×7, zawierająca kafelki z symbolami matematycznymi i wyrażeniami algebraicznymi. Na kafelkach umieszczono między innymi litery zmiennych (a, b), symbole potęg (², ³), operatory działań matematycznych (+, −, =), nawiasy oraz złożone wyrażenia typu 2ab, ab² czy a³. Pod planszą wyświetlana jest lista nazw siedmiu wzorów skróconego mnożenia, takich jak: „Kwadrat sumy”, „Kwadrat różnicy”, „Różnica kwadratów” czy „Suma sześcianów”. W treści zadania nie podano jednak pełnych wzorów, co zmusza graczy do samodzielnego przypomnienia ich z wiedzy szkolnej. Celem użytkownika jest ułożenie siedmiu pełnych wyrażeń odpowiadających tym wzorom, poprzez przesuwanie kafelków na planszy i formowanie poprawnych układów w pionie lub poziomie, zgodnie z zasadami klasycznej gry „piętnastki”. System automatycznie rozpoznaje poprawnie ułożone wzory i oznacza je na liście oraz na planszy. Zadanie można rozwiązywać w dowolnej kolejności, a jego ukończenie następuje po poprawnym ułożeniu wszystkich siedmiu wyrażeń.
+
+\subsection{Planimetria}
+
+Po ukończeniu pierwszego etapu, powierzchnia interaktywnego stołu zmienia swój wygląd, a na ekranie pojawia się plansza zawierająca dwanaście par figur geometrycznych. Wśród nich znajdują się takie figury jak kwadraty, romby, prostokąty, równoległoboki, trapezy oraz różne typy trójkątów. Zadanie ma na celu sprawdzenie znajomości zależności między figurami oraz umiejętności rozpoznawania ich cech charakterystycznych. Na planszy, pomiędzy każdą parą figur, znajduje się miejsce przeznaczone na wybór relacji. Gracze, analizując właściwości obu figur w każdej parze, muszą zdecydować, czy jedna z nich jest szczególnym przypadkiem drugiej, czy też nie. Do dyspozycji mają dwa symbole: strzałkę w prawo, oznaczającą, że pierwsza figura jest szczególnym przypadkiem drugiej, oraz przekreśloną strzałkę, oznaczającą brak takiej zależności. Po dokonaniu wszystkich wyborów system natychmiast weryfikuje poprawność ustawionych relacji. W przypadku błędnych odpowiedzi, gracze otrzymują stosowny komunikat i możliwość poprawienia wyłącznie tych relacji, które zostały oznaczone niepoprawnie. Zadanie kończy się w momencie, gdy wszystkie relacje zostaną poprawnie oznaczone. 
+
+\subsection{Równania i nierówności}
+
+W trzecim zadaniu gracze trafiają na scenę stylizowaną na film przygodowy, gdzie postać odkrywcy musi przejść przez wiszący most zbudowany z kamiennych płytek. Na każdej z płytek widnieje liczba rzeczywista, a na ścianie pojawia się układ dwóch nierówności. Zadaniem uczestników jest rozwiązanie układu i wybranie płytek z wartościami należącymi do przedziału spełniającego oba warunki. Gracze prowadzą postać, klikając po kolei właściwe płytki, a błędny wybór powoduje zapadnięcie się płytki i konieczność powrotu na początek. Po poprawnym przejściu przez most gracze odblokowują dostęp do kolejnej zagadki.
+
+\subsection{Funkcje}
+
+W czwartym zadaniu gracze pracują z dużą interaktywną tablicą, na której wyświetlany jest układ współrzędnych. Ich celem jest dostosowanie parametrów funkcji liniowej w taki sposób, aby jej wykres przechodził przez trzy wyznaczone punkty. Dzięki suwakom lub polom edycyjnym uczestnicy mogą dynamicznie zmieniać współczynnik kierunkowy oraz wyraz wolny funkcji, obserwując na bieżąco, jak zmienia się jej wykres. Zadanie polega na precyzyjnym dobraniu wartości parametrów, by wykres przeciął wszystkie wskazane punkty. 
+
+\subsection{Geometria analityczna na płaszczyźnie kartezjańskiej}
+
+W piątym zadaniu gracze ponownie pracują z interaktywną tablicą, na której tym razem pojawiają się dwa wykresy funkcji liniowych. Celem wyzwania jest odnalezienie współrzędnych punktu, w którym obie funkcje przecinają się na płaszczyźnie kartezjańskiej. Uczestnicy mogą odczytać ten punkt bezpośrednio z wykresu lub rozwiązać układ równań opisujących obie proste. Po ustaleniu wartości współrzędnych gracze wpisują je w specjalnie przygotowane pole. System weryfikuje poprawność odpowiedzi i odblokowuje przejście do kolejnego etapu gry.
+
+\subsection{Kombinatoryka}
+
+W szóstym zadaniu gracze natrafiają na metalowy sejf wyposażony w podświetlany panel numeryczny. Na wyświetlaczu obok pojawia się zagadka z zakresu kombinatoryki dotycząca liczby możliwych ustawień trzycyfrowego kodu PIN, w którym żadna z cyfr się nie powtarza. Uczestnicy muszą przypomnieć sobie zasady permutacji i wyliczyć, ile jest możliwych kombinacji, wybierając trzy różne cyfry spośród dziesięciu dostępnych. Po obliczeniu właściwej liczby gracze wpisują wynik na klawiaturze sejfu.
+
+\subsection{Liczby rzeczywiste}
+
+W siódmym zadaniu gracze pracują z dużą drewnianą skrzynią oznaczoną liczbami i symbolami zbiorów liczbowych. Pierwszym etapem jest przyporządkowanie wszystkich liczb nadrukowanych na ściankach skrzyni do odpowiednich zbiorów: liczb naturalnych, całkowitych, wymiernych i niewymiernych. Na podstawie tego podziału gracze ustalają czterocyfrowy kod otwierający mechaniczny zamek. Po poprawnym wprowadzeniu kombinacji, wewnątrz skrzyni odnajdują płaską planszę ilustrującą przecięcia zbiorów w formie diagramu Venna. Obok leżą kafelki z symbolami działań na zbiorach, które należy odpowiednio rozmieścić na planszy, uzupełniając brakujące miejsca. Po wykonaniu tego zadania, gracze odkrywają kolejny mechanizm, gdzie muszą ułożyć zależności między zbiorami liczbowymi za pomocą ruchomych symboli i strzałek, odzwierciedlając relacje zawierania się zbiorów. Poprawne wykonanie wszystkich trzech etapów aktywuje mechanizm w skrzyni i otwiera dostęp do kolejnego etapu gry.
+
+\subsection{Trygonometria}
+
+W ósmym zadaniu gracze stają przed ścianą, na której umieszczone są cztery duże okręgi, symbolizujące funkcje trygonometryczne: sinus, cosinus, tangens i cotangens. Każdy okrąg podzielony jest na cztery ćwiartki układu współrzędnych oznaczone numerami I–IV. Zadaniem uczestników jest uzupełnienie pustych pól przy każdej ćwiartce odpowiednim znakiem „+” lub „−”, wskazującym, czy dana funkcja przyjmuje w tej ćwiartce wartości dodatnie czy ujemne. Poprawne przypisanie znaków wymaga znajomości własności funkcji trygonometrycznych w poszczególnych ćwiartkach.
+
+\subsection{Ciągi}
+
+W dziewiątym zadaniu gracze przenoszą się na interaktywną platformę stylizowaną na arenę gry rytmicznej, gdzie głównym wyzwaniem jest rozpoznawanie kolejnych wyrazów ciągów liczbowych. Na ekranie wyświetlana jest formuła ciągu arytmetycznego lub geometrycznego, a z góry spadają kostki z różnymi wartościami liczbowymi. Zadaniem uczestników jest przecięcie mieczem świetlnym tylko tych kostek, które zawierają poprawne elementy podanego ciągu. Jeśli kostka nie pasuje do ciągu, gracze powinni ją pozostawić nienaruszoną. Za każdą poprawną akcję przyznawany jest punkt, natomiast błędne cięcie skutkuje odebraniem punktu. Tempo gry rośnie wraz z postępem, zwiększając wymagania dotyczące refleksu i precyzji. Gra kończy się sukcesem po zdobyciu 50 punktów i składa się z dwóch etapów: rozpoznawania ciągu arytmetycznego, a następnie geometrycznego.
+
+\subsection{Rachunek prawdopodobieństwa i statystyka}
+
+W tym zadaniu gracze stają przed wyzwaniem probabilistycznym, reprezentowanym przez interaktywny stół z postacią Morfeusza oraz dwoma pojemnikami i zestawem 100 tabletek – po 50 czerwonych i niebieskich. Celem jest rozdzielenie tabletek między pojemniki w taki sposób, aby maksymalizować szansę wybrania czerwonej tabletki przez Morfeusza. Gracze mogą dowolnie przesuwać tabletki, testując różne układy i obserwując wyświetlany na bieżąco procent prawdopodobieństwa sukcesu. Optymalnym rozwiązaniem jest umieszczenie jednej czerwonej tabletki w pierwszym pojemniku, a pozostałych 49 czerwonych oraz 50 niebieskich w drugim, co daje maksymalną szansę około 74,75\%. Zadanie wymaga od uczestników zrozumienia i wykorzystania zasad prawdopodobieństwa do podejmowania decyzji.
+
+\subsection{Optymalizacja i rachunek różniczkowy}
+
+Gracze stają przed wyzwaniem trafienia w cele na symulowanym polu bitwy. Sterują kątem nachylenia armaty, regulując go na pokrętle, aby zmodyfikować trajektorię lotu pocisku wyświetlaną na ekranie. Ich zadaniem jest precyzyjne ustawienie kąta, tak aby pocisk trafił w pojawiający się w losowej pozycji cel. Po każdym strzale pojawia się nowy cel, a gracz musi trafić łącznie 15 razy. W trakcie rozgrywki uczestnicy poznają związek między parametrami funkcji kwadratowej opisującej tor lotu, a jej maksimum, ucząc się podstaw optymalizacji i rachunku różniczkowego.
+
+\subsection{Układy równań}
+
+Gracze muszą umieścić odpowiednią liczbę jednostek energii w trzech kolorowych pojemnikach: czerwonym, zielonym i niebieskim, tak aby spełnić podane warunki dotyczące ich wydajności i sumy energii. Poprawne ustawienie 12 jednostek energii, z uwzględnieniem zależności między pojemnikami, spowoduje zapalenie się dużej żarówki nad stołem, sygnalizując sukces. System na bieżąco weryfikuje poprawność i informuje o błędach, dając możliwość kolejnych prób.
+
+\subsection{Stereometria}
+
+Gracze w półmroku obracają na obrotowym podeście pojawiającą się bryłę przestrzenną, taką jak graniastosłup, ostrosłup, walec czy stożek. Muszą rozpoznać jej nazwę oraz wskazać właściwości, takie jak liczba ścian, wierzchołków, krawędzi, rodzaj podstawy czy kąty między elementami.
+
+\section{Model przypadków użycia}
+
+\section{Projekt architektury systemu}
+
+
+\section{Projekt interfejsu użytkownika i środowiska gry}

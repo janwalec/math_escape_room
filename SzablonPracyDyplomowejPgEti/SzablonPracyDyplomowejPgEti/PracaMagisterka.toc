@@ -1,0 +1,58 @@
+\contentsline {chapter}{\numberline {1}Wstęp i cel pracy}{6}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Wprowadzenie do dziedziny}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Rola technologii w edukacji (Konrad Czarnecki)}{8}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Nowoczesne metody nauczania matematyki}{8}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Gamifinacka w edukacji}{9}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Edukacyjne zastosowania escape roomów (Konrad Czarnecki)}{9}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Historia i definicja escape roomu}{10}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Escape roomy jako metoda aktywizacji uczniów}{10}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Wirtualna rzeczywistość (Konrad Czarnecki)}{11}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Wirtualna rzeczywistość i jej zastosowanie w nauce}{11}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Wpływ interaktywności na zaangażowanie gracza}{11}{subsection.2.3.2}%
+\contentsline {chapter}{\numberline {3}Analiza istniejących rozwiązań}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Wirtualne escape roomy}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Przegląd gier edukacyjnych z elementami VR}{13}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Blockerzz}{13}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Mage Math}{13}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}EdScape XR}{13}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Wnioski z analizy dostępnych rozwiązań}{13}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Projekt systemu}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Wymagania funkcjonalne i niefunkcjonalne (Konrad Czarnecki)}{14}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Wymagania funkcjonalne}{14}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Wymagania niefunkcjonalne}{15}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Scenariusz gry (Konrad Czarnecki)}{15}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Zagadki (Konrad Czarnecki)}{16}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Wyrażenia algebraiczne}{16}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Planimetria}{16}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Równania i nierówności}{17}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Funkcje}{17}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Geometria analityczna na płaszczyźnie kartezjańskiej}{17}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Kombinatoryka}{17}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.3.7}Liczby rzeczywiste}{17}{subsection.4.3.7}%
+\contentsline {subsection}{\numberline {4.3.8}Trygonometria}{18}{subsection.4.3.8}%
+\contentsline {subsection}{\numberline {4.3.9}Ciągi}{18}{subsection.4.3.9}%
+\contentsline {subsection}{\numberline {4.3.10}Rachunek prawdopodobieństwa i statystyka}{18}{subsection.4.3.10}%
+\contentsline {subsection}{\numberline {4.3.11}Optymalizacja i rachunek różniczkowy}{18}{subsection.4.3.11}%
+\contentsline {subsection}{\numberline {4.3.12}Układy równań}{19}{subsection.4.3.12}%
+\contentsline {subsection}{\numberline {4.3.13}Stereometria}{19}{subsection.4.3.13}%
+\contentsline {section}{\numberline {4.4}Model przypadków użycia}{19}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Projekt architektury systemu}{19}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Projekt interfejsu użytkownika i środowiska gry}{19}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Technologie i narzędzia}{20}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Silnik gry (Konrad Czarnecki)}{20}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Laboratorium Zanurzonej Wizualizacji Przestrzennej (Konrad Czarnecki)}{20}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Środowisko 3D (Konrad Czarnecki)}{21}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Udźwiękowienie}{21}{section.5.4}%
+\contentsline {section}{\numberline {5.5}System kontroli wersji (Konrad Czarnecki)}{21}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Analiza dydaktyczna i potencjał edukacyjny}{22}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Motywacja uczniów do nauki matematyki}{22}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Możliwość personalizacji i różnicowania poziomu trudności}{22}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Wpływ imersji na naukę}{22}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Podsumowanie}{23}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Ocena realizacji celów}{23}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Propozycje rozwoju projektu}{23}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Wnioski końcowe}{23}{section.7.3}%
+\contentsline {chapter}{Wykaz literatury}{24}{section.7.3}%
+\contentsline {chapter}{Wykaz rysunków}{24}{chapter*.5}%
+\contentsline {chapter}{Wykaz tabel}{25}{chapter*.6}%
+\contentsfinish 
