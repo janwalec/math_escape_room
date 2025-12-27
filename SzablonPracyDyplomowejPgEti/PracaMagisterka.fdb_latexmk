@@ -1,0 +1,14 @@
+# Fdb version 4
+["xdvipdfmx"] 0 "PracaMagisterka.xdv" "PracaMagisterka.pdf" "PracaMagisterka" 0 -1
+  "PracaMagisterka.xdv" 0 -1 0 "xelatex"
+  (generated)
+  "PracaMagisterka.pdf"
+  (rewritten before read)
+["xelatex"] 0 "PracaMagisterka.tex" "PracaMagisterka.xdv" "PracaMagisterka" 0 -1
+  "PracaMagisterka.aux" 0 -1 0 "xelatex"
+  "PracaMagisterka.tex" 0 -1 0 ""
+  (generated)
+  "PracaMagisterka.aux"
+  "PracaMagisterka.log"
+  "PracaMagisterka.xdv"
+  (rewritten before read)

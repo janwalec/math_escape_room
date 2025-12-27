@@ -48,11 +48,17 @@
 \contentsline {section}{\numberline {6.1}Motywacja uczniów do nauki matematyki}{22}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Możliwość personalizacji i różnicowania poziomu trudności}{22}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Wpływ imersji na naukę}{22}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Podsumowanie}{23}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Ocena realizacji celów}{23}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Propozycje rozwoju projektu}{23}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Wnioski końcowe}{23}{section.7.3}%
-\contentsline {chapter}{Wykaz literatury}{24}{section.7.3}%
-\contentsline {chapter}{Wykaz rysunków}{24}{chapter*.5}%
-\contentsline {chapter}{Wykaz tabel}{25}{chapter*.6}%
+\contentsline {chapter}{\numberline {7}Opis teoretyczny zagadek}{23}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Wzory skróconego mnożenia}{23}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Planimetria (Jan Walczak)}{23}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Cel zadania}{23}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Zasady działania}{23}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Zakończenie zadania}{24}{subsection.7.2.3}%
+\contentsline {chapter}{\numberline {8}Podsumowanie}{25}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Ocena realizacji celów}{25}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Propozycje rozwoju projektu}{25}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Wnioski końcowe}{25}{section.8.3}%
+\contentsline {chapter}{Wykaz literatury}{26}{section.8.3}%
+\contentsline {chapter}{Wykaz rysunków}{26}{chapter*.6}%
+\contentsline {chapter}{Wykaz tabel}{27}{chapter*.7}%
 \contentsfinish 
