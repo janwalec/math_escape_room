@@ -1,0 +1,35 @@
+\begin{itemize}
+    \item liczba boków,
+    \item długości boków,
+    \item kąty (proste lub nie),
+    \item cechy charakterystyczne danej figury.
+\end{itemize}
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Nagłówek 1 & Nagłówek 2 & Nagłówek 3 \\ \hline
+        Wiersz 1, kol 1 & Wiersz 1, kol 2 & Wiersz 1, kol 3 \\ \hline
+        Wiersz 2, kol 1 & Wiersz 2, kol 2 & Wiersz 2, kol 3 \\ \hline
+        Wiersz 3, kol 1 & Wiersz 3, kol 2 & Wiersz 3, kol 3 \\ \hline
+    \end{tabular}
+    \caption{Opis tabeli, która będzie w wykazie tabel}
+    \label{tab:przyklad}
+\end{table}
+
+\begin{figure}[htbp]  % h - here, t - top, b - bottom, p - page of floats
+    \centering
+    \includegraphics[width=0.7\textwidth]{sciezka/do/rysunku.png}
+    \caption{Opis rysunku, który będzie w spisie rysunków}
+    \label{fig:przyklad}
+\end{figure}
+
+\begin{itemize}
+    \item Pierwszy punkt
+    \item Drugi punkt
+    \item Trzeci punkt
+\end{itemize}
+
+
+\textit{tekst pochylony}

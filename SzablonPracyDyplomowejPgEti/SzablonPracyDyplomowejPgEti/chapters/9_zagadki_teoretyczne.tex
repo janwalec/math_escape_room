@@ -1,15 +1,20 @@
 \chapter{Opis teoretyczny zagadek}
 \label{chap:theory}
 
-Dzień dobry
-Tu będą zagadki
+\section{Wstęp (Jan Walczak)}
+W niniejszym rozdziale znajduje się teoretyczny opis zagadek, który stanowi punkt wejściowy do implementacji
+projektu inżynierskiego. Stanowi podstawę teoretyczną i nakreśla charakter pracy. Opisy poszczególnych zagadek
+zostały zredagowane na podstawie ogólnodostępnej podstawy programowej dla szkół średnich z przedmiotu matematyka.
+Jest to bardzo ważny aspekt całego projektu inżynierskiego, ponieważ aplikacja końcowa ma być skierowana do uczniów
+szkół średnich. Nie można więc wykraczać poza daną podstawę programową.
 
-\section{Wzory skróconego mnożenia}
+\section{Zadanie 1 – wzory skróconego mnożenia (Autor)}
+\subsection{Cel zadania}
+\subsection{Zasady działania}
+\subsection{Zakończenie zadania}
 
-tekst tekst tekst
-
-\section{Planimetria (Jan Walczak)}
-Po ukończeniu pierwszego zadania plansza z kafelkami znika, a na jej miejscu pojawia się tabela z trzema kolumnami.
+\section{Zadanie 2 – Planimetria (Jan Walczak)}
+Po ukończeniu pierwszego zadania pojawia się tabela z trzema kolumnami.
 Dwie skrajne kolumny zawierają nazwy figur geometrycznych. Środkowa kolumna jest pusta i będzie uzupełniana przez gracza 
 odpowiednimi symbolami.  
 \subsection{Cel zadania}
@@ -19,21 +24,191 @@ Przykładowo, relacją taką jest to, że „każdy kwadrat jest rombem” lub �
 Gracze przechodzą przez kolejne rzędy sekwencyjnie. Dopóki nie ułożą pierwszej relacji poprawnie,
 to nie mogą ułożyć kolejnej. Po poprawnym ułożeniu rzędu (wstawieniu odpowiedniego symbolu) podświetla się on na zielono, 
 sygnalizując graczowi, że może przejść do kolejnego punktu. Symbole, które układają gracze są następujące:
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.7\textwidth]{images/zad2.1.png}
-    \caption{Przykładowy wygląd tabeli}
-\end{figure}
-\\Gracze kierują się swoją wiedzą matematyczną oraz następującymi własnościami figur:
 \begin{itemize}
+    \item > to <
+    \item > to nie <
+\end{itemize}
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Kwadrat & > to < & protsokąt \\ \hline
+        Prostokąt & > to nie < & Kwadrat \\ \hline
+        romb & [      ] & kwadrat \\ \hline
+        ... & ... & ... \\ \hline
+    \end{tabular}
+    \caption{Przykładowa tabela zawierająca zależności między figurami geometrycznymi.}
+    \label{tab:przyklad}
+\end{table}
+
+\medskip
+  
+Gracze kierują się swoją wiedzą matematyczną oraz następującymi własnościami figur:
+
+\begin{itemize}[left=1.5em, label=\textbullet, topsep=0pt, itemsep=0pt]
     \item liczba boków,
     \item długości boków,
     \item kąty (proste lub nie),
     \item cechy charakterystyczne danej figury.
 \end{itemize}
-Po zaznaczeniu wszystkich relacji zadanie uznaje się za wykonane.
-
+\subsection{Zakończenie zadania}
+Po poprawnym uzupełnieniu wszystkich relacji zadanie uznaje się za zakończone. Gracz może przejść
+do kolejnego zadania.
+\section{Zadanie 3 – Nierówności (Autor)}
+a
+\subsection{Cel zadania}
+a
+\subsection{Zasady działania}
+a
+\subsection{Zakończenie zadania}
+a
+\section{Zadanie 4 – Funkcje (Autor)}a
+a
+\subsection{Cel zadania}
+a
+\subsection{Zasady działania}
+a
 \subsection{Zakończenie zadania}
 
-Poprawne rozwiązanie powoduje rozsunięcie się blatu stołu, który odsłania kolejne wyzwanie.
+\section{Zadanie 5 – Geometria analityczna (Autor)}
+a
+\subsection{Cel zadania}
+a
+\subsection{Zasady działania}
+a
+\subsection{Zakończenie zadania}
 
+\section{Zadanie 6 – Kombinatoryka (Autor)}
+a
+\subsection{Cel zadania}
+a
+\subsection{Zasady działania}
+a
+\subsection{Zakończenie zadania}
+
+\section{Zadanie 7 – Liczby rzeczywiste i działania na zbiorach liczbowych \\(Jan Walczak)}
+W następnym zadaniu gracze znajdują skrzynię, na której powierzchni – z każdej strony – narysowane są liczby:
+\textit{15; π; 4,5; √2; ¼; -3; 1; -7; ⅓ ; 9}.
+
+\subsection{Cel zadania}
+Skrzynia wyposażona jest w mechaniczny zamek z pięcioma polami na cyfry, obok których znajdują się symbole zbiorów:
+\begin{itemize}
+    \item \textit{N} – liczby naturalne,
+    \item \textit{Z} – liczby całkowite,
+    \item \textit{R} – liczby rzeczywiste,
+    \item \textit{W} – liczby wymierne,
+    \item \textit{NW} – liczby niewymierne,
+\end{itemize}
+Gracz musi uważnie obejrzeć skrzynię i policzyć ile liczb, zapisanych na skrzyni, należy do jakiego zbioru. 
+Po wpisaniu odpowiednich liczb, obok symboli zbiorów, skrzynia otwiera się, a gracz otrzymuje kilka symboli: 
+\begin{itemize}
+    \item zawieranie się zbiorów – $\subset$,
+    \item zbiór pusty – $\varnothing$,
+    \item iloczyn zbiorów – $\cap$.
+\end{itemize}
+Tym samym gracz przechodzi do drugiego etapu zadania. W drugim etapie w pokoju ukazuje się plansza z symbolami zbiorów, takimi jak na skrzyni. 
+Celem gracza jest ułożenie poprawnej relacji między nimi tj. zbiór liczb naturalnych zawiera się w zbiorze liczb całkowitych, zbiór liczb całkowitych zawiera się w zbiorze liczb rzeczywistych itd.
+
+\subsection{Zasady działania}
+W pierwszym etapie zadania gracz powinien policzyć ile liczb ze skrzyni należy do danego zbioru 
+i wpisać odpowiednią odpowiedź na kłódce. Przykładowo:
+\begin{itemize}
+    \item \textit{N} (naturalne): \textit{15; 1; 9} – 3 liczby,
+    \item \textit{C} (całkowite):  \textit{15; 1; 9; -3; -7} – 5 liczb,
+    \item \textit{R} (rzeczywiste): wszystkie liczby – 10 liczb,
+    \item \textit{W} (wymierne): \textit{15; 1; 9; -3; -7; 4,5; ¼; ⅓} – 8 liczb,
+    \item \textit{NW} (niewymierne): \textit{π; √2} – 2 liczby.
+\end{itemize}
+Kombinacja do ustawienia na kłódce: 3, 5, 10, 8, 2.
+
+W drugim etapie gracz powinien ustawić posiadane symbole między literami symbolizującymi kolejne zbiory i odpowiednio je obrócić, tak aby powstała między nimi poprawna relacja tj.
+
+\begin{itemize}
+    \item $N \subset Z \subset R$,
+    \item $NW \cap W = \varnothing$,
+    \item $NW \cap R$.
+\end{itemize}
+
+\subsection{Zakończenie zadania}
+Zadanie zostaje uznane za zakończone, gdy gracz poprawnie przejdzie przez oba etapy. 
+Gracz nie może przejść do etapu drugiego, bez zakończenia etapu pierwszego – jest to wymuszone 
+przez wymaganie otwarcia przez niego skrzyni.
+\section{Zadanie 8 – Znaki funkcji trygonometrycznych (Autor)}
+a
+\subsection{Cel zadania}
+a
+\subsection{Zasady działania}
+a
+\subsection{Zakończenie zadania}
+
+\section{Zadanie 9 – Ciągi liczbowe (Jan Walczak)}
+Poniżej opisane zadanie będzie podobne do gry wyprodukowanej przez Nintendo na platformę Pegasus.
+
+\subsection{Cel zadania}
+Zadaniem gracza będzie odpowiednio szybko obliczyć kolejne wyrazy ciągu arytmetycznego 
+z podanego wzoru. Będzie on wyposażony w laserowy pistolet, którym będzie musiał strzelać
+w odpowiednio oznaczone kaczki.
+\subsection{Zasady działania}
+Na ekranie pojawia się formuła ciągu arytmetycznego lub geometrycznego, np.: $a_n = 2n + 1$ (ciąg arytmetyczny) wybranego z predefiniowanej puli. 
+Gracz będzie musiał wybrać i strzelić do kaczki oznaczonej odpowiednią wartością kolejnych wyrazów ciągu. Gra przyspiesza (kaczki lecą coraz szybciej) razem z postępem w zadaniu. 
+Aby ułatwić graczowi zadanie, na górze ekranu będzie podany nie tylko wzór ciągu, ale też aktualny numer wyrazu tego ciągu. 
+Przykładowo, dla wzoru $a_n = 2n + 1$:
+\begin{itemize}
+    \item $n = 1$ – gracz musi trafić w kaczkę z liczbą 3,
+    \item $n = 2$ – gracz musi trafić w kaczkę z liczbą 5
+\end{itemize}
+
+\subsection{Zakończenie zadania}
+Gracz będzie zdobywał punkty za każdy poprawnie wybrany wyraz ciągu. 
+Gra zakończy się po upływie określonego czasu lub jeśli gracz pomyli się trzy razy
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics{images/duckhunt.jpg}
+    \caption{gra Duck Hunt}
+    \label{duckhunt}
+\end{figure}
+
+\section{Zadanie 10 – Prawdopodobieństwo (Autor)}
+a
+\subsection{Cel zadania}
+a
+\subsection{Zasady działania}
+a
+\subsection{Zakończenie zadania}
+
+\section{Zadanie 11 – Optymalizacja i rachunek różniczkowy (Autor)}
+a
+\subsection{Cel zadania}
+a
+\subsection{Zasady działania}
+a
+\subsection{Zakończenie zadania}
+
+\section{Zadanie 12 – Układy równań (Autor)}
+a
+\subsection{Cel zadania}
+a
+\subsection{Zasady działania}
+a
+\subsection{Zakończenie zadania}
+
+\section{Zadanie 13 – Stereometria(Jan Walczak)}
+Bryły przestrzenne mogą sprawić uczniom trudność, ponieważ wymagają przejścia od rysunku 
+dwuwymiarowego tj. takiego na kartce papieru, do wyobrażenia sobie ich w przestrzeni trójwymiarowej.
+\subsection{Cel zadania}
+Celem zadania jest zapoznać uczniów z podstawowymi wartościami brył geometrycznych 
+poprzez ich samodzielne odkrywanie.
+\subsection{Zasady działania}
+Gracz wchodzi do ciemnego pokoju i jest wyposażony w źródło światła np. pochodnię lub latarkę. 
+Na środku pokoju znajduje się jedna z brył, wylosowanych z danej puli: prostopadłościan, ostrosłup, graniastosłup, kula lub sześcian.
+Na ścianie pokoju znajduje się panel z pytaniami np.:
+\begin{itemize}
+    \item Ile ścian ma dana bryła?
+    \item Ile krawędzi ma dana bryła?
+    \item Co jest podstawą danej bryły?
+\end{itemize}
+Gracz obchodząc bryłę dookoła i rozświetlając ją latarką powinien móc udzielić odpowiedzi na te pytania. 
+\subsection{Zakończenie zadania}
+Gdy gracz udziela poprawnych odpowiedzi na kolejne pytania zostają one podświetlone na zielono, sygnalizując graczowi, że wykonał zadanie poprawnie. 
+Po uzupełnieniu wszystkich odpowiedzi pokój rozświetla się, a gracz może przyjrzeć się bryle w pełnym świetle.

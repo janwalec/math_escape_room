@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.12.27)  27 DEC 2025 15:59
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.12.27)  27 DEC 2025 22:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -781,14 +781,99 @@ Overfull \hbox (0.58105pt too wide) detected at line 37
 
 
 
-])
+]
+Overfull \hbox (2.24121pt too wide) detected at line 85
+\TU/Arial(0)/m/n/10 7.10. 
+ []
+
+
+Overfull \hbox (0.58105pt too wide) detected at line 86
+\TU/Arial(0)/m/n/10 7.10.1. 
+ []
+
+[4]
+Overfull \hbox (0.58105pt too wide) detected at line 87
+\TU/Arial(0)/m/n/10 7.10.2. 
+ []
+
+
+Overfull \hbox (0.58105pt too wide) detected at line 88
+\TU/Arial(0)/m/n/10 7.10.3. 
+ []
+
+
+Overfull \hbox (1.49902pt too wide) detected at line 89
+\TU/Arial(0)/m/n/10 7.11. 
+ []
+
+
+Overfull \hbox (2.24121pt too wide) detected at line 93
+\TU/Arial(0)/m/n/10 7.12. 
+ []
+
+
+Overfull \hbox (0.58105pt too wide) detected at line 94
+\TU/Arial(0)/m/n/10 7.12.1. 
+ []
+
+
+Overfull \hbox (0.58105pt too wide) detected at line 95
+\TU/Arial(0)/m/n/10 7.12.2. 
+ []
+
+
+Overfull \hbox (0.58105pt too wide) detected at line 96
+\TU/Arial(0)/m/n/10 7.12.3. 
+ []
+
+
+Overfull \hbox (2.24121pt too wide) detected at line 97
+\TU/Arial(0)/m/n/10 7.13. 
+ []
+
+
+Overfull \hbox (0.58105pt too wide) detected at line 98
+\TU/Arial(0)/m/n/10 7.13.1. 
+ []
+
+
+Overfull \hbox (0.58105pt too wide) detected at line 99
+\TU/Arial(0)/m/n/10 7.13.2. 
+ []
+
+
+Overfull \hbox (0.58105pt too wide) detected at line 100
+\TU/Arial(0)/m/n/10 7.13.3. 
+ []
+
+
+Overfull \hbox (2.24121pt too wide) detected at line 101
+\TU/Arial(0)/m/n/10 7.14. 
+ []
+
+
+Overfull \hbox (0.58105pt too wide) detected at line 102
+\TU/Arial(0)/m/n/10 7.14.1. 
+ []
+
+
+Overfull \hbox (0.58105pt too wide) detected at line 103
+\TU/Arial(0)/m/n/10 7.14.2. 
+ []
+
+
+Overfull \hbox (0.58105pt too wide) detected at line 104
+\TU/Arial(0)/m/n/10 7.14.3. 
+ []
+
+)
 \tf@toc=\write5
 \openout5 = `PracaMagisterka.toc'.
 
-) [4]
+) [5]
 \openout2 = `chapters/0c_wykaz_skrotow.aux'.
 
- (chapters/0c_wykaz_skrotow.tex) [5
+ (chapters/0c_wykaz_skrotow.tex) [6
 
 
 
@@ -803,30 +888,30 @@ Overfull \hbox (10.4678pt too wide) in paragraph at lines 6--7
 []\TU/Arial(0)/m/n/10 Matematyka, jako jedna z podstawowych dziedzin nauki, często bywa postrzegana przez uczniów
  []
 
-[6
+[7
 
 
 
 
-]) [7]
+]) [8]
 \openout2 = `chapters/2_wprowadzenie_do_dziedziny.aux'.
 
  (chapters/2_wprowadzenie_do_dziedziny.tex
 Rozdzia\PlPrIeC {\l } 2.
-[8
+[9
 
 
 
 
-] [9]
+] [10]
 Underfull \vbox (badness 6876) has occurred while \output is active []
 
- [10] [11]) [12]
+ [11] [12]) [13]
 \openout2 = `chapters/3_technologie_algorytmy_narzedzia.aux'.
 
  (chapters/3_technologie_algorytmy_narzedzia.tex
 Rozdzia\PlPrIeC {\l } 3.
-) [13
+) [14
 
 
 
@@ -839,27 +924,27 @@ Rozdzia\PlPrIeC {\l } 4.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14
+ [15
 
 
 
 
-] [15] [16] [17] [18]) [19]
+] [16] [17] [18] [19]) [20]
 \openout2 = `chapters/5_badania.aux'.
 
  (chapters/5_badania.tex
 Rozdzia\PlPrIeC {\l } 5.
-[20
+[21
 
 
 
 
-]) [21]
+]) [22]
 \openout2 = `chapters/6_analiza.aux'.
 
  (chapters/6_analiza.tex
 Rozdzia\PlPrIeC {\l } 6.
-) [22
+) [23
 
 
 
@@ -869,19 +954,57 @@ Rozdzia\PlPrIeC {\l } 6.
 
  (chapters/9_zagadki_teoretyczne.tex
 Rozdzia\PlPrIeC {\l } 7.
-File: images/zad2.1.png Graphic file (type bmp)
-<images/zad2.1.png>
-) [23
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 33.
+(C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 33.
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 33.
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 33.
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 33.
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 33.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 33.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 33.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 33.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 33.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 33.
+ [24
 
 
 
 
-] [24]
+] [25]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 89.
+
+[26] [27]
+File: images/duckhunt.jpg Graphic file (type bmp)
+<images/duckhunt.jpg>
+ [28]) [29]
 \openout2 = `chapters/7_podsumowanie.aux'.
 
  (chapters/7_podsumowanie.tex
 Rozdzia\PlPrIeC {\l } 8.
-) [25
+) [30
 
 
 
@@ -893,44 +1016,11 @@ Rozdzia\PlPrIeC {\l } 8.
 
 LaTeX Warning: Empty bibliography on input line 3.
 
-(PracaMagisterka.lof
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 8.
- (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
-File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
-)
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 8.
- (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlzplm.fd
-File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 8.
- (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omszplm.fd
-File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 8.
- (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxzplm.fd
-File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 8.
- (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1zplm.fd
-File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 8.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 8.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 8.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 8.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 8.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 8.
-)
+(PracaMagisterka.lof)
 \tf@lof=\write6
 \openout6 = `PracaMagisterka.lof'.
 
- [26
+ [31
 
 
 
@@ -939,7 +1029,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 \tf@lot=\write7
 \openout7 = `PracaMagisterka.lot'.
 
-) [27
+) [32
 
 ] (PracaMagisterka.aux (chapters/0a_streszczenie.aux) (chapters/0b_spis_tresci.aux) (chapters/0c_wykaz_skrotow.aux) (chapters/1_wstep.aux) (chapters/2_wprowadzenie_do_dziedziny.aux) (chapters/3_technologie_algorytmy_narzedzia.aux) (chapters/4_projekt_systemu.aux) (chapters/5_badania.aux) (chapters/6_analiza.aux) (chapters/9_zagadki_teoretyczne.aux) (chapters/7_podsumowanie.aux) (chapters/8_wykazy.aux))
  ***********
@@ -947,18 +1037,18 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `PracaMagisterka.out' has not changed.
-(rerunfilecheck)             Checksum: A3BA3637BCA64F9D8A6BBA4787E1C61F;12813.
+(rerunfilecheck)             Checksum: FE6B7CA5D133ABB52152AAC16072C90B;21659.
 Package logreq Info: Writing requests to 'PracaMagisterka.run.xml'.
 \openout1 = `PracaMagisterka.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22595 strings out of 409617
- 440482 string characters out of 5774012
- 1937191 words of memory out of 5000000
- 44341 multiletter control sequences out of 15000+600000
+ 22620 strings out of 409617
+ 440951 string characters out of 5774012
+ 1939191 words of memory out of 5000000
+ 44366 multiletter control sequences out of 15000+600000
  568537 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  94i,11n,107p,1445b,3688s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on PracaMagisterka.xdv (27 pages, 563964 bytes).
+Output written on PracaMagisterka.xdv (32 pages, 731580 bytes).
