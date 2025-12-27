@@ -102,11 +102,25 @@
 \contentsline {subsection}{\numberline {7.14.1}Cel zadania}{29}{subsection.7.14.1}%
 \contentsline {subsection}{\numberline {7.14.2}Zasady działania}{29}{subsection.7.14.2}%
 \contentsline {subsection}{\numberline {7.14.3}Zakończenie zadania}{29}{subsection.7.14.3}%
-\contentsline {chapter}{\numberline {8}Podsumowanie}{30}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Ocena realizacji celów}{30}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Propozycje rozwoju projektu}{30}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Wnioski końcowe}{30}{section.8.3}%
-\contentsline {chapter}{Wykaz literatury}{31}{section.8.3}%
-\contentsline {chapter}{Wykaz rysunków}{31}{chapter*.7}%
-\contentsline {chapter}{Wykaz tabel}{32}{chapter*.8}%
+\contentsline {chapter}{\numberline {8}Implementacja zagadek}{30}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Zadanie 1 – wzory skróconego mnożenia (Autor)}{30}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Zadanie 2 – Planimetria (Jan Walczak)}{30}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Zadanie 3 – Nierówności (Autor)}{30}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Zadanie 4 – Funkcje (Autor)}{30}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Zadanie 5 – Geometria analityczna (Autor)}{30}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Zadanie 6 – Kombinatoryka (Autor)}{30}{section.8.6}%
+\contentsline {section}{\numberline {8.7}Zadanie 7 – Liczby rzeczywiste i działania na zbiorach liczbowych \\(Jan Walczak)}{30}{section.8.7}%
+\contentsline {section}{\numberline {8.8}Zadanie 8 – Znaki funkcji trygonometrycznych (Autor)}{30}{section.8.8}%
+\contentsline {section}{\numberline {8.9}Zadanie 9 – Ciągi liczbowe (Jan Walczak)}{30}{section.8.9}%
+\contentsline {section}{\numberline {8.10}Zadanie 10 – Prawdopodobieństwo (Autor)}{30}{section.8.10}%
+\contentsline {section}{\numberline {8.11}Zadanie 11 – Optymalizacja i rachunek różniczkowy (Autor)}{30}{section.8.11}%
+\contentsline {section}{\numberline {8.12}Zadanie 12 – Układy równań (Autor)}{30}{section.8.12}%
+\contentsline {section}{\numberline {8.13}Zadanie 13 – Stereometria(Jan Walczak)}{30}{section.8.13}%
+\contentsline {chapter}{\numberline {9}Podsumowanie}{31}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Ocena realizacji celów}{31}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Propozycje rozwoju projektu}{31}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Wnioski końcowe}{31}{section.9.3}%
+\contentsline {chapter}{Wykaz literatury}{32}{section.9.3}%
+\contentsline {chapter}{Wykaz rysunków}{32}{chapter*.7}%
+\contentsline {chapter}{Wykaz tabel}{33}{chapter*.8}%
 \contentsfinish 

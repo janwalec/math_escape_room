@@ -229,6 +229,9 @@ INPUT chapters\6_analiza.aux
 INPUT .\chapters\9_zagadki_teoretyczne.aux
 INPUT .\chapters\9_zagadki_teoretyczne.aux
 INPUT chapters\9_zagadki_teoretyczne.aux
+INPUT .\chapters\10_zagadki_praktyczne.aux
+INPUT .\chapters\10_zagadki_praktyczne.aux
+INPUT chapters\10_zagadki_praktyczne.aux
 INPUT .\chapters\7_podsumowanie.aux
 INPUT .\chapters\7_podsumowanie.aux
 INPUT chapters\7_podsumowanie.aux
@@ -357,6 +360,12 @@ INPUT C:\Users\jasia\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT .\images\duckhunt.jpg
 INPUT .\images\duckhunt.jpg
 INPUT .\images\duckhunt.jpg
+INPUT .\chapters\10_zagadki_praktyczne.tex
+INPUT .\chapters\10_zagadki_praktyczne.tex
+OUTPUT chapters\10_zagadki_praktyczne.aux
+INPUT .\chapters\10_zagadki_praktyczne.tex
+INPUT .\chapters\10_zagadki_praktyczne.tex
+INPUT chapters\10_zagadki_praktyczne.tex
 INPUT .\chapters\7_podsumowanie.tex
 INPUT .\chapters\7_podsumowanie.tex
 OUTPUT chapters\7_podsumowanie.aux
@@ -408,6 +417,9 @@ INPUT chapters\6_analiza.aux
 INPUT .\chapters\9_zagadki_teoretyczne.aux
 INPUT .\chapters\9_zagadki_teoretyczne.aux
 INPUT chapters\9_zagadki_teoretyczne.aux
+INPUT .\chapters\10_zagadki_praktyczne.aux
+INPUT .\chapters\10_zagadki_praktyczne.aux
+INPUT chapters\10_zagadki_praktyczne.aux
 INPUT .\chapters\7_podsumowanie.aux
 INPUT .\chapters\7_podsumowanie.aux
 INPUT chapters\7_podsumowanie.aux
