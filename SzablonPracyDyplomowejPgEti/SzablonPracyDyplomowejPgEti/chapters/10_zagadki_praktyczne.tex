@@ -2,15 +2,80 @@
 \label{chap:development}
 
 \section{Zadanie 1 – wzory skróconego mnożenia (Autor)}
+a
 \section{Zadanie 2 – Planimetria (Jan Walczak)}
+
+\subsection{Problemy i różnice w realizacji zadania w praktyce}
+Podczas implementacji zadania, zgodnie z teorią opisaną w podrozdziale \ref{subsec:planimetria_teoria}
+napotkałem się z kilkoma problemami. Przede wszystkim zauważyłem, że odpowiedzi są zero--jedynkowe.
+Przykładowo: uczeń ma do uzupełniania relację typu \glqq każdy kwadrat ... prostokątem\grqq. Jeśli 
+odpowie niepoprawnie tj. zaznaczy odpowiedź \glqq nie jest\grqq, a zostanie od razu zapytany ponownie o tę
+samą relację, to od razu wyklucza jedną z odpowiedzi. Tym samym zadanie zatraca swoją wartość edukacyjną
+-- uczeń może rozwiązać całe zadanie stosując jedynie metodę eliminacji.
+
+Rozwiązanie tego problemu, które zostało zaimplementowane, to zdefiniowanie puli takich relacji i po udzieleniu
+przez ucznia odpowiedzi, każdorazowe losowanie relacji innej niż ta poprzednia.
+W ten sposób uniemożliwia się uczniowi stosowania zasady eliminacji i wymusza na nim prawidłowe podejście.
+
+Kolejnym problemem była prezentacja zadania. Zwykła tabela, którą uczeń miałby uzupełniać mogłaby wydać mu się
+mało ciekawa. Tym samym postanowiłem wizualnie usprawnić zagadkę. Na środku zostały umieszczone dwa przyciski:
+\begin{itemize}
+    \item każdy
+    \item nie każdy
+\end{itemize}
+Uczeń zostaje poinstruowany, że po obu ścianach pokoju zostaną wyświetlone różne figury geometryczne. Po lewej stronie,
+patrząc od przycisków -- figury oznaczone kolorem czerwonym, po prawej stronie -- figury oznaczone kolorem zielonym.
+Liczba figur jest stała, każdorazowo typ wyświetlanych figur jest wybierany z określonej puli i wyświetlany w pseudolosowej 
+konfiguracji -- losowane jest ich położenie, obrót oraz rozmiar. Zadaniem ucznia jest uzupełnianie kolejnych relacji poprzez
+wybieranie odpowiednich przycisków. Relacja wyświetlana na ścianie pokoju przedstawia się jako:
+\glqq każdy typ figury, narysowany kolorem czerwonym, jest równocześnie typem figury oznaczonym kolorem zielonym\grqq.
+Dodatkowo, tekst jest odpowiednio pokolorowany, tak aby uczeń nie miał wątpliwości, że chodzi o typ figury, wyświetlane tymże kolorem
+na ścianach.
+
+\subsection{Implementacja struktury danych przechowującej relację}
+Na początku pracy należało zdefiniować strukturę, przechowującą relację, czyli innymi słowami, pytanie na które uczeń
+będzie odpowiadał. Relacja taka została zdefiniowana jako aktor. Zawiera pola:
+
+\begin{itemize}
+    \item \verb|Every| -- wartość logiczna
+    \item \verb|FigureA| -- ciąg tekstowy, reprezentujący pierwszą figurę w relacji
+    \item \verb|FigureB| -- ciąg tekstowy, reprezentujący drugą figurę w relacji
+\end{itemize}
+
+Wartość zmiennej \verb|Every| odpowiada na pytanie, czy każda figura typu pierwszego (\verb|FigureA|) jest równocześnie
+figurą typu drugiego (\verb|FigureB|). Struktura zawierała również funkcję słownikową, czyli taką, która tłumaczy wartości
+tekstowe na liczbowe.
+
+\subsection{Implementacja kontrolerów}
+Aby zarządzać zagadką została zaimplementowana seria kontrolerów i menadżerów.
+\begin{itemize}
+    \item \verb|ControlerFigures| (główny kontroler)
+    \item \verb|FiguresTextManager|
+    \item \verb|WallFigures|
+\end{itemize}
+
+\verb|WallFigures| to najprostszy z kontrolerów. Wykonuje polecenia głównego kontrolera. Jego zadaniem jest 
+wyświetlanie żądanych figur i ich losowe ustawianie (obracanie, skalowanie, rozmieszczanie). W projekcie występują
+jego dwie instancje: kontroler lewy i prawy. Odpowiadają za odpowiednie ściany, na których wyświetlane są figury.
+
+\verb|FiguresTextManager| jest odpowiedzialny za zarządzanie tekstem wyświetlanym na ekranie. Wykonuje polecenia
+głównego kontrolera. Jego zadaniem jest odpowiednie wyświetlanie, skalowanie i kolorowanie tekstu.
+
+\verb|ControlerFigures| czyli kontroler główny jest najważniejszym elementem zagadki. Zawiera referencję do pozostałych
+kontrolerów, zarządza obiektami wyświetlanymi na scenie i kontroluje przebieg zadania.
+
+\subsection{Przebieg zadania}
+
+
 \section{Zadanie 3 – Nierówności (Autor)}
-\section{Zadanie 4 – Funkcje (Autor)}a
+\section{Zadanie 4 – Funkcje (Autor)}
 \section{Zadanie 5 – Geometria analityczna (Autor)}
 \section{Zadanie 6 – Kombinatoryka (Autor)}
-\section{Zadanie 7 – Liczby rzeczywiste i działania na zbiorach liczbowych \\(Jan Walczak)}
+\section{Zadanie 7 – Liczby rzeczywiste i działania na zbiorach liczbowych 
+\texorpdfstring{\\}{ } (Jan Walczak)}
 \section{Zadanie 8 – Znaki funkcji trygonometrycznych (Autor)}
 \section{Zadanie 9 – Ciągi liczbowe (Jan Walczak)}
 \section{Zadanie 10 – Prawdopodobieństwo (Autor)}
 \section{Zadanie 11 – Optymalizacja i rachunek różniczkowy (Autor)}
 \section{Zadanie 12 – Układy równań (Autor)}
-\section{Zadanie 13 – Stereometria(Jan Walczak)}
+\section{Zadanie 13 – Stereometria (Jan Walczak)}
