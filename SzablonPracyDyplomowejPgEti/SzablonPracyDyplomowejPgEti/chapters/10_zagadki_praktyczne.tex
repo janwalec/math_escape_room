@@ -4,6 +4,7 @@
 \section{Zadanie 1 – wzory skróconego mnożenia (Autor)}
 a
 \section{Zadanie 2 – Planimetria (Jan Walczak)}
+\label{sec:planimetria_praktyka}
 
 \subsection{Problemy i różnice w realizacji zadania w praktyce}
 Podczas implementacji zadania, zgodnie z teorią opisaną w podrozdziale \ref{subsec:planimetria_teoria}
@@ -70,7 +71,7 @@ Kontroler zawiera też predefiniowaną tablicę relacji typów figur opisanych w
     \centering
     \includegraphics[width=0.7\textwidth]{images/planimetreia_UML.png}
     \caption{Diagram UML zawierający najważniejsze elementy kontrolerów dla zadania 2 -- planimetria.}
-    \label{uml:planimetria}
+    \label{planimetria:uml}
 \end{figure}
 
 \FloatBarrier
@@ -94,7 +95,7 @@ losuje kolejną relację do wyświetlenia graczowi i nie zalicza punktu. Gra ko�
     \centering
     \includegraphics[width=0.7\textwidth]{images/planimetria_FLOW.png}
     \caption{Diagram przepływu dla zadania 2 -- planimetria}
-    \label{uml:planimetria}
+    \label{planimetria:flow}
 \end{figure}
 
 \FloatBarrier
@@ -105,6 +106,123 @@ losuje kolejną relację do wyświetlenia graczowi i nie zalicza punktu. Gra ko�
 \section{Zadanie 6 – Kombinatoryka (Autor)}
 \section{Zadanie 7 – Liczby rzeczywiste i działania na zbiorach liczbowych 
 \texorpdfstring{\\}{ } (Jan Walczak)}
+\subsection{Problemy i różnice w realizacji zadania w praktyce}
+\label{subsec:rzeczywiste_problemy}
+Podczas implementacji zadania, zgodnie z teorią opisaną w podrozdziale \ref{subsec:liczby_rzeczywiste}
+musiałem wprowadzić, względem niej, kilka poprawek. Pierwotny mechanizm zakładał, że zamek, umieszczony na skrzyni, będzie
+wyposażony w pola na umieszczenie odpowiednich cyfr -- liczby elementów danego podzbioru znajdujących się na niej. W praktyce
+okazało się to niemożliwe. Maksymalna liczba jednocyfrowa to 9, tym samym zadanie jest ograniczone do wyświetlania maksymalnie 9 liczb
+rzeczywistych w pokoju. 
+
+Postanowiłem zmienić zamysł i zamiast kłódki umieścić skrzynię z elektronicznym zamkiem i wyposażyć go w klawiaturę.
+W ten sposób dostajemy możliwość umieszczenia więcej niż 9 liczb w pokoju. Uczeń staje równiez przed dodatkowym zadaniem -- 
+wywnioskować kolejność wpisywanych liczb zgodnie z podpowiedzią, umieszczoną na ścianie (patrz rysnuek \ref{rzeczywiste:screen}).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/liczby_rzeczywiste_screen.png}
+    \caption{Zrzut ekranu -- skrzynia z zamkiem oraz podpowiedź na ścianie dla zadania 7.}
+    \label{rzeczywiste:screen}
+\end{figure}
+\FloatBarrier
+
+Zmienione zostały również liczby, które są rozmieszczone w pokoju. Aktualnie pojawiają się liczby: 
+\textit{15; π; 4,5; √2; ¼; -3; 1; -7; ⅓ ; 9} Tym samym kombinacja prezentuje się następująco (kolejność zgodna z podpowiedzią 
+na rysunku \ref{rzeczywiste:screen})
+\begin{itemize}
+    \item \textit{N} (naturalne): \textit{15; 1; 9} – 3 liczby,
+    \item \textit{C} (całkowite):  \textit{15; 1; 9; -3; -7} – 5 liczb,
+    \item \textit{R} (rzeczywiste): wszystkie liczby – 10 liczb,
+    \item \textit{W} (wymierne): \textit{15; 1; 9; -3; -7; 4,5; ¼; ⅓} – 8 liczb,
+    \item \textit{NW} (niewymierne): \textit{π; √2} – 2 liczby.
+\end{itemize}
+
+Tym samym kombinacja do otwarcia sejfu to \textit{351082}.
+
+Ostatnią rzeczą, która została zmieniona jest koncepcja drugiej części zadania. Niepotrzebny jest mechanizm obracania bloczków,
+ponieważ wybrane relacje są jednoznaczne -- są czytane zawsze od lewej do prawej strony. Niepoprawny obrót bloczka od razu sugeruje
+błędną odpowiedź -- tym samym jest to mechanizm bezcelowy.
+
+Spośród wszystkich relacji zostały wybrane dwie:
+\begin{itemize}
+    \item $N \subset Z \subset R$,
+    \item $NW \cap W = \varnothing$,
+\end{itemize}
+Zostały one wybrane przez swoją charakterystykę. Pierwsza z nich pokazuje, jak kolejne zbiory zawierają się w sobie nazwajem,
+a druga pokazuje rozłączność zbiorów liczb wymiernych i niewymiernych.
+Gracz ma do dyspozycji 6 bloczków:
+\begin{itemize}
+    \item dwa bloczki z symbolem $\subset$,
+    \item dwa bloczki z symbolem $\varnothing$,
+    \item dwa bloczki z symbolem $\cap$
+\end{itemize}
+Mają mu posłużyć do uzupełnienia dwóch relacji wymienionych wcześniej. Po ułożeniu relacji poprawnie bądź nie bloczki pozostają
+do dyspozycji gracza.
+
+\subsection{Implementacja kontrolera}
+
+W przeciwieństwie do zadania drugiego, opisanego w \ref{sec:planimetria_praktyka}, został zaimplementowany jedynie jeden, główny 
+kontroler \verb|RealNumbersController|. Zarządza on przebiegiem zadania, położeniem elementów na scenie oraz wyświetlaniem tekstu.
+Zawiera odpowiednie referencje do komponentów i odpowiada za poprawną inicjalizację.
+
+Komponent \verb|Element| jest bloczkiem z odpowiednim symbolem relacji, \verb|Sejf| jest skrzynią, która przetrzymuje bloczki,
+a \verb|WallQuestion| to płaska tablica (ścianka), na której wyświetlane są pytania w drugiej części zadania.
+
+\verb|Sejf| posiada jednostronną referencję do głównego kontrolera. Kontroler może zostać przez niego powiadomiony, że gracz
+poprawnie wpisał kod, tak aby kontroler mógł sterować dalszym przebiegiem zadania. \verb|WallQuestion| zawiera dwustronną referencję
+do głównego kontrolera. Mechanizm powiadomień działa tutaj podobnie ale kontroler może odpowiadać na otrzymywane powiadomienia poprzez
+wywoływanie odpowiednich funkcji.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/real_UML.png}
+    \caption{Diagram UML zawierający najważniejsze elementy dla zadania 7 -- liczby rzeczywiste i działania na zbiorach liczbowych.}
+    \label{rzeczywiste:UML}
+\end{figure}
+\FloatBarrier
+
+\subsection{Przebieg zadania}
+Zadanie rozpoczyna się od pierwszej części -- wpisania kodu do skrzyni. Kontroler inicjalizuje komponenty, a  na ścianach i na skrzyni 
+zostają wyświetlone liczby opisane w \ref{subsec:rzeczywiste_problemy}. Gracz powinien policzyć ile liczb i z jakiego zbioru jest 
+wyświetlanych w pokoju i poprawnie wpisać kod, według podpowiedzi znajdującej się na ścianie.
+Po poprawnym wpisaniu kodu, kontroler główny zostaje powiadomiony przez instancję skrzyni, że zadanie może przejść do następnego etapu.
+Drzwi się otwierają a kontroler inicjalizuje 6 bloczków, opisanych w \ref{subsec:rzeczywiste_problemy} i ściankę z pytaniami \verb|WallQuestion|.
+Zapisuje pozycję oraz obrót bloczków w świecie, tak aby możliwy był powrót do stanu początkowego, między udzielanymi odpowiedziami.
+
+Ścianka wykrywa kolizję z bloczkami, które gracz na niej umieszcza. W momencie kiedy zostaje uzupełniona w całości tj. bloczki wypełniają 
+miejsca na odpowiedzi, to powiadamia kontroler o rozwiązaniu zadania. Kontroler decyduje czy odpowiedź gracza jest poprawna. W przypadku gdy 
+jest, to przesyła do \verb|WallQuestion| powiadomienie o zmianie pytania na kolejne i zalicza punkt. Jeżeli odpowiedź nie jest poprawna, to
+również powiadamia o tym ściankę, ale nie zalicza punktu. W obu przypadkach bloczki wracają na wcześniej zapisaną pozycję.
+W zależności od poprawności udzielonej odpowiedzi ścianka rozświetla się kolorem zielonym lub czerwonym, tak żeby gracz miał pewność, że udzielił
+dobrej odpowiedzi. Podczas sprawdzania stan ścianki tj. ustawienie bloczków i pytanie zostaje zablokowany i gracz nie może go modifykować (dokładać
+lub zabierać bloczków).
+
+Kiedy gracz odpowie na oba pytania poprawnie poziom zostaje uznany za zaliczony.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{images/real_FLOW.png}
+    \caption{Diagram przepływu dla zadania 7 -- liczby rzeczywiste i działania na zbiorach liczbowych.}
+    \label{rzeczywiste:FLOW}
+\end{figure}
+\FloatBarrier
+
+\subsection{Implementacja mechanizmu uzupełniania ścianki}
+Ścianka, czyli \verb|WallQuestion|, wykrywa kolizję z bloczkami, czyli \verb|Element| w dwóch miejscach, w których będą one docelowo
+umieszczone. Kiedy gracz przytrzyma bloczek nad jednym z miejsc uruchamiana jest odpowiednia funkcja \verb|StartCollision()|. W zależności,
+od tego gdzie został umieszczony bloczek, sprawdzany jest aktualny stan ścianki -- czy w tym miejscu gracz zdążył już umieścić bloczek.
+Jeśli tak, to ścianka nie pozwoli mu umieścić w tym miejscu kolejnego bloczka, dopóki nie wyjmie poprzedniego. Dzieje się tak za sprawą dwóch
+zmiennych wartości logicznych: \verb|ActorHovered| i \verb|ActorLockedIn|. Oznaczają one kolejno: stan, w którym gracz trzyma bloczek nad ścianką
+i stan, w którym gracz umieścił bloczek na ściance. W przypadku gdy \verb|ActorLockedIn| jest ustawione na wartość \verb|0|, to zapisywana
+jest referencja bloczku, który został właśnie umieszczony. 
+
+Dodatkowo informacja o tym, że gracz puścił bloczek, czyli zamierza go umieścić w danym miejscu, jest odpowiednio zapisywana w bloczku.
+Kiedy bloczek znajduje się w ręce gracza otrzymuje sygnaturę \verb|held|. Kiedy go puści, sygnatura jest odbierana. Wyżej wymienione wartości
+logiczne są ustawiane dopiero wtedy, kiedy sygnatura najpierw istniała w instancji bloczka, a potem została z niej usunięta.
+
+W przypadku, gdy gracz chce usunąć bloczek ze ścianki sytuacja jest analogiczna. Tym razem jednak, sprawdzamy czy bloczek, który zabiera gracz,
+jest tym znajdującym się na ściance, poprzez porównanie referencji. 
+
 \section{Zadanie 8 – Znaki funkcji trygonometrycznych (Autor)}
 \section{Zadanie 9 – Ciągi liczbowe (Jan Walczak)}
 \section{Zadanie 10 – Prawdopodobieństwo (Autor)}

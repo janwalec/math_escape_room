@@ -1,0 +1,46 @@
+@startuml
+
+class RealNumbersController <<Actor>> {
+    - texst : Array<Text>
+    - elements: Array<Element>
+    - wallQuestion: WallQuestion
+    
+    --
+    + InitGame()
+    + StartGame()
+    + EndGame()
+    + GetNotified()
+    + SetQuestion()
+}
+    
+class Sejf <<Actor>> {
+    - realNumbersController : RealNumbersController
+    --
+    + Notify()
+}
+
+class Element <<Actor>> {
+    - symbol : Int
+}
+
+class WallQuestion <<Actor>> {
+    - realNumbersController : RealNumbersController
+    --
+    + Notify()
+    + SetQuestion()
+}
+
+class Text <<Actor>> {
+    
+}
+
+
+RealNumbersController <--> WallQuestion
+RealNumbersController <-- Sejf
+
+RealNumbersController "1" o-- "*" Element
+RealNumbersController "1" o-- "*" Text
+
+
+
+@enduml
