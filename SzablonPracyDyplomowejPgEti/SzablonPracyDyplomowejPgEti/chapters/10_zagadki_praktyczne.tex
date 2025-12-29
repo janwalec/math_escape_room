@@ -59,13 +59,45 @@ wyświetlanie żądanych figur i ich losowe ustawianie (obracanie, skalowanie, r
 jego dwie instancje: kontroler lewy i prawy. Odpowiadają za odpowiednie ściany, na których wyświetlane są figury.
 
 \verb|FiguresTextManager| jest odpowiedzialny za zarządzanie tekstem wyświetlanym na ekranie. Wykonuje polecenia
-głównego kontrolera. Jego zadaniem jest odpowiednie wyświetlanie, skalowanie i kolorowanie tekstu.
+głównego kontrolera. Jego zadaniem jest odpowiednie wyświetlanie i kolorowanie tekstu.
 
 \verb|ControlerFigures| czyli kontroler główny jest najważniejszym elementem zagadki. Zawiera referencję do pozostałych
-kontrolerów, zarządza obiektami wyświetlanymi na scenie i kontroluje przebieg zadania.
+kontrolerów, zarządza obiektami wyświetlanymi na scenie i kontroluje przebieg zadania. Dodatkowo zawiera dwustronną
+referencję z instancjami przycisków \verb|Button|, które wysyłają do niego powiadomienia o tym, że zostały naciśnięte.
+Kontroler zawiera też predefiniowaną tablicę relacji typów figur opisanych wcześniej.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/planimetreia_UML.png}
+    \caption{Diagram UML zawierający najważniejsze elementy kontrolerów dla zadania 2 -- planimetria.}
+    \label{uml:planimetria}
+\end{figure}
+
+\FloatBarrier
 
 \subsection{Przebieg zadania}
+Główny kontroler jest odpowiedzialny za inicjalizację zadania. Uruchamia on funkcję 
+\verb|InitBlueprint|, odpowiedzialną za wywołanie odpowiednich funkcji, z podrzędnych 
+elementów, takich jak: ustawienie tekstu, inicjalizacja ścian i przycisków. Ustawia także początkowe wartości zmiennych dla zadania.
 
+Kontroler oczekuje na otrzymanie powiadomienia od przycisku odpowiedzialnego za uruchomienie gry.
+Kiedy otrzyma dane powiadomienie, za pośrednictwem odpowiedniej funkcji, uruchamia grę tj. wywołuje
+funkcje podrzędnych komponentów ustawiając im odpowiednią widoczność na scenie w grze.
+
+Z predefiniowanej tablicy relacji zostaje wybrana jedna, która zostaje wyświetlona graczowi za pośrednictwem
+wywołania odpowiednich funkcji.
+Główny kontroler czeka na informacje od przycisków. Kiedy zostaje powiadomiony o tym, że jeden z nich, został naciśnięty
+sprawdza poprawność odpowiedzi. Jeśli odpowiedź jest poprawna, usuwa relację z tablicy i  losuje kolejną. Jeśli nie jest poprawna,
+losuje kolejną relację do wyświetlenia graczowi i nie zalicza punktu. Gra kończy się po poprawnym uzupełnieniu wszystkich relacji.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/planimetria_FLOW.png}
+    \caption{Diagram przepływu dla zadania 2 -- planimetria}
+    \label{uml:planimetria}
+\end{figure}
+
+\FloatBarrier
 
 \section{Zadanie 3 – Nierówności (Autor)}
 \section{Zadanie 4 – Funkcje (Autor)}

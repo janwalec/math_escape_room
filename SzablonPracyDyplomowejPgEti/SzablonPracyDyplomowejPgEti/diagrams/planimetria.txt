@@ -1,0 +1,53 @@
+@startuml
+
+class ControlerFigures <<Actor>> {
+    - leftWall : WallFigures
+    - rightWall : WallFigures
+    - textManager : FiguresTextManager
+    - buttons : Arr<Button>
+    - relationArray : Arr<RelationFigure>
+    --
+    + InitGame()
+    + StartGame()
+    + EndGame()
+    + SetRandomQuestion()
+    + EvaluateAnswear()
+    + GetNotified()
+}
+
+class WallFigures <<Actor>> {
+    - figures : Arr<Figure>
+    --
+    + SpawnActors()
+    + RandomlyTransformActors()
+    + MoveActors()
+    + RotateActors()
+    + ScaleActors()
+}
+
+class FiguresTextManager <<Actor>> {
+    - texts : Arr<Text>
+    --
+    + SetText()
+    + DefineColor()
+}
+
+class Figure <<Actor>>
+class Text <<Actor>>
+class Button <<Actor>> {
+    - controler ControlerFigures
+    --
+    + Notify()
+}
+class RelationFigure <<Actor>>
+
+ControlerFigures --> WallFigures : steruje
+ControlerFigures --> FiguresTextManager : steruje
+
+WallFigures "1" o-- "*" Figure
+FiguresTextManager "1" o-- "*" Text
+ControlerFigures <--> Button
+ControlerFigures "1" o-- "*" RelationFigure
+
+
+@enduml
