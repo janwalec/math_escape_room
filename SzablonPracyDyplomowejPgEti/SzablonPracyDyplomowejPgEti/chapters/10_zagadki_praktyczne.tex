@@ -106,6 +106,7 @@ losuje kolejną relację do wyświetlenia graczowi i nie zalicza punktu. Gra ko�
 \section{Zadanie 6 – Kombinatoryka (Autor)}
 \section{Zadanie 7 – Liczby rzeczywiste i działania na zbiorach liczbowych 
 \texorpdfstring{\\}{ } (Jan Walczak)}
+\label{sec:rzeczywiste_praktyka}
 \subsection{Problemy i różnice w realizacji zadania w praktyce}
 \label{subsec:rzeczywiste_problemy}
 Podczas implementacji zadania, zgodnie z teorią opisaną w podrozdziale \ref{subsec:liczby_rzeczywiste}
@@ -225,6 +226,87 @@ jest tym znajdującym się na ściance, poprzez porównanie referencji.
 
 \section{Zadanie 8 – Znaki funkcji trygonometrycznych (Autor)}
 \section{Zadanie 9 – Ciągi liczbowe (Jan Walczak)}
+\label{sec:ciągi_praktyka}
+\subsection{Problemy i różnice w realizacji zadania w praktyce}
+W przeciwieństwie do zadań opisanych w podroździałach \ref{sec:planimetria_praktyka} i \ref{sec:rzeczywiste_praktyka} w tym zadaniu nie pojawiło się 
+dużo rozbieżności między teorią, a praktyczną implementacją.
+
+Miejsce, w którym wprowadziłem modyfikację, to warunki zakończenia gry. Zadanie, przez swój projekt, stawia bardziej na szybką analizę, niż
+na długie zastanawianie się nad odpowiedzią. Jest bezpośrednio inspirowane prawdziwą grą, w której największą wartością, wyróżniającą gracza, jest jego
+czas reakcji. Z tego powodu zdecydowałem się na usunięcie limitu czasowego. Gra przyspiesza liniowo, razem z postępem tj. liczbą zestrzelonych przez
+gracza kaczek.
+
+Dodatkowo zwiększyłem liczbę żyć tj. możliwości na pomyłkę gracza do 4 zamiast 3. Jest to spowodowane wprowadzeniem dodatkowej mechaniki gry -- jeśli
+kaczka wyleci poza zasięg gracza (za ścianę) gracz traci życie. Gra kończy się jedynie w momencie utraty wszsyskich żyć -- co musi nastąpić, ponieważ
+prędkość kaczek będzie rosła tak długo, jak długo toczy się rozgrywka.
+
+\subsection{Implementacja pistoletu laserowego}
+Implementacja pistoletu lasterowego była kluczowym punktem, potrzebnym do stworzenia całego poziomu. 
+
+Aby poprawnie zaimplementować taki laser potrzebne są w sumie trzy wartości:
+\begin{itemize}
+    \item punkt początkowy, od którego zaczynamy rysowanie lasera
+    \item punkt końcowy, do którego laser będzie rysowany
+    \item wektor kierunkowy, według którego laser będzie rysowany
+\end{itemize}
+
+Za punkt początkowy został obrany koniec ręki gracza tj. kontrolera którym steruje. Kolejno, z ustawienia gracza można wyznaczyć wektor kierunkowy.
+Wystarczy pobrać z kontrolera jego wartość przy użyciu systemowej funkcji Unreal Engine \verb|Get Forward Vector|. Należało go zapisać,
+razem z punktem początkowym. Obliczenie punktu końcowego jest nieco trudniejsze. Polega na początkowym pomnożeniu wektora kierunkowego przez inny wektor,
+o dużych wartościach poszczególnych współrzędnych, a następnym dodaniu wyniku tego działania do współrzędnych punktu początkowego. 
+W projekcie zastosowano wektor $(1000,0; 1000,0; 1000,0)$. Tak obliczony punkt należało chwilowo zapisać jako punkt końcowy.
+
+Następnie, przy użyciu systemowej funkcji \verb|Line Trace by Channel|, należało wyznaczyć punkt, w którym linia, poprowadzona od punktu
+początkowego do końcowego, przecina się ze światem przedstawionym w symulacji. Funkcja ta zwraca wynik w postaci wartości typu struktury \verb|Hit Result|, 
+który można rozbić na składowe i pozyskać z niego \verb|Impact Point|, czyli rzeczywisty punkt końcowy oraz \verb|Distance|, c
+zyli wartość zmiennoprzecinkową reprezentującą długość wyznaczonej linii.
+
+Z obliczonymi wartościami można narysować laser, przebiegający od kontrolera gracza, do pierwszego napotkanego obiektu w grze. W tym celu kontroler ma
+na stałe przypisany obiekt \verb|Static Mesh| z siatką statyczną w kształcie cylindra, który jest rozciągany według obliczonych wartości. Nałożony jest
+na niego materiał emitujący czerwone światło. Na końcu, rozciągniętej siatki statycznej, umieszczona jest niewidzialna kulka, z włączonym systemem kolizji. 
+Dzięki niej można wykrywać, w jaki komponent na scenie, aktualnie celuje gracz.
+
+Na rysunku \ref{fig:sequence_laser} widać, że laser faktycznie wykrywa otoczenie, w które celuje gracz i zmienia odpowiednio swoją długość. Zmianie
+ulega również kierunek, w którym celuje gracz.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/sequence_laser.png}
+    \caption{Porównanie rysowania lasera w przypadku kontaktu z przykładowym elementem otoczenia i ścianą.}
+    \label{fig:sequence_laser}
+\end{figure}
+
+\subsection{Implementacja kontrolera}
+
+Podobnie jak w zadaniu opisanym w podroździale \ref{sec:rzeczywiste_praktyka} zaimplementowany został jeden, główny kontroler \verb|SequenceControler|.
+Jego zadaniem jest inicjalizacja gry, zarządzenie przebiegiem gry, wyświetlanie tekstu i zarządzanie instancjami kaczek. Kontroler wybiera pseudolosowo
+jeden z trzech dostępnych wzorów na kolejny wyraz ciągu arytmetycznego, według którego będzie wybierał kolejne elementy:
+\begin{itemize}
+    \item $a_n = 3n + 4$
+    \item $a_n = 2n + 3$
+    \item $a_n = 5n + 7$
+\end{itemize}
+
+Komponent \verb|Duck| implementuje funkcjonalności związane ze sterowaniem pojedynczej kaczki. Zawiera dwustronną referencję do obiektu głównego kontrolera
+i przesyła powiadomienia, kiedy zostanie zestrzelony przez gracza, przy użyciu pistoletu laserowego. W jej instancji zapisywana jest pozycja początkowa, numer,
+który aktualnie jest na niej wyświetlany i wartość zmiennoprzecinkowa, czyli droga, którą pokona kaczka w każdej klatce wykonywania się programu.
+
+Gracz zostaje również zapoznany z zasadami działania gry. Kiedy jest gotowy, do rozpoczęcia gry, naciska przycisk podobny do tego opisanego w podroździale
+\ref{sec:planimetria_praktyka}. Działa na tej samej zasadzie i również posiada dwustronną referencję do instancji kontrolera.
+
+W zagadce występują jeszcze dwa komponenty: \verb|HitWall| i \verb|Life|. Główny kontroler zawiera tablicę referencji do 4 instancji obiektów \verb|Life|. 
+Reprezentują ilość pozostałych żyć gracza i nie pełnią w logice działania programu żadnej istotnej roli, poza tą wizualną. \verb|HitWall| jest obiektem
+niewidocznym, znajdującym się poza zasięgiem gracza. Lecące kaczki będą wykrywać ten obiekt, po przeleceniu przez ścianę i sygnalizować to
+głównemu kontrolerowi tak, jakby zostały trafione. Jeżeli kaczka uderzy w ten komponent to wyśle specjalny typ powiadomienia,
+mówiący o tym, że graczowi nie udało się jej zestrzelić. Jeśli kaczka zawierała poprawny wyraz ciągu to kontroler oznaczy to jako błąd i odejmie
+graczowi jedno życie. W takim przypadku, jeżeli gracz ma jeszcze pozostałe życia, wyświetli się kolejny wyraz ciągu, a kaczki zaczną lecieć od początku.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/sequence_UML.png}
+    \caption{Diagram UML zawierający najważniejsze elementy dla zadania 9 -- Ciągi liczbowe.}
+    \label{fig:sequence_UML}
+\end{figure}
+
 \section{Zadanie 10 – Prawdopodobieństwo (Autor)}
 \section{Zadanie 11 – Optymalizacja i rachunek różniczkowy (Autor)}
 \section{Zadanie 12 – Układy równań (Autor)}

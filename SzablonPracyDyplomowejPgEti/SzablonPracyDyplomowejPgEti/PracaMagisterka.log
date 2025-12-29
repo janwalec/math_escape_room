@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.28)  29 DEC 2025 16:20
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.28)  29 DEC 2025 19:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -884,22 +884,22 @@ Overfull \hbox (0.58105pt too wide) detected at line 105
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 124
+Overfull \hbox (2.24121pt too wide) detected at line 127
 \TU/Arial(0)/m/n/10 8.10. 
  []
 
 
-Overfull \hbox (1.49902pt too wide) detected at line 125
+Overfull \hbox (1.49902pt too wide) detected at line 128
 \TU/Arial(0)/m/n/10 8.11. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 126
+Overfull \hbox (2.24121pt too wide) detected at line 129
 \TU/Arial(0)/m/n/10 8.12. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 127
+Overfull \hbox (2.24121pt too wide) detected at line 130
 \TU/Arial(0)/m/n/10 8.13. 
  []
 
@@ -1087,16 +1087,22 @@ File: images/real_UML.png Graphic file (type bmp)
 File: images/real_FLOW.png Graphic file (type bmp)
 <images/real_FLOW.png>
  [37] [38]
-Overfull \hbox (7.70264pt too wide) in paragraph at lines 211--218
+Overfull \hbox (7.70264pt too wide) in paragraph at lines 212--219
 \TU/Arial(0)/m/n/10 uruchamiana jest odpowiednia funkcja [][]\TU/lmtt/m/n/9 StartCollision()[]\TU/Arial(0)/m/n/10 . W zależności, od tego gdzie został umiesz-
  []
 
-) [39]
+[39]
+File: images/sequence_laser.png Graphic file (type bmp)
+<images/sequence_laser.png>
+ [40]
+File: images/sequence_UML.png Graphic file (type bmp)
+<images/sequence_UML.png>
+) [41]
 \openout2 = `chapters/7_podsumowanie.aux'.
 
  (chapters/7_podsumowanie.tex
 Rozdział 9.
-) [40
+) [42
 
 
 
@@ -1112,7 +1118,7 @@ LaTeX Warning: Empty bibliography on input line 3.
 \tf@lof=\write6
 \openout6 = `PracaMagisterka.lof'.
 
- [41
+ [43
 
 
 
@@ -1121,7 +1127,7 @@ LaTeX Warning: Empty bibliography on input line 3.
 \tf@lot=\write7
 \openout7 = `PracaMagisterka.lot'.
 
-) [42
+) [44
 
 ] (PracaMagisterka.aux (chapters/0a_streszczenie.aux) (chapters/0b_spis_tresci.aux) (chapters/0c_wykaz_skrotow.aux) (chapters/1_wstep.aux) (chapters/2_wprowadzenie_do_dziedziny.aux) (chapters/3_technologie_algorytmy_narzedzia.aux) (chapters/4_projekt_systemu.aux) (chapters/5_badania.aux) (chapters/6_analiza.aux) (chapters/9_zagadki_teoretyczne.aux) (chapters/10_zagadki_praktyczne.aux) (chapters/7_podsumowanie.aux) (chapters/8_wykazy.aux))
  ***********
@@ -1129,18 +1135,18 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `PracaMagisterka.out' has not changed.
-(rerunfilecheck)             Checksum: 8868A4B68BAAC725D56DB88B1980520E;27692.
+(rerunfilecheck)             Checksum: 31A52170A84DA66D6D8908D77415DB10;28457.
 Package logreq Info: Writing requests to 'PracaMagisterka.run.xml'.
 \openout1 = `PracaMagisterka.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23976 strings out of 402986
- 466507 string characters out of 5448502
- 1403010 words of memory out of 5000000
- 52318 multiletter control sequences out of 15000+600000
+ 24000 strings out of 402986
+ 467132 string characters out of 5448502
+ 1403501 words of memory out of 5000000
+ 52340 multiletter control sequences out of 15000+600000
  638205 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  88i,11n,107p,1412b,3964s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on PracaMagisterka.xdv (42 pages, 914712 bytes).
+Output written on PracaMagisterka.xdv (44 pages, 979288 bytes).
