@@ -1,17 +1,23 @@
 \chapter{Opis teoretyczny zagadek}
 \label{chap:theory}
 
-\section{Wstęp (Jan Walczak)}
-W niniejszym rozdziale znajduje się teoretyczny opis zagadek, który stanowi punkt wejściowy do implementacji
-projektu inżynierskiego. Stanowi podstawę teoretyczną i nakreśla charakter pracy. Opisy poszczególnych zagadek
-zostały zredagowane na podstawie ogólnodostępnej podstawy programowej dla szkół średnich z przedmiotu matematyka.
-Jest to bardzo ważny aspekt całego projektu inżynierskiego, ponieważ aplikacja końcowa ma być skierowana do uczniów
-szkół średnich. Nie można więc wykraczać poza daną podstawę programową.
 
-\section{Zadanie 1 – wzory skróconego mnożenia (Autor)}
+W poniższym rozdziale znajduje się teoretyczny opis zagadek, który stanowi punkt wejściowy do implementacji
+projektu inżynierskiego. Stanowi on podstawę teoretyczną i nakreśla charakter pracy. Opisy poszczególnych zagadek
+zostały zredagowane na podstawie ogólnodostępnej podstawy programowej dla szkół średnich z przedmiotu matematyka.
+Jest to kluczowy aspekt całego projektu inżynierskiego, gdyż aplikacja końcowa ma być skierowana do uczniów
+szkół średnich, w związku z czym wymagany zakres wiedzy nie może wykraczać poza podstawę programową.
+
+
+
+
+\section{Zadanie 1 – Wzory skróconego mnożenia (Autor)}
 \subsection{Cel zadania}
 \subsection{Zasady działania}
 \subsection{Zakończenie zadania}
+
+
+
 
 \section{Zadanie 2 – Planimetria (Jan Walczak)}
 \label{subsec:planimetria_teoria}
@@ -55,29 +61,95 @@ Gracze kierują się swoją wiedzą matematyczną oraz następującymi własnoś
 \subsection{Zakończenie zadania}
 Po poprawnym uzupełnieniu wszystkich relacji zadanie uznaje się za zakończone. Gracz może przejść
 do kolejnego zadania.
-\section{Zadanie 3 – Nierówności (Autor)}
-a
-\subsection{Cel zadania}
-a
-\subsection{Zasady działania}
-a
-\subsection{Zakończenie zadania}
-a
-\section{Zadanie 4 – Funkcje (Autor)}a
-a
-\subsection{Cel zadania}
-a
-\subsection{Zasady działania}
-a
-\subsection{Zakończenie zadania}
 
-\section{Zadanie 5 – Geometria analityczna (Autor)}
-a
-\subsection{Cel zadania}
-a
+
+
+
+\section{Zadanie 3 – Nierówności (Konrad Czarnecki)}
+Po wejściu do kolejnego pomieszczenia gracz widzi przed sobą most zawieszony nad przepaścią. Po drugiej stronie znajduje się zamknięte przejście, do którego gracz musi się dostać
+Na bocznych ścianach wypisany jest układ nierówności:
+    \textit{2x - 5 < 9};
+    \textit{x + 1 ≥ 4}.
+Na płytkach mostu umieszczone są różne liczby z zakresu liczb całkowitych (np.: \textit{1}, \textit{2}, \textit{3}, \textit{4}, \textit{5}, \textit{6}, \textit{8}, \textit{7}, \textit{10}).
+    \subsection{Cel zadania}
+Gracz musi rozwiązać układ nierówności i wyznaczyć przedział, który spełnia oba warunki. Następnie powinien przeprowadzić postać przez most, poruszając się wyłącznie po płytkach z wartościami należącymi do tego przedziału.
+\medskip
+Rozwiązanie układu
+\begin{enumerate}[left=1.5em, topsep=0pt, itemsep=0pt]
+    \item Rozwiązanie pierwszej nierówności:
+    \begin{itemize}[left=1.5em, label=\textbullet, topsep=0pt, itemsep=0pt]
+        \item \textit{2x - 5 < 9}
+        \item \textit{2x < 14}
+        \item \textit{x < 7}
+    \end{itemize}
+    \item Rozwiązanie drugiej nierówności:
+    \begin{itemize}[left=1.5em, label=\textbullet, topsep=0pt, itemsep=0pt]
+        \item \textit{x + 1 ≥ 4}
+        \item \textit{x ≥ 3}
+    \end{itemize}
+    \item Wspólny przedział:
+    \begin{itemize}[left=1.5em, label=\textbullet, topsep=0pt, itemsep=0pt]
+        \item \textit{$x \in [3; 7)$}
+    \end{itemize}
+\end{enumerate}
+\medskip
+Gracz musi wybrać wyłącznie płytki z wartościami większymi lub równymi \textit{3} i mniejszymi od \textit{7}, np. \textit{3}, \textit{4}, \textit{5}, \textit{6}, \textit{8}.
 \subsection{Zasady działania}
-a
+\begin{itemize}[left=1.5em, label=\textbullet, topsep=0pt, itemsep=0pt]
+    \item Gracz poruszając postacią, przechodzi przez kolejne płytki.
+    \item Poprawna płytka – postać przechodzi dalej.
+    \item Błędna płytka – płytka zapada się lub podświetla na czerwono, a postać wraca na początek mostu. Gracz może próbować dowolną liczbę razy, aż do skutecznego przejścia na drugą stronę.
+\end{itemize}
 \subsection{Zakończenie zadania}
+Zadanie zostaje uznane za zakończone, gdy graczowi uda się przejść na drugą stronę mostu.
+
+
+
+
+\section{Zadanie 4 – Funkcje (Konrad Czarnecki)}
+Zadania 4 i 5 są realizowane w jednym pomieszczeniu. Gracz widzi dwie duże tablice, umieszczone na ścianach. Na obu naniesiona jest siatka układu współrzędnych. W układzie współrzędnych pojawiają się trzy punkty, np.:
+\begin{itemize}[left=1.5em, label=\textbullet, topsep=0pt, itemsep=0pt]
+    \item Punkt \textit{A (1, 2)}
+    \item Punkt \textit{B (3, 4)}
+    \item Punkt \textit{C (5, 6)}
+\end{itemize}
+oraz wzór funkcji z losowo wybranymi współczynnikami.
+Poniżej widoczne są elementy służące do sterowania wykresem funkcji. Dają one możliwość zmiany współczynników wylosowanego wzoru.
+\subsection{Cel zadania}
+Celem gracza jest dobranie odpowiednich współczynników funkcji tak, aby przeszła ona przez wszystkie wyświetlone punkty. 
+\subsection{Zasady działania}
+Podczas wybierania współczynników funkcji przez gracza, jej wykres na tablicy zmienia się na bieżąco zgodnie z ustawionym wzorem. Wykres funkcji powinien być losowany z wcześniej zdefiniowanej puli par typu funkcja – punkty, tak aby po każdorazowym uruchomieniu zadania gracz czuł, że ma przed sobą nowe wyzwanie.
+\subsection{Zakończenie zadania}
+Rozwiązanie jest sprawdzane na bieżąco i gdy gracz dobierze współczynniki funkcji poprawnie, tj. przetnie ona wszystkie wybrane punkty, zadanie zostaje uznane za rozwiązane. W takim przypadku tablica się blokuje i podświetla na zielono.
+
+
+
+
+
+\section{Zadanie 5 – Geometria analityczna (Konrad Czarnecki)}
+W układzie współrzędnych pojawiają się dwa wykresy funkcji. Są one losowane z pewnej określonej puli, podobnie jak w zadaniu 4. 
+\subsection{Cel zadania}
+Zadaniem gracza jest znalezienie punktu przecięcia dwóch funkcji prostych wyświetlanych w układzie współrzędnych. Określenie puli wyklucza możliwość prostych równoległych, które nie mają ze sobą żadnych punktów wspólnych lub w całości się pokrywają. W tych przypadkach zadanie byłoby niemożliwe do rozwiązania. Gracz będzie wpisywał swoją odpowiedź (współrzędne punktu przecięcia) na klawiaturze znajdującej się pod tablicą.
+\subsection{Zasady działania}
+Skala osi współrzędnych jest dobrana tak, by gracz nie mógł odczytać z niej rozwiązania; musi rozwiązać układ równań dysponując dwoma wzorami funkcji. Rysunek \ref{fig:przykladowy_wykres_funkcji} obrazuje dwa wykresy: 
+\begin{itemize}[left=1.5em, label=\textbullet, topsep=0pt, itemsep=0pt]
+    \item \textit{y = 3x + 4} (czerwony)
+    \item \textit{y = 5x + 8} (niebieski)
+\end{itemize}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics{images/przykładowy_wykres_funkcji.png}
+    \caption{Przykładowy wygląd tablicy z przecinającymi się wykresami}
+    \label{fig:przykladowy_wykres_funkcji}
+\end{figure}
+Gracz dysponuje tymi wzorami i na ich podstawie musi rozwiązać układ równań. Wykresy powinny być dobrane tak, aby obie współrzędne punktu przecięcia były liczbami całkowitymi. 
+\subsection{Zakończenie zadania}
+Rozwiązanie jest sprawdzane na bieżąco i gdy gracz dobierze współrzędne punktu przecięcia funkcji poprawnie, zadanie zostaje uznane za rozwiązane. W takim przypadku tablica się blokuje i podświetla na zielono. Jeśli gracz wykonał wcześniej zadanie 4 (znajdujące się w tym samym pokoju), przechodzi do następnego zadania.
+
+
+
+
+
 
 \section{Zadanie 6 – Kombinatoryka (Autor)}
 a
@@ -86,6 +158,11 @@ a
 \subsection{Zasady działania}
 a
 \subsection{Zakończenie zadania}
+
+
+
+
+
 
 \section{Zadanie 7 – Liczby rzeczywiste i działania na zbiorach liczbowych \\(Jan Walczak)}
 \label{subsec:liczby_rzeczywiste}
@@ -136,13 +213,43 @@ W drugim etapie gracz powinien ustawić posiadane symbole między literami symbo
 Zadanie zostaje uznane za zakończone, gdy gracz poprawnie przejdzie przez oba etapy. 
 Gracz nie może przejść do etapu drugiego, bez zakończenia etapu pierwszego – jest to wymuszone 
 przez wymaganie otwarcia przez niego skrzyni.
-\section{Zadanie 8 – Znaki funkcji trygonometrycznych (Autor)}
-a
+
+
+
+
+
+
+\section{Zadanie 8 – Znaki funkcji trygonometrycznych (Konrad Czarnecki)}
+Po ukończeniu zadania ze zbiorami gracz kieruje się do ściany z czterema dużymi okręgami jednostkowymi, oznaczonymi nazwami funkcji:
+\begin{itemize}[left=1.5em, label=\textbullet, topsep=0pt, itemsep=0pt]
+    \item \textit{sin(x)}
+    \item \textit{cos(x)}
+    \item \textit{tg(x)}
+    \item \textit{ctg(x)}
+\end{itemize}
+Każdy z okręgów podzielony jest na cztery ćwiartki, oznaczone jako \textit{I}, \textit{II}, \textit{III}, \textit{IV}.
+Przy każdej ćwiartce znajduje się puste miejsce, które gracz musi wypełnić odpowiednim znakiem:
+\begin{itemize}[left=1.5em, label=\textbullet, topsep=0pt, itemsep=0pt]
+    \item „+” (plus) — funkcja przyjmuje wartości dodatnie
+    \item „−” (minus) — funkcja przyjmuje wartości ujemne
+\end{itemize}
+Gracz zmienia znak naciskając na niego. Domyślnie wszystkie znaki są ustawione na puste, dopiero po pierwszym naciśnięciu zmieniają się na znak „+”, po kolejnym na „−”, następnie znów na „+”, itd.
 \subsection{Cel zadania}
-a
+Celem gracza jest poprawne ustawienie znaków funkcji trygonometrycznych w każdej ćwiartce układu współrzędnych.
+
 \subsection{Zasady działania}
-a
+Gracz przeciąga kostki „+” i „−” i umieszcza je w odpowiednich miejscach na planszy. Może dowolnie poprawiać swój wybór, dopóki nie zatwierdzi odpowiedzi.
+
 \subsection{Zakończenie zadania}
+Po poprawnym ułożeniu wszystkich znakówściana rozświetla się na zielono.
+
+
+
+
+
+
+
+
 
 \section{Zadanie 9 – Ciągi liczbowe (Jan Walczak)}
 \label{sec:sequence}
@@ -173,6 +280,10 @@ Gra zakończy się po upływie określonego czasu lub jeśli gracz pomyli się t
     \label{duckhunt}
 \end{figure}
 
+
+
+
+
 \section{Zadanie 10 – Prawdopodobieństwo (Autor)}
 a
 \subsection{Cel zadania}
@@ -180,6 +291,12 @@ a
 \subsection{Zasady działania}
 a
 \subsection{Zakończenie zadania}
+
+
+
+
+
+
 
 \section{Zadanie 11 – Optymalizacja i rachunek różniczkowy (Autor)}
 a
@@ -189,6 +306,12 @@ a
 a
 \subsection{Zakończenie zadania}
 
+
+
+
+
+
+
 \section{Zadanie 12 – Układy równań (Autor)}
 a
 \subsection{Cel zadania}
@@ -197,7 +320,13 @@ a
 a
 \subsection{Zakończenie zadania}
 
-\section{Zadanie 13 – Stereometria(Jan Walczak)}
+
+
+
+
+
+
+\section{Zadanie 13 – Stereometria (Jan Walczak)}
 Bryły przestrzenne mogą sprawić uczniom trudność, ponieważ wymagają przejścia od rysunku 
 dwuwymiarowego tj. takiego na kartce papieru, do wyobrażenia sobie ich w przestrzeni trójwymiarowej.
 \subsection{Cel zadania}
