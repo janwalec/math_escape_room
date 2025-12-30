@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.28)  30 DEC 2025 16:46
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.28)  30 DEC 2025 17:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1057,6 +1057,11 @@ File: images/duckhunt.jpg Graphic file (type bmp)
 
  (chapters/10_zagadki_praktyczne.tex
 Rozdział 8.
+
+Overfull \hbox (1.74384pt too wide) in paragraph at lines 11--17
+\TU/Arial(0)/m/n/10 problemów. Przede wszystkim zauważono, że odpowiedzi są zero-jedynkowe. Przykładowo: uczeń
+ []
+
 [33
 
 
@@ -1066,7 +1071,7 @@ Rozdział 8.
 File: images/planimetreia_UML.png Graphic file (type bmp)
 <images/planimetreia_UML.png>
 
-Overfull \hbox (17.22809pt too wide) in paragraph at lines 80--83
+Overfull \hbox (17.22809pt too wide) in paragraph at lines 81--84
 []\TU/Arial(0)/m/n/10 Główny kontroler jest odpowiedzialny za inicjalizację zadania. Uruchamia on funkcję [][]\TU/lmtt/m/n/9 InitBlueprint[]\TU/Arial(0)/m/n/10 ,
  []
 
@@ -1082,31 +1087,20 @@ File: images/real_UML.png Graphic file (type bmp)
  [38]
 File: images/real_FLOW.png Graphic file (type bmp)
 <images/real_FLOW.png>
- [39] [40]
-Overfull \hbox (7.70264pt too wide) in paragraph at lines 212--219
-\TU/Arial(0)/m/n/10 uruchamiana jest odpowiednia funkcja [][]\TU/lmtt/m/n/9 StartCollision()[]\TU/Arial(0)/m/n/10 . W zależności, od tego gdzie został umiesz-
+ [39] [40] [41]
+Overfull \hbox (21.69315pt too wide) in paragraph at lines 257--262
+\TU/Arial(0)/m/n/10 nia do współrzędnych punktu początkowego. W projekcie zastosowano wektor $\OT1/zplm/m/n/10 (\OT1/ppl/m/n/10 1000, 0; 1000, 0; 1000, 0\OT1/zplm/m/n/10 )$\TU/Arial(0)/m/n/10 .
  []
 
-[41]
 File: images/sequence_laser.png Graphic file (type bmp)
 <images/sequence_laser.png>
- [42]
+[42]
 File: images/sequence_UML.png Graphic file (type bmp)
 <images/sequence_UML.png>
-
-Overfull \hbox (802.8072pt too wide) in paragraph at lines 326--327
-[][]\TU/lmtt/m/n/9 itWall|. Kaczki mogą zostać zestrzelone przez gracza, zanim zderzą się z wyżej wymienionym obiektem. W obu przypadkach, do kontrolera wysyłane jest powiadomienie odpowiedniego rodzaju: kaczka została zestrzelona lub kaczka  zderzyła się z obiektem \verb|[]\TU/Arial(0)/m/n/10 itWall|.
- []
-
-[43]
+ [43]
 File: images/sequence_FLOW.png Graphic file (type bmp)
 <images/sequence_FLOW.png>
- [44] [45]
-Overfull \hbox (21.59067pt too wide) in paragraph at lines 381--390
-[]\TU/Arial(0)/m/n/10 Obiekt [][]\TU/lmtt/m/n/9 Stereometry []\TU/Arial(0)/m/n/10 odpowiada za poprawne wyświetlanie brył. Zawiera 5 obiektów typu [][]\TU/lmtt/m/n/9 Static Mesh[]\TU/Arial(0)/m/n/10 ,
- []
-
-[46]
+ [44] [45] [46]
 File: images/stereometria_UML.png Graphic file (type bmp)
 <images/stereometria_UML.png>
 File: images/stereometria_FLOW.png Graphic file (type bmp)
@@ -1163,4 +1157,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  88i,11n,107p,1412b,3964s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on PracaMagisterka.xdv (51 pages, 1096928 bytes).
+Output written on PracaMagisterka.xdv (51 pages, 1096072 bytes).
