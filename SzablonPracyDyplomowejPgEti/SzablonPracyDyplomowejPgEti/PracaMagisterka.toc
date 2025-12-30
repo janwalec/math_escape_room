@@ -122,15 +122,16 @@
 \contentsline {subsection}{\numberline {8.9.1}Problemy i różnice w realizacji zadania w praktyce}{41}{subsection.8.9.1}%
 \contentsline {subsection}{\numberline {8.9.2}Implementacja pistoletu laserowego}{41}{subsection.8.9.2}%
 \contentsline {subsection}{\numberline {8.9.3}Implementacja kontrolera}{42}{subsection.8.9.3}%
-\contentsline {section}{\numberline {8.10}Zadanie 10 – Prawdopodobieństwo (Autor)}{43}{section.8.10}%
-\contentsline {section}{\numberline {8.11}Zadanie 11 – Optymalizacja i rachunek różniczkowy (Autor)}{43}{section.8.11}%
-\contentsline {section}{\numberline {8.12}Zadanie 12 – Układy równań (Autor)}{43}{section.8.12}%
-\contentsline {section}{\numberline {8.13}Zadanie 13 – Stereometria (Jan Walczak)}{43}{section.8.13}%
-\contentsline {chapter}{\numberline {9}Podsumowanie}{44}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Ocena realizacji celów}{44}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Propozycje rozwoju projektu}{44}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Wnioski końcowe}{44}{section.9.3}%
-\contentsline {chapter}{Wykaz literatury}{45}{section.9.3}%
-\contentsline {chapter}{Spis rysunków}{45}{chapter*.15}%
-\contentsline {chapter}{Spis tabel}{46}{chapter*.16}%
+\contentsline {subsection}{\numberline {8.9.4}Przebieg zadania}{43}{subsection.8.9.4}%
+\contentsline {section}{\numberline {8.10}Zadanie 10 – Prawdopodobieństwo (Autor)}{46}{section.8.10}%
+\contentsline {section}{\numberline {8.11}Zadanie 11 – Optymalizacja i rachunek różniczkowy (Autor)}{46}{section.8.11}%
+\contentsline {section}{\numberline {8.12}Zadanie 12 – Układy równań (Autor)}{46}{section.8.12}%
+\contentsline {section}{\numberline {8.13}Zadanie 13 – Stereometria (Jan Walczak)}{46}{section.8.13}%
+\contentsline {chapter}{\numberline {9}Podsumowanie}{47}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Ocena realizacji celów}{47}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Propozycje rozwoju projektu}{47}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Wnioski końcowe}{47}{section.9.3}%
+\contentsline {chapter}{Wykaz literatury}{48}{section.9.3}%
+\contentsline {chapter}{Spis rysunków}{48}{chapter*.16}%
+\contentsline {chapter}{Spis tabel}{49}{chapter*.17}%
 \contentsfinish 

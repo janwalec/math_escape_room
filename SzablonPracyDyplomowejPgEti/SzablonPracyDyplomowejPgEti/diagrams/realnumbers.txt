@@ -42,5 +42,63 @@ RealNumbersController "1" o-- "*" Element
 RealNumbersController "1" o-- "*" Text
 
 
-
 @enduml
+
+
+
+
+
+
+
+
+
+
+
+@startuml
+start
+
+:Inicjalizacja komponentów;
+
+repeat
+  :Wpisanie kodu do skrzyni;
+  :Powiadomienie kontrolera;
+repeat while (Kod poprawny?) is (nie)
+->tak;
+
+
+:Otwarcie drzwi;
+:Inicjalizacja 6 bloczków;
+:Inicjalizacja WallQuestion;
+:Zapis pozycji i obrotu bloczków;
+
+
+while (Nie odpowiedziano na oba pytania?) is (tak)
+
+  :Gracz ustawia bloczki na ścianie;
+
+  if (Ścianka pełna?) then (tak)
+    :Powiadomienie kontrolera;
+
+    if (Odpowiedź poprawna?) then (tak)
+      :Zablokowanie stanu ścianki;
+      :Zaliczenie punktu;
+      :Zmiana pytania na kolejne;
+      :Bloczki wracają do zapisanej pozycji;
+      :Ścianka świeci na zielono;
+    else (nie)
+      :Zablokowanie stanu ścianki;
+      :Brak punktu;
+      :Bloczki wracają do zapisanej pozycji;
+      :Ścianka świeci na czerwono;
+    endif
+
+  else (nie)
+    :Oczekiwanie na uzupełnienie bloczków;
+  endif
+
+endwhile (nie)
+
+:Zakończenie gry;
+stop
+@enduml
+

@@ -51,3 +51,39 @@ ControlerFigures "1" o-- "*" RelationFigure
 
 
 @enduml
+
+
+
+
+
+
+@startuml
+start
+
+:Inicjalizacja komponentów;
+
+repeat
+  note right: Czekaj na START
+repeat while (Przycisk START\nnaciśnięty?) is (nie)
+->tak;
+
+:Rozpoczęcie gry;
+
+:Wylosowanie relacji z tablicy;
+
+while (Nie zdobyto wszystkich punktów?) is (tak)
+
+  if (Odpowiedź poprawna?) then (tak)
+    :Usunięcie relacji z tablicy;
+    :Zaliczenie punktu;
+  else (nie)
+    :Brak punktu;
+  endif
+
+  :Losowanie kolejnej relacji;
+  :Wyświetlenie relacji;
+endwhile (nie)
+
+:Zakończenie gry;
+stop
+@enduml

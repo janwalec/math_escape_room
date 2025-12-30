@@ -293,18 +293,55 @@ który aktualnie jest na niej wyświetlany i wartość zmiennoprzecinkowa, czyli
 Gracz zostaje również zapoznany z zasadami działania gry. Kiedy jest gotowy, do rozpoczęcia gry, naciska przycisk podobny do tego opisanego w podroździale
 \ref{sec:planimetria_praktyka}. Działa na tej samej zasadzie i również posiada dwustronną referencję do instancji kontrolera.
 
-W zagadce występują jeszcze dwa komponenty: \verb|HitWall| i \verb|Life|. Główny kontroler zawiera tablicę referencji do 4 instancji obiektów \verb|Life|. 
-Reprezentują ilość pozostałych żyć gracza i nie pełnią w logice działania programu żadnej istotnej roli, poza tą wizualną. \verb|HitWall| jest obiektem
-niewidocznym, znajdującym się poza zasięgiem gracza. Lecące kaczki będą wykrywać ten obiekt, po przeleceniu przez ścianę i sygnalizować to
-głównemu kontrolerowi tak, jakby zostały trafione. Jeżeli kaczka uderzy w ten komponent to wyśle specjalny typ powiadomienia,
-mówiący o tym, że graczowi nie udało się jej zestrzelić. Jeśli kaczka zawierała poprawny wyraz ciągu to kontroler oznaczy to jako błąd i odejmie
-graczowi jedno życie. W takim przypadku, jeżeli gracz ma jeszcze pozostałe życia, wyświetli się kolejny wyraz ciągu, a kaczki zaczną lecieć od początku.
+W zagadce występują jeszcze dwa komponenty: \verb|HitWall| i \verb|Life|. Główny kontroler zawiera tablicę referencji do 4 
+instancji obiektów \verb|Life|. Reprezentują ilość pozostałych żyć gracza i nie pełnią w logice działania programu żadnej 
+istotnej roli, poza tą wizualną. \verb|HitWall| jest obiektem niewidocznym, znajdującym się poza zasięgiem gracza. Lecące 
+kaczki będą wykrywać ten obiekt, 
+po przeleceniu przez ścianę i sygnalizować to głównemu kontrolerowi tak, jakby zostały trafione. Jeżeli kaczka uderzy w 
+ten komponent to wyśle specjalny typ powiadomienia, mówiący o tym, że graczowi nie udało się jej zestrzelić. Jeśli kaczka 
+zawierała poprawny wyraz ciągu to kontroler oznaczyto jako błąd i odejmie graczowi jedno życie. W takim przypadku, jeżeli 
+gracz ma jeszcze pozostałe życia, wyświetli się kolejny wyraz ciągu, a kaczki zaczną lecieć od początku.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.7\textwidth]{images/sequence_UML.png}
     \caption{Diagram UML zawierający najważniejsze elementy dla zadania 9 -- Ciągi liczbowe.}
     \label{fig:sequence_UML}
+\end{figure}
+
+\subsection{Przebieg zadania}
+Zadanie rozpoczyna się od inicjalizacji komponentów przez główny kontroler.  Początkowo graczowi zostaje
+wyświetlona instrukcja do zadania. Kiedy gracz będzie gotowy może rozpocząć grę naciskając przycisk \glqq
+Start\grqq. Kontroler zostaje w takiej sytuacji powiadomiony przez instancję przycisku i rozpoczyna grę. W sposób 
+pseudolsowy zostaje wybrany jeden z trzech wzorów na kolejny \textit{n-ty} wyraz ciągu arytmetycznego. Ustawia również
+poprawny wyraz ciągu, początkowo $n = 0$, na jednej z trzech kaczek. Pozostałe kaczki otrzymują wyrazy, większe
+lub mniejsze od poprawnego wyrazu, również w sposób pseudolosowy, biorąc pod uwagę to, że wybrane wyrazy mogą być
+odległe jedynie o 2 jednostki na osi współrzędnych, od poprawnego wyrazu.  
+
+Kaczki pokonują stałą jednostkę odległości w każdej jednostce czasu wykonywania się programu, wyrażoną za pomocą
+liczby zmiennoprzecinkowej. Jednostka ta jest tym większa, im większy jest aktualny numer wyrazu ciągu
+arytmetycznego. Oznacza to, że będą przyspieszać razem z przebiegiem gry. Do tak obliczonej, stałej wartości,
+dodawana jest pseudolosowa wartość zmiennoprzecinkowa wybrana z przedziału $\left[0,5; 0,7\right] $. 
+
+Kaczki poruszają się od lewej do prawej strony ekranu, aż do zderzenia się z instancją obiektu \verb HitWall|. Kaczki mogą zostać zestrzelone przez gracza, zanim zderzą się z wyżej wymienionym obiektem. W obu przypadkach, do kontrolera wysyłane jest powiadomienie odpowiedniego rodzaju: kaczka została zestrzelona lub kaczka  zderzyła się z obiektem \verb|HitWall|. W powiadomieniu przekazana jest również wartość stałoprzecinkowa, reprezentująca liczbę, która znajdowała sie na danej kaczce. 
+
+Kontroler po otrzymaniu w powiadomieniu liczby oraz informacji, czy dana kaczka została zestrzelona, 
+podejmuje decyzję:
+\begin{enumerate}
+  \item Jeśli liczba jest poprawnym wyrazem ciągu -- zalicza punkt i ustawia ponownie kaczki.
+  \item Jeśli liczba nie jest poprawna -- odejmuje jedno życie, ale nie ustawia ponownie kaczek.
+  \item Jeśli kaczka, przechowująca poprawny wyraz ciągu, uderzy w obiekt \verb|HitWall| (wyleci poza 
+  zasięg gracza) -- odejmuje jedno życie i ponownie ustawia kaczki.
+\end{enumerate}
+Ponowne ustawienie kaczek polega na obliczeniu kolejnego wyrazu ciągu arytmetycznego, ustawieniu go na 
+jednej z nich, ustawieniu dwóm pozostałym kaczkom błędnego wyrazu oraz na cofnięciu ich do stanu 
+początkowego. Gra kończy się w momencie, gdy gracz straci wszystkie 4 życia.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{images/sequence_FLOW.png}
+    \caption{Diagram przepływu dla zadania 9 -- Ciągi liczbowe }
+    \label{sequence:flow}
 \end{figure}
 
 \section{Zadanie 10 – Prawdopodobieństwo (Autor)}

@@ -1,0 +1,55 @@
+@startuml
+start
+
+:Inicjalizacja komponentów;
+:Wyświetlenie instrukcji;
+
+repeat
+  note right: Czekaj na START
+repeat while (Przycisk START\nnaciśnięty?) is (nie)
+->tak;
+
+:Losowy wybór wzoru ciągu;
+:Rozpoczęcie gry;
+
+
+repeat
+  
+  :Ustaw n-ty wyraz (n=0\nna starcie) na jednej z kaczek;
+  :Ustaw błędne wyrazy\nna pozostałych kaczkach;
+  :Ustaw prędkość kaczek;
+
+  :Uruchom lot kaczek;
+
+  if (Zdarzenie?) then (Kaczka zestrzelona)
+    :Wyślij liczbę\ndo kontrolera;
+  else (Zderzenie z HitWall)
+    :Wyślij liczbę\ndo kontrolera;
+  endif
+
+  if (Liczba poprawna?) then (tak)
+    if (Kaczka uderzyła\nw HitWall?) then (tak)
+      :Odejmij życie;
+      :Zwiększ n;
+      :Poprawnie uruchom lot kaczek;
+    else (nie)
+      :Zwiększ n;
+      :Poprawnie uruchom lot kaczek;
+    endif
+  else (nie)
+    if (Kaczka uderzyła\nw HitWall?) then (tak)
+      :Kontynuuj bez resetu kaczek;
+    else (nie)
+      :Odejmij życie;
+      :Zwiększ n;
+      :Poprawnie uruchom lot kaczek;
+    endif
+  endif
+
+repeat while (Liczba żyć > 0?) is (nie)
+->tak;
+
+:Zakończenie gry;
+stop
+
+@enduml
