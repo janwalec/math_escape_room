@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.28)  30 DEC 2025 15:16
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.28)  30 DEC 2025 16:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -686,26 +686,26 @@ Package babel Info: 'polish' activates 'polish' shorthands.
  (chapters/0b_spis_tresci.aux) (chapters/0c_wykaz_skrotow.aux) (chapters/1_wstep.aux) (chapters/2_wprowadzenie_do_dziedziny.aux) (chapters/3_analiza_istniejacych_rozwiazan.aux) (chapters/4_projekt_systemu.aux) (chapters/5_technologie_i_narzedzia.aux) (chapters/6_analiza.aux) (chapters/9_zagadki_teoretyczne.aux) (chapters/10_zagadki_praktyczne.aux) (chapters/7_podsumowanie.aux) (chapters/8_wykazy.aux))
 \openout1 = `PracaMagisterka.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -760,9 +760,9 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'PracaMagisterka.bbl' found.
  (PracaMagisterka.bbl)
-Package biblatex Info: Reference section=0 on input line 23.
-Package biblatex Info: Reference segment=0 on input line 23.
-Package hyperref Info: Link coloring OFF on input line 23.
+Package biblatex Info: Reference section=0 on input line 25.
+Package biblatex Info: Reference segment=0 on input line 25.
+Package hyperref Info: Link coloring OFF on input line 25.
  (PracaMagisterka.out) (PracaMagisterka.out)
 \@outlinefile=\write4
 \openout4 = `PracaMagisterka.out'.
@@ -881,6 +881,21 @@ Overfull \hbox (2.24121pt too wide) detected at line 128
 [5]
 Overfull \hbox (2.24121pt too wide) detected at line 129
 \TU/Arial(0)/m/n/10 8.13. 
+ []
+
+
+Overfull \hbox (0.58105pt too wide) detected at line 130
+\TU/Arial(0)/m/n/10 8.13.1. 
+ []
+
+
+Overfull \hbox (0.58105pt too wide) detected at line 131
+\TU/Arial(0)/m/n/10 8.13.2. 
+ []
+
+
+Overfull \hbox (0.58105pt too wide) detected at line 132
+\TU/Arial(0)/m/n/10 8.13.3. 
  []
 
 )
@@ -1086,12 +1101,22 @@ Overfull \hbox (802.8072pt too wide) in paragraph at lines 326--327
 [43]
 File: images/sequence_FLOW.png Graphic file (type bmp)
 <images/sequence_FLOW.png>
- [44] [45]) [46]
+ [44] [45]
+Overfull \hbox (21.59067pt too wide) in paragraph at lines 381--390
+[]\TU/Arial(0)/m/n/10 Obiekt [][]\TU/lmtt/m/n/9 Stereometry []\TU/Arial(0)/m/n/10 odpowiada za poprawne wyświetlanie brył. Zawiera 5 obiektów typu [][]\TU/lmtt/m/n/9 Static Mesh[]\TU/Arial(0)/m/n/10 ,
+ []
+
+[46]
+File: images/stereometria_UML.png Graphic file (type bmp)
+<images/stereometria_UML.png>
+File: images/stereometria_FLOW.png Graphic file (type bmp)
+<images/stereometria_FLOW.png>
+) [47] [48]
 \openout2 = `chapters/7_podsumowanie.aux'.
 
  (chapters/7_podsumowanie.tex
 Rozdział 9.
-) [47
+) [49
 
 
 
@@ -1107,7 +1132,7 @@ LaTeX Warning: Empty bibliography on input line 3.
 \tf@lof=\write6
 \openout6 = `PracaMagisterka.lof'.
 
- [48
+ [50
 
 
 
@@ -1116,7 +1141,7 @@ LaTeX Warning: Empty bibliography on input line 3.
 \tf@lot=\write7
 \openout7 = `PracaMagisterka.lot'.
 
-) [49
+) [51
 
 ] (PracaMagisterka.aux (chapters/0a_streszczenie.aux) (chapters/0b_spis_tresci.aux) (chapters/0c_wykaz_skrotow.aux) (chapters/1_wstep.aux) (chapters/2_wprowadzenie_do_dziedziny.aux) (chapters/3_analiza_istniejacych_rozwiazan.aux) (chapters/4_projekt_systemu.aux) (chapters/5_technologie_i_narzedzia.aux) (chapters/6_analiza.aux) (chapters/9_zagadki_teoretyczne.aux) (chapters/10_zagadki_praktyczne.aux) (chapters/7_podsumowanie.aux) (chapters/8_wykazy.aux))
  ***********
@@ -1124,18 +1149,18 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `PracaMagisterka.out' has not changed.
-(rerunfilecheck)             Checksum: D40F772D0749691C3E207B5C6DB8169C;28538.
+(rerunfilecheck)             Checksum: 5F47EFF2D03D18611AA1C51758CC766D;29171.
 Package logreq Info: Writing requests to 'PracaMagisterka.run.xml'.
 \openout1 = `PracaMagisterka.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24025 strings out of 402986
- 468305 string characters out of 5448502
- 1403673 words of memory out of 5000000
- 52363 multiletter control sequences out of 15000+600000
+ 24047 strings out of 402986
+ 468960 string characters out of 5448502
+ 1403952 words of memory out of 5000000
+ 52383 multiletter control sequences out of 15000+600000
  638205 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  88i,11n,107p,1412b,3964s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on PracaMagisterka.xdv (49 pages, 1051624 bytes).
+Output written on PracaMagisterka.xdv (51 pages, 1096928 bytes).

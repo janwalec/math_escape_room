@@ -160,7 +160,7 @@ Gracz ma do dyspozycji 6 bloczków:
 Mają mu posłużyć do uzupełnienia dwóch relacji wymienionych wcześniej. Po ułożeniu relacji poprawnie bądź nie bloczki pozostają
 do dyspozycji gracza.
 
-\subsection{Implementacja kontrolera}
+\subsection{Implementacja zadania}
 
 W przeciwieństwie do zadania drugiego, opisanego w \ref{sec:planimetria_praktyka}, został zaimplementowany jedynie jeden, główny 
 kontroler \verb|RealNumbersController|. Zarządza on przebiegiem zadania, położeniem elementów na scenie oraz wyświetlaniem tekstu.
@@ -275,7 +275,7 @@ ulega również kierunek, w którym celuje gracz.
     \label{fig:sequence_laser}
 \end{figure}
 
-\subsection{Implementacja kontrolera}
+\subsection{Implementacja zadania}
 
 Podobnie jak w zadaniu opisanym w podroździale \ref{sec:rzeczywiste_praktyka} zaimplementowany został jeden, główny kontroler \verb|SequenceControler|.
 Jego zadaniem jest inicjalizacja gry, zarządzenie przebiegiem gry, wyświetlanie tekstu i zarządzanie instancjami kaczek. Kontroler wybiera pseudolosowo
@@ -347,4 +347,68 @@ początkowego. Gra kończy się w momencie, gdy gracz straci wszystkie 4 życia.
 \section{Zadanie 10 – Prawdopodobieństwo (Autor)}
 \section{Zadanie 11 – Optymalizacja i rachunek różniczkowy (Autor)}
 \section{Zadanie 12 – Układy równań (Autor)}
+
 \section{Zadanie 13 – Stereometria (Jan Walczak)}
+\label{sec:stereometria_praktyka}
+\subsection{Problemy i różnice w realizacji zadania w praktyce}
+Zadanie nie odbiega za bardzo od wcześniej opracowanego opisu teoretycznego. Pierwszą różnicą jest ilość wyświetlanych
+brył geometrycznych. Według opisu graczowi miała być przedstawiana tylko jedna bryła. W praktyce takie zadanie byłoby
+bardzo krótkie. Zdefiniowano więc pulę 5 brył:
+\begin{enumerate}
+    \item kulę,
+    \item stożek,
+    \item walec,
+    \item sześcian,
+    \item ostrosłup prawidłowy czworokątny.
+\end{enumerate}
+Do każdej z wymienionych brył wybrano 3 pytania. Dotyczą one kolejno:
+\begin{itemize}
+    \item rodzaju bryły,
+    \item wzoru na obliczenie powierzchni bryły,
+    \item wzoru na obliczenie objętości bryły.
+\end{itemize}
+Gracz musi odpowiedzieć na wszystkie 3 pytania prawidłowo. Jeśli się pomyli, ze zbioru wybierana jest inna bryła,
+inna niż ta, o którą pytano go przed chwilą. W ten sposób uniknięto sytuacji, w której gracz odpowiadałby losowo i
+przechodził zadanie metodą eliminacji.
+
+\subsection{Implementacja zadania}
+W zadaniu został zaimplementowany jeden główny kontroler \verb|SelectorControler|. Jego zadaniem jest inicjalizacja gry,
+zarządzanie przebiegiem gry, wyświetlanie tekstu i wybór odpowiednich pytań, wyświetlanych graczowi. Zawiera on dwustronną
+referencję do obiektu \verb|Stereometry| oraz dwustronną referencję do trzech obiektów \verb|Button| (takich, jak te
+opisane w podroździałach \ref{sec:planimetria_praktyka} i \ref{sec:stereometria_praktyka}). Zawiera także predefiniowany
+zbiór pytań, dotyczących każdej z brył, reprezentowany przez mapę typu \textit{pytanie:poprawna odpowiedź}.
+
+Obiekt \verb|Stereometry| odpowiada za poprawne wyświetlanie brył. Zawiera 5 obiektów typu \verb|Static Mesh|, które
+wyświetla w świecie gry, wybierając bryłę odpowiadającą aktualnie zadawanemu pytaniu. Jest też odpowiedzialny 
+za pseudolosowy mechanizm wyboru brył. Przed wyświetleniem obiekt \verb|Stereometry|, w sposób pseudolosowy, obraca
+bryłę, zmienia jej rozmiar, oraz położenie w świecie gry. W tym przypadku nie było potrzeby implementowania mechanizmu
+powiadomień, ponieważ rodzaj komunikatów wysyłanych pomiędzy obiektami \verb|Stereometry| i \verb|SelectorControler| jest
+prosty i zawsze jednakowy (żądanie wyświetlenia nowej bryły). Dodatkowo, obiekt \verb|Stereometry| zawiera referencję
+do kontrolera tylko dlatego, że jego inicjalizacja jest długa (prawdopodobnie przez wczytywanie siatek statycznych brył,
+z nałożoną teksturą odbijającą światło). Musi więc powiadomić kontroler główny, że zakończył swoją inicjalizację, aby ten
+mógł zacząć wykonywać na nim operacje, przez wywołanie odpowiednich funkcji.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/stereometria_UML.png}
+    \caption{Diagram UML zawierający najważniejsze elementy kontrolerów dla zadania 13 -- stereometria.}
+    \label{stereometria:uml}
+\end{figure}
+
+\subsection{Przebieg zadania}
+Kontroler inicjalizuje podrzędne mu obiekty i rozpoczyna grę. W sposób pseudolosowy, wybierana jest jedna z 5 predefiniowanych
+brył, poprzez wywołanie odpowiedniej funkcji obiektu \verb|Stereometry|. Gracz ma do wyboru 3 przyciski, które 
+zawierają odpowiedzi \textit{A, B} lub \textit{C}. Pytania są wyświetlane sekwencyjnie -- najpierw zadawane jest pytanie 
+o typ bryłu, potem o wzór na obliczenie jej pola powierzchni, a na końcu o wzór na obliczanie jej objęctości.
+
+Jeśli gracz pomyli się, podczas udzielania odpowiedzi, kontroler ponownie wywoła funkcję odpowiedzialną za wybór
+kolejnej bryły. W takim przypadku może się ona pojawić ponownie w zadaniu, ale nie od razu po udzieleniu błędnej
+odpowiedzi. Jeśli gracz odpowie na wszystkie 3 pytania prawidłowo, bryła zostaje uznana za zaliczoną i jest usuwana
+z puli dostępnych do wylosowania brył. Gra kończy się kiedy gracz poprawnie odpowie na pytania dotyczące 3 różnych brył.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/stereometria_FLOW.png}
+    \caption{Diagram przepływu dla zadania 13 -- stereometria}
+    \label{stereometria:flow}
+\end{figure}

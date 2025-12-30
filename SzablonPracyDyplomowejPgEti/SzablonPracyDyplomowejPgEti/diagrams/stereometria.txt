@@ -1,0 +1,76 @@
+@startuml
+
+class SelectorControler <<Actor>> {
+    - buttons : Arr<Button>
+    - relationArray : Arr<RelationFigure>
+    - questions: Map<Text, Text>
+    --
+    + InitGame()
+    + SetQuestion()
+    + EndGame()
+    + ValidateAnswear()
+    + GetNotified()
+}
+
+class Stereometry <<Actor>> {
+    - meshes: Arr<StaticMesh>
+    - controler: SelectorControler
+    --
+    + GetRandomMesh()
+    + TransformMeshRandomly()
+    + SetCurrentMesh()
+    + NotifyOnInitCompleted()
+}
+
+class Button <<Actor>> {
+    - controler: SelectorControler
+    --
+    + Notify()
+}
+
+
+class Text <<Actor>>
+
+SelectorControler <--> Stereometry
+SelectorControler "1" o-- "*" Text
+SelectorControler "1" <--> "n" Button
+
+@enduml
+
+
+
+
+
+
+
+@startuml
+start
+:Inicjalizacja obiektów;
+
+repeat
+  :Wybór nowej bryły;
+  
+  :Pytanie o typ bryły;
+  if (Poprawna odpowiedź?) then (tak)
+    :Pytanie o wzór na pole;
+    if (Poprawna odpowiedź?) then (tak)
+      :Pytanie o wzór na objętość;
+      if (Poprawna odpowiedź?) then (tak)
+        :Usunięcie bryły z puli;
+        :Zwiększ licznik\nzaliczonych brył;
+      else (nie)
+        :Zapisanie bryły,\n o którą pytano;
+      endif
+    else (nie)
+      :Zapisanie bryły,\n o którą pytano;
+    endif
+  else (nie)
+    :Zapisanie bryły,\n o którą pytano;
+  endif
+
+repeat while (Czy licznik zaliczonych brył < 3?) is (tak)
+->nie;
+
+:Koniec gry;
+stop
+@enduml
