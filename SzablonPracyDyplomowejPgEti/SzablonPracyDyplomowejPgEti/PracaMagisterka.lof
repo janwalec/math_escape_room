@@ -7,17 +7,25 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7.1}{\ignorespaces Przykładowy wygląd tablicy z przecinającymi się wykresami}}{28}{figure.caption.6}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces gra Duck Hunt}}{31}{figure.caption.7}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Ćwiartki układow jednostkowych ze znakami funkcji trygonometrycznych}}{30}{figure.caption.7}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces gra Duck Hunt}}{31}{figure.caption.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Diagram UML zawierający najważniejsze elementy kontrolerów dla zadania 2 -- planimetria.}}{34}{figure.caption.8}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Diagram przepływu dla zadania 2 -- planimetria}}{36}{figure.caption.9}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Zrzut ekranu -- skrzynia z zamkiem oraz podpowiedź na ścianie dla zadania 7.}}{37}{figure.caption.10}%
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Diagram UML zawierający najważniejsze elementy dla zadania 7 -- liczby rzeczywiste i działania na zbiorach liczbowych.}}{38}{figure.caption.11}%
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Diagram przepływu dla zadania 7 -- liczby rzeczywiste i działania na zbiorach liczbowych.}}{40}{figure.caption.12}%
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Porównanie rysowania lasera w przypadku kontaktu z przykładowym elementem otoczenia i ścianą.}}{42}{figure.caption.13}%
-\contentsline {figure}{\numberline {8.7}{\ignorespaces Diagram UML zawierający najważniejsze elementy dla zadania 9 -- Ciągi liczbowe.}}{43}{figure.caption.14}%
-\contentsline {figure}{\numberline {8.8}{\ignorespaces Diagram przepływu dla zadania 9 -- Ciągi liczbowe }}{45}{figure.caption.15}%
-\contentsline {figure}{\numberline {8.9}{\ignorespaces Diagram UML zawierający najważniejsze elementy kontrolerów dla zadania 13 -- stereometria.}}{47}{figure.caption.16}%
-\contentsline {figure}{\numberline {8.10}{\ignorespaces Diagram przepływu dla zadania 13 -- stereometria}}{48}{figure.caption.17}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Diagram UML zawierający najważniejsze elementy kontrolerów dla zadania 2 -- planimetria.}}{35}{figure.caption.9}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Diagram przepływu dla zadania 2 -- planimetria}}{37}{figure.caption.10}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Zainicjowany układ współrzędnych wraz z jednym punktem, który gracz musi przeciąć wykresem funkcji w pokoju 4}}{39}{figure.caption.11}%
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Wszystkie suwaki dostępne w ostatnim etapie w pokoju 4}}{39}{figure.caption.12}%
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Zainicjowany układ współrzędnych wraz z przecinającymi się wykresami funkcji w pokoju 5}}{41}{figure.caption.13}%
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Przyciski odpowiedzialne za współrzędną $X$ w pokoju 5}}{42}{figure.caption.14}%
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Zrzut ekranu -- skrzynia z zamkiem oraz podpowiedź na ścianie dla zadania 7.}}{43}{figure.caption.15}%
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Diagram UML zawierający najważniejsze elementy dla zadania 7 -- liczby rzeczywiste i działania na zbiorach liczbowych.}}{44}{figure.caption.16}%
+\contentsline {figure}{\numberline {8.9}{\ignorespaces Diagram przepływu dla zadania 7 -- liczby rzeczywiste i działania na zbiorach liczbowych.}}{45}{figure.caption.17}%
+\contentsline {figure}{\numberline {8.10}{\ignorespaces Ruchome sześciany w pokoju 8}}{47}{figure.caption.18}%
+\contentsline {figure}{\numberline {8.11}{\ignorespaces Układ jednostkowy w pokoju 8}}{47}{figure.caption.19}%
+\contentsline {figure}{\numberline {8.12}{\ignorespaces Sześcian po wykryciu luki w pokoju 8}}{47}{figure.caption.20}%
+\contentsline {figure}{\numberline {8.13}{\ignorespaces Porównanie rysowania lasera w przypadku kontaktu z przykładowym elementem otoczenia i ścianą.}}{49}{figure.caption.21}%
+\contentsline {figure}{\numberline {8.14}{\ignorespaces Diagram UML zawierający najważniejsze elementy dla zadania 9 -- Ciągi liczbowe.}}{50}{figure.caption.22}%
+\contentsline {figure}{\numberline {8.15}{\ignorespaces Diagram przepływu dla zadania 9 -- Ciągi liczbowe }}{52}{figure.caption.23}%
+\contentsline {figure}{\numberline {8.16}{\ignorespaces Diagram UML zawierający najważniejsze elementy kontrolerów dla zadania 13 -- stereometria.}}{54}{figure.caption.24}%
+\contentsline {figure}{\numberline {8.17}{\ignorespaces Diagram przepływu dla zadania 13 -- stereometria}}{55}{figure.caption.25}%
 \addvspace {10\p@ }
 \contentsfinish 

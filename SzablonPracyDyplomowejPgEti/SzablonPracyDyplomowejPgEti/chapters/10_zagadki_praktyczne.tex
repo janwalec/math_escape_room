@@ -100,11 +100,185 @@ losuje kolejną relację, do wyświetlenia graczowi i nie zalicza punktu. Gra ko
 
 \FloatBarrier
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Zadanie 3 – Nierówności (Autor)}
+
+
+
+\section{Zadanie 3 – Nierówności (Konrad Czarnecki)}
+\label{subsec:nierownosci_praktyka}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Zadanie 4 – Funkcje (Autor)}
+
+
+
+\section{Zadanie 4 – Funkcje (Konrad Czarnecki)}
+\label{subsec:funkcje_praktyka}
+\subsection{Problemy i różnice w realizacji zadania w praktyce}
+Jedyną istotną zmianą zadania względem opisu teoretycznego w podrozdziale \ref{subsec:funkcje_teoria} było rozdzielenie zagadki
+czwartej i piątej na dwa oddzielne pokoje. Pierwotnie oba zadania miały być realizowane w jednym pomieszczeniu, jednak aby udostępnić
+graczowi większą przestrzeń, zdecydowano się to zmienić.
+
+\subsection{Wybór dostępnych punktów}
+Zadanie składa się z trzech części. W każdej liczba punktów, które należy przeciąć wykresem funkcji zwiększa się o jeden, gracz otrzymuje dodatkowy suwak, pozwalający mu modyfikować następny współczynnik.
+Losowe punkty, które gracz ma za zadanie przeciąć, są wybierane z wcześniej
+zdefiniowanego zbioru. Zbiór ten został dobrany w taki sposób, aby współczynniki, które należy dobrać zawsze były liczbami całkowitymi,
+aby poziom trudności rósł wraz z kolejnymi częściami zadania, oraz by gracz musiał wykorzystywać wszystkie dostępne suwaki. Zatem części drugiej
+(z dwoma punktami do przecięcia i dwoma suwakami) nie da się rozwiązać, wykorzystując jedynie pierwszy suwak
+odpowiedzialny za współczynnik $C$. Analogicznie, część trzecia (z trzema punktami do przecięcia i trzema suwakami)
+wymaga wykorzystania wszystkich dostępnych suwaków.
+
+\medskip
+Lista możliwych punktów do przecięcia w każdej części zadania:
+\begin{enumerate}[left=1.5em, topsep=0pt, itemsep=0pt]
+    \item Część pierwsza (jeden punkt):
+    \begin{itemize}[left=1.5em, label=\textbullet, topsep=0pt, itemsep=0pt]
+        \item $P_1(4; 3)$; rozwiązanie: $f(x) = 3$
+        \item $P_1(-3; 5)$; rozwiązanie: $f(x) = 5$
+        \item $P_1(5; -1)$; rozwiązanie: $f(x) = -1$
+        \item $P_1(2; -4)$; rozwiązanie: $f(x) = -4$
+        \item $P_1(-3; 2)$; rozwiązanie: $f(x) = 2$
+    \end{itemize}
+    \item Część druga (dwa punkty):
+    \begin{itemize}[left=1.5em, label=\textbullet, topsep=0pt, itemsep=0pt]
+        \item $P_1(-1; 2)$; $P_2(0; 5)$; rozwiązanie: $f(x) = 3x + 5$
+        \item $P_1(1; -2)$; $P_2(3; 2)$; rozwiązanie: $f(x) = 2x - 4$
+        \item $P_1(-2; 1)$; $P_2(-3; 3)$; rozwiązanie: $f(x) = -2x -3$
+        \item $P_1(-1; 6)$; $P_2(1; -2)$; rozwiązanie: $f(x) = -4x + 2$
+
+    \end{itemize}
+    \item Część trzecia (trzy punkty):
+    \begin{itemize}[left=1.5em, label=\textbullet, topsep=0pt, itemsep=0pt]
+        \item $P_1(-1; 5)$; $P_2(1; 5)$; $P_3(0; 2)$; rozwiązanie: $f(x) = 3x^2 + 0x + 2$
+        \item $P_1(-1; -2)$; $P_2(0; -2)$; $P_3(-2; 4)$; rozwiązanie: $f(x) = 3x^2 + 3x - 2$
+        \item $P_1(0; 2)$; $P_2(2; 0)$; $P_3(-1; -3)$; rozwiązanie: $f(x) = -2x^2 + 3x + 2$
+        \item $P_1(-1; 6)$; $P_2(-2; 4)$; $P_3(-3; -2)$; rozwiązanie: $f(x) = -2x^2 - 4x + 4$
+    \end{itemize}
+\end{enumerate}
+\medskip
+
+\subsection{Przebieg zadania}
+Zadanie rozpoczyna się zainicjalizowaniem i wstępną konfiguracją kanwy, na której wyświetlany będzie
+układ współrzędnych. Następnie główny kontroler wywołuje funkcję \verb|Random Points|, która losowo wybiera
+współrzędne punktu, który gracz będzie musiał przeciąć funkcją, z wcześniej zdefiniowanego zbioru i wypisze je na podłodze pomieszczenia. Wzór funkcji
+\( f(x) = Ax^2 + Bx + C \) (gdzie współczynniki $A$, $B$ i $C$ są domyślnie ustawione na $0$)
+zostaje wypisany na ścianie, a jej wykres, jak i wybrany wcześniej punkt narysowany w kanwie (rys. \ref{fig:uklad_wspolrzednych_pokoj_4}).
+
+W pierwszej części gracz ma do dyspozycji jeden suwak – odpowiadający za współczynnik $C$. Jego zadaniem jest przesunięcie
+wykresu funkcji w górę lub w dół tak, aby przeciął on wylosowany punkt. Po rozwiązaniu pierwszej części, główny kontroler
+ponownie wywołuje funkcję \verb|Random Points|, tym razem losując współrzędne dwóch punktów, a gracz otrzymuje drugi suwak
+– odpowiadający za współczynnik $B$. Teraz jego zadaniem jest ustawienie odpowiednich wartości obu współczynników, tak aby
+wykres funkcji przeciął oba punkty jednocześnie. Ostatnia część jest analogiczna do poprzednich. \verb|Random Points|
+losuje trzy punkty, a gracz dostaje do dyspozycji trzeci suwak – odpowiadający za współczynnik $A$ (rys. \ref{fig:wszystkie_suwaki_pokoj_4}) i musi dostosować
+wzór paraboli, przecinając wszystkie trzy punkty.
+
+W momencie zakończenia wszystkich trzech części zadania, zagadka zostaje uznana za rozwiązaną.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/uklad_wspolrzednych_pokoj_4.png}
+    \caption{Zainicjowany układ współrzędnych wraz z jednym punktem, który gracz musi przeciąć wykresem funkcji w pokoju 4}
+    \label{fig:uklad_wspolrzednych_pokoj_4}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/wszystkie_suwaki_pokoj_4.png}
+    \caption{Wszystkie suwaki dostępne w ostatnim etapie w pokoju 4}
+    \label{fig:wszystkie_suwaki_pokoj_4}
+\end{figure}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Zadanie 5 – Geometria analityczna (Autor)}
+
+
+
+\section{Zadanie 5 – Geometria analityczna (Konrad Czarnecki)}
+\label{subsec:geometria_analityczna_praktyka}
+\subsection{Problemy i różnice w realizacji zadania w praktyce}
+Tak samo jak w przypadku zagadki \ref{subsec:funkcje_praktyka} jedyną istotną zmianą zadania
+względem opisu teoretycznego w podrozdziale \ref{subsec:geometria_analityczna_teoria} było
+rozdzielenie zagadki
+czwartej i piątej na dwa oddzielne pokoje.
+
+\subsection{Kontroler przycisków}
+Przyciski wyświetlane po obu stronach kanwy dysponują własnym kontrolerem, który powiadamia
+kontroler główny za każdym razem, gdy któryś z nich zostanie naciśnięty. Kontroler ten obsługuje
+też zmiany wprowadzane przez gracza, np. jeśli gracz naciśnie przycisk odpowiadający współczynnikowi
+$x$ punktu przecięcia, równemu $3$, a następnie zmieni zadanie i wciśnie przycisk $4$ dla
+współczynnika $x$, przycisk $3$ zostanie automatycznie odznaczony. Analogicznie działa to dla
+przycisków współczynnika $y$.
+
+W celu zachowania przestronności pomieszczenia, zdecydowano się zrezygnować z przycisków o
+wartościach ujemnych i zamiast nich wprowadzić przycisk oznaczony symbolem $\pm$, który po
+naciśnięciu zmienia znaki wszystkich innych przycisków w danej grupie ($x$ lub $y$) na przeciwne.
+
+\subsection{Wybór dostępnych wzorów funkcji}
+Zadanie składa się z trzech części. W każdej części gracz musi wyliczyć punkt przecięcia wykresów
+funkcji i wcisnąć odpowiadające mu przyciski. W celu zwiększania poziomu trudności, w pierwszej
+części obie funkcje są funkcjami liniowymi, w drugiej jedna z nich jest funkcją liniową, a druga
+kwadratową, a w trzeciej obie funkcje są kwadratowe.
+
+Losowe funkcje, których punkt przecięcia gracz ma za zadanie wyznaczyć, są wybierane z wcześniej
+zdefiniowanego zbioru. Zbiór ten został dobrany w taki sposób, aby funkcje zawsze przecinały się
+tylko w jednym miejscu (w przypadku funkcji kwadratowych drugi punkt przecięcia zawsze znajduje
+się w dużej odległości poza zakresem widoczności kanwy).
+
+\medskip
+Lista możliwych wzorów przecinających się funkcji w każdej części zadania:
+\begin{enumerate}[left=1.5em, topsep=0pt, itemsep=0pt]
+    \item Część pierwsza (dwie funkcje liniowe):
+    \begin{itemize}[left=1.5em, label=\textbullet, topsep=0pt, itemsep=0pt]
+        \item $f_1(x) = 2x - 3$; $f_2(x) = -x + 6$; rozwiązanie: $P(3; 3)$
+        \item $f_1(x) = -2x - 8$; $f_2(x) = 2x + 4$; rozwiązanie: $P(-3; -2)$
+        \item $f_1(x) = -9x - 6$; $f_2(x) = 2x + 5$; rozwiązanie: $P(-1; 3)$
+    \end{itemize}
+    \item Część druga (jedna funkcja liniowa, jedna kwadratowa):
+    \begin{itemize}[left=1.5em, label=\textbullet, topsep=0pt, itemsep=0pt]
+        \item $f_1(x) = x^2 - 10x + 23$; $f_2(x) = 6x - 32$; rozwiązanie: $P(5; -2)$
+        \item $f_1(x) = x^2 + 10x + 29$; $f_2(x) = -6x - 26$; rozwiązanie: $P(-5; 4)$
+        \item $f_1(x) = x^2 - 6x + 14$; $f_2(x) = 8x - 19$; rozwiązanie: $P(3; 5)$
+    \end{itemize}
+    \item Część trzecia (dwie funkcje kwadratowe):
+    \begin{itemize}[left=1.5em, label=\textbullet, topsep=0pt, itemsep=0pt]
+        \item $f_1(x) = 2x^2 - 31x + 103$; $f_2(x) = x^2 - 10x + 23$; rozwiązanie: $P(5; -2)$
+        \item $f_1(x) = 2x^2 - 19x + 36$; $f_2(x) = x^2 - 4x + 10$; rozwiązanie: $P(2; 6)$
+        \item $f_1(x) = 2x^2 + 23x + 46$; $f_2(x) = x^2 + 6x + 4$; rozwiązanie: $P(-3; -5)$
+    \end{itemize}
+\end{enumerate}
+\medskip
+
+\subsection{Przebieg zadania}
+Podobnie jak w przypadku czwartej zagadki, zadanie rozpoczyna się zainicjalizowaniem i wstępną
+konfiguracją kanwy, na której wyświetlane będą układ współrzędnych oraz wzory funkcji. Następnie
+główny kontroler wywołuje funkcję \verb|Random Points|, która losowo wybiera wzory dwóch
+przecinających się funkcji z wcześniej zdefiniowanego zbioru. Wzory funkcji zostają wypisane na
+podłodze, a ich wykresy narysowany w kanwie (rys. \ref{fig:uklad_wspolrzednych_pokoj_5}).
+
+Gracz ma do dyspozycji rzędy przycisków po prawej i lewej stronie kanwy, których zadaniem jest
+odpowiednio modyfikacja współczynników $x$ (rys. \ref{fig:przyciski_x_pokoj_5}) i $y$. Za plecami gracza znajdują się trzy rozświetlone
+na czerwono lampy. Po rozwiązaniu każdej części zadania, jedna z lamp zmienia kolor na niebieski,
+a funkcja \verb|Random Points| wybiera nowy zestaw funkcji.
+
+W momencie zakończenia wszystkich trzech części zadania i rozświetlenia wszystkich lamp na
+niebiesko, zagadka zostaje uznana za rozwiązaną.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/uklad_wspolrzednych_pokoj_5.png}
+    \caption{Zainicjowany układ współrzędnych wraz z przecinającymi się wykresami funkcji w pokoju 5}
+    \label{fig:uklad_wspolrzednych_pokoj_5}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/przyciski_x_pokoj_5.png}
+    \caption{Przyciski odpowiedzialne za współrzędną $X$ w pokoju 5}
+    \label{fig:przyciski_x_pokoj_5}
+\end{figure}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Zadanie 6 – Kombinatoryka (Autor)}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -227,7 +401,78 @@ logiczne są ustawiane dopiero wtedy, kiedy sygnatura najpierw istniała (w inst
 W przypadku, gdy gracz chce usunąć bloczek ze ścianki, sytuacja jest analogiczna. Tym razem jednak, sprawdzamy czy bloczek, który zabiera gracz,
 jest tym znajdującym się na ściance, poprzez porównanie referencji. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Zadanie 8 – Znaki funkcji trygonometrycznych (Autor)}
+
+
+
+\section{Zadanie 8 – Znaki funkcji trygonometrycznych (Konrad Czarnecki)}
+\label{subsec:znaki_funkcji_trygonometrycznych_praktyka}
+\subsection{Problemy i różnice w realizacji zadania w praktyce}
+Podczas implementacji zadania zgodnie z opisem teoretycznym zawartym w podrozdziale \ref{subsec:znaki_funkcji_trygonometrycznych_teoria}
+wprowadzono zmiany poprawiające estetykę i grywalność zagadki. 
+Pierwotnie wszystkie cztery układy jednostkowe (oznaczone $sin(x)$, $cos(x)$, $tg(x)$ i $ctg(x)$) miały znajdować się na jednej ścianie, ale w celu uzyskania większej
+przejrzystości każdy z nich umieszczono na oddzielnej. Dodano ruchome sześciany w dwóch wariantach: zielone –
+oznaczone symbolami „+” oraz czerwone – oznaczone symbolami „–” (rys. \ref{fig:szesciany_pokoj_8}). Przyciski do zmiany znaku funkcji umieszczone
+w czterech ćwiatrtkach układów jednostkowych zostały zastąpione lukami (rys. \ref{fig:uklad_jednostkowy_pokoj_8}), które gracz musi wypełnić wyżej
+wspomniamymi sześcianami. Taka zmiana zwiększa poziom interakcji gracza z zagadką, co bezpośrednio przekłada
+się na wyższy poziom zaangażowania oraz lepszą czytelność mechanik zadania.
+
+Ze względu na ograniczony rozmiar Jaskini tylko jeden układ jednostkowy jest widoczny w danym czasie. 
+Po wypełnieniu jego ćwiartek sześcianami opatrzonymi odpowiednimi symbolami, układ jednostkowy chowa się,
+a zza innej ściany płynnie wysuwa się następny – ich kolejność jest losowa. W związku z tym liczba sześcianów
+z symbolami dostępnych w jednym czasie w pomieszczeniu mogła zostać ograniczona do czterech – dwa oznaczone 
+„+” i dwa oznaczone „–”. Pozwala to rozwiązać każdy poszczególny układ jednostkowy (rys. \ref{fig:cwiartki_ukladow_jednostkowych}).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/szesciany_pokoj_8.png}
+    \caption{Ruchome sześciany w pokoju 8}
+    \label{fig:szesciany_pokoj_8}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/uklad_jednostkowy_pokoj_8.png}
+    \caption{Układ jednostkowy w pokoju 8}
+    \label{fig:uklad_jednostkowy_pokoj_8}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/wykryto_luke_pokoj_8.png}
+    \caption{Sześcian po wykryciu luki w pokoju 8}
+    \label{fig:wykryto_luke_pokoj_8}
+\end{figure}
+
+\subsection{Implementacja sześcianów}
+Sześciany dysponują własnym kontrolerem, który powiadamia kontroler główny za każdym razem, gdy któryś sześcian
+zostaje umieszczony w luce. Gracz może również wyjąć wcześniej umieszczony sześcian z luki i włożyć go w inną.
+Ponadto kontroler zapobiega umieszczeniu dwóch sześcianów w tej samej luce, a także wyrzuceniu ich poza obszar
+gry. W takim wypadku sześcian automatycznie pojawia się na środku pokoju, zapewniając ciągłość zagadki.
+
+Kiedy gracz zbliży się do luki w układzie jednostkowym, trzymając sześcian, kolor sześcianu zmieni się na jaskrawo
+żółty, informując gracza, że luka została wykryta (rys. \ref{fig:wykryto_luke_pokoj_8}). Jeśli w takim momencie gracz puści sześcian, uruchomi się płynna
+animacja, w której ten automatycznie obróci się do odpowiedniego kąta i umieści w luce.
+
+\subsection{Przebieg zadania}
+Zadanie rozpoczyna się wywołaniem funkcji \verb|Random Order| przez główny kontroler. Funkcja ta w losowy sposób
+ustala kolejność czterech układów jednostkowych funkcji trygonometrycznych, które gracz będzie musiał
+rozwiązać. Następnie wykonuje się funkcja \verb|Reset Boxes Position|, która umieszcza ruchome sześciany
+w rogach pomieszczenia, również w losowy sposób.
+
+Po tej wstępnej konfiguracji rozpoczyna się właściwa część zadania. Pierwszy układ jednostkowy wyłania się zza
+ściany, a gracz podnosi sześciany i umieszcza je w odpowiednich lukach. Za każdym razem wywoływana jest funkcja
+\verb|Box Inside| informująca główny kontroler, że sześcian został umieszczony wewnątrz układu i sprawdzająca,
+czy położenie wszystkich sześcianów jest poprawne. Kiedy to nastąpi układ jednostkowy chowa się, nazwa funkcji
+trygonometrycznej nad nim rozświetla się na zielono, dając graczowi do zrozumienia, że element zagadki został
+rozwiązany poprawnie, sześciany cofają się do swoich pozycji startowych funkcją \verb|Reset Boxes Position|,
+a następnie pojawia się kolejny układ jednostkowy do rozwiązania.
+
+Kiedy gracz wypełni wszystkie układy poprawnie, zagadka zostaje uznana za rozwiązaną.
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Zadanie 9 – Ciągi liczbowe (Jan Walczak)}
 \label{sec:ciągi_praktyka}
