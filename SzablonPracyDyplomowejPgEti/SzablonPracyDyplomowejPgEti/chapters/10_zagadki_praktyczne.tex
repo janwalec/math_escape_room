@@ -114,7 +114,7 @@ która zamiast przesuwania się po kolejnych kafelkach, obraca się wzdłuż swo
 swoją pozycję. 
 
 \subsection{Główny kontroler}
-Zadaniem głównego kontrolera jest zarządzanie przebiegiem całego zadania. Porusza kostką w kiedunkach wskazanych
+Zadaniem głównego kontrolera jest zarządzanie przebiegiem całego zadania. Porusza kostką w kierunkach wskazanych
 przez gracza, sprawdza poprawność ruchów, informuje o porażce lub zwycięstwie, zrzuca kafelki, które nie spełniają
 wylosowanej nierówności, jeśli gracz pokierował na nie kostkę, a także blokuje niedozwolone ruchy,
 takie jak opuszczenie mostu przez jego krawędź lub wejście w dziurę po kafelku, który wcześniej spadł – takie błędy
@@ -126,7 +126,7 @@ kostka mogła zostać cofnięta do tego punktu, a nie do samego początku. Odblo
 również cofnięcie się do pierwszej sekcji mostu.
 
 Główny kontroler przechowuje także zmienną \verb|real Position|, która określa aktualną pozycję kostki na moście
-względem kafelków, niezależnie od jej fizycznego położenia w świecie gry, gdyż te może być niewystarczająco
+względem kafelków, niezależnie od jej fizycznego położenia w świecie gry, które może być niewystarczająco
 precyzyjne. Zatem, gdy gracz przesunie kostkę o jeden kafelek w przód, wartość parametru $y$ zmiennej \verb|real Position|
 zostanie zwiększona o jeden. Cofanie zmniejszy wartość tego parametru o jeden, a ruchy w lewo i prawo odpowiednio
 zmienią wartość parametru $x$.
@@ -152,7 +152,7 @@ Lista układów nierówności oraz ich rozwiązań:
 \end{itemize}
 \medskip
 
-W związku z faktem, że zbiory liczb spełniajace układ nierówności różnią się w zależności od układu, który zostanie
+W związku z faktem, że zbiory liczb spełniające układ nierówności różnią się w zależności od układu, który zostanie
 wylosowany, a liczby na kafelkach zawsze pozostają te same, należało odpowiednio dobrać kafelki, tak aby w
 każdym z przypadków istniała droga przez obie sekcje mostu (rys. \ref{fig:pokoj3_rozwiazanie}).
 
@@ -194,10 +194,10 @@ Następnie główny kontroler wywołuje funkcję \verb|Died|, która ustawia kos
 wyjściowej (rys. \ref{fig:uklad_wspolrzednych_pokoj_4}). Most dzieli się na dwie sekcje oddzielone bezpiecznym punktem kontrolnym – jeśli gracz przegra w
 drugiej sekcji, kostka zostanie cofnięta do punktu kontrolnego, a nie do samego początku.
 
-Po wstępnej konfiguracji rozpoczyna się Właściwa część zagadki. Gracz dysponuje czterema przyciskami (rys. \ref{fig:przyciski_pokoj_3}), odpowiadającymi
+Po wstępnej konfiguracji rozpoczyna się właściwa część zagadki. Gracz dysponuje czterema przyciskami (rys. \ref{fig:przyciski_pokoj_3}), odpowiadającymi
 czterem kierunkom (w przód, w tył, w lewo i w prawo), które po naciśnięciu wywołują funkcję \verb|turn Side| z odpowiednim
 parametrem w głównym kontrolerze. Jego zadaniem jest przeprowadzenie kostki przez most, poruszając się jedynie
-po kafelkach, których liczby spełniają wylosowaną nierówność. Jeśli kostka stanie na kafelku, który niespełnia
+po kafelkach, których liczby spełniają wylosowaną nierówność. Jeśli kostka stanie na kafelku, który nie spełnia
 nierówności, kafelek i kostka spadają w przepaść, a gracz musi zacząć od początku, lub od punktu kontrolnego,
 w zależności, w której sekcji mostu popełnił błąd.
 
