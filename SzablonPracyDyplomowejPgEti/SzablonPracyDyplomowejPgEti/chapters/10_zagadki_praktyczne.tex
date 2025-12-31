@@ -164,16 +164,16 @@ mało ciekawa. Tym samym postanowiono wizualnie usprawnić zagadkę. Na środku 
 \end{itemize}
 Uczeń zostaje poinstruowany, że po obu ścianach pokoju zostaną wyświetlone różne figury geometryczne. Po lewej stronie,
 patrząc od przycisków -- figury oznaczone kolorem czerwonym, po prawej stronie -- figury oznaczone kolorem zielonym.
-Liczba figur jest stała, każdorazowo typ wyświetlanych figur jest wybierany z określonej puli i wyświetlany w pseudolosowej 
+Liczba figur jest stała. Każdorazowo typ wyświetlanych figur jest wybierany z określonej puli i wyświetlany w pseudolosowej 
 konfiguracji -- losowane jest ich położenie, obrót oraz rozmiar. Zadaniem ucznia jest uzupełnianie kolejnych relacji poprzez
 wybieranie odpowiednich przycisków. Relacja, wyświetlana na ścianie pokoju, przedstawia się jako:
 \glqq każdy typ figury, narysowany kolorem czerwonym, jest równocześnie typem figury oznaczonym kolorem zielonym\grqq.
-Dodatkowo, tekst jest odpowiednio pokolorowany, tak aby uczeń nie miał wątpliwości, że chodzi o typ figury, wyświetlanej tymże kolorem
+Dodatkowo tekst jest odpowiednio pokolorowany tak, aby uczeń nie miał wątpliwości, że chodzi o typ figury, wyświetlanej tymże kolorem
 na ścianach.
 
 \subsection{Implementacja struktury danych przechowującej relację}
 Na początku pracy należało zdefiniować strukturę, przechowującą relacje, czyli pytania, na które uczeń
-będzie odpowiadał. Relacja taka została zawiera następujące pola:
+będzie odpowiadał. Relacja taka zawiera następujące pola:
 
 \begin{itemize}
     \item \verb|Every| -- wartość logiczna
@@ -195,13 +195,13 @@ Aby zarządzać zagadką została zaimplementowana seria kontrolerów i menedże
 
 \verb|WallFigures| to najprostszy z kontrolerów, wykonuje polecenia głównego kontrolera. Jego zadaniem jest 
 wyświetlanie żądanych figur i ich losowe ustawianie w świecie gry (obracanie, skalowanie, rozmieszczanie). W projekcie występują
-jego dwie instancje: kontroler lewy i prawy. Odpowiadają za odpowiednie ściany, na których wyświetlane są figury.
+jego dwie instancje: kontroler lewy i prawy. Odpowiadają one za odpowiednie ściany, na których wyświetlane są figury.
 
 \verb|FiguresTextManager| jest odpowiedzialny za zarządzanie tekstem wyświetlanym na ekranie. Wykonuje polecenia
 głównego kontrolera. Jego zadaniem jest odpowiednie wyświetlanie i kolorowanie tekstu.
 
 \verb|ControlerFigures|, czyli kontroler główny, jest najważniejszym elementem zagadki. Zawiera referencję do pozostałych
-kontrolerów, zarządza obiektami, wyświetlanymi na scenie i kontroluje przebieg zadania. Dodatkowo, zawiera dwustronną
+kontrolerów, zarządza obiektami wyświetlanymi na scenie i kontroluje przebieg zadania. Dodatkowo zawiera dwustronną
 referencję do przycisków (\verb|Button|), które wysyłają do niego powiadomienia o tym, że zostały naciśnięte.
 Kontroler zawiera też predefiniowaną tablicę relacji typów figur opisanych wcześniej.
 
@@ -219,14 +219,14 @@ Główny kontroler jest odpowiedzialny za inicjalizację zadania. Uruchamia on f
 \verb|InitBlueprint|, odpowiedzialną za wywołanie odpowiednich funkcji podrzędnych 
 elementów, takich jak: ustawienie tekstu, inicjalizacja ścian i przycisków.
 
-Kontroler oczekuje na otrzymanie powiadomienia, od przycisku, odpowiedzialnego za uruchomienie gry.
+Kontroler oczekuje na otrzymanie powiadomienia od przycisku odpowiedzialnego za uruchomienie gry.
 Kiedy otrzyma powiadomienie, przesłane mu za pośrednictwem odpowiedniej funkcji, uruchamia grę, tj. wywołuje
 funkcje podrzędnych komponentów, ustawiając im odpowiednią widoczność w świecie gry.
 
 Z predefiniowanej tablicy relacji zostaje wybrana jedna, która zostaje wyświetlona graczowi
-Główny kontroler czeka na powiadomienia od przycisków. Kiedy zostaje powiadomiony o tym, że jeden z nich, został naciśnięty
+Główny kontroler czeka na powiadomienia od przycisków. Kiedy zostaje powiadomiony o tym, że jeden z nich został naciśnięty
 sprawdza poprawność odpowiedzi. Jeśli odpowiedź jest poprawna, usuwa relację z tablicy i  losuje kolejną. Jeśli nie jest poprawna,
-losuje kolejną relację, do wyświetlenia graczowi i nie zalicza punktu. Gra kończy się po poprawnym uzupełnieniu przez gracza wszystkich relacji.
+losuje kolejną relację do wyświetlenia graczowi i nie zalicza punktu. Gra kończy się po poprawnym uzupełnieniu przez gracza wszystkich relacji.
 
 \begin{figure}[htbp]
     \centering
@@ -645,7 +645,7 @@ Takie rozwiązanie znacząco zwiększa regrywalność gry oraz poprawia jej walo
 \subsection{Problemy i różnice w realizacji zadania w praktyce}
 \label{subsec:rzeczywiste_problemy}
 Podczas implementacji zadania, zgodnie z teorią opisaną w podrozdziale \ref{subsec:liczby_rzeczywiste},
-należało wprowadzić, względem niej, kilka poprawek. Pierwotny mechanizm zakładał, że zamek, umieszczony na skrzyni, będzie
+należało wprowadzić względem niej kilka poprawek. Pierwotny mechanizm zakładał, że zamek umieszczony na skrzyni będzie
 wyposażony w pola, w które uczeń wpisywałby odpowiednie cyfry -- liczby elementów danego podzbioru. W praktyce
 okazało się to niemożliwe. Maksymalna liczba jednocyfrowa to 9, tym samym zadanie jest ograniczone do wyświetlania maksymalnie 9 liczb
 rzeczywistych w pokoju. 
@@ -664,7 +664,7 @@ wywnioskować kolejność wpisywanych liczb zgodnie z podpowiedzią, umieszczon�
 
 Zmienione zostały również liczby, które są rozmieszczone w pokoju. Aktualnie pojawiają się liczby: 
 \textit{15; π; 4,5; √2; ¼; -3; 1; -7; ⅓ ; 9} Tym samym kombinacja prezentuje się następująco (kolejność zgodna z podpowiedzią 
-na rysunku \ref{rzeczywiste:screen})
+na rysunku \ref{rzeczywiste:screen}):
 \begin{itemize}
     \item \textit{N} (naturalne): \textit{15; 1; 9} – 3 liczby,
     \item \textit{C} (całkowite):  \textit{15; 1; 9; -3; -7} – 5 liczb,
@@ -704,7 +704,7 @@ a \verb|WallQuestion| to płaska tablica (ścianka), na której wyświetlane są
 
 \verb|Sejf| zawiera jednostronną referencję do głównego kontrolera. Kontroler może zostać przez niego powiadomiony, że gracz
 poprawnie wpisał kod. W ten sposób kontroler może sterować dalszym przebiegiem zadania. \verb|WallQuestion| zawiera dwustronną referencję
-do głównego kontrolera. Mechanizm powiadomień działa tutaj podobnie ale kontroler może odpowiadać, na otrzymywane powiadomienia, poprzez
+do głównego kontrolera. Mechanizm powiadomień działa tutaj podobnie ale kontroler może odpowiadać na otrzymywane powiadomienia, poprzez
 wywoływanie odpowiednich funkcji.
 
 \begin{figure}[htbp]
@@ -718,8 +718,8 @@ wywoływanie odpowiednich funkcji.
 \subsection{Przebieg zadania}
 Zadanie rozpoczyna się od pierwszej części -- wpisania kodu do skrzyni. Kontroler inicjalizuje komponenty, a  na ścianach i na skrzyni 
 zostają wyświetlone liczby opisane w \ref{subsec:rzeczywiste_problemy}. Gracz powinien policzyć ile liczb, z jakiego zbioru, jest 
-wyświetlanych w pokoju i poprawnie wpisać kod. W doborze kolejności wpisywanych liczb pomaga mu podpowiedź, umieszczona na ścianie.
-Po poprawnym wpisaniu kodu, kontroler główny zostaje powiadomiony, przez instancję skrzyni, że zadanie może przejść do następnego etapu.
+wyświetlanych w pokoju i poprawnie wpisać kod. W doborze kolejności wpisywanych liczb pomaga mu podpowiedź umieszczona na ścianie.
+Po poprawnym wpisaniu kodu, kontroler główny zostaje powiadomiony przez instancję skrzyni, że zadanie może przejść do następnego etapu.
 Drzwi się otwierają a kontroler inicjalizuje 6 bloczków, opisanych w \ref{subsec:rzeczywiste_problemy} i ściankę z pytaniami \verb|WallQuestion|.
 Zapisuje pozycję oraz obrót bloczków w świecie gry, tak aby możliwy był powrót do stanu początkowego.
 
@@ -727,8 +727,8 @@ Zapisuje pozycję oraz obrót bloczków w świecie gry, tak aby możliwy był po
 miejsca na odpowiedzi, powiadamia kontroler o rozwiązaniu zadania. Kontroler decyduje czy odpowiedź gracza jest poprawna. W przypadku gdy 
 jest, to przesyła do \verb|WallQuestion| powiadomienie o zmianie pytania na kolejne i zalicza punkt. Jeżeli odpowiedź nie jest poprawna, to
 również powiadamia o tym ściankę, ale nie zalicza punktu. W obu przypadkach bloczki wracają na wcześniej zapisaną pozycję.
-W zależności, od poprawności udzielonej odpowiedzi, ścianka rozświetla się kolorem zielonym lub czerwonym, tak żeby gracz miał pewność, że udzielona
-odpowiedź jest poprawna. Podczas sprawdzania stanu ścianki, tj. ustawienie bloczków przez gracza, pytanie zostaje zablokowane, a gracz nie może
+W zależności od poprawności udzielonej odpowiedzi, ścianka rozświetla się kolorem zielonym lub czerwonym, tak żeby gracz miał pewność, że udzielona
+odpowiedź jest poprawna. Podczas sprawdzania stanu ścianki, tj. ustawienie bloczków przez gracza pytanie zostaje zablokowane, a gracz nie może
 modyfikować swojej odpowiedzi (dokładać lub zabierać bloczków).
 
 Kiedy gracz odpowie na oba pytania poprawnie, poziom zostaje uznany za zaliczony.
@@ -743,8 +743,8 @@ Kiedy gracz odpowie na oba pytania poprawnie, poziom zostaje uznany za zaliczony
 
 \subsection{Implementacja mechanizmu uzupełniania ścianki}
 Ścianka, czyli \verb|WallQuestion|, wykrywa kolizję z bloczkami, czyli \verb|Element|, w dwóch miejscach, w których będą one docelowo
-umieszczone. Kiedy gracz przytrzyma bloczek, nad jednym z dwóch wskazanych miejsc, uruchamiana jest odpowiednia funkcja \verb|StartCollision()|. 
-W zależności, od tego gdzie został umieszczony bloczek, sprawdzany jest aktualny stan ścianki -- czy w danym miejscu gracz umieścił już bloczek.
+umieszczone. Kiedy gracz przytrzyma bloczek nad jednym z dwóch wskazanych miejsc, uruchamiana jest odpowiednia funkcja \verb|StartCollision()|. 
+W zależności od tego gdzie został umieszczony bloczek, sprawdzany jest aktualny stan ścianki -- czy w danym miejscu gracz umieścił już bloczek.
 Jeśli tak, to ścianka nie pozwoli mu umieścić w tym miejscu kolejnego bloczka, dopóki nie wyjmie poprzedniego. Dzieje się tak za sprawą dwóch
 zmiennych wartości logicznych: \verb|ActorHovered| i \verb|ActorLockedIn|. Oznaczają one kolejno: stan, w którym gracz trzyma bloczek nad ścianką
 i stan, w którym gracz umieścił bloczek na ściance. W przypadku gdy \verb|ActorLockedIn| jest ustawione na wartość \verb|0|, to zapisywana
@@ -841,7 +841,7 @@ na długie zastanawianie się nad odpowiedzią. Jest bezpośrednio inspirowane p
 czas reakcji. Z tego powodu zdecydowano się na usunięcie limitu czasowego. Gra przyspiesza liniowo, razem z postępem, tj. liczbą zestrzelonych przez
 gracza kaczek.
 
-Dodatkowo zwiększono liczbę żyć, tj. możliwości na pomyłkę gracza, do 4 zamiast 3. Jest to spowodowane wprowadzeniem dodatkowej mechaniki gry -- jeśli
+Dodatkowo zwiększono liczbę żyć, tj. możliwości na pomyłkę gracza do 4 zamiast 3. Jest to spowodowane wprowadzeniem dodatkowej mechaniki gry -- jeśli
 kaczka wyleci poza zasięg gracza (za ścianę), gracz traci życie. Gra kończy się jedynie w momencie utraty wszystkich żyć -- co musi nastąpić, ponieważ
 prędkość kaczek będzie rosła tak długo, jak toczy się rozgrywka.
 
@@ -868,8 +868,8 @@ wartość zmiennoprzecinkową, reprezentującą długość wyznaczonej linii.
 
 Dzięki obliczonym wartościom można narysować laser, przebiegający od kontrolera gracza, do pierwszego napotkanego obiektu w grze. W tym celu kontroler ma
 na stałe przypisany obiekt \verb|Static Mesh|, z siatką statyczną w kształcie cylindra, który jest rozciągany zgodnie z obliczonymi wartościami. Nałożony jest
-na niego materiał, emitujący czerwone światło. Na końcu rozciągniętej siatki statycznej, umieszczona jest niewidzialna kulka, z włączonym systemem kolizji. 
-Dzięki niej można wykrywać, w jaki komponent na scenie, aktualnie celuje gracz.
+na niego materiał, emitujący czerwone światło. Na końcu rozciągniętej siatki statycznej umieszczona jest niewidzialna kulka, z włączonym systemem kolizji. 
+Dzięki niej można wykrywać, w jaki komponent na scenie aktualnie celuje gracz.
 
 Na rysunku \ref{fig:sequence_laser} widać, że laser faktycznie wykrywa otoczenie, w które celuje gracz i zmienia odpowiednio swoją długość. Zmianie
 ulega również kierunek, w którym celuje gracz.
@@ -883,7 +883,7 @@ ulega również kierunek, w którym celuje gracz.
 \subsection{Implementacja zadania}
 
 Zaimplementowany został jeden, główny kontroler \verb|SequenceControler|.
-Jego zadaniem jest inicjalizacja gry, zarządzanie przebiegiem gry, wyświetlanie tekstu i zarządzanie instancjami kaczek. Kontroler, wybiera pseudolosowo,
+Jego zadaniem jest inicjalizacja gry, zarządzanie przebiegiem gry, wyświetlanie tekstu i zarządzanie instancjami kaczek. Kontroler wybiera pseudolosowo
 jeden z trzech dostępnych wzorów, na kolejny wyraz ciągu arytmetycznego, według którego będą obliczane kolejne elementy. Dostępne są wzory:
 \begin{itemize}
     \item $a_n = 3n + 4$
@@ -893,9 +893,9 @@ jeden z trzech dostępnych wzorów, na kolejny wyraz ciągu arytmetycznego, wed�
 
 Komponent \verb|Duck| implementuje funkcjonalności związane ze sterowaniem pojedynczej kaczki. Zawiera dwustronną referencję, do obiektu głównego kontrolera
 i przesyła powiadomienia, kiedy zostanie zestrzelony przez gracza, przy użyciu pistoletu laserowego. W instancji kaczki zapisywana jest pozycja początkowa, numer,
-który aktualnie jest na niej wyświetlany i wartość zmiennoprzecinkowa, czyli droga, którą pokona kaczka, w każdej jednostce czasu w grze.
+który aktualnie jest na niej wyświetlany i wartość zmiennoprzecinkowa, czyli droga, którą pokona kaczka w każdej jednostce czasu w grze.
 
-Gracz zostaje również zapoznany z zasadami działania gry. Kiedy jest gotowy do rozpoczęcia gry, naciska przycisk, podobny do tego opisanego w podrozdziale 
+Gracz zostaje również zapoznany z zasadami działania gry. Kiedy jest gotowy do rozpoczęcia gry naciska przycisk, podobny do tego opisanego w podrozdziale 
 \ref{sec:planimetria_praktyka}. Przycisk działa na tej samej zasadzie i również posiada dwustronną referencję do instancji kontrolera.
 
 W zagadce występują jeszcze dwa komponenty: \verb|HitWall| i \verb|Life|. Główny kontroler zawiera tablicę referencji do 4 
@@ -916,20 +916,20 @@ gracz ma jeszcze pozostałe życia, wyświetli się kolejny wyraz ciągu, a kacz
 \subsection{Przebieg zadania}
 Zadanie rozpoczyna się od inicjalizacji komponentów przez główny kontroler.  Początkowo graczowi zostaje
 wyświetlona instrukcja do zadania. Kiedy gracz będzie gotowy może rozpocząć grę naciskając przycisk \glqq
-Start\grqq. Kontroler zostaje w takiej sytuacji powiadomiony, przez instancję przycisku i rozpoczyna grę. W sposób 
+Start\grqq. Kontroler zostaje w takiej sytuacji powiadomiony przez instancję przycisku i rozpoczyna grę. W sposób 
 pseudolosowy zostaje wybrany jeden z trzech wzorów na kolejny \textit{n-ty} wyraz ciągu arytmetycznego. Kontroler ustawia również
-poprawny wyraz ciągu, początkowo $n = 0$, na jednej z trzech kaczek. Pozostałe kaczki otrzymują wyrazy, większe
+poprawny wyraz ciągu, początkowo $n = 0$, na jednej z trzech kaczek. Pozostałe kaczki otrzymują wyrazy większe
 lub mniejsze od poprawnego wyrazu, również w sposób pseudolosowy. Dzieje się to wedle zasady, że wybrane wyrazy mogą być
-odległe jedynie o 2 jednostki na osi współrzędnych, od poprawnego wyrazu ($a_n \pm 2$).
+odległe jedynie o 2 jednostki na osi współrzędnych od poprawnego wyrazu ($a_n \pm 2$).
 
-Kaczki pokonują stałą jednostkę odległości, w każdej jednostce, czasu wykonywania się programu, wyrażoną za pomocą
+Kaczki pokonują stałą jednostkę odległości, w każdej jednostce czasu wykonywania się programu, wyrażoną za pomocą
 liczby zmiennoprzecinkowej. Jednostka ta jest tym większa, im większy jest aktualny numer wyrazu ciągu
-arytmetycznego. Oznacza to, że będą przyspieszać razem z przebiegiem gry. Do tak obliczonej, stałej wartości,
+arytmetycznego. Oznacza to, że będą przyspieszać razem z przebiegiem gry. Do tak obliczonej stałej wartości,
 dodawana jest pseudolosowa wartość zmiennoprzecinkowa wybrana pseudolosowo z przedziału $\left[0,5; 0,7\right] $. 
 
 Kaczki poruszają się od lewej do prawej strony ekranu, aż do zderzenia się z instancją obiektu \verb |HitWall|. 
 Kaczki mogą zostać zestrzelone przez gracza, zanim zderzą się z wyżej wymienionym obiektem. 
-W obu przypadkach, do kontrolera wysyłane jest powiadomienie odpowiedniego rodzaju: 
+W obu przypadkach do kontrolera wysyłane jest powiadomienie odpowiedniego rodzaju: 
 kaczka została zestrzelona lub kaczka  zderzyła się z obiektem \verb|HitWall|. 
 W powiadomieniu przekazana jest również liczba całkowita, która znajdowała się na danej kaczce. 
 
@@ -1059,8 +1059,8 @@ Do każdej z wymienionych brył wybrano 3 pytania. Dotyczą one kolejno:
     \item wzoru na obliczenie powierzchni bryły,
     \item wzoru na obliczenie objętości bryły.
 \end{itemize}
-Gracz musi odpowiedzieć na wszystkie 3 pytania prawidłowo. Jeśli się pomyli, ze zbioru wybierana jest inna bryła,
-inna niż ta, o którą pytano go przed chwilą. W ten sposób uniknięto sytuacji, w której gracz odpowiadałby losowo i
+Gracz musi odpowiedzieć na wszystkie 3 pytania prawidłowo. Jeśli się pomyli, ze zbioru wybierana jest inna bryła.
+Inna niż ta, o którą pytano go przed chwilą. W ten sposób uniknięto sytuacji, w której gracz odpowiadałby losowo i
 przechodził zadanie metodą eliminacji.
 
 \subsection{Implementacja zadania}
@@ -1072,7 +1072,7 @@ zbiór pytań, dotyczących każdej z brył, reprezentowany przez mapę typu \te
 
 Obiekt \verb|Stereometry| odpowiada za poprawne wyświetlanie brył. Zawiera 5 obiektów 
 typu siatki statycznej, które wyświetla w świecie gry, wybierając bryłę odpowiadającą aktualnie zadawanemu pytaniu. 
-Jest też odpowiedzialny  za pseudolosowy mechanizm wyboru brył. Przed wyświetleniem obiekt \verb|Stereometry|, w sposób pseudolosowy, 
+Jest też odpowiedzialny  za pseudolosowy mechanizm wyboru brył. Przed wyświetleniem obiekt \verb|Stereometry| w sposób pseudolosowy 
 obraca bryłę, zmienia jej rozmiar, oraz położenie w świecie gry. W tym przypadku nie było potrzeby implementowania mechanizmu
 powiadomień, ponieważ rodzaj komunikatów wysyłanych pomiędzy obiektami \verb|Stereometry| i \verb|SelectorControler| jest
 prosty i zawsze jednakowy (żądanie wyświetlenia nowej bryły). Dodatkowo, obiekt \verb|Stereometry| zawiera referencję
@@ -1088,12 +1088,12 @@ mógł zacząć wykonywać na nim operacje, przez wywołanie odpowiednich funkcj
 \end{figure}
 
 \subsection{Przebieg zadania}
-Kontroler inicjalizuje podrzędne mu obiekty i rozpoczyna grę. W sposób pseudolosowy, wybierana jest jedna z 5 predefiniowanych
+Kontroler inicjalizuje podrzędne mu obiekty i rozpoczyna grę. W sposób pseudolosowy wybierana jest jedna z 5 predefiniowanych
 brył, poprzez wywołanie odpowiedniej funkcji obiektu \verb|Stereometry|. Gracz ma do wyboru 3 przyciski, które 
 zawierają odpowiedzi \textit{A, B} lub \textit{C}. Pytania są wyświetlane sekwencyjnie -- najpierw zadawane jest pytanie 
 o typ bryły, potem o wzór na obliczenie jej pola powierzchni, a na końcu o wzór na obliczanie jej objętości.
 
-Jeśli gracz pomyli się, podczas udzielania odpowiedzi, kontroler ponownie wywoła funkcję odpowiedzialną za wybór
+Jeśli gracz pomyli się podczas udzielania odpowiedzi, kontroler ponownie wywoła funkcję odpowiedzialną za wybór
 kolejnej bryły. W takim przypadku może się ona pojawić ponownie w zadaniu, ale nie od razu po udzieleniu błędnej
 odpowiedzi. Jeśli gracz odpowie na wszystkie 3 pytania prawidłowo, bryła zostaje uznana za zaliczoną i jest usuwana
 z puli dostępnych do wylosowania brył. Gra kończy się kiedy gracz poprawnie odpowie na pytania dotyczące 3 różnych brył.
