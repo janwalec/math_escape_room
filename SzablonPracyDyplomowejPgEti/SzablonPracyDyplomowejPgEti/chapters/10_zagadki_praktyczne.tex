@@ -103,12 +103,135 @@ losuje kolejną relację, do wyświetlenia graczowi i nie zalicza punktu. Gra ko
 
 
 
+
+
 \section{Zadanie 3 – Nierówności (Konrad Czarnecki)}
 \label{subsec:nierownosci_praktyka}
+\subsection{Problemy i różnice w realizacji zadania w praktyce}
+Podczas implementacji zadania, zgodnie z teorią opisaną w podrozdziale \ref{subsec:nierownosci_teoria},
+ze względów estetycznych zmieniono postać, która miała być przeprowadzana przez most, na metaliczną kostkę,
+która zamiast przesuwania się po kolejnych kafelkach, obraca się wzdłuż swojej krawędzi, tym samym zmieniając
+swoją pozycję. 
+
+\subsection{Główny kontroler}
+Zadaniem głównego kontrolera jest zarządzanie przebiegiem całego zadania. Porusza kostką w kiedunkach wskazanych
+przez gracza, sprawdza poprawność ruchów, informuje o porażce lub zwycięstwie, zrzuca kafelki, które nie spełniają
+wylosowanej nierówności, jeśli gracz pokierował na nie kostkę, a także blokuje niedozwolone ruchy,
+takie jak opuszczenie mostu przez jego krawędź lub wejście w dziurę po kafelku, który wcześniej spadł – takie błędy
+świadczyłyby o przypadkowych, niezamierzonych akcjach, a nie o braku matematycznej wiedzy.
+
+Kiedy gracz dotrze do punktu kontrolnego w połowie mostu, główny kontroler zapisuje tę informację i podświetla
+punkt kontrolny na zielono (rys. \ref{fig:punkt_kontrolny_pokoj_3}), aby w przypadku porażki w dalszej części mostu,
+kostka mogła zostać cofnięta do tego punktu, a nie do samego początku. Odblokowanie punktu kontrolnego uniemożliwia
+również cofnięcie się do pierwszej sekcji mostu.
+
+Główny kontroler przechowuje także zmienną \verb|real Position|, która określa aktualną pozycję kostki na moście
+względem kafelków, niezależnie od jej fizycznego położenia w świecie gry, gdyż te może być niewystarczająco
+precyzyjne. Zatem, gdy gracz przesunie kostkę o jeden kafelek w przód, wartość parametru $y$ zmiennej \verb|real Position|
+zostanie zwiększona o jeden. Cofanie zmniejszy wartość tego parametru o jeden, a ruchy w lewo i prawo odpowiednio
+zmienią wartość parametru $x$.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/punkt_kontrolny_pokoj_3.png}
+    \caption{Punkt kontrolny w pokoju 3}
+    \label{fig:punkt_kontrolny_pokoj_3}
+\end{figure}
+
+\subsection{Wybór kafelków i układ nierówności}
+Gracz może przesuwać kostkę jedynie po kafelkach, które są oznaczone liczbami spełniającymi wybrany układ nierówności.
+W celu zwiększenia różnorodności rozgrywki, układ nierówności jest wybierany w sposób losowany ze zdefiniowanego
+wcześniej zbioru.
+
+\medskip
+Lista układów nierówności oraz ich rozwiązań:
+\begin{itemize}[left=1.5em, label=\textbullet, topsep=0pt, itemsep=0pt]
+    \item $3x-4<11$; $x+1>-2$; rozwiązania całkowite: $-2$, $-1$, $0$, $1$, $2$, $3$, $4$
+    \item $2x-5>-1$; $x-3<6$; rozwiązania całkowite: $3$, $4$, $5$, $6$, $7$, $8$
+    \item $x+7>2$; $-x+1>-3$; rozwiązania całkowite: $-4$, $-3$, $-2$, $-1$, $0$, $1$, $2$, $3$
+\end{itemize}
+\medskip
+
+W związku z faktem, że zbiory liczb spełniajace układ nierówności różnią się w zależności od układu, który zostanie
+wylosowany, a liczby na kafelkach zawsze pozostają te same, należało odpowiednio dobrać kafelki, tak aby w
+każdym z przypadków istniała droga przez obie sekcje mostu (rys. \ref{fig:pokoj3_rozwiazanie}).
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{0.3\textwidth}
+	\centering
+	\includegraphics[width=\linewidth]{images/rozwiazanie1_pokoj_3.png}
+	\vspace{0.3em}
+	\small (a) Rozwiązanie dla $x \in [-2,\,4]$
+\end{minipage}
+\hspace{0.01\textwidth}
+\vrule
+\hspace{0.01\textwidth}
+\begin{minipage}{0.3\textwidth}
+	\centering
+	\includegraphics[width=\linewidth]{images/rozwiazanie2_pokoj_3.png}
+	\vspace{0.3em}
+	\small (b) Rozwiązanie dla $x \in [3,\,8]$
+\end{minipage}
+\hspace{0.01\textwidth}
+\vrule
+\hspace{0.01\textwidth}
+\begin{minipage}{0.3\textwidth}
+	\centering
+	\includegraphics[width=\linewidth]{images/rozwiazanie3_pokoj_3.png}
+	\vspace{0.3em}
+	\small (c) Rozwiązanie dla $x \in [-4,\,3]$
+\end{minipage}
+
+\caption{Ścieżki przejścia przez obie sekcje mostu dla każdego z układów nierówności}
+\label{fig:pokoj3_rozwiazanie}
+\end{figure}
+
+\subsection{Przebieg zadania}
+Zadanie rozpoczyna się wraz z wywołaniem funkcji \verb|Put On Tiles|, która ustawia kafelki z liczbami w odpowiednich pozycjach,
+budując z nich most, a także w losowy sposób wybiera układ nierówności, który gracz będzie musiał wykorzystać.
+Następnie główny kontroler wywołuje funkcję \verb|Died|, która ustawia kostkę na początku mostu w pozycji
+wyjściowej (rys. \ref{fig:uklad_wspolrzednych_pokoj_4}). Most dzieli się na dwie sekcje oddzielone bezpiecznym punktem kontrolnym – jeśli gracz przegra w
+drugiej sekcji, kostka zostanie cofnięta do punktu kontrolnego, a nie do samego początku.
+
+Po wstępnej konfiguracji rozpoczyna się Właściwa część zagadki. Gracz dysponuje czterema przyciskami (rys. \ref{fig:przyciski_pokoj_3}), odpowiadającymi
+czterem kierunkom (w przód, w tył, w lewo i w prawo), które po naciśnięciu wywołują funkcję \verb|turn Side| z odpowiednim
+parametrem w głównym kontrolerze. Jego zadaniem jest przeprowadzenie kostki przez most, poruszając się jedynie
+po kafelkach, których liczby spełniają wylosowaną nierówność. Jeśli kostka stanie na kafelku, który niespełnia
+nierówności, kafelek i kostka spadają w przepaść, a gracz musi zacząć od początku, lub od punktu kontrolnego,
+w zależności, w której sekcji mostu popełnił błąd.
+
+Niemożliwe jest wypadnięcie z mostu poprzez wyjście poza jego krawędzie, lub wejście w dziurę po kafelku, który
+wcześniej spadł – gra uniemożliwia takie ruchy. 
+
+Po przejściu obu sekcji mostu, wszystkie pozostałe kafelki spadają do przepaści, a zagadka zostaje uznana za rozwiązaną (rys. \ref{fig:wygrana_pokoj_3}).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/pozycja_poczatkowa_pokoj_3.png}
+    \caption{Most podzielony na dwie sekcje w pokoju 3}
+    \label{fig:pozycja_poczatkowa_pokoj_3}
+\end{figure}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/przyciski_pokoj_3.png}
+    \caption{Przyciski do poruszania kostką w pokoju 3}
+    \label{fig:przyciski_pokoj_3}
+\end{figure}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/wygrana_pokoj_3.png}
+    \caption{Rozwiązany pokój 3}
+    \label{fig:wygrana_pokoj_3}
+\end{figure}
+
+
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 
 

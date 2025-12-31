@@ -109,42 +109,46 @@
 \contentsline {subsection}{\numberline {8.2.3}Implementacja kontrolerów}{35}{subsection.8.2.3}%
 \contentsline {subsection}{\numberline {8.2.4}Przebieg zadania}{35}{subsection.8.2.4}%
 \contentsline {section}{\numberline {8.3}Zadanie 3 – Nierówności (Konrad Czarnecki)}{38}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Zadanie 4 – Funkcje (Konrad Czarnecki)}{38}{section.8.4}%
-\contentsline {subsection}{\numberline {8.4.1}Problemy i różnice w realizacji zadania w praktyce}{38}{subsection.8.4.1}%
-\contentsline {subsection}{\numberline {8.4.2}Wybór dostępnych punktów}{38}{subsection.8.4.2}%
-\contentsline {subsection}{\numberline {8.4.3}Przebieg zadania}{39}{subsection.8.4.3}%
-\contentsline {section}{\numberline {8.5}Zadanie 5 – Geometria analityczna (Konrad Czarnecki)}{40}{section.8.5}%
-\contentsline {subsection}{\numberline {8.5.1}Problemy i różnice w realizacji zadania w praktyce}{40}{subsection.8.5.1}%
-\contentsline {subsection}{\numberline {8.5.2}Kontroler przycisków}{40}{subsection.8.5.2}%
-\contentsline {subsection}{\numberline {8.5.3}Wybór dostępnych wzorów funkcji}{40}{subsection.8.5.3}%
-\contentsline {subsection}{\numberline {8.5.4}Przebieg zadania}{41}{subsection.8.5.4}%
-\contentsline {section}{\numberline {8.6}Zadanie 6 – Kombinatoryka (Autor)}{42}{section.8.6}%
-\contentsline {section}{\numberline {8.7}Zadanie 7 – Liczby rzeczywiste i działania na zbiorach liczbowych \\ (Jan Walczak)}{42}{section.8.7}%
-\contentsline {subsection}{\numberline {8.7.1}Problemy i różnice w realizacji zadania w praktyce}{42}{subsection.8.7.1}%
-\contentsline {subsection}{\numberline {8.7.2}Implementacja zadania}{44}{subsection.8.7.2}%
-\contentsline {subsection}{\numberline {8.7.3}Przebieg zadania}{44}{subsection.8.7.3}%
-\contentsline {subsection}{\numberline {8.7.4}Implementacja mechanizmu uzupełniania ścianki}{46}{subsection.8.7.4}%
-\contentsline {section}{\numberline {8.8}Zadanie 8 – Znaki funkcji trygonometrycznych (Konrad Czarnecki)}{46}{section.8.8}%
-\contentsline {subsection}{\numberline {8.8.1}Problemy i różnice w realizacji zadania w praktyce}{46}{subsection.8.8.1}%
-\contentsline {subsection}{\numberline {8.8.2}Implementacja sześcianów}{46}{subsection.8.8.2}%
-\contentsline {subsection}{\numberline {8.8.3}Przebieg zadania}{48}{subsection.8.8.3}%
-\contentsline {section}{\numberline {8.9}Zadanie 9 – Ciągi liczbowe (Jan Walczak)}{48}{section.8.9}%
-\contentsline {subsection}{\numberline {8.9.1}Problemy i różnice w realizacji zadania w praktyce}{48}{subsection.8.9.1}%
-\contentsline {subsection}{\numberline {8.9.2}Implementacja pistoletu laserowego}{48}{subsection.8.9.2}%
-\contentsline {subsection}{\numberline {8.9.3}Implementacja zadania}{49}{subsection.8.9.3}%
-\contentsline {subsection}{\numberline {8.9.4}Przebieg zadania}{50}{subsection.8.9.4}%
-\contentsline {section}{\numberline {8.10}Zadanie 10 – Prawdopodobieństwo (Autor)}{53}{section.8.10}%
-\contentsline {section}{\numberline {8.11}Zadanie 11 – Optymalizacja i rachunek różniczkowy (Autor)}{53}{section.8.11}%
-\contentsline {section}{\numberline {8.12}Zadanie 12 – Układy równań (Autor)}{53}{section.8.12}%
-\contentsline {section}{\numberline {8.13}Zadanie 13 – Stereometria (Jan Walczak)}{53}{section.8.13}%
-\contentsline {subsection}{\numberline {8.13.1}Problemy i różnice w realizacji zadania w praktyce}{53}{subsection.8.13.1}%
-\contentsline {subsection}{\numberline {8.13.2}Implementacja zadania}{53}{subsection.8.13.2}%
-\contentsline {subsection}{\numberline {8.13.3}Przebieg zadania}{54}{subsection.8.13.3}%
-\contentsline {chapter}{\numberline {9}Podsumowanie}{56}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Ocena realizacji celów}{56}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Propozycje rozwoju projektu}{56}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Wnioski końcowe}{56}{section.9.3}%
-\contentsline {chapter}{Wykaz literatury}{57}{section.9.3}%
-\contentsline {chapter}{Spis rysunków}{57}{chapter*.26}%
-\contentsline {chapter}{Spis tabel}{58}{chapter*.27}%
+\contentsline {subsection}{\numberline {8.3.1}Problemy i różnice w realizacji zadania w praktyce}{38}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Główny kontroler}{38}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Wybór kafelków i układ nierówności}{38}{subsection.8.3.3}%
+\contentsline {subsection}{\numberline {8.3.4}Przebieg zadania}{39}{subsection.8.3.4}%
+\contentsline {section}{\numberline {8.4}Zadanie 4 – Funkcje (Konrad Czarnecki)}{41}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Problemy i różnice w realizacji zadania w praktyce}{41}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Wybór dostępnych punktów}{41}{subsection.8.4.2}%
+\contentsline {subsection}{\numberline {8.4.3}Przebieg zadania}{41}{subsection.8.4.3}%
+\contentsline {section}{\numberline {8.5}Zadanie 5 – Geometria analityczna (Konrad Czarnecki)}{43}{section.8.5}%
+\contentsline {subsection}{\numberline {8.5.1}Problemy i różnice w realizacji zadania w praktyce}{43}{subsection.8.5.1}%
+\contentsline {subsection}{\numberline {8.5.2}Kontroler przycisków}{43}{subsection.8.5.2}%
+\contentsline {subsection}{\numberline {8.5.3}Wybór dostępnych wzorów funkcji}{43}{subsection.8.5.3}%
+\contentsline {subsection}{\numberline {8.5.4}Przebieg zadania}{44}{subsection.8.5.4}%
+\contentsline {section}{\numberline {8.6}Zadanie 6 – Kombinatoryka (Autor)}{45}{section.8.6}%
+\contentsline {section}{\numberline {8.7}Zadanie 7 – Liczby rzeczywiste i działania na zbiorach liczbowych \\ (Jan Walczak)}{45}{section.8.7}%
+\contentsline {subsection}{\numberline {8.7.1}Problemy i różnice w realizacji zadania w praktyce}{45}{subsection.8.7.1}%
+\contentsline {subsection}{\numberline {8.7.2}Implementacja zadania}{47}{subsection.8.7.2}%
+\contentsline {subsection}{\numberline {8.7.3}Przebieg zadania}{47}{subsection.8.7.3}%
+\contentsline {subsection}{\numberline {8.7.4}Implementacja mechanizmu uzupełniania ścianki}{49}{subsection.8.7.4}%
+\contentsline {section}{\numberline {8.8}Zadanie 8 – Znaki funkcji trygonometrycznych (Konrad Czarnecki)}{49}{section.8.8}%
+\contentsline {subsection}{\numberline {8.8.1}Problemy i różnice w realizacji zadania w praktyce}{49}{subsection.8.8.1}%
+\contentsline {subsection}{\numberline {8.8.2}Implementacja sześcianów}{49}{subsection.8.8.2}%
+\contentsline {subsection}{\numberline {8.8.3}Przebieg zadania}{51}{subsection.8.8.3}%
+\contentsline {section}{\numberline {8.9}Zadanie 9 – Ciągi liczbowe (Jan Walczak)}{51}{section.8.9}%
+\contentsline {subsection}{\numberline {8.9.1}Problemy i różnice w realizacji zadania w praktyce}{51}{subsection.8.9.1}%
+\contentsline {subsection}{\numberline {8.9.2}Implementacja pistoletu laserowego}{51}{subsection.8.9.2}%
+\contentsline {subsection}{\numberline {8.9.3}Implementacja zadania}{52}{subsection.8.9.3}%
+\contentsline {subsection}{\numberline {8.9.4}Przebieg zadania}{53}{subsection.8.9.4}%
+\contentsline {section}{\numberline {8.10}Zadanie 10 – Prawdopodobieństwo (Autor)}{56}{section.8.10}%
+\contentsline {section}{\numberline {8.11}Zadanie 11 – Optymalizacja i rachunek różniczkowy (Autor)}{56}{section.8.11}%
+\contentsline {section}{\numberline {8.12}Zadanie 12 – Układy równań (Autor)}{56}{section.8.12}%
+\contentsline {section}{\numberline {8.13}Zadanie 13 – Stereometria (Jan Walczak)}{56}{section.8.13}%
+\contentsline {subsection}{\numberline {8.13.1}Problemy i różnice w realizacji zadania w praktyce}{56}{subsection.8.13.1}%
+\contentsline {subsection}{\numberline {8.13.2}Implementacja zadania}{56}{subsection.8.13.2}%
+\contentsline {subsection}{\numberline {8.13.3}Przebieg zadania}{57}{subsection.8.13.3}%
+\contentsline {chapter}{\numberline {9}Podsumowanie}{59}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Ocena realizacji celów}{59}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Propozycje rozwoju projektu}{59}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Wnioski końcowe}{59}{section.9.3}%
+\contentsline {chapter}{Wykaz literatury}{60}{section.9.3}%
+\contentsline {chapter}{Spis rysunków}{60}{chapter*.31}%
+\contentsline {chapter}{Spis tabel}{61}{chapter*.32}%
 \contentsfinish 
