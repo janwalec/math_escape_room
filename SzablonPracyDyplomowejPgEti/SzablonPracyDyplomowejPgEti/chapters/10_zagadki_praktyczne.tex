@@ -1,8 +1,145 @@
 \chapter{Implementacja zagadek}
 \label{chap:development}
 
-\section{Zadanie 1 – wzory skróconego mnożenia (Autor)}
-a
+\section{Zadanie 1 – wzory skróconego mnożenia (Andrii Demyshyn)}
+W tym zadaniu zrealizowano zagadkę poświęconą wzorom skróconego mnożenia. 
+Zadaniem gracza jest prawidłowe połączenie początków i końcówek wzorów skróconego mnożenia poprzez umieszczenie odpowiednich klocków w przeznaczonych dla nich miejscach.
+
+Kiedy gracz pojawia się w pokoju, widzi przed sobą tablicę z początkami wzorów skróconego mnożenia do uzupełnienia, a także klocki z różnymi formułami, panel informacyjny oraz przycisk do sprawdzenia odpowiedzi.
+
+\subsection{Opis obiektów pokoju}
+
+\subsubsection{Matematyczna tablica \texttt{BP\_MathBoard}}
+
+Głównym obiektem pokoju jest matematyczna tablica zrealizowana w postaci blueprintu aktora \texttt{BP\_MathBoard}. 
+Tablica zawiera siedem wzorów do uzupełnienia:
+
+\begin{enumerate}
+    \item \textbf{Kwadrat sumy}  
+    \[
+    (a+b)^2 = a^2 + 2ab + b^2
+    \]
+
+    \item \textbf{Kwadrat różnicy}  
+    \[
+    (a-b)^2 = a^2 - 2ab + b^2
+    \]
+
+    \item \textbf{Różnica kwadratów}  
+    \[
+    (a-b)(a+b) = a^2 - b^2
+    \]
+
+    \item \textbf{Sześcian sumy}  
+    \[
+    (a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3
+    \]
+
+    \item \textbf{Sześcian różnicy}  
+    \[
+    (a-b)^3 = a^3 - 3a^2b + 3ab^2 - b^3
+    \]
+
+    \item \textbf{Rozkład sumy sześcianów}  
+    \[
+    a^3 + b^3 = (a+b)(a^2 - ab + b^2)
+    \]
+
+    \item \textbf{Rozkład różnicy sześcianów}  
+    \[
+    a^3 - b^3 = (a-b)(a^2 + ab + b^2)
+    \]
+\end{enumerate}
+
+Naprzeciw każdego wzoru, po znaku „=”, znajduje się odpowiedni slot, do którego należy umieścić końcówkę wzoru. 
+Każdy slot składa się z następujących elementów:
+
+\begin{itemize}
+    \item wyróżnionego kolorem obszaru,
+    \item komponentu \texttt{Box Collision},
+    \item komponentu \texttt{Scene Component -- Point},
+    \item oczekiwanego identyfikatora \texttt{ExpectedID},
+    \item zmiennej typu bool \texttt{Slot[i]IsNoFull}, która informuje, czy slot jest zajęty (domyślnie ustawiona na \texttt{True}),
+    \item własnego materiału slotu \texttt{Slot[i]HighLightMaterial}.
+\end{itemize}
+
+Każdemu slotowi odpowiada tylko jeden poprawny obiekt z formułą.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/tablica.png}
+    \caption{Wygląd BP\_MathBoard}
+    \label{fig:Lamp}
+\end{figure}
+\subsection{Zakończenie zadania}
+\subsection{Zakończenie zadania}
+W obiekcie \texttt{BP\_MathBoard} zaimplementowano również funkcję \texttt{AreAllSlotsFilled}, która sprawdza, czy wszystkie sloty zostały uzupełnione oraz czy zostały uzupełnione poprawnie.
+
+\subsubsection{Prostopadłościan z formułą \texttt{BP\_FormulaBlock}}
+
+Wszystkie formuły są przedstawione jako interaktywne obiekty 3D w postaci \texttt{BP\_FormulaBlock} typu Blueprint Actor. 
+Gracz może podnosić i przenosić te obiekty po pokoju oraz umieszczać je w slotach tablicy.
+
+Każdy obiekt \texttt{BP\_FormulaBlock} składa się z:
+\begin{itemize}
+    \item komponentu \texttt{StaticMesh},
+    \item komponentu \texttt{TextRender} z odpowiednią formułą,
+    \item komponentu \texttt{Box Collision},
+    \item identyfikatora \texttt{FormulaID}.
+\end{itemize}
+
+Występują zarówno poprawne obiekty \texttt{BP\_FormulaBlock}, zawierające prawidłowe końcówki wzorów, jak i obiekty fałszywe (fikcyjne). 
+Obiekty fałszywe wizualnie nie różnią się od poprawnych, lecz zawierają formuły oraz identyfikatory \texttt{FormulaID}, które nie pasują do żadnego wzoru. 
+Zostały one dodane w celu zwiększenia poziomu trudności oraz zmylenia gracza. 
+Formuły te są niemal poprawne, jednak zawierają drobne błędy, takie jak niewłaściwe znaki, współczynniki lub mieszanie typów wzorów.
+
+\subsubsection{Przycisk sprawdzenia \texttt{BP\_CheckMath}}
+
+Na poziomie zaprojektowano przycisk \texttt{BP\_CheckMath}, który umożliwia sprawdzenie poprawności uzupełnienia tablicy \texttt{BP\_MathBoard}. 
+Gracz decyduje, kiedy chce sprawdzić rozwiązanie, a po kliknięciu przycisku aktywowana jest funkcja \texttt{AreAllSlotsFilled}.
+
+\subsubsection{Panel informacyjny \texttt{BP\_MathText}}
+
+Instrukcja zadania wyświetlana jest za pomocą blueprintu aktora \texttt{BP\_MathText}, w którym umieszczono blueprintowy widget \texttt{W\_MathText}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/algebraic.png}
+    \caption{Wygląd pokoju algebraicznego}
+    \label{fig:Lamp}
+\end{figure}
+\subsection{Przebieg zadania}
+
+Po rozpoczęciu zadania gracz znajduje się w pokoju i widzi na panelu informacyjnym \texttt{BP\_MathText} komunikat:
+\begin{quote}
+„Połącz odpowiednie początki i końce wzorów skróconego mnożenia. Przeciągnij klocki we właściwe miejsca.”
+\end{quote}
+
+Jeżeli gracz podniesie obiekt z formułą i spróbuje umieścić go w slocie, w momencie wejścia obiektu w obszar \texttt{Box Collision} slotu, obiekt tymczasowo przejmuje materiał slotu. 
+Jeżeli w tym momencie gracz upuści obiekt, zostaje on automatycznie umieszczony w slocie. 
+Rozwiązanie to zostało zastosowane w celu ułatwienia precyzyjnego umieszczania obiektów. 
+Jeżeli gracz wyciągnie obiekt z obszaru kolizji slotu, jego materiał zostaje przywrócony do pierwotnego stanu.
+
+W momencie umieszczenia obiektu w slocie tablicy \texttt{BP\_MathBoard}, zmienna \texttt{Slot[i]IsNoFull} przyjmuje wartość \texttt{False}, co uniemożliwia umieszczenie innego obiektu w tym samym slocie do momentu usunięcia aktualnie umieszczonego klocka.
+
+Gracz w dowolnym momencie może nacisnąć przycisk \texttt{BP\_CheckMath}, który po interakcji odtwarza animację wciśnięcia oraz wywołuje funkcję \texttt{AreAllSlotsFilled}. 
+Funkcja ta w pierwszej kolejności sprawdza, czy wszystkie sloty zostały uzupełnione. 
+Jeżeli nie, do widgetu \texttt{W\_MathText} wysyłany jest komunikat:
+\begin{quote}
+„Nie wszystkie formuły są jeszcze uzupełnione. Połącz każdą część początkową z odpowiednim zakończeniem.”
+\end{quote}
+
+Jeżeli wszystkie sloty są uzupełnione, funkcja sprawdza poprawność wzorów poprzez porównanie identyfikatora \texttt{FormulaID} obiektu z identyfikatorem \texttt{ExpectedID} slotu. 
+W przypadku poprawnego dopasowania wyświetlany jest komunikat:
+\begin{quote}
+„Świetnie! Poprawnie połączyłeś wzory skróconego mnożenia.”
+\end{quote}
+Zadanie zostaje zaliczone, a gra przechodzi do kolejnego poziomu.
+
+W przeciwnym przypadku wyświetlany jest komunikat:
+\begin{quote}
+„Części formuł zostały połączone niepoprawnie. Spróbuj dobrać inne pary.”
+\end{quote}
+Gracz może ponawiać próby do momentu poprawnego rozwiązania zadania.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Zadanie 2 – Planimetria (Jan Walczak)}
 \label{sec:planimetria_praktyka}
@@ -403,7 +540,103 @@ niebiesko, zagadka zostaje uznana za rozwiązaną.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Zadanie 6 – Kombinatoryka (Autor)}
+\section{Zadanie 6 – Kombinatoryka (Amdrii Demyshyn)}
+\subsection{Różnice realizacji zadania w praktyce}
+W koncepcji teoretycznej sejf zawierał jedną, stałą zagadkę matematyczną. 
+Takie rozwiązanie powodowało, że po jednorazowym rozwiązaniu zadania element ten tracił swoją funkcję edukacyjną oraz rozgrywkową. 
+W związku z tym zdecydowano się na rozbudowanie pierwotnej koncepcji poprzez wprowadzenie wielu zagadek kombinatorycznych obsługiwanych przez jeden, uniwersalny mechanizm sejfu.
+
+\subsection{Zaimplementowane zagadki}
+
+Zaimplementowano dwanaście zagadek kombinatorycznych, z których każda posiada przypisany indeks. 
+Podczas uruchomienia gry indeks zagadki jest losowo generowany z przedziału od 0 do 11. 
+Następnie treść wybranej zagadki wyświetlana jest za pomocą blueprintu aktora \texttt{BP\_RiddleSafe}, w którym umieszczony jest widget typu \texttt{WB\_ZagadkaText}. 
+Poprawna odpowiedź ustawiana jest jako zmienna \texttt{CurrentCode}.
+
+\begin{enumerate}
+    \item \textbf{Zagadka 1:}  
+    „PIN to liczba wszystkich możliwych 3-cyfrowych kodów PIN, w których żadna cyfra się nie powtarza.”  
+    \textbf{Odpowiedź:} 720
+
+    \item \textbf{Zagadka 2:}  
+    „PIN to liczba wszystkich możliwych 4-cyfrowych kodów PIN, w których żadna cyfra się nie powtarza.”  
+    \textbf{Odpowiedź:} 5040
+
+    \item \textbf{Zagadka 3:}  
+    „PIN to liczba wszystkich możliwych 4-cyfrowych kodów PIN bez powtórzeń, gdzie pierwsza cyfra nie może być zerem.”  
+    \textbf{Odpowiedź:} 4536
+
+    \item \textbf{Zagadka 4:}  
+    „PIN to liczba wszystkich 4-cyfrowych kodów PIN, w których dokładnie jedna cyfra występuje dwa razy, a pozostałe dwie cyfry są różne od niej i od siebie (np. 1213).”  
+    \textbf{Odpowiedź:} 4320
+
+    \item \textbf{Zagadka 5:}  
+    „PIN to liczba wszystkich 4-cyfrowych kodów PIN, które składają się z dokładnie dwóch różnych cyfr (obie muszą wystąpić co najmniej raz).”  
+    \textbf{Odpowiedź:} 2100
+
+    \item \textbf{Zagadka 6:}  
+    „PIN to liczba wszystkich 4-cyfrowych kodów PIN będących palindromem (ABBA).”  
+    \textbf{Odpowiedź:} 100
+
+    \item \textbf{Zagadka 7:}  
+    „PIN to liczba wszystkich 6-cyfrowych kodów PIN będących palindromem (ABCCBA).”  
+    \textbf{Odpowiedź:} 1000
+
+    \item \textbf{Zagadka 8:}  
+    „PIN to liczba wszystkich 3-cyfrowych kodów PIN, w których dokładnie jedna cyfra występuje dwa razy.”  
+    \textbf{Odpowiedź:} 270
+
+    \item \textbf{Zagadka 9:}  
+    „PIN to liczba wszystkich 4-cyfrowych kodów PIN, w których dokładnie dwie cyfry są parzyste.”  
+    \textbf{Odpowiedź:} 3750
+
+    \item \textbf{Zagadka 10:}  
+    „PIN to liczba wszystkich 4-cyfrowych kodów PIN, w których suma cyfr wynosi dokładnie 10.”  
+    \textbf{Odpowiedź:} 286
+
+    \item \textbf{Zagadka 11:}  
+    „PIN to liczba wszystkich 4-cyfrowych kodów PIN, w których cyfry są ustawione w ściśle rosnącym porządku.”  
+    \textbf{Odpowiedź:} 210
+
+    \item \textbf{Zagadka 12:}  
+    „PIN to liczba wszystkich 5-cyfrowych kodów PIN, w których cyfry są ustawione w ściśle malejącym porządku.”  
+    \textbf{Odpowiedź:} 252
+\end{enumerate}
+
+\subsection{Sejf}
+
+Sejf został zrealizowany jako obiekt typu Blueprint Actor. 
+Składa się on z komponentów \texttt{StaticMesh} tworzących obudowę sejfu oraz klawiaturę numeryczną, a także z wyświetlacza w postaci widgetu \texttt{WBP\_SafeDisplay}, który prezentuje wprowadzane cyfry oraz komunikaty zwrotne.
+
+Klawiatura sejfu zawiera:
+\begin{itemize}
+    \item przyciski numeryczne od 0 do 9, których wciśnięcie powoduje wyświetlenie cyfry na ekranie,
+    \item przycisk \texttt{DEL}, umożliwiający usunięcie ostatnio wprowadzonej cyfry,
+    \item przycisk \texttt{CHECK}, służący do zatwierdzenia kodu.
+\end{itemize}
+
+Gracz wchodzi w interakcję z sejfem poprzez naciskanie przycisków. 
+Aktualnie wprowadzany kod jest na bieżąco prezentowany na wyświetlaczu, co umożliwia kontrolę poprawności danych.
+
+Każdy przycisk sejfu składa się z komponentu wizualnego typu \texttt{StaticMesh} oraz komponentu \texttt{Box Collision}, odpowiedzialnego za wykrywanie interakcji. 
+Po wciśnięciu przycisku odtwarzana jest animacja oraz wywoływane zdarzenie przekazujące informację o wciśniętym elemencie do głównej logiki sejfu.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/sejf1.png}
+    \caption{Wygląd sejfu}
+    \label{fig:Lamp}
+\end{figure}
+\subsection{Zakończenie zadania}
+
+Po wciśnięciu przycisku \texttt{CHECK} rozpoczyna się proces weryfikacji wprowadzonego kodu z wartością zmiennej \texttt{CurrentCode}. 
+Jeżeli wartości są zgodne, sejf zostaje otwarty, co sygnalizuje poprawne rozwiązanie zagadki. 
+W przypadku wprowadzenia błędnego kodu sejf pozostaje zamknięty, a na wyświetlaczu pojawia się komunikat „ERROR”. 
+Gracz może ponowić próbę rozwiązania zagadki.
+
+\subsection{Podsumowanie}
+
+Zastosowanie jednego, rozszerzalnego mechanizmu sejfu umożliwiło implementację wielu zagadek kombinatorycznych w spójnym środowisku interaktywnym. 
+Takie rozwiązanie znacząco zwiększa regrywalność gry oraz poprawia jej walory edukacyjne.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Zadanie 7 – Liczby rzeczywiste i działania na zbiorach liczbowych 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -721,7 +954,91 @@ początkowego. Gra kończy się w momencie, gdy gracz straci wszystkie 4 życia.
 
 \section{Zadanie 10 – Prawdopodobieństwo (Autor)}
 \section{Zadanie 11 – Optymalizacja i rachunek różniczkowy (Autor)}
-\section{Zadanie 12 – Układy równań (Autor)}
+\section{Zadanie 12 – Układy równań (Andrii Demyshyn)}
+\subsection{Różnice realizacji zadania w praktyce}
+W tym zadaniu zrealizowano zagadkę matematyczną opartą na osiągnięciu zadanej wartości energetycznej niezbędnej do zapalenia żarówki. 
+Zadaniem gracza jest umieszczenie odpowiedniej liczby kulek każdego koloru w pojemnikach w taki sposób, aby łączna wartość energetyczna kulek była równa wartości wskazanej nad żarówką.
+
+W trakcie opracowywania zadania zdecydowano się na zmianę logiki zagadki. 
+Początkowo planowano implementację rozwiązania posiadającego tylko jedno poprawne rozwiązanie, co nadawałoby grze charakter jednorazowy. 
+We wcześniejszej koncepcji docelowa wartość energii była stała, a gracz musiał umieścić dokładnie 12 kulek w kontenerach. 
+W toku realizacji podjęto decyzję o zwiększeniu różnorodności rozgrywki poprzez losowanie wartości docelowej z przedziału od 18 do 51. 
+W obecnej wersji zagadki gracz sam decyduje o liczbie umieszczanych kulek, pod warunkiem że ich łączna wartość energetyczna odpowiada liczbie wyświetlanej nad żarówką. 
+Dzięki tym zmianom zagadka stała się bardziej zróżnicowana i wielokrotnego użytku.
+
+Po wejściu do pokoju gracz widzi lampę, trzy pojemniki na kulki, zestaw kolorowych kulek oraz panel informacyjny z instrukcją zadania. 
+Nad lampą wyświetlana jest docelowa wartość energii, którą należy osiągnąć.
+
+\subsection{Opis obiektów sceny}
+
+\subsubsection{Panel informacyjny \texttt{BP\_RiddleText}}
+
+W pokoju umieszczono panel informacyjny w postaci blueprintu aktora \texttt{BP\_RiddleText}, wewnątrz którego znajduje się blueprintowy widget \texttt{ZagadkaLamp}. 
+W widżecie wyświetlana jest instrukcja zadania:
+
+\begin{quote}
+„Aby uruchomić oświetlenie, należy włożyć do pojemników taką liczbę kulek, aby łącznie wygenerowana moc była dokładnie równa wartości wyświetlanej nad lampą.  
+Jeśli moc będzie zbyt niska lub zbyt wysoka — instalacja nie zadziała.  
+Pojemniki przyjmują tylko kulki w swoim kolorze.
+
+Parametry energetyczne kulek:  
+Czerwona kulka ma o 3 jednostki energii więcej niż zielona.  
+Niebieska kulka ma o 1 jednostkę energii więcej niż czerwona.  
+Trzy zielone kulki mają o 2 jednostki energii mniej niż jedna niebieska.”
+\end{quote}
+
+\subsubsection{Kulki}
+
+W scenie zaprojektowano trzy typy kulek: czerwone, zielone oraz niebieskie. 
+Zostały one zrealizowane za pomocą trzech blueprintów aktorów: \texttt{BR}, \texttt{BB} oraz \texttt{BG}, gdzie pierwsza litera jest skrótem od słowa „Ball”, a druga od pierwszej litery koloru.
+
+Każdy obiekt kulki składa się z:
+\begin{itemize}
+    \item komponentu \texttt{StaticMesh} w postaci sfery,
+    \item komponentu \texttt{Box Collision},
+    \item tagu \texttt{Ball},
+    \item tagu odpowiadającego kolorowi kulki (\texttt{Green}, \texttt{Blue}, \texttt{Red}).
+\end{itemize}
+
+Kulki są obiektami fizycznymi, które gracz może podnosić, przenosić oraz umieszczać w kontenerach.
+
+\subsubsection{Kontenery}
+
+W scenie zaimplementowano trzy kontenery w postaci obiektów typu Blueprint Actor:
+\texttt{BP\_Container\_Red}, \texttt{BP\_Container\_Blue} oraz \texttt{BP\_Container\_Green}.
+
+Ściany każdego kontenera składają się z czterech komponentów typu \texttt{StaticMesh} z materiałem szklanym, dna wykonanego z komponentu \texttt{StaticMesh} w odpowiednim kolorze oraz komponentu \texttt{Box Collision}.
+
+Kontenery przyjmują oraz przekazują do żarówki wartości energetyczne kulek odpowiadającego im koloru. 
+Mechanizm ten został zrealizowany w taki sposób, że w momencie wejścia obiektu w obszar \texttt{Box Collision} kontener sprawdza, czy obiekt posiada tag \texttt{Ball} oraz tag odpowiadający kolorowi kontenera. 
+Jeżeli warunki są spełnione, kontener dodaje wartość energetyczną kulki do swojej łącznej wartości, która domyślnie wynosi 0. 
+W przeciwnym przypadku nie jest wykonywana żadna akcja.
+
+Jeżeli kulka opuszcza obszar kontenera, jej wartość energetyczna zostaje odjęta od sumy. 
+Aktualne wartości energetyczne kontenerów są na bieżąco przekazywane do obiektu \texttt{BP\_Lamp}.
+
+\subsubsection{Żarówka}
+
+Żarówka została zrealizowana jako blueprint aktora \texttt{BP\_Lamp}. 
+Obiekt składa się z komponentów:
+\begin{itemize}
+    \item \texttt{StaticMesh},
+    \item \texttt{TextRender},
+    \item \texttt{PointLight}.
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/Lamp1.png}
+    \caption{Wygląd pokoju z kulkami}
+    \label{fig:Lamp}
+\end{figure}
+\subsection{Zakończenie zadania}
+Komponent \texttt{TextRender} wyświetla wartość energii, którą gracz musi osiągnąć. 
+Wartość ta jest generowana losowo przy każdym uruchomieniu gry z przedziału od 18 do 51.
+
+W obiekcie \texttt{BP\_Lamp} zaimplementowano funkcję \texttt{ApplyTotal}, która porównuje sumę wartości energetycznych kulek przekazywanych przez kontenery z wygenerowaną wartością docelową. 
+W przypadku zgodności wartości żarówka zmienia kolor, zapala się, a zadanie zostaje zaliczone. 
+W przeciwnym przypadku lampa pozostaje wyłączona.
 
 \section{Zadanie 13 – Stereometria (Jan Walczak)}
 \label{sec:stereometria_praktyka}
