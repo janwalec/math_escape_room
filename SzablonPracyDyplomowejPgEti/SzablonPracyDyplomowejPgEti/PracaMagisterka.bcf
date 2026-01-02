@@ -2372,8 +2372,18 @@
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
     <bcf:datasource type="file" datatype="bibtex" glob="false">bibliography/bibliography.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex" glob="false">bibliography/bibliography.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1" intorder="1">Zarzadzanie_Projektami_IT_Przewodnik_po_Metodykach</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">github_about_git</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">github_about_git</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">github_about_issues</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">git_branches</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">git_rulesets</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">git_about_pull_requests</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">git_about_pull_requests</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">git_about_pull_requests</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

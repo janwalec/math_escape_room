@@ -1,0 +1,92 @@
+\chapter{Organizacja pracy (Jan Walczak)}
+\label{organizacja_pracy}
+
+Zarządzanie zespołem i dobra organizacja pracy to dwa kluczowe aspekty podczas pracy grupowej.
+Metodyczne działanie pozwala usprawnić i uporządkować pracę projektową i komunikację 
+w zespole \cite{Zarzadzanie_Projektami_IT_Przewodnik_po_Metodykach}. Zespół, który implementował omawiane w tej pracy rozwiązanie, składał się 
+z~trzech osób: Jana Walczaka, Konrada Czarneckiego i Andriego Demyshyna.
+
+\section{System kontroli wersji (Jan Walczak)}
+
+\subsection{Zastosowane rozwiązanie}
+System kontroli wersji pomaga śledzić historię zmian dokonywanych przez uczestników projektu.
+Ułatwia zarządzanie procesem tworzenia projektu, zapewnia integralność danych oraz gwarantuje,
+że dokonywane zmiany są na bieżąco zapisywane i udostępniane uczestnikom \cite{github_about_git}. 
+
+Do wdrożenia kontroli wersji w omawianym projekcie użyto internetowej platformy GitHub.
+Organizacja pracy sprowadza się do opracowania zasad dotyczących tzw. \glqq Flow\grqq.
+\glqq Flow\grqq pochodzi od angielskiego słowa \glqq workflow\grqq (\textit{ang. przepływu pracy}).
+Taki przepływ ma na celu opisanie i~wdrażanie zmian zachodzących w danym projekcie tak, aby ułatwić 
+ich zrozumienie nie tylko deweloperom, ale także użytkownikom, którzy śledzą zmiany zachodzące w repozytorium \cite{github_about_git}.  
+
+\subsection{Kontrola przepływu}
+
+Przepływ zaczyna się od zdefiniowania problemu, poprzez opisanie problemu lub funkcjonalności,
+których będzie dotyczyć implementowana zmiana. Na platformie GitHub odbywa się to poprzez tworzenie
+\verb|Issues| (\textit{zagadnienia}). Pozwalają one również na planowanie i prowadzenie dyskusji
+na temat danego zagadnienia z innymi uczestnikami projektu lub użytkownikami \cite{github_about_issues}.
+Dodatkową zaletą jest możliwość bezpośredniego powiązania zmian dokonanych w kodzie z unikalnym numerem,
+który jest nadawany każdej takiej dyskusji przez platformę GitHub.
+W omawianym projekcie zdecydowano się na wprowadzanie zasad dotyczących formułowania tytułu i treści
+\verb|Issue|. Tytuł powinien być napisany w języku angielskim, tak żeby każda osoba przeglądająca
+repozytorium mogła powiązać problem i dyskusję ze zmianą w aplikacji. Dodatkowo powinien być zwięzły i dotyczyć
+wyłącznie jednej zmiany. Opis i dyskusja mogą być napisane w języku polskim, tak żeby maksymalnie usprawnić komunikację zespołu.
+\verb|Issue| może znajdować się w dwóch stanach: zamknięte -- czyli stan, w którym praca została zakończona
+i otwarte -- czyli stan, w którym praca nad danym zagadnieniem nadal trwa.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/git_issues.png}
+    \caption{Zrzut ekranu z platformy GitHub -- tablica z przykładowymi Issues do projektu.}
+    \label{git:issues}
+\end{figure}
+
+\FloatBarrier
+
+W repozytorium znajduje się tak zwana główna linia (\textit{ang. main line of development}).
+Jest to liniowa historia zmian, które zostały wprowadzone do projektu. Deweloperzy mogą wprowadzać swoje zmiany,
+które są definiowane tym, w jaki sposób (w którym punkcie w historii zmian) odłączyły się od tej linii.
+W ten sposób można tworzyć rozgałęzienia (\textit{ang. branches}) względem głównej linii \cite{git_branches}. 
+Główna gałąź (\textit{ang. main branch}), może umożliwić deweloperom zorientowanie się czy zmiana, którą chcą wprowadzić, 
+będzie mogła być połączona z aktualnie istniejącą wersją aplikacji. Ważnym elementem przepływu jest więc zdefiniowanie 
+tego w jaki sposób każda zmiana będzie dołączana do głównej gałęzi. Podczas implementacji projektu zdecydowano się na
+bezpośrednie powiązanie gałęzi z \verb|Issues|, tj. nazywanie ich tymi samymi tytułami oraz wiązanie ich przez linkowanie
+unikalnego identyfikatora nadawanego każdemu \verb|Issue|.
+
+\subsection{Łączenie gałęzi}
+
+Domyślnie gałęzie mogą być wiązane bez żadnych ograniczeń. GitHub umożliwia tworzenie zbioru zasad (\textit{ang. rulesets})
+dotyczących wiązania gałęzi deweloperów z innymi gałęziami. Zasady pozwalają na określenie, które grupy są upoważnione
+do jakich czynności związanych z gałęzią oraz definiują jakie zasady muszą spełnić aby powiązać swoją gałąź,
+czyli wprowadzaną zmianę, do danej linii. \cite{git_rulesets}. W projekcie zastosowano następujące zasady,
+dotyczące głównej linii:
+\begin{itemize}
+    \item \verb|Restrict deletions| -- nie pozwalaj na usuwanie powiązanych referencji.
+    \item \verb|Require a pull request before merging| -- powiąż z gałęzią przez \glqq pull request\grqq.
+    \item \verb|Block force pushes| -- nie pozwól na wymuszenie nadpisania zmian.
+\end{itemize}
+
+W celu spełnienia zasady \verb|Require a pull request before merging| każda wprowadzana zmiana musi zostać
+przygotowana do połączenia. Odbywa się to przez mechanizm \verb|Pull request|. Umożliwia on wgląd we wprowadzane
+modyfikacje innym uczestnikom projektu przed ich finalnym zatwierdzeniem i wdrożeniem \cite{git_about_pull_requests}.
+W projekcie określono, że żeby zmiana została połączona z główną gałęzią, musi być zatwierdzona przez minimalnie 
+jednego uczestnika projektu, niebędącego autorem. Dodatkowo, zmiana musi być możliwa do powiązania bez tak zwanych
+konfliktów, czyli fragmentów plików, których system kontroli wersji nie mógł samodzielnie scalić ze zmianami \cite{git_about_pull_requests}.
+
+Zmiany wprowadzane przez deweloperów składają się z serii migawek \verb|Commit|. \verb|Commit| zawiera wiadomość,
+unikalny identyfikator oraz listę plików i zmian, które są z nim powiązane. Pozwala na
+wielokrotny zapis zmian podczas pracy w ramach jednej gałęzi. W projekcie zostało nałożone ograniczenie, wymuszające
+na uczestnikach scalanie migawek w jedność za pomocą mechanizmu \verb|rebase| i \verb|squash| \cite{git_about_pull_requests}.
+
+Po poprawnym utworzeniu i scaleniu \verb|Pull request| utworzona wcześniej gałąź może zostać usunięta. Jest to bezpieczne,
+ponieważ gałąź zostaje dołączona do głównej linii jako \verb|Commit| i historia zachowuje swój liniowy charakter. Deweloper
+powinien oznaczyć \verb|Issue| jako zamknięte. \verb|Pull request| otrzyma status \verb|Merged| automatycznie.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/git_merged.png}
+    \caption{Zrzut ekranu z platformy GitHub -- tablica z przykładowym Pull Request}
+    \label{git:merged}
+\end{figure}
+
+\FloatBarrier
