@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.28)  31 DEC 2025 13:40
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.28)  2 JAN 2026 16:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -799,158 +799,143 @@ Package hyperref Info: Link coloring OFF on input line 26.
 ]
 \openout2 = `chapters/0b_spis_tresci.aux'.
 
- (chapters/0b_spis_tresci.tex (PracaMagisterka.toc
-Overfull \hbox (0.58105pt too wide) detected at line 35
-\TU/Arial(0)/m/n/10 4.3.10. 
- []
-
-
-Overfull \hbox (0.58105pt too wide) detected at line 37
-\TU/Arial(0)/m/n/10 4.3.12. 
- []
-
-
-Overfull \hbox (0.58105pt too wide) detected at line 38
-\TU/Arial(0)/m/n/10 4.3.13. 
- []
-
-[3
+ (chapters/0b_spis_tresci.tex (PracaMagisterka.toc [3
 
 
 
 
-] [4]
-Overfull \hbox (2.24121pt too wide) detected at line 88
+]
+Overfull \hbox (2.24121pt too wide) detected at line 74
 \TU/Arial(0)/m/n/10 7.10. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 89
+Overfull \hbox (0.58105pt too wide) detected at line 75
 \TU/Arial(0)/m/n/10 7.10.1. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 90
+Overfull \hbox (0.58105pt too wide) detected at line 76
 \TU/Arial(0)/m/n/10 7.10.2. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 91
+Overfull \hbox (0.58105pt too wide) detected at line 77
 \TU/Arial(0)/m/n/10 7.10.3. 
  []
 
 
-Overfull \hbox (1.49902pt too wide) detected at line 92
+Overfull \hbox (1.49902pt too wide) detected at line 78
 \TU/Arial(0)/m/n/10 7.11. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 96
+Overfull \hbox (2.24121pt too wide) detected at line 82
 \TU/Arial(0)/m/n/10 7.12. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 97
+Overfull \hbox (0.58105pt too wide) detected at line 83
 \TU/Arial(0)/m/n/10 7.12.1. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 98
+Overfull \hbox (0.58105pt too wide) detected at line 84
 \TU/Arial(0)/m/n/10 7.12.2. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 99
+Overfull \hbox (0.58105pt too wide) detected at line 85
 \TU/Arial(0)/m/n/10 7.12.3. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 100
+Overfull \hbox (2.24121pt too wide) detected at line 86
 \TU/Arial(0)/m/n/10 7.13. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 101
+Overfull \hbox (0.58105pt too wide) detected at line 87
 \TU/Arial(0)/m/n/10 7.13.1. 
  []
 
-
-Overfull \hbox (0.58105pt too wide) detected at line 102
+[4]
+Overfull \hbox (0.58105pt too wide) detected at line 88
 \TU/Arial(0)/m/n/10 7.13.2. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 103
+Overfull \hbox (0.58105pt too wide) detected at line 89
 \TU/Arial(0)/m/n/10 7.13.3. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 104
+Overfull \hbox (2.24121pt too wide) detected at line 90
 \TU/Arial(0)/m/n/10 7.14. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 105
+Overfull \hbox (0.58105pt too wide) detected at line 91
 \TU/Arial(0)/m/n/10 7.14.1. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 106
+Overfull \hbox (0.58105pt too wide) detected at line 92
 \TU/Arial(0)/m/n/10 7.14.2. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 107
+Overfull \hbox (0.58105pt too wide) detected at line 93
 \TU/Arial(0)/m/n/10 7.14.3. 
  []
 
 [5]
-Overfull \hbox (2.24121pt too wide) detected at line 157
+Overfull \hbox (2.24121pt too wide) detected at line 143
 \TU/Arial(0)/m/n/10 8.10. 
  []
 
 
-Overfull \hbox (1.49902pt too wide) detected at line 158
+Overfull \hbox (1.49902pt too wide) detected at line 144
 \TU/Arial(0)/m/n/10 8.11. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 159
+Overfull \hbox (2.24121pt too wide) detected at line 145
 \TU/Arial(0)/m/n/10 8.12. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 160
+Overfull \hbox (0.58105pt too wide) detected at line 146
 \TU/Arial(0)/m/n/10 8.12.1. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 161
+Overfull \hbox (0.58105pt too wide) detected at line 147
 \TU/Arial(0)/m/n/10 8.12.2. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 166
+Overfull \hbox (0.58105pt too wide) detected at line 152
 \TU/Arial(0)/m/n/10 8.12.3. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 167
+Overfull \hbox (2.24121pt too wide) detected at line 153
 \TU/Arial(0)/m/n/10 8.13. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 168
+Overfull \hbox (0.58105pt too wide) detected at line 154
 \TU/Arial(0)/m/n/10 8.13.1. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 169
+Overfull \hbox (0.58105pt too wide) detected at line 155
 \TU/Arial(0)/m/n/10 8.13.2. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 170
+Overfull \hbox (0.58105pt too wide) detected at line 156
 \TU/Arial(0)/m/n/10 8.13.3. 
  []
 
@@ -1022,15 +1007,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-] [17] [18]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
-Overfull \hbox (1.7471pt too wide) in paragraph at lines 114--115
-\TU/Arial(0)/m/n/10 dzielony jest na cztery ćwiartki układu współrzędnych oznaczone numerami I–IV. Zadaniem uczest-
- []
-
-[20]) [21]
+] [17]) [18]
 \openout2 = `chapters/5_technologie_i_narzedzia.aux'.
 
  (chapters/5_technologie_i_narzedzia.tex
@@ -1040,17 +1017,17 @@ Overfull \hbox (5.64989pt too wide) in paragraph at lines 27--28
 []\TU/Arial(0)/m/n/10 W procesie tworzenia aplikacji niezbędne było opracowanie modeli 3D reprezentujących obiekty,
  []
 
-[22
+[19
 
 
 
 
-]) [23]
+]) [20]
 \openout2 = `chapters/6_analiza.aux'.
 
  (chapters/6_analiza.tex
 Rozdział 6.
-) [24
+) [21
 
 
 
@@ -1062,7 +1039,7 @@ Rozdział 6.
 Rozdział 7.
 File: images/wzory.png Graphic file (type bmp)
 <images/wzory.png>
-[25
+[22
 
 
 
@@ -1100,24 +1077,24 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.91925pt on input line 48.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 48.
- [26] [27]
+ [23] [24]
 File: images/przykładowy_wykres_funkcji.png Graphic file (type bmp)
 <images/przykładowy_wykres_funkcji.png>
- [28]
+ [25]
 File: images/sejf.png Graphic file (type bmp)
 <images/sejf.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29]
+ [26]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 187.
 
-[30] [31]
+[27] [28]
 File: images/cwiartki_ukladow_jednostkowych.png Graphic file (type bmp)
 <images/cwiartki_ukladow_jednostkowych.png>
- [32]
+ [29]
 File: images/duckhunt.jpg Graphic file (type bmp)
 <images/duckhunt.jpg>
 File: images/morfeus.png Graphic file (type bmp)
@@ -1125,23 +1102,23 @@ File: images/morfeus.png Graphic file (type bmp)
 
 Underfull \vbox (badness 5578) has occurred while \output is active []
 
- [33]
+ [30]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34]
+ [31]
 File: images/Lamp.png Graphic file (type bmp)
 <images/Lamp.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35] [36]) [37]
+ [32] [33]) [34]
 \openout2 = `chapters/10_zagadki_praktyczne.aux'.
 
  (chapters/10_zagadki_praktyczne.tex
 Rozdział 8.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 12.
-[38
+[35
 
 
 
@@ -1154,7 +1131,7 @@ Overfull \hbox (8.71785pt too wide) in paragraph at lines 76--77
 []\TU/Arial(0)/m/n/10 W obiekcie \TU/lmtt/m/n/10 BP_MathBoard \TU/Arial(0)/m/n/10 zaimplementowano również funkcję \TU/lmtt/m/n/10 AreAllSlotsFilled\TU/Arial(0)/m/n/10 , która spraw-
  []
 
-[39]
+[36]
 File: images/algebraic.png Graphic file (type bmp)
 <images/algebraic.png>
 
@@ -1172,12 +1149,12 @@ Overfull \hbox (0.62079pt too wide) in paragraph at lines 114--115
 []\TU/Arial(0)/m/n/10 „Połącz odpowiednie początki i końce wzorów skróconego mnożenia. Przeciągnij klocki
  []
 
-[40]
+[37]
 Overfull \hbox (1.74384pt too wide) in paragraph at lines 148--154
 \TU/Arial(0)/m/n/10 problemów. Przede wszystkim zauważono, że odpowiedzi są zero-jedynkowe. Przykładowo: uczeń
  []
 
-[41]
+[38]
 File: images/planimetreia_UML.png Graphic file (type bmp)
 <images/planimetreia_UML.png>
 
@@ -1185,13 +1162,13 @@ Overfull \hbox (17.22809pt too wide) in paragraph at lines 224--227
 []\TU/Arial(0)/m/n/10 Główny kontroler jest odpowiedzialny za inicjalizację zadania. Uruchamia on funkcję [][]\TU/lmtt/m/n/9 InitBlueprint[]\TU/Arial(0)/m/n/10 ,
  []
 
-[42]
+[39]
 File: images/planimetria_FLOW.png Graphic file (type bmp)
 <images/planimetria_FLOW.png>
- [43] [44]
+ [40] [41]
 File: images/punkt_kontrolny_pokoj_3.png Graphic file (type bmp)
 <images/punkt_kontrolny_pokoj_3.png>
- [45]
+ [42]
 File: images/rozwiazanie1_pokoj_3.png Graphic file (type bmp)
 <images/rozwiazanie1_pokoj_3.png>
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -1216,7 +1193,7 @@ File: images/przyciski_pokoj_3.png Graphic file (type bmp)
 <images/przyciski_pokoj_3.png>
 File: images/wygrana_pokoj_3.png Graphic file (type bmp)
 <images/wygrana_pokoj_3.png>
- [46] [47] [48]
+ [43] [44] [45]
 File: images/uklad_wspolrzednych_pokoj_4.png Graphic file (type bmp)
 <images/uklad_wspolrzednych_pokoj_4.png>
 File: images/wszystkie_suwaki_pokoj_4.png Graphic file (type bmp)
@@ -1224,17 +1201,17 @@ File: images/wszystkie_suwaki_pokoj_4.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49]
+ [46]
 Overfull \hbox (12.13773pt too wide) in paragraph at lines 521--526
 []\TU/Arial(0)/m/n/10 Podobnie jak w przypadku czwartej zagadki, zadanie rozpoczyna się zainicjalizowaniem i wstępną
  []
 
-[50]
+[47]
 File: images/uklad_wspolrzednych_pokoj_5.png Graphic file (type bmp)
 <images/uklad_wspolrzednych_pokoj_5.png>
 File: images/przyciski_x_pokoj_5.png Graphic file (type bmp)
 <images/przyciski_x_pokoj_5.png>
- [51] [52]
+ [48] [49]
 Overfull \hbox (8.71304pt too wide) in paragraph at lines 586--589
 []\TU/Arial(0)/b/n/10 Zagadka 6: \TU/Arial(0)/m/n/10 „PIN to liczba wszystkich 4-cyfrowych kodów PIN będących palindromem (ABBA).”
  []
@@ -1249,49 +1226,49 @@ File: images/sejf1.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53] [54]
+ [50] [51]
 File: images/liczby_rzeczywiste_screen.png Graphic file (type bmp)
 <images/liczby_rzeczywiste_screen.png>
- [55]
+ [52]
 File: images/real_UML.png Graphic file (type bmp)
 <images/real_UML.png>
- [56]
+ [53]
 File: images/real_FLOW.png Graphic file (type bmp)
 <images/real_FLOW.png>
- [57] [58]
+ [54] [55]
 File: images/szesciany_pokoj_8.png Graphic file (type bmp)
 <images/szesciany_pokoj_8.png>
 File: images/uklad_jednostkowy_pokoj_8.png Graphic file (type bmp)
 <images/uklad_jednostkowy_pokoj_8.png>
 File: images/wykryto_luke_pokoj_8.png Graphic file (type bmp)
 <images/wykryto_luke_pokoj_8.png>
- [59] [60] [61]
+ [56] [57] [58]
 File: images/sequence_laser.png Graphic file (type bmp)
 <images/sequence_laser.png>
- [62]
+ [59]
 File: images/sequence_UML.png Graphic file (type bmp)
 <images/sequence_UML.png>
- [63]
+ [60]
 File: images/sequence_FLOW.png Graphic file (type bmp)
 <images/sequence_FLOW.png>
- [64] [65] [66]
+ [61] [62] [63]
 Overfull \hbox (42.74814pt too wide) in paragraph at lines 1047--1049
 []\TU/Arial(0)/m/n/10 W scenie zaimplementowano trzy kontenery w postaci obiektów typu Blueprint Actor: \TU/lmtt/m/n/10 BP_Container_Red\TU/Arial(0)/m/n/10 ,
  []
 
 File: images/Lamp1.png Graphic file (type bmp)
 <images/Lamp1.png>
-[67] [68]
+[64] [65]
 File: images/stereometria_UML.png Graphic file (type bmp)
 <images/stereometria_UML.png>
 File: images/stereometria_FLOW.png Graphic file (type bmp)
 <images/stereometria_FLOW.png>
-) [69] [70]
+) [66] [67]
 \openout2 = `chapters/7_podsumowanie.aux'.
 
  (chapters/7_podsumowanie.tex
 Rozdział 9.
-) [71
+) [68
 
 
 
@@ -1307,16 +1284,16 @@ LaTeX Warning: Empty bibliography on input line 3.
 \tf@lof=\write6
 \openout6 = `PracaMagisterka.lof'.
 
- [72
+ [69
 
 
 
 
-] [73] (PracaMagisterka.lot)
+] [70] (PracaMagisterka.lot)
 \tf@lot=\write7
 \openout7 = `PracaMagisterka.lot'.
 
-) [74
+) [71
 
 ] (PracaMagisterka.aux (chapters/0a_streszczenie.aux) (chapters/0b_spis_tresci.aux) (chapters/0c_wykaz_skrotow.aux) (chapters/1_wstep.aux) (chapters/2_wprowadzenie_do_dziedziny.aux) (chapters/3_analiza_istniejacych_rozwiazan.aux) (chapters/4_projekt_systemu.aux) (chapters/5_technologie_i_narzedzia.aux) (chapters/6_analiza.aux) (chapters/9_zagadki_teoretyczne.aux) (chapters/10_zagadki_praktyczne.aux) (chapters/7_podsumowanie.aux) (chapters/8_wykazy.aux))
  ***********
@@ -1328,18 +1305,18 @@ L3 programming layer <2025-12-24>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `PracaMagisterka.out' has not changed.
-(rerunfilecheck)             Checksum: 2E3C75F411081A35BAEA3074EF8A3B2B;35704.
+(rerunfilecheck)             Checksum: 58268B898EF75ECA7462C87BBE603A4B;33276.
 Package logreq Info: Writing requests to 'PracaMagisterka.run.xml'.
 \openout1 = `PracaMagisterka.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24391 strings out of 402986
- 478092 string characters out of 5448502
- 1407669 words of memory out of 5000000
- 52697 multiletter control sequences out of 15000+600000
+ 24390 strings out of 402986
+ 478079 string characters out of 5448502
+ 1408668 words of memory out of 5000000
+ 52696 multiletter control sequences out of 15000+600000
  645123 words of font info for 117 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 88i,12n,107p,1318b,3964s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,12n,107p,1301b,3964s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on PracaMagisterka.xdv (74 pages, 1537952 bytes).
+Output written on PracaMagisterka.xdv (71 pages, 1425772 bytes).
