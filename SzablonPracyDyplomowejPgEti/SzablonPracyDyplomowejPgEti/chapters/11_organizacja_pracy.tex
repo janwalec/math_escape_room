@@ -10,12 +10,12 @@ z~trzech osób: Jana Walczaka, Konrada Czarneckiego i Andriego Demyshyna.
 
 \subsection{Zastosowane rozwiązanie}
 System kontroli wersji pomaga śledzić historię zmian dokonywanych przez uczestników projektu.
-Ułatwia zarządzanie procesem tworzenia projektu, zapewnia integralność danych oraz gwarantuje,
-że dokonywane zmiany są na bieżąco zapisywane i udostępniane uczestnikom \cite{github_about_git}. 
+Ułatwia zarządzanie procesem jego tworzenia, zapewnia integralność danych oraz gwarantuje,
+że dokonywane zmiany są na bieżąco zapisywane i udostępniane uczestnikom oraz użytkownikom \cite{github_about_git}. 
 
-Do wdrożenia kontroli wersji w omawianym projekcie użyto internetowej platformy GitHub.
+Do wdrożenia systemu kontroli wersji w omawianym projekcie użyto internetowej platformy GitHub.
 Organizacja pracy sprowadza się do opracowania zasad dotyczących tzw. \glqq Flow\grqq.
-\glqq Flow\grqq pochodzi od angielskiego słowa \glqq workflow\grqq (\textit{ang. przepływu pracy}).
+\glqq Flow \grqq pochodzi od angielskiego słowa \glqq workflow \grqq (\textit{ang. przepływu pracy}).
 Taki przepływ ma na celu opisanie i~wdrażanie zmian zachodzących w danym projekcie tak, aby ułatwić 
 ich zrozumienie nie tylko deweloperom, ale także użytkownikom, którzy śledzą zmiany zachodzące w repozytorium \cite{github_about_git}.  
 
@@ -23,16 +23,16 @@ ich zrozumienie nie tylko deweloperom, ale także użytkownikom, którzy śledz�
 
 Przepływ zaczyna się od zdefiniowania problemu, poprzez opisanie problemu lub funkcjonalności,
 których będzie dotyczyć implementowana zmiana. Na platformie GitHub odbywa się to poprzez tworzenie
-\verb|Issues| (\textit{zagadnienia}). Pozwalają one również na planowanie i prowadzenie dyskusji
+\verb|Issues| (\textit{zagadnień}). Pozwalają one również na planowanie i prowadzenie dyskusji
 na temat danego zagadnienia z innymi uczestnikami projektu lub użytkownikami \cite{github_about_issues}.
 Dodatkową zaletą jest możliwość bezpośredniego powiązania zmian dokonanych w kodzie z unikalnym numerem,
-który jest nadawany każdej takiej dyskusji przez platformę GitHub.
+który jest nadawany każdej takiej dyskusji przez omawianą platformę.
 W omawianym projekcie zdecydowano się na wprowadzanie zasad dotyczących formułowania tytułu i treści
 \verb|Issue|. Tytuł powinien być napisany w języku angielskim, tak żeby każda osoba przeglądająca
 repozytorium mogła powiązać problem i dyskusję ze zmianą w aplikacji. Dodatkowo powinien być zwięzły i dotyczyć
-wyłącznie jednej zmiany. Opis i dyskusja mogą być napisane w języku polskim, tak żeby maksymalnie usprawnić komunikację zespołu.
-\verb|Issue| może znajdować się w dwóch stanach: zamknięte -- czyli stan, w którym praca została zakończona
-i otwarte -- czyli stan, w którym praca nad danym zagadnieniem nadal trwa.
+wyłącznie jednego zagadnienia. Opis i dyskusja mogą być napisane w języku polskim, tak żeby maksymalnie usprawnić komunikację zespołu.
+\verb|Issue| może znajdować się w dwóch stanach: zamkniętym -- czyli stan, w którym praca została zakończona
+i otwartym -- czyli stan, w którym praca nad danym zagadnieniem nadal trwa.
 
 \begin{figure}[htbp]
     \centering
@@ -50,14 +50,14 @@ W ten sposób można tworzyć rozgałęzienia (\textit{ang. branches}) względem
 Główna gałąź (\textit{ang. main branch}), może umożliwić deweloperom zorientowanie się czy zmiana, którą chcą wprowadzić, 
 będzie mogła być połączona z aktualnie istniejącą wersją aplikacji. Ważnym elementem przepływu jest więc zdefiniowanie 
 tego w jaki sposób każda zmiana będzie dołączana do głównej gałęzi. Podczas implementacji projektu zdecydowano się na
-bezpośrednie powiązanie gałęzi z \verb|Issues|, tj. nazywanie ich tymi samymi tytułami oraz wiązanie ich przez linkowanie
+bezpośrednie powiązanie tworzonych gałęzi z \verb|Issues|, tj. nazywanie ich tymi samymi tytułami oraz wiązanie ich przez linkowanie
 unikalnego identyfikatora nadawanego każdemu \verb|Issue|.
 
 \subsection{Łączenie gałęzi}
 
 Domyślnie gałęzie mogą być wiązane bez żadnych ograniczeń. GitHub umożliwia tworzenie zbioru zasad (\textit{ang. rulesets})
-dotyczących wiązania gałęzi deweloperów z innymi gałęziami. Zasady pozwalają na określenie, które grupy są upoważnione
-do jakich czynności związanych z gałęzią oraz definiują jakie zasady muszą spełnić aby powiązać swoją gałąź,
+dotyczących wiązania gałęzi deweloperów z innymi gałęziami. Zasady te pozwalają na określenie, które grupy są upoważnione
+do jakich czynności związanych z daną gałęzią oraz definiują jakie zasady muszą spełnić, aby powiązać swoją gałąź,
 czyli wprowadzaną zmianę, do danej linii. \cite{git_rulesets}. W projekcie zastosowano następujące zasady,
 dotyczące głównej linii:
 \begin{itemize}
@@ -66,11 +66,11 @@ dotyczące głównej linii:
     \item \verb|Block force pushes| -- nie pozwól na wymuszenie nadpisania zmian.
 \end{itemize}
 
-W celu spełnienia zasady \verb|Require a pull request before merging| każda wprowadzana zmiana musi zostać
-przygotowana do połączenia. Odbywa się to przez mechanizm \verb|Pull request|. Umożliwia on wgląd we wprowadzane
-modyfikacje innym uczestnikom projektu przed ich finalnym zatwierdzeniem i wdrożeniem \cite{git_about_pull_requests}.
+W celu spełnienia zasady \verb|Require a pull request before merging|
+każda wprowadzana zmiana musi zostać przygotowana do połączenia w odpowiedni sposób. Odbywa się to przez mechanizm
+\verb|Pull request|. Umożliwia on wgląd we wprowadzane modyfikacje innym uczestnikom projektu przed ich finalnym zatwierdzeniem i wdrożeniem \cite{git_about_pull_requests}.
 W projekcie określono, że żeby zmiana została połączona z główną gałęzią, musi być zatwierdzona przez minimalnie 
-jednego uczestnika projektu, niebędącego autorem. Dodatkowo, zmiana musi być możliwa do powiązania bez tak zwanych
+jednego uczestnika projektu, niebędącego autorem. Dodatkowo, zmiana musi być możliwa do powiązania bez występowania
 konfliktów, czyli fragmentów plików, których system kontroli wersji nie mógł samodzielnie scalić ze zmianami \cite{git_about_pull_requests}.
 
 Zmiany wprowadzane przez deweloperów składają się z serii migawek \verb|Commit|. \verb|Commit| zawiera wiadomość,
@@ -80,7 +80,7 @@ na uczestnikach scalanie migawek w jedność za pomocą mechanizmu \verb|rebase|
 
 Po poprawnym utworzeniu i scaleniu \verb|Pull request| utworzona wcześniej gałąź może zostać usunięta. Jest to bezpieczne,
 ponieważ gałąź zostaje dołączona do głównej linii jako \verb|Commit| i historia zachowuje swój liniowy charakter. Deweloper
-powinien oznaczyć \verb|Issue| jako zamknięte. \verb|Pull request| otrzyma status \verb|Merged| automatycznie.
+powinien oznaczyć \verb|Issue| jako zamknięte. \verb|Pull request| otrzyma status \verb|Merged| (scalone) automatycznie.
 
 \begin{figure}[htbp]
     \centering
@@ -90,3 +90,54 @@ powinien oznaczyć \verb|Issue| jako zamknięte. \verb|Pull request| otrzyma sta
 \end{figure}
 
 \FloatBarrier
+
+\subsection{Przechowywanie dużych plików -- Git LFS}
+Projekt był realizowany w środowisku Unreal Engine, przez co w projekcie znajdowało się dużo plików o dużym rozmiarze.
+Co do zasady Git nie jest przystosowany do przechowywania dużych plików (takich jak wideo, audio, grafiki), a jedynie
+małych plików binarnych takich jak tekst czy pliki z kodem.
+
+W projekcie zastosowano mechanizm \verb|Git LFS| czyli \glqq Git Large File Storage\grqq.  Jest to system, który
+umożliwia tworzenie wskaźników kierujących do danego pliku, który jest umieszczany poza repozytorium (na zewnętrznym
+serwerze) \cite{git_lfs}. Repozytorium wymaga wyspecyfikowania, które pliki powinny być przechowywane nie jako pliki
+binarne w repozytorium, a jako dowiązania. W~tym celu należało zastosować odpowiednie filtry wskazujące na duże
+obiekty tworzone w Unreal Engine: rozszerzenia \verb|*.uasset| oraz \verb|*.umap|.
+W przypadku omawianej platformy zagwarantowany jest dysk o pojemności \textit{10~GB} znajdujący
+się bezpośrednio po stronie platformy.
+
+\section{Tablica Kanban (Jan Walczak)}
+Aby dobrze zarządzać projektem potrzebna jest jasna komunikacja i wyznaczanie celów już od
+najwcześniejszych etapów rozwoju projektu. Praktyki definiujące wymagania i przydzielające uczestników
+projektu do poszczególnych zadań znacząco zwiększają ich zaangażowanie i gwarantują, że aplikacja będzie spełniać
+potrzeby zdefiniowane przez interesariuszy \cite{rational-unified-process}.  
+
+Żeby zapewnić powyższe wymagania zdecydowano się na zastosowanie zwinnej metodyki Kanban. Jednym z jej głównych zadań jest
+wizualizacja działań podejmowanych w projekcie \cite{kanban}. Metodyka jest często stosowana w formie fizycznej i występuje
+wtedy jako tablica podzielona na odpowiednie kolumny. Standardowy, trzykolumnowy podział prezentuje się następująco:
+\begin{itemize}
+    \item ToDo -- zadania do zrobienia,
+    \item Doing -- zadania, nad którymi trwa praca,
+    \item Done -- zadania zakończone.
+\end{itemize}
+Uczestnicy umieszczają samoprzylepne karteczki z krótko opisanymi zadaniami. W opisywanym projekcie zastosowano narzędzie
+internetowe, służące do wizualizacji wykonywanych zadań. Każdy uczestnik otrzymał przydział zadań według deklarowanych przez niego
+preferencji. Dodano dodatkową kolumnę \glqq testing\grqq, w której były umieszczane zadania, które były w danej chwili
+testowane.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/kanban_nasze.png}
+    \caption{Zrzut ekranu z platformy Trello -- wizualizacja tablicy Kanban}
+    \label{git:merged}
+\end{figure}
+
+\FloatBarrier
+
+Kolejnym, charakterystycznym elementem metodyki Kanban jest kontrola przepływem \cite{kanban}. Dzięki sekwencyjnemu
+przemieszczaniu karteczek z zadaniami na tablicy, zgodnie z zasadą, że można przesunąć tylko jedną karteczkę na raz
+(od lewej do prawej), uczestnicy mają możliwość śledzenia postępu prac. Aby kontrola przepływem działała sprawnie
+konieczna jest samodyscyplina uczestników w uaktualnianiu postępów wykonywanych zadań. 
+
+Kontrola przepływem wiąże się bezpośrednio z zasadą limitu WIP (\textit{ang. Work In Progress}) określoną dla metodyki, 
+która odróżnia ją od innych, zwinnych metodyk \cite{kanban}. W przypadku opisanym w projekcie określała ona nad iloma zagadkami
+na raz może pracować każdy uczestnik projektu. Zdecydowano się na ustalenie tego limitu na jedną zagadkę na raz. W takim przypadku
+każdy uczestnik projektu mógł umieścić tylko jedną karteczkę, przypisaną do niego, w kolumnie \glqq Doing\grqq.

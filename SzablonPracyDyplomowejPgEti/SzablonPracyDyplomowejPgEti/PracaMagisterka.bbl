@@ -129,6 +129,7 @@
       \strng{authornamehash}{d8dda73b95810ca1104b81dc2d69e5ff}
       \strng{authorfullhash}{d8dda73b95810ca1104b81dc2d69e5ff}
       \strng{authorfullhashraw}{d8dda73b95810ca1104b81dc2d69e5ff}
+      \field{extraname}{1}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -212,6 +213,100 @@
       \endverb
       \verb{url}
       \verb https://docs.github.com/en/pull-requests/collaborating-with-pull-requests
+      \endverb
+    \endentry
+    \entry{git_lfs}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=d8dda73b95810ca1104b81dc2d69e5ff}{%
+           family={community},
+           familyi={c\bibinitperiod},
+           given={Git},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{d8dda73b95810ca1104b81dc2d69e5ff}
+      \strng{fullhash}{d8dda73b95810ca1104b81dc2d69e5ff}
+      \strng{fullhashraw}{d8dda73b95810ca1104b81dc2d69e5ff}
+      \strng{bibnamehash}{d8dda73b95810ca1104b81dc2d69e5ff}
+      \strng{authorbibnamehash}{d8dda73b95810ca1104b81dc2d69e5ff}
+      \strng{authornamehash}{d8dda73b95810ca1104b81dc2d69e5ff}
+      \strng{authorfullhash}{d8dda73b95810ca1104b81dc2d69e5ff}
+      \strng{authorfullhashraw}{d8dda73b95810ca1104b81dc2d69e5ff}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Git LFS}
+      \field{urlday}{3}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://git-lfs.com/
+      \endverb
+      \verb{url}
+      \verb https://git-lfs.com/
+      \endverb
+    \endentry
+    \entry{rational-unified-process}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=63783a2ac07f1c9e2c5fa6eb9c77a98a}{%
+           family={Kruchten},
+           familyi={K\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Professional}%
+      }
+      \strng{namehash}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
+      \strng{fullhash}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
+      \strng{fullhashraw}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
+      \strng{bibnamehash}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
+      \strng{authorbibnamehash}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
+      \strng{authornamehash}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
+      \strng{authorfullhash}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
+      \strng{authorfullhashraw}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{The Rational Unified Process: An Introduction}
+      \field{year}{2003}
+    \endentry
+    \entry{kanban}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=d3c3cd30e78ce850a89ee1bbc2f82e04}{%
+           family={Roman},
+           familyi={R\bibinitperiod},
+           given={Mateusz},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3c3cd30e78ce850a89ee1bbc2f82e04}
+      \strng{fullhash}{d3c3cd30e78ce850a89ee1bbc2f82e04}
+      \strng{fullhashraw}{d3c3cd30e78ce850a89ee1bbc2f82e04}
+      \strng{bibnamehash}{d3c3cd30e78ce850a89ee1bbc2f82e04}
+      \strng{authorbibnamehash}{d3c3cd30e78ce850a89ee1bbc2f82e04}
+      \strng{authornamehash}{d3c3cd30e78ce850a89ee1bbc2f82e04}
+      \strng{authorfullhash}{d3c3cd30e78ce850a89ee1bbc2f82e04}
+      \strng{authorfullhashraw}{d3c3cd30e78ce850a89ee1bbc2f82e04}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Kanban (agile)}
+      \field{urlday}{2}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://mfiles.pl/pl/index.php/Kanban_(agile)
+      \endverb
+      \verb{url}
+      \verb https://mfiles.pl/pl/index.php/Kanban_(agile)
       \endverb
     \endentry
   \enddatalist
