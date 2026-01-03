@@ -992,7 +992,98 @@ ich do stanu początkowego. Gra kończy się w momencie, gdy gracz straci wszyst
     \label{sequence:flow}
 \end{figure}
 
-\section{Zadanie 10 – Prawdopodobieństwo (Autor)}
+\section{Zadanie 10 – Prawdopodobieństwo (Andrii Demyshyn)}
+\subsection{Praktyczna realizacja zadania}
+
+Praktyczna realizacja zadania nie różni się zasadniczo od tego, co zostało zaplanowane w teorii, niewielkie zmiany zostały opisane poniżej.
+
+\subsubsection{Design pokoju}
+
+Modele trójwymiarowe wykorzystane w projekcie zostały pobrane z platformy 
+Sketchfab\footnote{\url{https://sketchfab.com}} 
+na licencji Creative Commons i dostosowane do wymagań silnika Unreal Engine.
+
+Początkowo planowano, że zagadka zostanie zrealizowana w stylu filmu „Matrix”. W tym celu pobrano i dodano do projektu fotel i stół w stylu filmu. Niestety nie udało się znaleźć postaci Morfeusza w bezpłatnym dostępie, którą można by dodać do projektu, dlatego postanowiono znaleźć i pobrać podobną postać, którą następnie można było przerobić na styl filmu. Udało się znaleźć i pobrać taką postać, a następnie przerobiono jej tekstury, aby styl odpowiadał postaci Morfeusza z filmu.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/morpheus_before_after.png}
+    \caption{Rysunek przedstawia postać przed i po modyfikacji.}
+    \label{fig:Lamp}
+\end{figure}
+
+
+Postanowiono również stylizować pokój na styl „Matrixa”. W tym celu stworzono teksturę materiału z neonowo-zielonymi symbolami na czarnym tle, podobnymi do tych, które widzieliśmy w filmie. Następnie teksturę dodano do stworzonego materiału, który został użyty na obiektach ścian. Aby zwiększyć immersję gracza, dodano ruch tekstury na obiektach, dzięki czemu wygląda to nie jak ściany, ale jak dane poruszające się w ciemności.
+
+\subsubsection{Obiekty sceny}
+
+Na scenie na początku gry, oprócz stołu, krzesła oraz postaci Morfeusza,
+gracz widzi również tekst zagadki wyświetlany nad postacią, dwa pojemniki
+oraz zestaw 100 tabletek.
+
+Treść zagadki przedstawiona graczowi ma następującą formę:
+
+\begin{quote}
+\textit{Morpheus: Agenci Matrixa mnie schwytali.  
+Przede mną leży 50 czerwonych i 50 niebieskich pigułek — czerwona mnie ocali,
+a niebieska pozostawi mnie na zawsze w Matriksie.  
+Mogę rozłożyć je w dowolny sposób do dwóch identycznych pudełek.  
+Agent sam wybierze jedno pudełko i na ślepo wyciągnie z niego jedną pigułkę.  
+Jak powinienem je rozłożyć, aby maksymalnie zwiększyć szansę
+na wyciągnięcie czerwonej?}
+\end{quote}
+
+\paragraph{Aktor Morfeusza -- \texttt{BP\_Morpheus}}
+
+Pobrana postać Morfeusza została umieszczona w obiekcie typu Blueprint Actor \texttt{BP\_Morpheus}. Do obiektu postaci dodano widżet typu Blueprint Widget \texttt{WBP\_MorpheusText}. Na tym widżecie wyświetlana jest informacja dla gracza na każdym etapie gry. Aby uzyskać interaktywność, dodano animacje. Animacje postaci zostały pobrane z platformy Mixamo\footnote{\url{https://www.mixamo.com}}.
+Pobrano i dodano trzy animacje: \texttt{Sitting\_Idle\_Anim}, \texttt{Sit\_To\_Stand} oraz \texttt{Salute}. Domyślnie wykorzystywana jest animacja \texttt{Sitting\_Idle\_Anim}.
+
+\paragraph{Tabletki -- \texttt{BP\_Pil}}
+
+Na stole gracz widzi przed sobą 100 tabletek w kolorze czerwonym i niebieskim. Tabletki są realizowane jako obiekty typu Blueprint Actor \texttt{BP\_Pil}. Tabletki mają komponent \texttt{StaticMesh} w kształcie kapsułki, komponent kolizji \texttt{BoxCollision}, materiał w kolorze czerwonym lub niebieskim, identyfikator \texttt{ID} oraz, w zależności od potrzeb, tagi \texttt{BP\_Red\_Pil} lub \texttt{BP\_Blue\_Pil}.
+
+\paragraph{Spawner -- \texttt{BP\_Pil\_Spawner}}
+
+Dla wygody na scenie umieszczono aktora typu Blueprint Actor \texttt{BP\_Pil\_Spawner}. Przy starcie gry obiekt ten tworzy na stole 50 czerwonych i 50 niebieskich tabletek z identyfikatorem „Table”.
+
+\paragraph{Kontenery -- \texttt{BP\_PillContainer}}
+
+Kontenery zostały zaimplementowane jako obiekt typu Blueprint Actor \texttt{BP\_PillContainer}. Ściany kontenera zostały zaimplementowane przez komponenty typu \texttt{StaticMesh} ze szklanym materiałem, dzięki czemu gracz może zobaczyć wszystko, co znajduje się i dzieje się wewnątrz kontenera.
+
+Początkowo zakładano, że gracz będzie ręcznie przenosił tabletki ze stołu do kontenera, co zostało zaimplementowane, jednak ręczne przenoszenie 100 tabletek nie jest zbyt wygodne. W związku z tym dodano do kontenerów przyciski, które po naciśnięciu przenoszą tabletki do kontenera. Do kontenera dodano cztery przyciski: \texttt{+ czerwony}, \texttt{- czerwony}, \texttt{+ niebieski} oraz \texttt{- niebieski}. Każdy przycisk został utworzony z komponentu \texttt{StaticMesh}, komponentu kolizji \texttt{BoxCollision} oraz komponentu tekstowego \texttt{TextRender}.
+
+Kiedy gracz naciśnie przycisk „+”, przycisk zaczyna teleportować tabletki odpowiedniego koloru do momentu, dopóki gracz nie zwolni przycisku. Po teleportacji pojemnik przypisuje tabletce swój identyfikator. Aby uniknąć konfliktów, teleportacja jest tak skonstruowana, że najpierw sprawdza i teleportuje tabletki ze stołu, a następnie, gdy się skończą, teleportuje tabletki z innego kontenera. W przypadku przycisku „-” kontener przenosi tabletki z siebie na stół i nadaje im identyfikator stołu.
+
+Nad przyciskami w pojemniku znajduje się również widżet, który pokazuje, ile tabletek każdego koloru znajduje się w pojemniku.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/container.png}
+    \caption{Rysunek przedstawia wygląd kontenera}
+    \label{fig:Lamp}
+\end{figure}
+
+\paragraph{Przycisk sprawdzania -- \texttt{BP\_CheckButton}}
+
+Na scenie, na piedestale, znajduje się przycisk sprawdzania etapów zadania, zaimplementowany jako obiekt typu Blueprint Actor \texttt{BP\_CheckButton}. Obiekt składa się z komponentów \texttt{StaticMesh} w formie sfery oraz komponentu kolizji typu \texttt{BoxCollision}.
+
+Po wciśnięciu przycisku w pierwszej kolejności sprawdzane jest, czy wszystkie 100 tabletek zostały umieszczone w obydwu kontenerach. Jeżeli nie wszystkie tabletki zostały umieszczone w kontenerach, gracz otrzymuje przez widżet komunikat: „Morpheus: Umieść wszystkie pigułki w pojemnikach.”. W przeciwnym przypadku sprawdzane jest, czy którykolwiek z pojemników jest pusty. Żaden pojemnik nie może być pusty. Jeżeli jeden z nich jest pusty, gracz otrzymuje komunikat: „Morpheus: Żaden pojemnik nie może być pusty. Umieść tabletki w obu pojemnikach.”.
+
+Jeżeli powyższe warunki zostały spełnione, obliczane jest prawdopodobieństwo wylosowania czerwonej pigułki według wzoru:
+
+\[
+P =
+\left(
+\frac{R_A}{N_A} +
+\frac{R_B}{N_B}
+\right)
+\cdot \frac{1}{2} \cdot 100\%
+\]
+
+Jeżeli prawdopodobieństwo wylosowania czerwonej pigułki wynosi mniej niż 74{,}74\%, gracz otrzymuje komunikat:
+„Morpheus: Aktualne prawdopodobieństwo czerwonej pigułki: \{P\}\%. Możesz zrobić to lepiej. Spróbuj ponownie.”.
+
+Jeżeli prawdopodobieństwo wynosi powyżej 74{,}74\%, gracz otrzymuje komunikat końcowy, zadanie zostaje zaliczone, uruchamiane są animacje \texttt{Sit\_To\_Stand} oraz \texttt{Salute}, po czym postać Morfeusza znika ze sceny.
+
+
 \section{Zadanie 11 – Optymalizacja i rachunek różniczkowy (Autor)}
 \section{Zadanie 12 – Układy równań (Andrii Demyshyn)}
 \subsection{Różnice realizacji zadania w praktyce}

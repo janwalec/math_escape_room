@@ -145,25 +145,33 @@
 \contentsline {subsection}{\numberline {9.9.2}Implementacja pistoletu laserowego}{61}{subsection.9.9.2}%
 \contentsline {subsection}{\numberline {9.9.3}Implementacja zadania}{62}{subsection.9.9.3}%
 \contentsline {subsection}{\numberline {9.9.4}Przebieg zadania}{63}{subsection.9.9.4}%
-\contentsline {section}{\numberline {9.10}Zadanie 10 – Prawdopodobieństwo (Autor)}{66}{section.9.10}%
-\contentsline {section}{\numberline {9.11}Zadanie 11 – Optymalizacja i rachunek różniczkowy (Autor)}{66}{section.9.11}%
-\contentsline {section}{\numberline {9.12}Zadanie 12 – Układy równań (Andrii Demyshyn)}{66}{section.9.12}%
-\contentsline {subsection}{\numberline {9.12.1}Różnice realizacji zadania w praktyce}{66}{subsection.9.12.1}%
-\contentsline {subsection}{\numberline {9.12.2}Opis obiektów sceny}{66}{subsection.9.12.2}%
-\contentsline {subsubsection}{Panel informacyjny \texttt {BP\_RiddleText}}{66}{subsubsection*.42}%
-\contentsline {subsubsection}{Kulki}{66}{subsubsection*.43}%
-\contentsline {subsubsection}{Kontenery}{67}{subsubsection*.44}%
-\contentsline {subsubsection}{Żarówka}{67}{subsubsection*.45}%
-\contentsline {subsection}{\numberline {9.12.3}Zakończenie zadania}{68}{subsection.9.12.3}%
-\contentsline {section}{\numberline {9.13}Zadanie 13 – Stereometria (Jan Walczak)}{68}{section.9.13}%
-\contentsline {subsection}{\numberline {9.13.1}Problemy i różnice w realizacji zadania w praktyce}{68}{subsection.9.13.1}%
-\contentsline {subsection}{\numberline {9.13.2}Implementacja zadania}{68}{subsection.9.13.2}%
-\contentsline {subsection}{\numberline {9.13.3}Przebieg zadania}{69}{subsection.9.13.3}%
-\contentsline {chapter}{\numberline {10}Podsumowanie}{71}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Ocena realizacji celów}{71}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Propozycje rozwoju projektu}{71}{section.10.2}%
-\contentsline {section}{\numberline {10.3}Wnioski końcowe}{71}{section.10.3}%
-\contentsline {chapter}{Wykaz literatury}{72}{chapter*.49}%
-\contentsline {chapter}{Spis rysunków}{74}{chapter*.50}%
-\contentsline {chapter}{Spis tabel}{75}{chapter*.51}%
+\contentsline {section}{\numberline {9.10}Zadanie 10 – Prawdopodobieństwo (Andrii Demyshyn)}{66}{section.9.10}%
+\contentsline {subsection}{\numberline {9.10.1}Praktyczna realizacja zadania}{66}{subsection.9.10.1}%
+\contentsline {subsubsection}{Design pokoju}{66}{subsubsection*.42}%
+\contentsline {subsubsection}{Obiekty sceny}{66}{subsubsection*.44}%
+\contentsline {paragraph}{Aktor Morfeusza -- \texttt {BP\_Morpheus}}{67}{paragraph*.45}%
+\contentsline {paragraph}{Tabletki -- \texttt {BP\_Pil}}{67}{paragraph*.46}%
+\contentsline {paragraph}{Spawner -- \texttt {BP\_Pil\_Spawner}}{67}{paragraph*.47}%
+\contentsline {paragraph}{Kontenery -- \texttt {BP\_PillContainer}}{67}{paragraph*.48}%
+\contentsline {paragraph}{Przycisk sprawdzania -- \texttt {BP\_CheckButton}}{68}{paragraph*.50}%
+\contentsline {section}{\numberline {9.11}Zadanie 11 – Optymalizacja i rachunek różniczkowy (Autor)}{69}{section.9.11}%
+\contentsline {section}{\numberline {9.12}Zadanie 12 – Układy równań (Andrii Demyshyn)}{69}{section.9.12}%
+\contentsline {subsection}{\numberline {9.12.1}Różnice realizacji zadania w praktyce}{69}{subsection.9.12.1}%
+\contentsline {subsection}{\numberline {9.12.2}Opis obiektów sceny}{69}{subsection.9.12.2}%
+\contentsline {subsubsection}{Panel informacyjny \texttt {BP\_RiddleText}}{69}{subsubsection*.51}%
+\contentsline {subsubsection}{Kulki}{69}{subsubsection*.52}%
+\contentsline {subsubsection}{Kontenery}{70}{subsubsection*.53}%
+\contentsline {subsubsection}{Żarówka}{70}{subsubsection*.54}%
+\contentsline {subsection}{\numberline {9.12.3}Zakończenie zadania}{70}{subsection.9.12.3}%
+\contentsline {section}{\numberline {9.13}Zadanie 13 – Stereometria (Jan Walczak)}{71}{section.9.13}%
+\contentsline {subsection}{\numberline {9.13.1}Problemy i różnice w realizacji zadania w praktyce}{71}{subsection.9.13.1}%
+\contentsline {subsection}{\numberline {9.13.2}Implementacja zadania}{71}{subsection.9.13.2}%
+\contentsline {subsection}{\numberline {9.13.3}Przebieg zadania}{72}{subsection.9.13.3}%
+\contentsline {chapter}{\numberline {10}Podsumowanie}{74}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Ocena realizacji celów}{74}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Propozycje rozwoju projektu}{74}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Wnioski końcowe}{74}{section.10.3}%
+\contentsline {chapter}{Wykaz literatury}{75}{chapter*.58}%
+\contentsline {chapter}{Spis rysunków}{77}{chapter*.59}%
+\contentsline {chapter}{Spis tabel}{78}{chapter*.60}%
 \contentsfinish 
