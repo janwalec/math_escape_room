@@ -1,13 +1,13 @@
 \babel@toc {polish}{}\relax 
-\contentsline {chapter}{\numberline {1}Wstęp i cel pracy}{8}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Wprowadzenie do dziedziny}{10}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Rola technologii w edukacji (Konrad Czarnecki)}{10}{section.2.1}%
+\contentsline {chapter}{\numberline {1}Wstęp i cel pracy (Konrad Czarnecki)}{8}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Wprowadzenie do dziedziny (Konrad Czarnecki)}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Rola technologii w edukacji}{10}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Nowoczesne metody nauczania matematyki}{10}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Gamifinacka w edukacji}{11}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Edukacyjne zastosowania escape roomów (Konrad Czarnecki)}{11}{section.2.2}%
+\contentsline {subsection}{\numberline {2.1.2}Gamifikacja w edukacji}{11}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Edukacyjne zastosowania escape roomów}{11}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Historia i definicja escape roomu}{12}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Escape roomy jako metoda aktywizacji uczniów}{12}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Wirtualna rzeczywistość (Konrad Czarnecki)}{13}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Wirtualna rzeczywistość}{13}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Wirtualna rzeczywistość i jej zastosowanie w nauce}{13}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Wpływ interaktywności na zaangażowanie gracza}{13}{subsection.2.3.2}%
 \contentsline {chapter}{\numberline {3}Analiza istniejących rozwiązań}{15}{chapter.3}%
@@ -20,16 +20,16 @@
 \contentsline {chapter}{\numberline {4}Projekt systemu}{16}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Wymagania funkcjonalne i niefunkcjonalne (Konrad Czarnecki)}{16}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Wymagania funkcjonalne}{16}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Wymagania niefunkcjonalne}{17}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.2}Wymagania niefunkcjonalne}{16}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Scenariusz gry (Konrad Czarnecki)}{17}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Model przypadków użycia}{18}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Projekt architektury systemu}{18}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Projekt interfejsu użytkownika i środowiska gry}{18}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Technologie i narzędzia}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Silnik gry (Konrad Czarnecki)}{19}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Laboratorium Zanurzonej Wizualizacji Przestrzennej (Konrad Czarnecki)}{19}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Środowisko 3D (Konrad Czarnecki)}{20}{section.5.3}%
-\contentsline {section}{\numberline {5.4}System kontroli wersji (Konrad Czarnecki)}{20}{section.5.4}%
+\contentsline {chapter}{\numberline {5}Technologie i narzędzia (Konrad Czarnecki)}{19}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Silnik gry}{19}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Laboratorium Zanurzonej Wizualizacji Przestrzennej}{19}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Środowisko 3D}{20}{section.5.3}%
+\contentsline {section}{\numberline {5.4}System kontroli wersji}{20}{section.5.4}%
 \contentsline {chapter}{\numberline {6}Organizacja pracy (Jan Walczak)}{21}{chapter.6}%
 \contentsline {section}{\numberline {6.1}System kontroli wersji (Jan Walczak)}{21}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Zastosowane rozwiązanie}{21}{subsection.6.1.1}%
@@ -41,7 +41,7 @@
 \contentsline {section}{\numberline {7.1}Motywacja uczniów do nauki matematyki}{25}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Możliwość personalizacji i różnicowania poziomu trudności}{25}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Wpływ imersji na naukę}{25}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Opis teoretyczny zagadek}{26}{chapter.8}%
+\contentsline {chapter}{\numberline {8}Wstępny projekt zagadek}{26}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Zadanie 1 – Wzory skróconego mnożenia (Andrii Demyshyn)}{26}{section.8.1}%
 \contentsline {subsection}{\numberline {8.1.1}Cel zadania}{26}{subsection.8.1.1}%
 \contentsline {subsection}{\numberline {8.1.2}Zasady działania}{26}{subsection.8.1.2}%
@@ -61,11 +61,11 @@
 \contentsline {section}{\numberline {8.5}Zadanie 5 – Geometria analityczna (Konrad Czarnecki)}{29}{section.8.5}%
 \contentsline {subsection}{\numberline {8.5.1}Cel zadania}{29}{subsection.8.5.1}%
 \contentsline {subsection}{\numberline {8.5.2}Zasady działania}{29}{subsection.8.5.2}%
-\contentsline {subsection}{\numberline {8.5.3}Zakończenie zadania}{29}{subsection.8.5.3}%
+\contentsline {subsection}{\numberline {8.5.3}Zakończenie zadania}{30}{subsection.8.5.3}%
 \contentsline {section}{\numberline {8.6}Zadanie 6 – Kombinatoryka (Andrii Demyshyn)}{30}{section.8.6}%
 \contentsline {subsection}{\numberline {8.6.1}Cel zadania}{30}{subsection.8.6.1}%
 \contentsline {subsection}{\numberline {8.6.2}Zasady działania}{30}{subsection.8.6.2}%
-\contentsline {subsection}{\numberline {8.6.3}Zakończenie zadania}{31}{subsection.8.6.3}%
+\contentsline {subsection}{\numberline {8.6.3}Zakończenie zadania}{30}{subsection.8.6.3}%
 \contentsline {section}{\numberline {8.7}Zadanie 7 – Liczby rzeczywiste i działania na zbiorach liczbowych \\(Jan Walczak)}{31}{section.8.7}%
 \contentsline {subsection}{\numberline {8.7.1}Cel zadania}{31}{subsection.8.7.1}%
 \contentsline {subsection}{\numberline {8.7.2}Zasady działania}{32}{subsection.8.7.2}%
@@ -90,23 +90,19 @@
 \contentsline {subsection}{\numberline {8.12.1}Cel zadania}{36}{subsection.8.12.1}%
 \contentsline {subsection}{\numberline {8.12.2}Zasady działania}{36}{subsection.8.12.2}%
 \contentsline {subsection}{\numberline {8.12.3}Zakończenie zadania}{37}{subsection.8.12.3}%
-\contentsline {section}{\numberline {8.13}Zadanie 13 – Stereometria(Jan Walczak)}{37}{section.8.13}%
+\contentsline {section}{\numberline {8.13}Zadanie 13 – Stereometria (Jan Walczak)}{37}{section.8.13}%
 \contentsline {subsection}{\numberline {8.13.1}Cel zadania}{37}{subsection.8.13.1}%
 \contentsline {subsection}{\numberline {8.13.2}Zasady działania}{37}{subsection.8.13.2}%
 \contentsline {subsection}{\numberline {8.13.3}Zakończenie zadania}{38}{subsection.8.13.3}%
-\contentsline {section}{\numberline {8.14}Zadanie 13 – Stereometria (Jan Walczak)}{38}{section.8.14}%
-\contentsline {subsection}{\numberline {8.14.1}Cel zadania}{38}{subsection.8.14.1}%
-\contentsline {subsection}{\numberline {8.14.2}Zasady działania}{38}{subsection.8.14.2}%
-\contentsline {subsection}{\numberline {8.14.3}Zakończenie zadania}{38}{subsection.8.14.3}%
 \contentsline {chapter}{\numberline {9}Implementacja zagadek}{39}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Zadanie 1 – wzory skróconego mnożenia (Andrii Demyshyn)}{39}{section.9.1}%
 \contentsline {subsection}{\numberline {9.1.1}Opis obiektów pokoju}{39}{subsection.9.1.1}%
-\contentsline {subsubsection}{Matematyczna tablica \texttt {BP\_MathBoard}}{39}{subsubsection*.16}%
+\contentsline {subsubsection}{Matematyczna tablica \texttt {BP\_MathBoard}}{39}{subsubsection*.17}%
 \contentsline {subsection}{\numberline {9.1.2}Zakończenie zadania}{40}{subsection.9.1.2}%
 \contentsline {subsection}{\numberline {9.1.3}Zakończenie zadania}{40}{subsection.9.1.3}%
-\contentsline {subsubsection}{Prostopadłościan z formułą \texttt {BP\_FormulaBlock}}{40}{subsubsection*.18}%
-\contentsline {subsubsection}{Przycisk sprawdzenia \texttt {BP\_CheckMath}}{41}{subsubsection*.19}%
-\contentsline {subsubsection}{Panel informacyjny \texttt {BP\_MathText}}{41}{subsubsection*.20}%
+\contentsline {subsubsection}{Prostopadłościan z formułą \texttt {BP\_FormulaBlock}}{40}{subsubsection*.19}%
+\contentsline {subsubsection}{Przycisk sprawdzenia \texttt {BP\_CheckMath}}{41}{subsubsection*.20}%
+\contentsline {subsubsection}{Panel informacyjny \texttt {BP\_MathText}}{41}{subsubsection*.21}%
 \contentsline {subsection}{\numberline {9.1.4}Przebieg zadania}{41}{subsection.9.1.4}%
 \contentsline {section}{\numberline {9.2}Zadanie 2 – Planimetria (Jan Walczak)}{42}{section.9.2}%
 \contentsline {subsection}{\numberline {9.2.1}Problemy i różnice w realizacji zadania w praktyce}{42}{subsection.9.2.1}%
@@ -149,21 +145,21 @@
 \contentsline {subsection}{\numberline {9.9.4}Przebieg zadania}{64}{subsection.9.9.4}%
 \contentsline {section}{\numberline {9.10}Zadanie 10 – Prawdopodobieństwo (Andrii Demyshyn)}{67}{section.9.10}%
 \contentsline {subsection}{\numberline {9.10.1}Praktyczna realizacja zadania}{67}{subsection.9.10.1}%
-\contentsline {subsubsection}{Design pokoju}{67}{subsubsection*.43}%
-\contentsline {subsubsection}{Obiekty sceny}{67}{subsubsection*.45}%
-\contentsline {paragraph}{Aktor Morfeusza -- \texttt {BP\_Morpheus}}{68}{paragraph*.46}%
-\contentsline {paragraph}{Tabletki -- \texttt {BP\_Pil}}{68}{paragraph*.47}%
-\contentsline {paragraph}{Spawner -- \texttt {BP\_Pil\_Spawner}}{68}{paragraph*.48}%
-\contentsline {paragraph}{Kontenery -- \texttt {BP\_PillContainer}}{68}{paragraph*.49}%
-\contentsline {paragraph}{Przycisk sprawdzania -- \texttt {BP\_CheckButton}}{69}{paragraph*.51}%
+\contentsline {subsubsection}{Design pokoju}{67}{subsubsection*.44}%
+\contentsline {subsubsection}{Obiekty sceny}{67}{subsubsection*.46}%
+\contentsline {paragraph}{Aktor Morfeusza -- \texttt {BP\_Morpheus}}{68}{paragraph*.47}%
+\contentsline {paragraph}{Tabletki -- \texttt {BP\_Pil}}{68}{paragraph*.48}%
+\contentsline {paragraph}{Spawner -- \texttt {BP\_Pil\_Spawner}}{68}{paragraph*.49}%
+\contentsline {paragraph}{Kontenery -- \texttt {BP\_PillContainer}}{68}{paragraph*.50}%
+\contentsline {paragraph}{Przycisk sprawdzania -- \texttt {BP\_CheckButton}}{69}{paragraph*.52}%
 \contentsline {section}{\numberline {9.11}Zadanie 11 – Optymalizacja i rachunek różniczkowy (Autor)}{70}{section.9.11}%
 \contentsline {section}{\numberline {9.12}Zadanie 12 – Układy równań (Andrii Demyshyn)}{70}{section.9.12}%
 \contentsline {subsection}{\numberline {9.12.1}Różnice realizacji zadania w praktyce}{70}{subsection.9.12.1}%
 \contentsline {subsection}{\numberline {9.12.2}Opis obiektów sceny}{70}{subsection.9.12.2}%
-\contentsline {subsubsection}{Panel informacyjny \texttt {BP\_RiddleText}}{70}{subsubsection*.52}%
-\contentsline {subsubsection}{Kulki}{70}{subsubsection*.53}%
-\contentsline {subsubsection}{Kontenery}{71}{subsubsection*.54}%
-\contentsline {subsubsection}{Żarówka}{71}{subsubsection*.55}%
+\contentsline {subsubsection}{Panel informacyjny \texttt {BP\_RiddleText}}{70}{subsubsection*.53}%
+\contentsline {subsubsection}{Kulki}{70}{subsubsection*.54}%
+\contentsline {subsubsection}{Kontenery}{71}{subsubsection*.55}%
+\contentsline {subsubsection}{Żarówka}{71}{subsubsection*.56}%
 \contentsline {subsection}{\numberline {9.12.3}Zakończenie zadania}{71}{subsection.9.12.3}%
 \contentsline {section}{\numberline {9.13}Zadanie 13 – Stereometria (Jan Walczak)}{72}{section.9.13}%
 \contentsline {subsection}{\numberline {9.13.1}Problemy i różnice w realizacji zadania w praktyce}{72}{subsection.9.13.1}%
@@ -173,7 +169,7 @@
 \contentsline {section}{\numberline {10.1}Ocena realizacji celów}{75}{section.10.1}%
 \contentsline {section}{\numberline {10.2}Propozycje rozwoju projektu}{75}{section.10.2}%
 \contentsline {section}{\numberline {10.3}Wnioski końcowe}{75}{section.10.3}%
-\contentsline {chapter}{Wykaz literatury}{76}{chapter*.59}%
-\contentsline {chapter}{Spis rysunków}{78}{chapter*.60}%
-\contentsline {chapter}{Spis tabel}{79}{chapter*.61}%
+\contentsline {chapter}{Wykaz literatury}{76}{chapter*.60}%
+\contentsline {chapter}{Spis rysunków}{78}{chapter*.61}%
+\contentsline {chapter}{Spis tabel}{79}{chapter*.62}%
 \contentsfinish 

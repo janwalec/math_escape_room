@@ -1,11 +1,11 @@
-\chapter{Wstęp i cel pracy}
+\chapter{Wstęp i cel pracy (Konrad Czarnecki)}
 \label{chap:introduction}
 
 Współczesny rozwój technologii informatycznych i multimedialnych umożliwia tworzenie nowoczesnych, interaktywnych narzędzi wspomagających proces nauczania, które pozwalają uczniom nie tylko na bierne przyswajanie wiedzy, ale również na aktywne uczestnictwo w zajęciach oraz samodzielne rozwiązywanie problemów w angażującym środowisku. W szczególności dynamicznie rozwijające się technologie wirtualnej i rozszerzonej rzeczywistości znajdują coraz szersze zastosowanie nie tylko w przemyśle i rozrywce, lecz również w edukacji na różnych poziomach nauczania. Zastosowanie immersyjnych środowisk w nauczaniu matematyki może znacząco wpłynąć na wzrost zaangażowania uczniów oraz efektywność przyswajania materiału dydaktycznego.
 
-Matematyka, jako jedna z podstawowych dziedzin nauki, często bywa postrzegana przez uczniów szkół średnich jako przedmiot trudny i mało atrakcyjny. Jednym ze sposobów przełamywania tego stereotypu jest wprowadzenie do procesu dydaktycznego elementów gier edukacyjnych, które poprzez zabawę i rywalizację angażują uczniów do aktywnego rozwiązywania problemów. W ostatnich latach coraz większym zainteresowaniem cieszą się tzw. escape roomy — gry logiczne, w których uczestnicy muszą w określonym czasie rozwiązać serię zagadek i łamigłówek, aby „wydostać się” z wirtualnego lub rzeczywistego pomieszczenia. Włączenie tego typu rozwiązań do nauczania matematyki stwarza szansę na połączenie nauki z zabawą oraz zastosowanie wiedzy teoretycznej w praktycznych sytuacjach problemowych.
+Matematyka, jako jedna z podstawowych dziedzin nauki, często bywa postrzegana przez ucz\-niów szkół średnich jako przedmiot trudny i mało atrakcyjny. Jednym ze sposobów przełamywania tego stereotypu jest wprowadzenie do procesu dydaktycznego elementów gier edukacyjnych, które poprzez zabawę i rywalizację angażują uczniów do aktywnego rozwiązywania problemów. W ostatnich latach coraz większym zainteresowaniem cieszą się tzw. escape roomy — gry logiczne, w których uczestnicy muszą w określonym czasie rozwiązać serię zagadek i łamigłówek, aby „wydostać się” z wirtualnego lub rzeczywistego pomieszczenia. Włączenie tego typu rozwiązań do nauczania matematyki stwarza szansę na połączenie nauki z zabawą oraz zastosowanie wiedzy teoretycznej w praktycznych sytuacjach problemowych.
 
-Przedmiotem niniejszej pracy jest opracowanie i wykonanie aplikacji stanowiącej wirtualny pokój zagadek matematycznych (ang. escape room), przeznaczonej do działania w systemie jaskiń rzeczywistości wirtualnej dostępnych w Laboratorium Zanurzonej Wizualizacji Przestrzennej (LZWP). Laboratorium to wyposażone jest w nowoczesne rozwiązania umożliwiające projekcję obrazów w technologii VR na ścianach specjalnie przystosowanych pomieszczeń, dając użytkownikowi wrażenie całkowitego zanurzenia w trójwymiarowym środowisku. Aplikacja powinna umożliwiać uczestnikom interakcję z otoczeniem za pomocą kontrolerów ruchu wykorzystywanych w LZWP.
+Przedmiotem niniejszej pracy jest opracowanie i wykonanie aplikacji stanowiącej wirtualny pokój zagadek matematycznych (ang. \textit{escape room}), przeznaczonej do działania w systemie jaskiń rzeczywistości wirtualnej dostępnych w Laboratorium Zanurzonej Wizualizacji Przestrzennej (LZWP). Laboratorium to wyposażone jest w nowoczesne rozwiązania umożliwiające projekcję obrazów w technologii VR na ścianach specjalnie przystosowanych pomieszczeń, dając użytkownikowi wrażenie całkowitego zanurzenia w trójwymiarowym środowisku. Aplikacja powinna umożliwiać uczestnikom interakcję z otoczeniem za pomocą kontrolerów ruchu wykorzystywanych w LZWP.
 
 Celem głównym projektu jest stworzenie interaktywnej aplikacji edukacyjnej zawierającej 13 zagadek matematycznych, odpowiadających poszczególnym działom matematyki nauczanym w szkołach średnich. Działy te obejmują: liczby rzeczywiste, wyrażenia algebraiczne, równania i nierówności, układy równań, funkcje, ciągi, trygonometrię, planimetrię, geometrię analityczną na płaszczyźnie kartezjańskiej, stereometrię, kombinatorykę, rachunek prawdopodobieństwa i statystykę oraz optymalizację i rachunek różniczkowy.
 
@@ -21,4 +21,67 @@ W ramach realizacji projektu przewidziano następujące etapy prac:
 
     5. Przeprowadzenie testów funkcjonalnych, wydajnościowych oraz badań pilotażowych z udziałem grupy uczniów i dydaktyków w celu weryfikacji poprawności działania aplikacji oraz jej efektywności dydaktycznej.
 \end{quotation}
+Podział prac przedstawiono w tabeli \ref{tab:podzial_prac}.
+
+
+\begin{table}[h]
+    \centering
+    \caption{Podział prac}
+    \label{tab:podzial_prac}
+    \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{Imię i nazwisko} & \textbf{Zakres prac} \\
+        \hline
+        Jan Walczak &
+        Opracowanie i implementacja zadań: 
+
+        \quad • 2 (Planimetria) 
+
+        \quad • 7 (Liczby rzeczywiste i działania na zbiorach liczbowych) 
+
+        \quad • 9 (Ciągi liczbowe) 
+
+        \quad • 13 (Stereometria)
+        
+        Koordynacja prac
+        
+        Zarządzanie projektem na GitHubie
+        
+        Scalanie zagadek i integracja z systemem CAVE\\
+        \hline
+        Konrad Czarnecki &
+        Opracowanie i implementacja zadań: 
+
+        \quad • 3 (Nierówności) 
+
+        \quad • 4 (Funkcje) 
+
+        \quad • 5 (Geometria analityczna) 
+
+        \quad • 8 (Znaki funkcji trygonometrycznych) 
+
+        Implementacja funkcji obracania pokoju o 90 stopni
+        
+        Scalanie zagadek i integracja z systemem CAVE\\
+        \hline
+        Andrii Demyshyn &
+        Opracowanie i implementacja zadań: 
+
+        \quad • 1 (Wzory skróconego mnożenia) 
+
+        \quad • 6 (Kombinatoryka) 
+
+        \quad • 10 (Prawdopodobieństwo) 
+
+        \quad • 11 (Optymalizacja i rachunek różniczkowy) 
+
+        \quad • 12 (Układy równań)
+        
+        Scalanie zagadek i integracja z systemem CAVE\\
+        \hline
+    \end{tabular}
+\end{table}
+
+
+
 Ostatecznym rezultatem pracy będzie kompletna, działająca aplikacja edukacyjna przeznaczona do uruchomienia w jaskiniach rzeczywistości wirtualnej, umożliwiająca użytkownikom rozwijanie kompetencji matematycznych w angażującej i nowoczesnej formie. Wnioski płynące z przeprowadzonych badań pilotażowych pozwolą na ocenę przydatności tego typu rozwiązań w praktyce dydaktycznej oraz wskazanie możliwości ich dalszego rozwoju i wykorzystania w nauczaniu przedmiotów ścisłych.

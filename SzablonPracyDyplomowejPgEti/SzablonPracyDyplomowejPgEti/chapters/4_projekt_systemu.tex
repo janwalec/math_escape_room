@@ -6,65 +6,74 @@
 \section{Wymagania funkcjonalne i niefunkcjonalne (Konrad Czarnecki)}
 Przed przystąpieniem do implementacji aplikacji edukacyjnej w formie escape roomu w środowisku rzeczywistości wirtualnej konieczne było precyzyjne określenie wymagań funkcjonalnych i niefunkcjonalnych, jakie powinna spełniać projektowana aplikacja. Zdefiniowanie wymagań pozwala na kontrolowanie procesu realizacji projektu, zapewnia jego zgodność z oczekiwaniami użytkowników końcowych oraz umożliwia przeprowadzenie testów walidacyjnych w końcowej fazie prac.
 
-
-
 \subsection{Wymagania funkcjonalne}
 
 Wymagania funkcjonalne określają, jakie działania użytkownik może wykonać w aplikacji oraz jakie funkcje powinna ona realizować. W przypadku projektowanej aplikacji escape room VR wymagania te obejmują:
+\begin{itemize}[left=1.5em, label=\textbullet, topsep=0pt, itemsep=0pt]
+    \item Wyświetlanie wirtualnego środowiska escape roomu – Aplikacja powinna umożliwiać użytkownikowi poruszanie się po wirtualnym pokoju zagadek, obejmującym zestaw pomieszczeń związanych z różnymi działami matematyki.
 
-    Wyświetlanie wirtualnego środowiska escape roomu – Aplikacja powinna umożliwiać użytkownikowi poruszanie się po wirtualnym pokoju zagadek, obejmującym zestaw pomieszczeń związanych z różnymi działami matematyki.
+    \item Realizacja 13 zagadek matematycznych – aplikacja musi zawierać 13 interaktywnych zagadek, po jednej dla każdego z wybranych działów matematyki: liczby rzeczywiste, wyrażenia algebraiczne, równania i nierówności, układy równań, funkcje, ciągi, trygonometria, planimetria, geometria analityczna, stereometria, kombinatoryka, rachunek prawdopodobieństwa i statystyka oraz optymalizacja i rachunek różniczkowy.
 
-    Realizacja 13 zagadek matematycznych – Aplikacja musi zawierać 13 interaktywnych zagadek, po jednej dla każdego z wybranych działów matematyki: liczby rzeczywiste, wyrażenia algebraiczne, równania i nierówności, układy równań, funkcje, ciągi, trygonometria, planimetria, geometria analityczna, stereometria, kombinatoryka, rachunek prawdopodobieństwa i statystyka oraz optymalizacja i rachunek różniczkowy.
+    \item Interaktywność zagadek – każda zagadka powinna wymagać od użytkownika aktywnej interakcji z otoczeniem wirtualnym, np. manipulowania obiektami, wpisywania odpowiedzi czy przestawiania elementów.
 
-    Interaktywność zagadek – Każda zagadka powinna wymagać od użytkownika aktywnej interakcji z otoczeniem wirtualnym, np. manipulowania obiektami, wpisywania odpowiedzi czy przestawiania elementów.
+    \item System weryfikacji poprawności odpowiedzi – aplikacja powinna sprawdzać poprawność rozwiązań podawanych przez użytkownika oraz wyświetlać komunikaty informujące o sukcesie lub błędzie.
 
-    System weryfikacji poprawności odpowiedzi – Aplikacja powinna sprawdzać poprawność rozwiązań podawanych przez użytkownika oraz wyświetlać komunikaty informujące o sukcesie lub błędzie.
+    \item Śledzenie postępu użytkownika – system powinien zapamiętywać, które zagadki zostały już rozwiązane, i odblokowywać dostęp do kolejnych pomieszczeń w ustalonej kolejności.
 
-    Podpowiedzi dla użytkownika – Każda zagadka powinna posiadać system podpowiedzi (tekstowych lub dźwiękowych), które użytkownik może wywołać w razie trudności z rozwiązaniem zadania.
+    \item Zakończenie rozgrywki – po rozwiązaniu wszystkich 13 zagadek aplikacja powinna wyświetlić ekran podsumowujący z informacją o ukończeniu escape roomu.
 
-    Śledzenie postępu użytkownika – System powinien zapamiętywać, które zagadki zostały już rozwiązane, i odblokowywać dostęp do kolejnych pomieszczeń w ustalonej kolejności.
+    \item Obsługa urządzeń VR i interfejsów w Laboratorium – aplikacja musi być kompatybilna z systemami śledzenia ruchu i projekcji wykorzystywanymi w Laboratorium Zanurzonej Wizualizacji Przestrzennej, w tym z systemami typu CAVE oraz kontrolerami ruchu.
+\end{itemize}
 
-    Zakończenie rozgrywki – Po rozwiązaniu wszystkich 13 zagadek aplikacja powinna wyświetlić ekran podsumowujący z informacją o ukończeniu escape roomu.
 
-    Obsługa urządzeń VR i interfejsów w Laboratorium – Aplikacja musi być kompatybilna z systemami śledzenia ruchu i projekcji wykorzystywanymi w Laboratorium Zanurzonej Wizualizacji Przestrzennej, w tym z systemami typu CAVE oraz kontrolerami ruchu.
 
 \subsection{Wymagania niefunkcjonalne}
 
 Wymagania niefunkcjonalne opisują cechy jakościowe systemu oraz warunki, jakie powinien spełniać, aby zapewnić poprawne działanie i pozytywne doświadczenia użytkowników. W kontekście projektowanej aplikacji escape room VR wymagania niefunkcjonalne obejmują:
+\begin{itemize}[left=1.5em, label=\textbullet, topsep=0pt, itemsep=0pt]
+    \item Kompatybilność z infrastrukturą LZWP – aplikacja musi działać poprawnie w warunkach technicznych Laboratorium Zanurzonej Wizualizacji Przestrzennej, współpracując z systemem projekcyjnym CAVE oraz wykorzystywanymi kontrolerami ruchu.
 
-    Kompatybilność z infrastrukturą LZWP – Aplikacja musi działać poprawnie w warunkach technicznych Laboratorium Zanurzonej Wizualizacji Przestrzennej, współpracując z systemem projekcyjnym CAVE oraz wykorzystywanymi kontrolerami ruchu.
+    \item Wydajność – aplikacja powinna działać płynnie, z minimalnym opóźnieniem renderowania obrazu i reakcji na ruchy użytkownika, zapewniając co najmniej 60 klatek na sekundę w środowisku VR.
 
-    Wydajność – Aplikacja powinna działać płynnie, z minimalnym opóźnieniem renderowania obrazu i reakcji na ruchy użytkownika, zapewniając co najmniej 60 klatek na sekundę w środowisku VR.
+    \item Jakość grafiki – wirtualne środowisko escape roomu powinno charakteryzować się realistyczną i spójną oprawą wizualną wspomagającą immersję.
 
-    Jakość grafiki i dźwięku – Wirtualne środowisko escape roomu powinno charakteryzować się realistyczną i spójną oprawą wizualną oraz odpowiednio dobranymi efektami dźwiękowymi wspomagającymi immersję.
+    \item Łatwość rozbudowy i modyfikacji – struktura projektu powinna umożliwiać przyszłą rozbudowę aplikacji o nowe zagadki, pomieszczenia lub funkcjonalności bez konieczności przebudowy istniejącego kodu i modeli.
 
-    Łatwość rozbudowy i modyfikacji – Struktura projektu powinna umożliwiać przyszłą rozbudowę aplikacji o nowe zagadki, pomieszczenia lub funkcjonalności bez konieczności przebudowy istniejącego kodu i modeli.
+    \item Przenośność kodu i zasobów – wszystkie pliki źródłowe, modele oraz pliki graficzne powinny być przechowywane w repozytorium GitHub w sposób umożliwiający łatwe przenoszenie projektu pomiędzy stanowiskami roboczymi oraz serwerami laboratorium.
 
-    Przenośność kodu i zasobów – Wszystkie pliki źródłowe, modele oraz zasoby dźwiękowe powinny być przechowywane w repozytorium GitHub w sposób umożliwiający łatwe przenoszenie projektu pomiędzy stanowiskami roboczymi oraz serwerami laboratorium.
-
-    Dokumentacja – Projekt musi być opatrzony szczegółową dokumentacją techniczną i użytkową, opisującą strukturę aplikacji, sposób instalacji, obsługi oraz instrukcje dotyczące przyszłej rozbudowy.
-
+    \item Dokumentacja – projekt musi być opatrzony szczegółową dokumentacją techniczną i użytkową, opisującą strukturę aplikacji, sposób instalacji, obsługi oraz instrukcje dotyczące przyszłej rozbudowy.
+\end{itemize}
 
 \section{Scenariusz gry (Konrad Czarnecki)}
 
-Po uruchomieniu aplikacji użytkownik znajduje się w wirtualnym holu startowym, który pełni funkcję ekranu powitalnego. W tym miejscu użytkownik może zapoznać się z zasadami działania aplikacji oraz sterowaniem w środowisku VR.
+Po uruchomieniu aplikacji gracz przenosi się do pierwszego z 13 wirtualnych pomieszczeń. Każde pomieszczenie jest
+utrzymane w odmiennym stylu wizualnym i zawiera jedną interaktywną zagadkę matematyczną z przypisanego działu.
+Zagadki muszą być rozwiązywane w określonej kolejności, a przejście do kolejnego pokoju jest możliwe dopiero po
+poprawnym rozwiązaniu bieżącej zagadki. Pomijanie zagadek lub powrót do poprzednich pokoi nie są możliwe z poziomu
+użytkownika.
 
-W momencie rozpoczęcia gry uruchamiany jest licznik czasu, który będzie rejestrował całkowity czas potrzebny na ukończenie escape roomu. Po wybraniu opcji rozpoczęcia gry użytkownik przenosi się do pierwszego z 13 wirtualnych pomieszczeń. Każde pomieszczenie jest utrzymane w odmiennym stylu wizualnym i zawiera jedną interaktywną zagadkę matematyczną z przypisanego działu.
+W każdym pokoju gracz ma możliwość poruszania się po przestrzeni VR, wchodzenia w interakcje z elementami zagadki
+oraz przechodzenia do kolejnego pomieszczenia po poprawnym rozwiązaniu zagadki. 
 
-W każdym pokoju gracz ma możliwość poruszania się po przestrzeni VR, wchodzenia w interakcje z elementami zagadki, wywoływania podpowiedzi (jeśli jest dostępna), przechodzenia do kolejnego pokoju po poprawnym rozwiązaniu zagadki.
+Działanie każdej zagadki może wymagać różnych form interakcji — takich jak przeciąganie obiektów, wpisywanie wyników
+na wirtualnej klawiaturze, wskazywanie elementów przestrzeni, czy manipulowanie wirtualnymi narzędziami (np. suwakami i
+przyciskami).
+Po rozwiązaniu ostatniej, trzynastej zagadki użytkownik zostaje przeniesiony do wirtualnego pokoju podsumowań, gdzie
+gra informuje go o odniesionym sukcesie.
 
-Działanie każdej zagadki może wymagać różnych form interakcji — takich jak przeciąganie obiektów, wpisywanie wyników na wirtualnej klawiaturze, wskazywanie elementów przestrzeni, czy manipulowanie wirtualnymi narzędziami (np. suwaki, przełączniki, dźwignie).
-Po rozwiązaniu ostatniej, trzynastej zagadki użytkownik zostaje przeniesiony do wirtualnego pokoju podsumowań. W tym miejscu aplikacja prezentuje takie informacje jak łączny czas ukończenia gry i liczbę wykorzystanych podpowiedzi.
+W przypadku przerwania rozgrywki przez użytkownika lub awarii systemu, aplikacja powinna zapewniać możliwość powrotu
+do gry lub całkowitego zamknięcia gry bez ryzyka utraty integralności danych systemu. Rozwiązanie to
+gwarantuje bezpieczeństwo użytkownika oraz stabilność aplikacji w środowisku CAVE.
 
-W przypadku przerwania rozgrywki przez użytkownika lub awarii systemu, aplikacja powinna zapewniać możliwość powrotu do holu głównego lub całkowitego zamknięcia gry bez ryzyka utraty integralności danych systemu. Rozwiązanie to gwarantuje bezpieczeństwo użytkownika oraz stabilność aplikacji w środowisku CAVE.
+Administrator systemu ma możliwość pomijania zagadek i bezpośredniego przeniesienia gracza do wybranego pokoju, co może
+być wykorzystane na życzenie użytkownika w związku z jego preferencjami w zakresie zagadek i dziedzin matematyki lub w
+przypadku awarii systemu. Funkcjonalność ta jest dostępna wyłącznie dla uprawnionych użytkowników i nie jest widoczna
+dla zwykłych graczy, by uniemożliwić przypadkowe pominięcie zagadek.
 
-Tak skonstruowany scenariusz rozgrywki umożliwia nie tylko wprowadzenie użytkownika w świat wirtualnej rzeczywistości, ale także zapewnia dynamiczny, uporządkowany i logiczny przebieg interakcji. Dzięki systematycznemu rozwiązywaniu zagadek i przemieszczaniu się między pokojami, aplikacja utrzymuje wysoki poziom zaangażowania i motywacji użytkowników do ukończenia całej gry.
-
-
-
-
-
-
+Tak skonstruowany scenariusz rozgrywki umożliwia nie tylko wprowadzenie użytkownika w świat wirtualnej
+rzeczywistości, ale także zapewnia dynamiczny, uporządkowany i logiczny przebieg interakcji. Dzięki systematycznemu
+rozwiązywaniu zagadek i przemieszczaniu się między pokojami, aplikacja utrzymuje wysoki poziom zaangażowania i
+motywacji użytkowników do ukończenia całej gry.
 
 
 

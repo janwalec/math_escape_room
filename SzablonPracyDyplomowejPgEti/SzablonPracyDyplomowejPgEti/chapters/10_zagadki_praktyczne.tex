@@ -254,7 +254,7 @@ wszystkich relacji.
 \section{Zadanie 3 – Nierówności (Konrad Czarnecki)}
 \label{subsec:nierownosci_praktyka}
 \subsection{Problemy i różnice w realizacji zadania w praktyce}
-Podczas implementacji zadania, zgodnie z teorią opisaną w podrozdziale \ref{subsec:nierownosci_teoria},
+Podczas implementacji zadania, zgodnie z projektem opisanym w podrozdziale \ref{subsec:nierownosci_teoria},
 ze względów estetycznych zmieniono postać, która miała być przeprowadzana przez most, na metaliczną kostkę,
 która zamiast przesuwania się po kolejnych kafelkach, obraca się wzdłuż swojej krawędzi, tym samym zmieniając
 swoją pozycję. 
@@ -337,17 +337,17 @@ każdym z przypadków istniała droga przez obie sekcje mostu (rys. \ref{fig:pok
 Zadanie rozpoczyna się wraz z wywołaniem funkcji \verb|Put On Tiles|, która ustawia kafelki z liczbami w odpowiednich pozycjach,
 budując z nich most, a także w losowy sposób wybiera układ nierówności, który gracz będzie musiał wykorzystać.
 Następnie główny kontroler wywołuje funkcję \verb|Died|, która ustawia kostkę na początku mostu w pozycji
-wyjściowej (rys. \ref{fig:uklad_wspolrzednych_pokoj_4}). Most dzieli się na dwie sekcje oddzielone bezpiecznym punktem kontrolnym – jeśli gracz przegra w
+wyjściowej. Most dzieli się na dwie sekcje oddzielone bezpiecznym punktem kontrolnym (rys. \ref{fig:pozycja_poczatkowa_pokoj_3}) – jeśli gracz przegra w
 drugiej sekcji, kostka zostanie cofnięta do punktu kontrolnego, a nie do samego początku.
 
 Po wstępnej konfiguracji rozpoczyna się właściwa część zagadki. Gracz dysponuje czterema przyciskami (rys. \ref{fig:przyciski_pokoj_3}), odpowiadającymi
 czterem kierunkom (w przód, w tył, w lewo i w prawo), które po naciśnięciu wywołują funkcję \verb|turn Side| z odpowiednim
 parametrem w głównym kontrolerze. Jego zadaniem jest przeprowadzenie kostki przez most, poruszając się jedynie
 po kafelkach, których liczby spełniają wylosowaną nierówność. Jeśli kostka stanie na kafelku, który nie spełnia
-nierówności, kafelek i kostka spadają w przepaść, a gracz musi zacząć od początku, lub od punktu kontrolnego,
+nierówności, kafelek i kostka spadają w przepaść, a gracz musi zacząć od początku lub od punktu kontrolnego,
 w zależności, w której sekcji mostu popełnił błąd.
 
-Niemożliwe jest wypadnięcie z mostu poprzez wyjście poza jego krawędzie, lub wejście w dziurę po kafelku, który
+Niemożliwe jest wypadnięcie z mostu poprzez wyjście poza jego krawędzie lub wejście w dziurę po kafelku, który
 wcześniej spadł – gra uniemożliwia takie ruchy. 
 
 Po przejściu obu sekcji mostu, wszystkie pozostałe kafelki spadają do przepaści, a zagadka zostaje uznana za rozwiązaną (rys. \ref{fig:wygrana_pokoj_3}).
@@ -476,7 +476,9 @@ kontroler główny za każdym razem, gdy któryś z nich zostanie naciśnięty. 
 też zmiany wprowadzane przez gracza, np. jeśli gracz naciśnie przycisk odpowiadający współczynnikowi
 $x$ punktu przecięcia, równemu $3$, a następnie zmieni zadanie i wciśnie przycisk $4$ dla
 współczynnika $x$, przycisk $3$ zostanie automatycznie odznaczony. Analogicznie działa to dla
-przycisków współczynnika $y$.
+przycisków współczynnika $y$. Liczba wyświetlana na przycisku wskazuje bezpośrednio wartość
+współczynnika punktu przecięcia – np. jeśli gracz chce wybrać współczynnik $x$ równy $2$, powinien wcisnąć
+przycisk oznaczony numerem $2$.
 
 W celu zachowania przestronności pomieszczenia, zdecydowano się zrezygnować z przycisków o
 wartościach ujemnych i zamiast nich wprowadzić przycisk oznaczony symbolem $\pm$, który po
@@ -793,7 +795,7 @@ w czterech ćwiatrtkach układów jednostkowych zostały zastąpione lukami (rys
 wspomniamymi sześcianami. Taka zmiana zwiększa poziom interakcji gracza z zagadką, co bezpośrednio przekłada
 się na wyższy poziom zaangażowania oraz lepszą czytelność mechanik zadania.
 
-Ze względu na ograniczony rozmiar Jaskini tylko jeden układ jednostkowy jest widoczny w danym czasie. 
+Ze względu na ograniczony rozmiar jaskini tylko jeden układ jednostkowy jest widoczny w danym czasie. 
 Po wypełnieniu jego ćwiartek sześcianami opatrzonymi odpowiednimi symbolami, układ jednostkowy chowa się,
 a zza innej ściany płynnie wysuwa się następny – ich kolejność jest losowa. W związku z tym liczba sześcianów
 z symbolami dostępnych w jednym czasie w pomieszczeniu mogła zostać ograniczona do czterech – dwa oznaczone 
