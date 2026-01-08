@@ -55,25 +55,25 @@ odpowiednimi symbolami.
 Celem gracza jest poprawne ułożenie relacji między figurami w kolejnych rzędach. 
 Przykładowo, relacją taką jest to, że „każdy kwadrat jest rombem” lub „każdy kwadrat jest prostokątem”.
 \subsection{Zasady działania}
-Gracze przechodzą przez kolejne rzędy sekwencyjnie. Dopóki nie ułożą pierwszej relacji poprawnie,
+Gracze przechodzą przez kolejne rzędy sekwencyjnie (rys. \ref{fig:przyklad}). Dopóki nie ułożą pierwszej relacji poprawnie,
 to nie mogą ułożyć kolejnej. Po poprawnym ułożeniu rzędu (wstawieniu odpowiedniego symbolu) podświetla się on na zielono, 
 sygnalizując graczowi, że może przejść do kolejnego punktu. Symbole, które układają gracze są następujące:
 \begin{itemize}
     \item > to <
     \item > to nie <
 \end{itemize}
-\begin{table}[htbp]
+\begin{figure}[htbp]
     \centering
     \begin{tabular}{|c|c|c|}
         \hline
-        Kwadrat & > to < & protsokąt \\ \hline
+        Kwadrat & > to < & Prostokąt \\ \hline
         Prostokąt & > to nie < & Kwadrat \\ \hline
-        romb & [      ] & kwadrat \\ \hline
+        Romb & [      ] & Kwadrat \\ \hline
         ... & ... & ... \\ \hline
     \end{tabular}
-    \caption{Przykładowa tabela zawierająca zależności między figurami geometrycznymi.}
-    \label{tab:przyklad}
-\end{table}
+    \caption{Przykładowy diagram zależności między figurami geometrycznymi.}
+    \label{fig:przyklad}
+\end{figure}
 
 \medskip
   
@@ -277,8 +277,8 @@ Skrzynia wyposażona jest w mechaniczny zamek z pięcioma polami na cyfry, obok 
     \item \textit{N} – liczby naturalne,
     \item \textit{Z} – liczby całkowite,
     \item \textit{R} – liczby rzeczywiste,
-    \item \textit{W} – liczby wymierne,
-    \item \textit{NW} – liczby niewymierne,
+    \item \textit{Q} – liczby wymierne,
+    \item \textit{R\textbackslash Q} – liczby niewymierne,
 \end{itemize}
 Gracz musi uważnie obejrzeć skrzynię i policzyć ile liczb, zapisanych na skrzyni, należy do jakiego zbioru. 
 Po wpisaniu odpowiednich liczb, obok symboli zbiorów, skrzynia otwiera się, a gracz otrzymuje kilka symboli: 
@@ -291,14 +291,14 @@ Tym samym gracz przechodzi do drugiego etapu zadania. W drugim etapie w pokoju u
 Celem gracza jest ułożenie poprawnej relacji między nimi tj. zbiór liczb naturalnych zawiera się w zbiorze liczb całkowitych, zbiór liczb całkowitych zawiera się w zbiorze liczb rzeczywistych itd.
 
 \subsection{Zasady działania}
-W pierwszym etapie zadania gracz powinien policzyć ile liczb ze skrzyni należy do danego zbioru 
+W pierwszym etapie zadania gracz powinien policzyć, ile liczb ze skrzyni należy do danego zbioru 
 i wpisać odpowiednią odpowiedź na kłódce. Przykładowo:
 \begin{itemize}
     \item \textit{N} (naturalne): \textit{ 7; 12; 2; 5; 10} – 5 liczb,
     \item \textit{C} (całkowite):  \textit{-3; 7; 12; 2; 5; 0; 10} – 7 liczb,
     \item \textit{R} (rzeczywiste): wszystkie liczby – 9 liczb,
-    \item \textit{W} (wymierne): \textit{-3; 7; 12; 2; 5; 0; 10; 3,75} – 8 liczb,
-    \item \textit{NW} (niewymierne): \textit{√2} – 1 liczba.
+    \item \textit{Q} (wymierne): \textit{-3; 7; 12; 2; 5; 0; 10; 3,75} – 8 liczb,
+    \item \textit{R\textbackslash Q} (niewymierne): \textit{√2} – 1 liczba.
 \end{itemize}
 Kombinacja do ustawienia na kłódce: \textit{5, 7, 9, 8, 1}.
 
@@ -306,8 +306,8 @@ W drugim etapie gracz powinien ustawić posiadane symbole między literami symbo
 
 \begin{itemize}
     \item $N \subset Z \subset R$,
-    \item $NW \cap W = \varnothing$,
-    \item $NW \cap R$.
+    \item $R\textbackslash Q \cap Q = \varnothing$,
+    \item $R\textbackslash Q \cap R = R\textbackslash Q$.
 \end{itemize}
 
 \subsection{Zakończenie zadania}
@@ -377,16 +377,16 @@ Po poprawnym ułożeniu wszystkich znaków ściana rozświetla się na zielono.
 
 \section{Zadanie 9 – Ciągi liczbowe (Jan Walczak)}
 \label{sec:sequence}
-Poniżej opisane zadanie będzie podobne do gry wyprodukowanej przez Nintendo na platformę Pegasus.
+Poniżej opisane zadanie będzie podobne do gry wyprodukowanej przez Nintendo na platformę Pegasus (rys. \ref{duckhunt}).
 
 \subsection{Cel zadania}
 Zadaniem gracza będzie odpowiednio szybko obliczyć kolejne wyrazy ciągu arytmetycznego 
-z podanego wzoru. Będzie on wyposażony w laserowy pistolet, którym będzie musiał strzelać
+z podanego wzoru. Będzie on wyposażony w wirtualny, laserowy pistolet, którym będzie musiał strzelać
 w odpowiednio oznaczone kaczki.
 \subsection{Zasady działania}
-Na ekranie pojawia się formuła ciągu arytmetycznego lub geometrycznego, np.: $a_n = 2n + 1$ (ciąg arytmetyczny) wybranego z predefiniowanej puli. 
+Na jednej ze ścian pokoju pojawia się formuła ciągu arytmetycznego, np.: $a_n = 2n + 1$ wybranego z predefiniowanej puli. 
 Gracz będzie musiał wybrać i strzelić do kaczki oznaczonej odpowiednią wartością kolejnych wyrazów ciągu. Gra przyspiesza (kaczki lecą coraz szybciej) razem z postępem w zadaniu. 
-Aby ułatwić graczowi zadanie, na górze ekranu będzie podany nie tylko wzór ciągu, ale też aktualny numer wyrazu tego ciągu. 
+Aby ułatwić graczowi zadanie, na górze jednej ze ścian pokoju będzie podany nie tylko wzór ciągu, ale też aktualny numer wyrazu tego ciągu. 
 Przykładowo, dla wzoru $a_n = 2n + 1$:
 \begin{itemize}
     \item $n = 1$ – gracz musi trafić w kaczkę z liczbą 3,
@@ -395,7 +395,7 @@ Przykładowo, dla wzoru $a_n = 2n + 1$:
 
 \subsection{Zakończenie zadania}
 Gracz będzie zdobywał punkty za każdy poprawnie wybrany wyraz ciągu. 
-Gra zakończy się po upływie określonego czasu lub jeśli gracz pomyli się trzy razy
+Gra zakończy się po upływie określonego czasu lub jeśli gracz pomyli się trzy razy.
 
 \begin{figure}[htbp]
     \centering
@@ -542,21 +542,22 @@ Po poprawnym ułożeniu żarówka zapala się nad stołem sygnalizując zakończ
 
 
 \section{Zadanie 13 – Stereometria (Jan Walczak)}
+\label{stereometria:teoria}
 Bryły przestrzenne mogą sprawić uczniom trudność, ponieważ wymagają przejścia od rysunku 
 dwuwymiarowego tj. takiego na kartce papieru, do wyobrażenia sobie ich w przestrzeni trójwymiarowej.
 \subsection{Cel zadania}
-Celem zadania jest zapoznać uczniów z podstawowymi wartościami brył geometrycznych 
-poprzez ich samodzielne odkrywanie.
+Celem zadania jest zapoznać uczniów z podstawowymi własnościami brył geometrycznych poprzez ich samodzielne odkrywanie.
 \subsection{Zasady działania}
 Gracz wchodzi do ciemnego pokoju i jest wyposażony w źródło światła np. pochodnię lub latarkę. 
 Na środku pokoju znajduje się jedna z brył, wylosowanych z danej puli: prostopadłościan, ostrosłup, graniastosłup, kula lub sześcian.
 Na ścianie pokoju znajduje się panel z pytaniami np.:
 \begin{itemize}
-    \item Ile ścian ma dana bryła?
-    \item Ile krawędzi ma dana bryła?
-    \item Co jest podstawą danej bryły?
+    \item Jak nazywa się ta bryła?
+    \item Jaki jest wzór na obliczenie jej pola powierzchni?
+    \item Jaki jest wzór na obliczenie jej objętości?
 \end{itemize}
 Gracz obchodząc bryłę dookoła i rozświetlając ją latarką powinien móc udzielić odpowiedzi na te pytania. 
 \subsection{Zakończenie zadania}
 Gdy gracz udziela poprawnych odpowiedzi na kolejne pytania zostają one podświetlone na zielono, sygnalizując graczowi, że wykonał zadanie poprawnie. 
-Po uzupełnieniu wszystkich odpowiedzi pokój rozświetla się, a gracz może przyjrzeć się bryle w pełnym świetle.
+Jeżeli się pomyli to losowana jest kolejna bryła, inna niż poprzednia. Gra kończy się w momencie kiedy gracz udzieli poprawnych
+odpowiedzi na pytania dotyczące dwóch różnych brył.

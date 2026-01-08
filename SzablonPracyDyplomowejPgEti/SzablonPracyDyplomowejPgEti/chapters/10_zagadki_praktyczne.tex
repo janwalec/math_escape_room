@@ -166,13 +166,15 @@ Na środku zostały umieszczone dwa przyciski:
 \end{itemize}
 Uczeń zostaje poinstruowany, że po obu ścianach pokoju zostaną wyświetlone różne figury geometryczne.
 Po lewej stronie, patrząc od przycisków -- figury oznaczone kolorem czerwonym, po
-prawej stronie -- figury oznaczone kolorem zielonym. Liczba figur jest stała. Każdorazowo typ wyświetlanych 
+prawej stronie -- figury oznaczone kolorem zielonym. Liczba figur jest stała. Każdorazowo zbiór figur wyświetlanych 
 figur jest wybierany z określonej puli i wyświetlany w pseudolosowej konfiguracji -- losowane
 jest ich położenie, obrót oraz rozmiar. Zadaniem ucznia jest uzupełnianie kolejnych relacji
 poprzez wybieranie odpowiednich przycisków. Relacja, wyświetlana na ścianie pokoju, przedstawia
-się jako: \glqq każdy typ figury, narysowany kolorem czerwonym, jest równocześnie typem figury
-oznaczonym kolorem zielonym\grqq. Dodatkowo tekst jest odpowiednio pokolorowany tak, aby uczeń
-nie miał wątpliwości, że chodzi o typ figury, wyświetlanej tymże kolorem na ścianach.
+się jako: \glqq zbiór figur reprezentowanych przykładami w kolorze
+czerwonym (po lewej stronie) zawiera się / nie zawiera się  w zbiorze
+figur reprezentowanych przykładami w kolorze zielonym (po prawej
+stronie)\grqq. Dodatkowo tekst jest odpowiednio pokolorowany tak, aby uczeń
+nie miał wątpliwości, że chodzi o figury z danego zbioru, które są wyświetlane tymże kolorem na ścianach.
 
 \subsection{Implementacja struktury danych przechowującej relację}
 Na początku pracy należało zdefiniować strukturę, przechowującą relacje, czyli pytania, na
@@ -189,7 +191,7 @@ jest równocześnie figurą typu drugiego (\verb|FigureB|)?\grqq. Struktura zawi
 czyli taką, która tłumaczy wartości tekstowe na liczbowe.
 
 \subsection{Implementacja kontrolerów}
-Aby zarządzać zagadką została zaimplementowana seria kontrolerów i menedżerów.
+Aby zarządzać zagadką została zaimplementowana seria kontrolerów i menedżerów przedstawionych na rysunku \ref{planimetria:uml}.
 \begin{itemize}
     \item \verb|ControlerFigures| (główny kontroler)
     \item \verb|FiguresTextManager|
@@ -235,11 +237,11 @@ Główny kontroler czeka na powiadomienia od przycisków. Kiedy zostaje powiadom
 jeden z nich został naciśnięty sprawdza poprawność odpowiedzi. Jeśli odpowiedź jest poprawna,
 usuwa relację z tablicy i  losuje kolejną. Jeśli nie jest poprawna, losuje kolejną relację do wyświetlenia
 graczowi i nie zalicza punktu. Gra kończy się po poprawnym uzupełnieniu przez gracza
-wszystkich relacji.
+wszystkich relacji. Przebieg całego zadania został zaprezentowany w postaci diagramu przepływu na rysunku \ref{planimetria:flow}.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/planimetria_FLOW.png}
+    \includegraphics[width=0.4\textwidth]{images/planimetria_FLOW.png}
     \caption{Diagram przepływu dla zadania 2 -- planimetria}
     \label{planimetria:flow}
 \end{figure}
@@ -655,8 +657,8 @@ Takie rozwiązanie znacząco zwiększa regrywalność gry oraz poprawia jej walo
 \label{sec:rzeczywiste_praktyka}
 \subsection{Problemy i różnice w realizacji zadania w praktyce}
 \label{subsec:rzeczywiste_problemy}
-Podczas implementacji zadania, zgodnie z teorią opisaną w podrozdziale \ref{subsec:liczby_rzeczywiste}, należało wprowadzić
-względem niej kilka poprawek. Pierwotny mechanizm zakładał, że zamek umieszczony na
+Podczas implementacji zadania, zgodnie z projektem opisanym w podrozdziale \ref{subsec:liczby_rzeczywiste}, należało wprowadzić
+względem niego kilka poprawek. Pierwotny mechanizm zakładał, że zamek umieszczony na
 skrzyni będzie wyposażony w pola, w które uczeń wpisywałby odpowiednie cyfry -- liczby elementów
 danego podzbioru. W praktyce okazało się to niemożliwe. Maksymalna liczba jednocyfrowa
 to 9, tym samym zadanie jest ograniczone do wyświetlania maksymalnie 9 liczb rzeczywistych
@@ -676,16 +678,16 @@ liczb zgodnie z podpowiedzią, umieszczoną na ścianie (patrz rysunek \ref{rzec
 \FloatBarrier
 
 Zmienione zostały również liczby, które są rozmieszczone w pokoju. Aktualnie pojawiają się
-liczby:  \textit{15; π; 4,5; √2; ¼; -3; 1; -7; ⅓ ; 9} Tym samym kombinacja prezentuje się następująco
+liczby:  \textit{15; π; 4,5; √2; ¼; -3; 1; -7; ⅓ ; 9}. Tym samym podzbiory prezentują się następująco
 (kolejność zgodna z podpowiedzią na rysunku \ref{rzeczywiste:screen}):
 \begin{itemize}
     \item \textit{N} (naturalne): \textit{15; 1; 9} – 3 liczby,
     \item \textit{C} (całkowite):  \textit{15; 1; 9; -3; -7} – 5 liczb,
     \item \textit{R} (rzeczywiste): wszystkie liczby – 10 liczb,
-    \item \textit{W} (wymierne): \textit{15; 1; 9; -3; -7; 4,5; ¼; ⅓} – 8 liczb,
-    \item \textit{NW} (niewymierne): \textit{π; √2} – 2 liczby.
+    \item \textit{Q} (wymierne): \textit{15; 1; 9; -3; -7; 4,5; ¼; ⅓} – 8 liczb,
+    \item \textit{R\textbackslash{}Q} (niewymierne): \textit{π; √2} – 2 liczby.
 \end{itemize}
-Tym samym kombinacja do otwarcia sejfu to \textit{351082}.
+Tym samym ciąg cyfr prowadzący do otwarcia sejfu to \textit{351082}.
 
 Ostatnią rzeczą, która została zmieniona jest koncepcja drugiej części zadania. Mechanizm
 obracania bloczków został uznany za niepotrzebny, ponieważ wybrane relacje są jednoznaczne --
@@ -695,7 +697,7 @@ odpowiedź.
 Spośród wszystkich relacji zostały wybrane dwie:
 \begin{itemize}
     \item $N \subset Z \subset R$,
-    \item $NW \cap W = \varnothing$,
+    \item $R\textbackslash{}Q \cap Q = \varnothing$,
 \end{itemize}
 Zostały one wybrane przez swoją charakterystykę. Pierwsza z nich pokazuje, jak kolejne zbiory
 zawierają się w sobie nawzajem, a druga pokazuje rozłączność zbiorów liczb wymiernych i niewymiernych.
@@ -706,13 +708,15 @@ Gracz ma do dyspozycji 6 bloczków:
     \item dwa bloczki z symbolem $\cap$
 \end{itemize}
 Bloczki mają mu służyć do uzupełnienia dwóch relacji wymienionych wyżej. Po ułożeniu relacji,
-poprawnie bądź nie, bloczki pozostają do dyspozycji gracza.
+poprawnie bądź nie, bloczki pozostają do dyspozycji gracza. W relacji elementami stałymi są
+\glqq =\grqq i litery reprezentujące zbiory liczb (nie można ich przestawiać).
 
 \subsection{Implementacja zadania}
 
 Został zaimplementowany jeden, główny kontroler \verb|RealNumbersController|. Zarządza on przebiegiem
 zadania, położeniem elementów na scenie  oraz wyświetlaniem tekstu. Zawiera odpowiednie
-referencje do komponentów i odpowiada za poprawną inicjalizację.
+referencje do komponentów i odpowiada za poprawną inicjalizację. Relacje między nim, a pozostałymi komponentami
+zostały zaprezentowane na rysunku \ref{rzeczywiste:UML}.
 
 Komponent \verb|Element| jest bloczkiem z odpowiednim symbolem relacji, \verb|Sejf| jest skrzynią, która
 przetrzymuje bloczki, a \verb|WallQuestion| to płaska tablica (ścianka), na której wyświetlane są pytania 
@@ -721,7 +725,7 @@ w drugiej części zadania.
 \verb|Sejf| zawiera jednostronną referencję do głównego kontrolera. Kontroler może zostać przez
 niego powiadomiony, że gracz poprawnie wpisał kod. W ten sposób kontroler może sterować dalszym
 przebiegiem zadania. \verb|WallQuestion| zawiera dwustronną referencję do głównego kontrolera.
-Mechanizm powiadomień działa tutaj podobnie ale kontroler może odpowiadać na otrzymywane
+Mechanizm powiadomień działa tutaj podobnie, ale kontroler może odpowiadać na otrzymywane
 powiadomienia, poprzez wywoływanie odpowiednich funkcji.
 
 \begin{figure}[htbp]
@@ -744,20 +748,20 @@ w świecie gry, tak aby możliwy był powrót do stanu początkowego.
 
 Ścianka wykrywa kolizję z bloczkami, które gracz na niej umieszcza. W momencie kiedy zostaje
 uzupełniona w całości, tj. bloczki wypełniają miejsca na odpowiedzi, powiadamia kontroler
-o~rozwiązaniu zadania. Kontroler decyduje czy odpowiedź gracza jest poprawna. W przypadku gdy 
+o~rozwiązaniu zadania. Kontroler decyduje, czy odpowiedź gracza jest poprawna. W przypadku gdy 
 jest, to przesyła do \verb|WallQuestion| powiadomienie o zmianie pytania na kolejne i zalicza punkt.
 Jeżeli odpowiedź nie jest poprawna, to również powiadamia o tym ściankę, ale nie zalicza punktu.
 W~obu przypadkach bloczki wracają na wcześniej zapisaną pozycję. W zależności od poprawności
 udzielonej odpowiedzi, ścianka rozświetla się kolorem zielonym lub czerwonym, tak żeby gracz
 miał pewność, że udzielona odpowiedź jest poprawna. Podczas sprawdzania stanu ścianki,
-tj.~ustawienie bloczków przez gracza pytanie zostaje zablokowane, a gracz nie może modyfikować
+tj.~ustawienia bloczków przez gracza, pytanie zostaje zablokowane, a gracz nie może modyfikować
 swojej odpowiedzi (dokładać lub zabierać bloczków).
 
 Kiedy gracz odpowie na oba pytania poprawnie, poziom zostaje uznany za zaliczony.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1.0\textwidth]{images/real_FLOW.png}
+    \includegraphics[width=0.4\textwidth]{images/real_FLOW.png}
     \caption{Diagram przepływu dla zadania 7 -- liczby rzeczywiste i działania na zbiorach liczbowych.}
     \label{rzeczywiste:FLOW}
 \end{figure}
@@ -857,7 +861,7 @@ Kiedy gracz wypełni wszystkie układy poprawnie, zagadka zostaje uznana za rozw
 \label{sec:ciągi_praktyka}
 \subsection{Problemy i różnice w realizacji zadania w praktyce}
 W przeciwieństwie do zadań opisanych w podrozdziałach \ref{sec:planimetria_praktyka} i \ref{sec:rzeczywiste_praktyka} w tym zadaniu nie pojawiło
-się  dużo rozbieżności między teorią, a praktyczną implementacją.
+się dużo rozbieżności między projektem, a praktyczną implementacją.
 
 Miejsce, w którym wprowadzono modyfikację, to warunki zakończenia gry. Zadanie, przez swój
 projekt, stawia bardziej na szybką analizę, niż na długie zastanawianie się nad odpowiedzią. Jest
@@ -885,10 +889,8 @@ Za punkt początkowy został obrany koniec ręki gracza, tj. kontrolera, którym
 kontrolera w świecie gry można również wyznaczyć wektor kierunkowy. Należy pobrać z kontrolera
 wartość tego wektora, przy użyciu systemowej funkcji Unreal Engine \verb|Get Forward Vector|. 
 Należy zapisać ten wektor, razem z punktem początkowym. Obliczenie punktu końcowego jest
-nieco trudniejsze. Polega na początkowym pomnożeniu wektora kierunkowego przez inny wektor, 
-o dużych wartościach poszczególnych współrzędnych, a następnym dodaniu wyniku tego działania
-do współrzędnych punktu początkowego. W projekcie zastosowano wektor\\
-$(1000,0; 1000,0; 1000,0)$. Tak obliczony punkt należało chwilowo zapisać jako punkt końcowy.
+nieco trudniejsze. Polega na początkowym pomnożeniu wektora kierunkowego przez dużą liczbę (1000), a następnie na dodaniu
+wyniku tego działania do współrzędnych punktu początkowego. Tak obliczony punkt należało chwilowo zapisać jako punkt końcowy.
 
 Następnie, przy użyciu systemowej funkcji \verb|Line Trace by Channel|, należało wyznaczyć punkt,
 w którym linia, poprowadzona od punktu początkowego do końcowego, przecina się ze światem
@@ -926,12 +928,12 @@ według którego będą obliczane kolejne elementy. Dostępne są wzory:
 
 Komponent \verb|Duck| implementuje funkcjonalności związane ze sterowaniem pojedynczej kaczki.
 Zawiera dwustronną referencję, do obiektu głównego kontrolera i przesyła powiadomienia, kiedy
-zostanie zestrzelony przez gracza, przy użyciu pistoletu laserowego. W instancji kaczki zapisywana
+zostanie zestrzelony przez gracza, przy użyciu pistoletu laserowego (rys. \ref{fig:sequence_UML}). W instancji kaczki zapisywana
 jest pozycja początkowa, numer, który aktualnie jest na niej wyświetlany i wartość zmiennoprzecinkowa,
 czyli droga, którą pokona kaczka w każdej jednostce czasu w grze.
 
 Gracz zostaje również zapoznany z zasadami działania gry. Kiedy jest gotowy do rozpoczęcia
-gry naciska przycisk, podobny do tego opisanego w podrozdziale \ref{sec:planimetria_praktyka}. Przycisk działa na tej samej
+gry naciska przycisk \glqq Start\grqq. Przycisk działa na tej samej
 zasadzie i również posiada dwustronną referencję do instancji kontrolera.
 
 W zagadce występują jeszcze dwa komponenty: \verb|HitWall| i \verb|Life|. Główny kontroler zawiera tablicę
@@ -942,7 +944,7 @@ i~sygnalizować to głównemu kontrolerowi zderzenie tak, jakby zostały trafion
 w~ten komponent, wyśle specjalny typ powiadomienia, mówiący o tym, że graczowi nie udało się jej
 zestrzelić. Jeśli kaczka zawierała poprawny wyraz ciągu to kontroler odczyta to jako błąd gracza
 i~odejmie mu jedno życie. W takim przypadku, jeżeli gracz ma jeszcze pozostałe życia, wyświetli
-się kolejny wyraz ciągu, a kaczki zaczną lecieć od początku.
+się kolejny wyraz ciągu, a kaczki zaczną lecieć od początku. 
 
 \begin{figure}[htbp]
     \centering
@@ -963,10 +965,17 @@ wyrazy mogą być odległe jedynie o 2 jednostki na osi współrzędnych od popr
 ($a_n \pm 2$).
 
 Kaczki pokonują stałą jednostkę odległości, w każdej jednostce czasu wykonywania się programu,
-wyrażoną za pomocą liczby zmiennoprzecinkowej. Jednostka ta jest tym większa,im większy
+wyrażoną za pomocą liczby zmiennoprzecinkowej. Jednostka odległości jest tym większa, im większy
 jest aktualny numer wyrazu ciągu arytmetycznego. Oznacza to, że będą przyspieszać razem
 z przebiegiem gry. Do tak obliczonej stałej wartości, dodawana jest pseudolosowa wartość zmiennoprzecinkowa
 wybrana pseudolosowo z przedziału $\left[0,5; 0,7\right] $. 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/sequence_FLOW.png}
+    \caption{Diagram przepływu dla zadania 9 -- Ciągi liczbowe }
+    \label{sequence:flow}
+\end{figure}
 
 Kaczki poruszają się od lewej do prawej strony ekranu, aż do zderzenia się z instancją obiektu
 \verb |HitWall|. Kaczki mogą zostać zestrzelone przez gracza, zanim zderzą się z wyżej wymienionym
@@ -982,17 +991,13 @@ podejmuje decyzję:
   \item Jeśli kaczka, przechowująca poprawny wyraz ciągu, uderzy w obiekt \verb|HitWall| (wyleci poza 
   zasięg gracza) -- odejmuje jedno życie i ponownie ustawia kaczki. Zwiększa też numer wyrazu ciągu.
 \end{enumerate}
-Ponowne ustawienie kaczeek polega na obliczeniu kolejnego wyrazu ciągu arytmetyczngo, ustawieniu
+Ponowne ustawienie kaczek polega na obliczeniu kolejnego wyrazu ciągu arytmetyczngo, ustawieniu
 go na jednej z nich, ustawieniu dwóm pozostałym kaczkom błędnego wyrazu oraz na cofnięciu
-ich do stanu początkowego. Gra kończy się w momencie, gdy gracz straci wszystkie 
-4~życia.
+ich do stanu początkowego. Najgorszym scenariuszem dla gracza jest niepoprawne zestrzelenie dwóch z trzech kaczek
+i pozwolenie, aby kaczka zawierająca poprawny numer uderzyła w obiekt \verb|HitWall|. W takim przypadku gracz straci aż 3 życia.
+Gra kończy się w momencie, gdy gracz straci wszystkie 4~życia.
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=1.0\textwidth]{images/sequence_FLOW.png}
-    \caption{Diagram przepływu dla zadania 9 -- Ciągi liczbowe }
-    \label{sequence:flow}
-\end{figure}
+
 
 \section{Zadanie 10 – Prawdopodobieństwo (Andrii Demyshyn)}
 \subsection{Praktyczna realizacja zadania}
@@ -1176,8 +1181,8 @@ W przeciwnym przypadku lampa pozostaje wyłączona.
 \section{Zadanie 13 – Stereometria (Jan Walczak)}
 \label{sec:stereometria_praktyka}
 \subsection{Problemy i różnice w realizacji zadania w praktyce}
-Zadanie nie odbiega za bardzo od wcześniej opracowanego opisu teoretycznego. Zmieniono
-ilość wyświetlanych brył geometrycznych. Według opisu graczowi miała być przedstawiana tylko 
+Zadanie nie odbiega za bardzo od wcześniej opracowanego opisu (podrozdz. \ref{stereometria:teoria}). Zmieniono
+liczbę wyświetlanych brył geometrycznych. Według opisu graczowi miała być przedstawiana tylko 
 jedna bryła. W praktyce takie zadanie byłoby bardzo krótkie. Zdefiniowano więc pulę złożoną 
 z~5~brył:
 \begin{enumerate}
@@ -1202,11 +1207,12 @@ W zadaniu został zaimplementowany jeden główny kontroler \verb|SelectorContro
 jest inicjalizacja gry, zarządzanie przebiegiem gry, wyświetlanie tekstu i wybór odpowiednich pytań,
 wyświetlanych graczowi. Zawiera on dwustronną referencję do obiektu \verb|Stereometry|
 oraz dwustronną referencję do trzech obiektów \verb|Button| (takich, jak te opisane w podrozdziałach
-\ref{sec:planimetria_praktyka} i \ref{sec:stereometria_praktyka}). Zawiera także predefiniowany zbiór pytań, dotyczących każdej z brył, reprezentowany
-przez mapę typu \textit{pytanie:poprawna odpowiedź}.
+\ref{sec:planimetria_praktyka} i \ref{sec:planimetria_praktyka}). Zawiera także predefiniowany zbiór pytań, dotyczących każdej z brył, reprezentowany
+przez mapę typu \textit{pytanie:poprawna odpowiedź}. Powiązania kontrolera z pozostałymi komponentami w zadaniu
+zostały zaprezentowane na rysunku \ref{stereometria:uml}.
 
 Obiekt \verb|Stereometry| odpowiada za poprawne wyświetlanie brył. Zawiera 5 obiektów typu siatki 
-statycznej, które wyświetla w świecie gry, wybierając bryłę odpowiadającą aktualnie zadawanemu 
+statyczne, które wyświetla w świecie gry, wybierając bryłę odpowiadającą aktualnie zadawanemu 
 pytaniu. Jest też odpowiedzialny  za pseudolosowy mechanizm wyboru brył. Przed wyświetleniem
 obiekt \verb|Stereometry| w sposób pseudolosowy obraca bryłę, zmienia jej rozmiar, oraz położenie
 w~świecie gry. W tym przypadku nie było potrzeby implementowania mechanizmu powiadomień,
@@ -1237,6 +1243,7 @@ za wybór kolejnej bryły. W takim przypadku może się ona pojawić ponownie w 
 ale nie od razu po udzieleniu błędnej odpowiedzi. Jeśli gracz odpowie na wszystkie 3 pytania
 prawidłowo, bryła zostaje uznana za zaliczoną i jest usuwana z puli dostępnych do wylosowania
 brył. Gra kończy się kiedy gracz poprawnie odpowie na pytania dotyczące 3 różnych brył.
+Przebieg całego zadania został zaprezentowany w postaci diagramu przepływu na rysunku \ref{stereometria:flow}
 
 \begin{figure}[htbp]
     \centering
