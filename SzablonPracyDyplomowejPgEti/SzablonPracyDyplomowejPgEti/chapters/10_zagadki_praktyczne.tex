@@ -2,6 +2,12 @@
 \label{chap:development}
 
 \section{Zadanie 1 – wzory skróconego mnożenia (Andrii Demyshyn)}
+\subsection{Problemy i różnice w realizacji zadania w praktyce}
+Podczas implementacji zadania nie wystąpiły istotne problemy techniczne. 
+Zastosowane rozwiązania w pełni odpowiadają założeniom projektowym, a mechanika 
+przeciągania i dopasowywania elementów została zaimplementowana w sposób 
+intuicyjny dla gracza.
+
 W tym zadaniu zrealizowano zagadkę poświęconą wzorom skróconego mnożenia. 
 Zadaniem gracza jest prawidłowe połączenie początków i końcówek wzorów skróconego mnożenia poprzez umieszczenie odpowiednich klocków w przeznaczonych dla nich miejscach.
 
@@ -11,7 +17,7 @@ Kiedy gracz pojawia się w pokoju, widzi przed sobą tablicę z początkami wzor
 
 \subsubsection{Matematyczna tablica \texttt{BP\_MathBoard}}
 
-Głównym obiektem pokoju jest matematyczna tablica zrealizowana w postaci blueprintu aktora \texttt{BP\_MathBoard}. 
+Głównym obiektem pokoju jest matematyczna tablica zrealizowana w postaci blueprintu aktora \texttt{BP\_MathBoard} rys.~\ref{fig:MathBoard}. 
 Tablica zawiera siedem wzorów do uzupełnienia:
 
 \begin{enumerate}
@@ -51,7 +57,7 @@ Tablica zawiera siedem wzorów do uzupełnienia:
     \]
 \end{enumerate}
 
-Naprzeciw każdego wzoru, po znaku „=”, znajduje się odpowiedni slot, do którego należy umieścić końcówkę wzoru. 
+Naprzeciw każdego wzoru, po znaku „=”, znajduje się odpowiedni slot, w którym należy umieścić końcówkę wzoru. 
 Każdy slot składa się z następujących elementów:
 
 \begin{itemize}
@@ -69,9 +75,8 @@ Każdemu slotowi odpowiada tylko jeden poprawny obiekt z formułą.
     \centering
     \includegraphics[width=0.8\textwidth]{images/tablica.png}
     \caption{Wygląd BP\_MathBoard}
-    \label{fig:Lamp}
+    \label{fig:MathBoard}
 \end{figure}
-\subsection{Zakończenie zadania}
 \subsection{Zakończenie zadania}
 W obiekcie \texttt{BP\_MathBoard} zaimplementowano również funkcję \texttt{AreAllSlotsFilled}, która sprawdza, czy wszystkie sloty zostały uzupełnione oraz czy zostały uzupełnione poprawnie.
 
@@ -101,11 +106,12 @@ Gracz decyduje, kiedy chce sprawdzić rozwiązanie, a po kliknięciu przycisku a
 \subsubsection{Panel informacyjny \texttt{BP\_MathText}}
 
 Instrukcja zadania wyświetlana jest za pomocą blueprintu aktora \texttt{BP\_MathText}, w którym umieszczono blueprintowy widget \texttt{W\_MathText}.
+Ogólny wygląd pokoju algebraicznego, w którym realizowane jest zadanie, przedstawiono na rys.~\ref{fig:AlgebraRoom}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{images/algebraic.png}
     \caption{Wygląd pokoju algebraicznego}
-    \label{fig:Lamp}
+    \label{fig:AlgebraRoom}
 \end{figure}
 \subsection{Przebieg zadania}
 
@@ -553,103 +559,135 @@ niebiesko, zagadka zostaje uznana za rozwiązaną.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Zadanie 6 – Kombinatoryka (Amdrii Demyshyn)}
+\section{Zadanie 6 – Kombinatoryka (Andrii Demyshyn)}
+
 \subsection{Różnice realizacji zadania w praktyce}
-W koncepcji teoretycznej sejf zawierał jedną, stałą zagadkę matematyczną. 
-Takie rozwiązanie powodowało, że po jednorazowym rozwiązaniu zadania element ten tracił swoją funkcję edukacyjną oraz rozgrywkową. 
-W związku z tym zdecydowano się na rozbudowanie pierwotnej koncepcji poprzez wprowadzenie wielu zagadek kombinatorycznych obsługiwanych przez jeden, uniwersalny mechanizm sejfu.
+W koncepcji teoretycznej sejf zawierał jedną, stałą zagadkę matematyczną.
+Takie rozwiązanie powodowało, że po jednorazowym rozwiązaniu zadania element ten
+tracił swoją funkcję edukacyjną oraz rozgrywkową.
+W związku z tym zdecydowano się na rozbudowanie pierwotnej koncepcji poprzez
+wprowadzenie wielu zagadek kombinatorycznych obsługiwanych przez jeden,
+uniwersalny mechanizm sejfu.
 
 \subsection{Zaimplementowane zagadki}
 
-Zaimplementowano dwanaście zagadek kombinatorycznych, z których każda posiada przypisany indeks. 
-Podczas uruchomienia gry indeks zagadki jest losowo generowany z przedziału od 0 do 11. 
-Następnie treść wybranej zagadki wyświetlana jest za pomocą blueprintu aktora \texttt{BP\_RiddleSafe}, w którym umieszczony jest widget typu \texttt{WB\_ZagadkaText}. 
-Poprawna odpowiedź ustawiana jest jako zmienna \texttt{CurrentCode}.
+Zaimplementowano dwanaście zagadek kombinatorycznych o zróżnicowanym poziomie
+trudności, z których każda posiada przypisany indeks.
+Podczas uruchomienia gry indeks zagadki jest losowo generowany z przedziału od 0
+do 11, co sprawia, że gracz nie musi rozwiązywać wszystkich zagadek w jednej
+rozgrywce.
+
+Następnie treść wybranej zagadki wyświetlana jest za pomocą blueprintu aktora
+\texttt{BP\_RiddleSafe}, w którym umieszczony jest widget typu
+\texttt{WB\_ZagadkaText}. Poprawna odpowiedź ustawiana jest jako zmienna
+\texttt{CurrentCode}.
 
 \begin{enumerate}
     \item \textbf{Zagadka 1:}  
-    „PIN to liczba wszystkich możliwych 3-cyfrowych kodów PIN, w których żadna cyfra się nie powtarza.”  
+    „PIN to liczba wszystkich możliwych 3-cyfrowych kodów PIN, w których żadna
+    cyfra się nie powtarza.”  
     \textbf{Odpowiedź:} 720
 
     \item \textbf{Zagadka 2:}  
-    „PIN to liczba wszystkich możliwych 4-cyfrowych kodów PIN, w których żadna cyfra się nie powtarza.”  
+    „PIN to liczba wszystkich możliwych 4-cyfrowych kodów PIN, w których żadna
+    cyfra się nie powtarza.”  
     \textbf{Odpowiedź:} 5040
 
     \item \textbf{Zagadka 3:}  
-    „PIN to liczba wszystkich możliwych 4-cyfrowych kodów PIN bez powtórzeń, gdzie pierwsza cyfra nie może być zerem.”  
+    „PIN to liczba wszystkich możliwych 4-cyfrowych kodów PIN bez powtórzeń, gdzie
+    pierwsza cyfra nie może być zerem.”  
     \textbf{Odpowiedź:} 4536
 
     \item \textbf{Zagadka 4:}  
-    „PIN to liczba wszystkich 4-cyfrowych kodów PIN, w których dokładnie jedna cyfra występuje dwa razy, a pozostałe dwie cyfry są różne od niej i od siebie (np. 1213).”  
+    „PIN to liczba wszystkich 4-cyfrowych kodów PIN, w których dokładnie jedna
+    cyfra występuje dwa razy, a pozostałe dwie cyfry są różne od niej i od siebie
+    (np. 1213).”  
     \textbf{Odpowiedź:} 4320
 
     \item \textbf{Zagadka 5:}  
-    „PIN to liczba wszystkich 4-cyfrowych kodów PIN, które składają się z dokładnie dwóch różnych cyfr (obie muszą wystąpić co najmniej raz).”  
-    \textbf{Odpowiedź:} 2100
+    „PIN to liczba wszystkich 4-cyfrowych kodów PIN, które składają się z dokładnie
+    dwóch różnych cyfr (obie muszą wystąpić co najmniej raz).”  
+    \textbf{Odpowiedź:} 630
 
     \item \textbf{Zagadka 6:}  
     „PIN to liczba wszystkich 4-cyfrowych kodów PIN będących palindromem (ABBA).”  
     \textbf{Odpowiedź:} 100
 
     \item \textbf{Zagadka 7:}  
-    „PIN to liczba wszystkich 6-cyfrowych kodów PIN będących palindromem (ABCCBA).”  
+    „PIN to liczba wszystkich 6-cyfrowych kodów PIN będących palindromem
+    (ABCCBA).”  
     \textbf{Odpowiedź:} 1000
 
     \item \textbf{Zagadka 8:}  
-    „PIN to liczba wszystkich 3-cyfrowych kodów PIN, w których dokładnie jedna cyfra występuje dwa razy.”  
+    „PIN to liczba wszystkich 3-cyfrowych kodów PIN, w których dokładnie jedna
+    cyfra występuje dwa razy.”  
     \textbf{Odpowiedź:} 270
 
     \item \textbf{Zagadka 9:}  
-    „PIN to liczba wszystkich 4-cyfrowych kodów PIN, w których dokładnie dwie cyfry są parzyste.”  
+    „PIN to liczba wszystkich 4-cyfrowych kodów PIN, w których dokładnie dwie
+    cyfry są parzyste.”  
     \textbf{Odpowiedź:} 3750
 
     \item \textbf{Zagadka 10:}  
-    „PIN to liczba wszystkich 4-cyfrowych kodów PIN, w których suma cyfr wynosi dokładnie 10.”  
-    \textbf{Odpowiedź:} 286
+    „PIN to liczba wszystkich 4-cyfrowych kodów PIN, w których suma cyfr wynosi
+    dokładnie 10.”  
+    \textbf{Odpowiedź:} 282
 
     \item \textbf{Zagadka 11:}  
-    „PIN to liczba wszystkich 4-cyfrowych kodów PIN, w których cyfry są ustawione w ściśle rosnącym porządku.”  
+    „PIN to liczba wszystkich 4-cyfrowych kodów PIN, w których cyfry są ustawione
+    w ściśle rosnącym porządku.”  
     \textbf{Odpowiedź:} 210
 
     \item \textbf{Zagadka 12:}  
-    „PIN to liczba wszystkich 5-cyfrowych kodów PIN, w których cyfry są ustawione w ściśle malejącym porządku.”  
+    „PIN to liczba wszystkich 5-cyfrowych kodów PIN, w których cyfry są ustawione
+    w ściśle malejącym porządku.”  
     \textbf{Odpowiedź:} 252
 \end{enumerate}
 
 \subsection{Sejf}
 
-Sejf został zrealizowany jako obiekt typu Blueprint Actor. 
-Składa się on z komponentów \texttt{StaticMesh} tworzących obudowę sejfu oraz klawiaturę numeryczną, a także z wyświetlacza w postaci widgetu \texttt{WBP\_SafeDisplay}, który prezentuje wprowadzane cyfry oraz komunikaty zwrotne.
+Sejf został zrealizowany jako obiekt typu Blueprint Actor.
+Składa się on z komponentów \texttt{StaticMesh} tworzących obudowę sejfu oraz
+klawiaturę numeryczną, a także z wyświetlacza w postaci widgetu
+\texttt{WBP\_SafeDisplay}, który prezentuje wprowadzane cyfry oraz komunikaty
+zwrotne.
 
-Klawiatura sejfu zawiera:
+Klawiatura sejfu zawiera (rys.~\ref{fig:Safe}):
 \begin{itemize}
-    \item przyciski numeryczne od 0 do 9, których wciśnięcie powoduje wyświetlenie cyfry na ekranie,
-    \item przycisk \texttt{DEL}, umożliwiający usunięcie ostatnio wprowadzonej cyfry,
-    \item przycisk \texttt{CHECK}, służący do zatwierdzenia kodu.
+    \item przyciski numeryczne od 0 do 9,
+    \item przycisk \texttt{DEL}, umożliwiający usunięcie ostatnio wprowadzonej
+    cyfry,
+    \item przycisk zatwierdzenia wykonany w formie sferycznego obiektu 3D.
 \end{itemize}
 
-Gracz wchodzi w interakcję z sejfem poprzez naciskanie przycisków. 
-Aktualnie wprowadzany kod jest na bieżąco prezentowany na wyświetlaczu, co umożliwia kontrolę poprawności danych.
+Gracz wchodzi w interakcję z sejfem poprzez naciskanie przycisków.
+Każdy przycisk sejfu składa się z komponentu wizualnego typu
+\texttt{StaticMesh} oraz komponentu \texttt{Box Collision}.
+Po wciśnięciu przycisku odtwarzana jest animacja oraz wywoływane jest zdarzenie
+przekazujące informację o wciśniętym elemencie do głównej logiki sejfu.
 
-Każdy przycisk sejfu składa się z komponentu wizualnego typu \texttt{StaticMesh} oraz komponentu \texttt{Box Collision}, odpowiedzialnego za wykrywanie interakcji. 
-Po wciśnięciu przycisku odtwarzana jest animacja oraz wywoływane zdarzenie przekazujące informację o wciśniętym elemencie do głównej logiki sejfu.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{images/sejf1.png}
     \caption{Wygląd sejfu}
-    \label{fig:Lamp}
+    \label{fig:Safe}
 \end{figure}
+
 \subsection{Zakończenie zadania}
 
-Po wciśnięciu przycisku \texttt{CHECK} rozpoczyna się proces weryfikacji wprowadzonego kodu z wartością zmiennej \texttt{CurrentCode}. 
-Jeżeli wartości są zgodne, sejf zostaje otwarty, co sygnalizuje poprawne rozwiązanie zagadki. 
-W przypadku wprowadzenia błędnego kodu sejf pozostaje zamknięty, a na wyświetlaczu pojawia się komunikat „ERROR”. 
+Po wciśnięciu przycisku zatwierdzenia rozpoczyna się proces weryfikacji
+wprowadzonego kodu z wartością zmiennej \texttt{CurrentCode}.
+Jeżeli wartości są zgodne, sejf zostaje otwarty.
+W przypadku wprowadzenia błędnego kodu sejf pozostaje zamknięty, a na wyświetlaczu
+pojawia się komunikat „ERROR”.
 Gracz może ponowić próbę rozwiązania zagadki.
 
 \subsection{Podsumowanie}
 
-Zastosowanie jednego, rozszerzalnego mechanizmu sejfu umożliwiło implementację wielu zagadek kombinatorycznych w spójnym środowisku interaktywnym. 
-Takie rozwiązanie znacząco zwiększa regrywalność gry oraz poprawia jej walory edukacyjne.
+Zastosowanie jednego, rozszerzalnego mechanizmu sejfu umożliwiło implementację
+wielu zagadek kombinatorycznych w spójnym środowisku interaktywnym.
+Takie rozwiązanie zwiększa regrywalność gry oraz poprawia jej walory edukacyjne.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Zadanie 7 – Liczby rzeczywiste i działania na zbiorach liczbowych 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1002,93 +1040,82 @@ Gra kończy się w momencie, gdy gracz straci wszystkie 4~życia.
 \section{Zadanie 10 – Prawdopodobieństwo (Andrii Demyshyn)}
 \subsection{Praktyczna realizacja zadania}
 
-Praktyczna realizacja zadania nie różni się zasadniczo od tego, co zostało zaplanowane w teorii, niewielkie zmiany zostały opisane poniżej.
+Praktyczna realizacja zadania nie różni się zasadniczo od tego, co zostało
+zaplanowane w projekcie, a niewielkie zmiany zostały opisane poniżej.
 
 \subsubsection{Design pokoju}
 
-Modele trójwymiarowe wykorzystane w projekcie zostały pobrane z platformy 
-Sketchfab\footnote{\url{https://sketchfab.com}} 
+Modele trójwymiarowe wykorzystane w projekcie zostały pobrane z platformy
+Sketchfab\footnote{\url{https://sketchfab.com}}
 na licencji Creative Commons i dostosowane do wymagań silnika Unreal Engine.
 
-Początkowo planowano, że zagadka zostanie zrealizowana w stylu filmu „Matrix”. W tym celu pobrano i dodano do projektu fotel i stół w stylu filmu. Niestety nie udało się znaleźć postaci Morfeusza w bezpłatnym dostępie, którą można by dodać do projektu, dlatego postanowiono znaleźć i pobrać podobną postać, którą następnie można było przerobić na styl filmu. Udało się znaleźć i pobrać taką postać, a następnie przerobiono jej tekstury, aby styl odpowiadał postaci Morfeusza z filmu.
+Początkowo planowano, że zagadka zostanie zrealizowana w stylistyce filmu
+„Matrix”. W tym celu pobrano i dodano do projektu fotel oraz stół w odpowiednim
+stylu. Ze względu na brak bezpłatnego modelu postaci Morfeusza zdecydowano się na
+wykorzystanie podobnej postaci, której tekstury zostały zmodyfikowane tak, aby
+odpowiadały estetyce filmu. Efekt modyfikacji postaci przed i po zmianach
+przedstawiono na rys.~\ref{fig:Morpheus}.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{images/morpheus_before_after.png}
-    \caption{Rysunek przedstawia postać przed i po modyfikacji.}
-    \label{fig:Lamp}
+    \caption{Postać przed i po modyfikacji}
+    \label{fig:Morpheus}
 \end{figure}
 
-
-Postanowiono również stylizować pokój na styl „Matrixa”. W tym celu stworzono teksturę materiału z neonowo-zielonymi symbolami na czarnym tle, podobnymi do tych, które widzieliśmy w filmie. Następnie teksturę dodano do stworzonego materiału, który został użyty na obiektach ścian. Aby zwiększyć immersję gracza, dodano ruch tekstury na obiektach, dzięki czemu wygląda to nie jak ściany, ale jak dane poruszające się w ciemności.
+Zdecydowano się również na stylizację pokoju w estetyce „Matrixa”. W tym celu
+stworzono materiał z neonowo-zielonymi symbolami na czarnym tle, który następnie
+zastosowano na obiektach ścian. Aby zwiększyć immersję gracza, dodano animację
+ruchu tekstury, dzięki czemu ściany sprawiają wrażenie dynamicznie poruszających
+się danych.
 
 \subsubsection{Obiekty sceny}
 
-Na scenie na początku gry, oprócz stołu, krzesła oraz postaci Morfeusza,
-gracz widzi również tekst zagadki wyświetlany nad postacią, dwa pojemniki
-oraz zestaw 100 tabletek.
+Na scenie, oprócz stołu, krzesła oraz postaci Morfeusza, gracz widzi również tekst
+zagadki wyświetlany nad postacią, dwa pojemniki oraz zestaw 100 tabletek. Wygląd
+kontenerów oraz ich interfejs użytkownika przedstawiono na rys.~\ref{fig:Container}.
 
-Treść zagadki przedstawiona graczowi ma następującą formę:
-
-\begin{quote}
-\textit{Morpheus: Agenci Matrixa mnie schwytali.  
-Przede mną leży 50 czerwonych i 50 niebieskich pigułek — czerwona mnie ocali,
-a niebieska pozostawi mnie na zawsze w Matriksie.  
-Mogę rozłożyć je w dowolny sposób do dwóch identycznych pudełek.  
-Agent sam wybierze jedno pudełko i na ślepo wyciągnie z niego jedną pigułkę.  
-Jak powinienem je rozłożyć, aby maksymalnie zwiększyć szansę
-na wyciągnięcie czerwonej?}
-\end{quote}
-
-\paragraph{Aktor Morfeusza -- \texttt{BP\_Morpheus}}
-
-Pobrana postać Morfeusza została umieszczona w obiekcie typu Blueprint Actor \texttt{BP\_Morpheus}. Do obiektu postaci dodano widżet typu Blueprint Widget \texttt{WBP\_MorpheusText}. Na tym widżecie wyświetlana jest informacja dla gracza na każdym etapie gry. Aby uzyskać interaktywność, dodano animacje. Animacje postaci zostały pobrane z platformy Mixamo\footnote{\url{https://www.mixamo.com}}.
-Pobrano i dodano trzy animacje: \texttt{Sitting\_Idle\_Anim}, \texttt{Sit\_To\_Stand} oraz \texttt{Salute}. Domyślnie wykorzystywana jest animacja \texttt{Sitting\_Idle\_Anim}.
-
-\paragraph{Tabletki -- \texttt{BP\_Pil}}
-
-Na stole gracz widzi przed sobą 100 tabletek w kolorze czerwonym i niebieskim. Tabletki są realizowane jako obiekty typu Blueprint Actor \texttt{BP\_Pil}. Tabletki mają komponent \texttt{StaticMesh} w kształcie kapsułki, komponent kolizji \texttt{BoxCollision}, materiał w kolorze czerwonym lub niebieskim, identyfikator \texttt{ID} oraz, w zależności od potrzeb, tagi \texttt{BP\_Red\_Pil} lub \texttt{BP\_Blue\_Pil}.
-
-\paragraph{Spawner -- \texttt{BP\_Pil\_Spawner}}
-
-Dla wygody na scenie umieszczono aktora typu Blueprint Actor \texttt{BP\_Pil\_Spawner}. Przy starcie gry obiekt ten tworzy na stole 50 czerwonych i 50 niebieskich tabletek z identyfikatorem „Table”.
-
-\paragraph{Kontenery -- \texttt{BP\_PillContainer}}
-
-Kontenery zostały zaimplementowane jako obiekt typu Blueprint Actor \texttt{BP\_PillContainer}. Ściany kontenera zostały zaimplementowane przez komponenty typu \texttt{StaticMesh} ze szklanym materiałem, dzięki czemu gracz może zobaczyć wszystko, co znajduje się i dzieje się wewnątrz kontenera.
-
-Początkowo zakładano, że gracz będzie ręcznie przenosił tabletki ze stołu do kontenera, co zostało zaimplementowane, jednak ręczne przenoszenie 100 tabletek nie jest zbyt wygodne. W związku z tym dodano do kontenerów przyciski, które po naciśnięciu przenoszą tabletki do kontenera. Do kontenera dodano cztery przyciski: \texttt{+ czerwony}, \texttt{- czerwony}, \texttt{+ niebieski} oraz \texttt{- niebieski}. Każdy przycisk został utworzony z komponentu \texttt{StaticMesh}, komponentu kolizji \texttt{BoxCollision} oraz komponentu tekstowego \texttt{TextRender}.
-
-Kiedy gracz naciśnie przycisk „+”, przycisk zaczyna teleportować tabletki odpowiedniego koloru do momentu, dopóki gracz nie zwolni przycisku. Po teleportacji pojemnik przypisuje tabletce swój identyfikator. Aby uniknąć konfliktów, teleportacja jest tak skonstruowana, że najpierw sprawdza i teleportuje tabletki ze stołu, a następnie, gdy się skończą, teleportuje tabletki z innego kontenera. W przypadku przycisku „-” kontener przenosi tabletki z siebie na stół i nadaje im identyfikator stołu.
-
-Nad przyciskami w pojemniku znajduje się również widżet, który pokazuje, ile tabletek każdego koloru znajduje się w pojemniku.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{images/container.png}
-    \caption{Rysunek przedstawia wygląd kontenera}
-    \label{fig:Lamp}
+    \caption{Wygląd kontenera}
+    \label{fig:Container}
 \end{figure}
+
+\paragraph{Tabletki -- \texttt{BP\_Pil}}
+
+Tabletki zostały zaimplementowane jako obiekty typu Blueprint Actor
+\texttt{BP\_Pil}. Każda tabletka posiada komponent wizualny \texttt{StaticMesh},
+komponent kolizji typu \texttt{Box Collision}, materiał w kolorze czerwonym lub
+niebieskim oraz odpowiedni identyfikator.
 
 \paragraph{Przycisk sprawdzania -- \texttt{BP\_CheckButton}}
 
-Na scenie, na piedestale, znajduje się przycisk sprawdzania etapów zadania, zaimplementowany jako obiekt typu Blueprint Actor \texttt{BP\_CheckButton}. Obiekt składa się z komponentów \texttt{StaticMesh} w formie sfery oraz komponentu kolizji typu \texttt{BoxCollision}.
+Na scenie znajduje się przycisk sprawdzania zaimplementowany jako obiekt typu
+Blueprint Actor \texttt{BP\_CheckButton}. Składa się on z komponentu
+\texttt{StaticMesh} w formie sfery oraz komponentu kolizji typu
+\texttt{Box Collision}.
 
-Po wciśnięciu przycisku w pierwszej kolejności sprawdzane jest, czy wszystkie 100 tabletek zostały umieszczone w obydwu kontenerach. Jeżeli nie wszystkie tabletki zostały umieszczone w kontenerach, gracz otrzymuje przez widżet komunikat: „Morpheus: Umieść wszystkie pigułki w pojemnikach.”. W przeciwnym przypadku sprawdzane jest, czy którykolwiek z pojemników jest pusty. Żaden pojemnik nie może być pusty. Jeżeli jeden z nich jest pusty, gracz otrzymuje komunikat: „Morpheus: Żaden pojemnik nie może być pusty. Umieść tabletki w obu pojemnikach.”.
-
-Jeżeli powyższe warunki zostały spełnione, obliczane jest prawdopodobieństwo wylosowania czerwonej pigułki według wzoru:
-
+Po spełnieniu warunków wstępnych obliczane jest prawdopodobieństwo wylosowania
+czerwonej pigułki według wzoru:
 \[
 P =
 \left(
 \frac{R_A}{N_A} +
 \frac{R_B}{N_B}
 \right)
-\cdot \frac{1}{2} \cdot 100\%
+\cdot \frac{1}{2} \cdot 100\%,
 \]
+gdzie:
+\begin{itemize}
+    \item $R_A$, $R_B$ – liczba czerwonych pigułek w obu pojemnikach,
+    \item $N_A$, $N_B$ – liczba wszystkich pigułek w obu pojemnikach.
+\end{itemize}
 
-Jeżeli prawdopodobieństwo wylosowania czerwonej pigułki wynosi mniej niż 74{,}74\%, gracz otrzymuje komunikat:
-„Morpheus: Aktualne prawdopodobieństwo czerwonej pigułki: \{P\}\%. Możesz zrobić to lepiej. Spróbuj ponownie.”.
+Jeżeli obliczone prawdopodobieństwo jest mniejsze niż 74{,}74\%, gracz otrzymuje
+komunikat zwrotny i może ponowić próbę. W przeciwnym przypadku zadanie zostaje
+zaliczone.
 
-Jeżeli prawdopodobieństwo wynosi powyżej 74{,}74\%, gracz otrzymuje komunikat końcowy, zadanie zostaje zaliczone, uruchamiane są animacje \texttt{Sit\_To\_Stand} oraz \texttt{Salute}, po czym postać Morfeusza znika ze sceny.
 
 
 \section{Zadanie 11 – Optymalizacja i rachunek różniczkowy (Autor)}
@@ -1154,6 +1181,7 @@ W przeciwnym przypadku nie jest wykonywana żadna akcja.
 
 Jeżeli kulka opuszcza obszar kontenera, jej wartość energetyczna zostaje odjęta od sumy. 
 Aktualne wartości energetyczne kontenerów są na bieżąco przekazywane do obiektu \texttt{BP\_Lamp}.
+Ogólny wygląd pokoju wraz z rozmieszczeniem pojemników, kulek oraz żarówki przedstawiono na rys.~\ref{fig:Lamp1}.
 
 \subsubsection{Żarówka}
 
@@ -1168,7 +1196,7 @@ Obiekt składa się z komponentów:
     \centering
     \includegraphics[width=0.8\textwidth]{images/Lamp1.png}
     \caption{Wygląd pokoju z kulkami}
-    \label{fig:Lamp}
+    \label{fig:Lamp1}
 \end{figure}
 \subsection{Zakończenie zadania}
 Komponent \texttt{TextRender} wyświetla wartość energii, którą gracz musi osiągnąć. 
