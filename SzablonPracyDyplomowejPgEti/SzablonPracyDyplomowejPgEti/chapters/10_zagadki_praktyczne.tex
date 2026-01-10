@@ -229,8 +229,8 @@ tablicę relacji typów figur opisanych wcześniej.
 \FloatBarrier
 
 \subsection{Przebieg zadania}
-Główny kontroler jest odpowiedzialny za inicjalizację zadania. Uruchamia on funkcję \verb|InitBlueprint|,
-odpowiedzialną za wywołanie odpowiednich funkcji podrzędnych elementów, takich jak: ustawienie
+Główny kontroler jest odpowiedzialny za inicjalizację zadania. Uruchamia on funkcję \\
+\verb|InitBlueprint|,~odpowiedzialną za wywołanie odpowiednich funkcji podrzędnych elementów, takich jak: ustawienie
 tekstu, inicjalizacja ścian i przycisków.
 
 Kontroler oczekuje na otrzymanie powiadomienia od przycisku odpowiedzialnego za uruchomienie
@@ -747,7 +747,7 @@ Gracz ma do dyspozycji 6 bloczków:
 \end{itemize}
 Bloczki mają mu służyć do uzupełnienia dwóch relacji wymienionych wyżej. Po ułożeniu relacji,
 poprawnie bądź nie, bloczki pozostają do dyspozycji gracza. W relacji elementami stałymi są
-\glqq =\grqq i litery reprezentujące zbiory liczb (nie można ich przestawiać).
+\glqq =\grqq i~litery reprezentujące zbiory liczb (nie można ich przestawiać).
 
 \subsection{Implementacja zadania}
 
@@ -795,11 +795,12 @@ miał pewność, że udzielona odpowiedź jest poprawna. Podczas sprawdzania sta
 tj.~ustawienia bloczków przez gracza, pytanie zostaje zablokowane, a gracz nie może modyfikować
 swojej odpowiedzi (dokładać lub zabierać bloczków).
 
-Kiedy gracz odpowie na oba pytania poprawnie, poziom zostaje uznany za zaliczony.
+Kiedy gracz odpowie na oba pytania poprawnie, poziom zostaje uznany za zaliczony. Przepływ został zaprezentowany w~postaci diagramu
+na rysunku \ref{rzeczywiste:FLOW}.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.4\textwidth]{images/real_FLOW.png}
+    \includegraphics[width=0.5\textwidth]{images/real_FLOW.png}
     \caption{Diagram przepływu dla zadania 7 -- liczby rzeczywiste i działania na zbiorach liczbowych.}
     \label{rzeczywiste:FLOW}
 \end{figure}
@@ -1000,7 +1001,7 @@ i rozpoczyna grę. W sposób pseudolosowy zostaje wybrany jeden z trzech wzorów
 $n = 0$, na jednej z trzech kaczek. Pozostałe kaczki otrzymują wyrazy większe lub mniejsze od
 poprawnego wyrazu, również w sposób pseudolosowy. Dzieje się to wedle zasady, że wybrane
 wyrazy mogą być odległe jedynie o 2 jednostki na osi współrzędnych od poprawnego wyrazu
-($a_n \pm 2$).
+($a_n \pm 2$). Przepływ tego mechanizmu można zobaczyć na rysunku \ref{sequence:flow}.
 
 Kaczki pokonują stałą jednostkę odległości, w każdej jednostce czasu wykonywania się programu,
 wyrażoną za pomocą liczby zmiennoprzecinkowej. Jednostka odległości jest tym większa, im większy
@@ -1008,18 +1009,19 @@ jest aktualny numer wyrazu ciągu arytmetycznego. Oznacza to, że będą przyspi
 z przebiegiem gry. Do tak obliczonej stałej wartości, dodawana jest pseudolosowa wartość zmiennoprzecinkowa
 wybrana pseudolosowo z przedziału $\left[0,5; 0,7\right] $. 
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.6\textwidth]{images/sequence_FLOW.png}
-    \caption{Diagram przepływu dla zadania 9 -- Ciągi liczbowe }
-    \label{sequence:flow}
-\end{figure}
-
 Kaczki poruszają się od lewej do prawej strony ekranu, aż do zderzenia się z instancją obiektu
 \verb |HitWall|. Kaczki mogą zostać zestrzelone przez gracza, zanim zderzą się z wyżej wymienionym
 obiektem. W obu przypadkach do kontrolera wysyłane jest powiadomienie odpowiedniego rodzaju: 
 kaczka została zestrzelona lub kaczka  zderzyła się z obiektem \verb|HitWall|. W powiadomieniu przekazana
 jest również liczba całkowita, która znajdowała się na danej kaczce. 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/sequence_FLOW.png}
+    \caption{Diagram przepływu dla zadania 9 -- Ciągi liczbowe }
+    \label{sequence:flow}
+\end{figure}
+\FloatBarrier
 
 Kontroler po otrzymaniu w powiadomieniu liczby oraz informacji, czy dana kaczka została zestrzelona, 
 podejmuje decyzję:
@@ -1036,7 +1038,7 @@ i pozwolenie, aby kaczka zawierająca poprawny numer uderzyła w obiekt \verb|Hi
 Gra kończy się w momencie, gdy gracz straci wszystkie 4~życia.
 
 
-
+\clearpage
 \section{Zadanie 10 – Prawdopodobieństwo (Andrii Demyshyn)}
 \subsection{Praktyczna realizacja zadania}
 
@@ -1056,12 +1058,13 @@ wykorzystanie podobnej postaci, której tekstury zostały zmodyfikowane tak, aby
 odpowiadały estetyce filmu. Efekt modyfikacji postaci przed i po zmianach
 przedstawiono na rys.~\ref{fig:Morpheus}.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/morpheus_before_after.png}
+    \includegraphics[width=0.6\textwidth]{images/morpheus_before_after.png}
     \caption{Postać przed i po modyfikacji}
     \label{fig:Morpheus}
 \end{figure}
+\FloatBarrier
 
 Zdecydowano się również na stylizację pokoju w estetyce „Matrixa”. W tym celu
 stworzono materiał z neonowo-zielonymi symbolami na czarnym tle, który następnie
@@ -1069,7 +1072,7 @@ zastosowano na obiektach ścian. Aby zwiększyć immersję gracza, dodano animac
 ruchu tekstury, dzięki czemu ściany sprawiają wrażenie dynamicznie poruszających
 się danych.
 
-\subsubsection{Obiekty sceny}
+\subsubsection{Obiekt sceny}
 
 Na scenie, oprócz stołu, krzesła oraz postaci Morfeusza, gracz widzi również tekst
 zagadki wyświetlany nad postacią, dwa pojemniki oraz zestaw 100 tabletek. Wygląd
@@ -1235,8 +1238,8 @@ W zadaniu został zaimplementowany jeden główny kontroler \verb|SelectorContro
 jest inicjalizacja gry, zarządzanie przebiegiem gry, wyświetlanie tekstu i wybór odpowiednich pytań,
 wyświetlanych graczowi. Zawiera on dwustronną referencję do obiektu \verb|Stereometry|
 oraz dwustronną referencję do trzech obiektów \verb|Button| (takich, jak te opisane w podrozdziałach
-\ref{sec:planimetria_praktyka} i \ref{sec:planimetria_praktyka}). Zawiera także predefiniowany zbiór pytań, dotyczących każdej z brył, reprezentowany
-przez mapę typu \textit{pytanie:poprawna odpowiedź}. Powiązania kontrolera z pozostałymi komponentami w zadaniu
+\ref{sec:planimetria_praktyka} i~\ref{sec:planimetria_praktyka}). Zawiera także predefiniowany zbiór pytań, dotyczących każdej z brył, reprezentowany
+przez mapę typu \textit{pytanie:poprawna odpowiedź}. Powiązania kontrolera z pozostałymi komponentami w~zadaniu
 zostały zaprezentowane na rysunku \ref{stereometria:uml}.
 
 Obiekt \verb|Stereometry| odpowiada za poprawne wyświetlanie brył. Zawiera 5 obiektów typu siatki 
@@ -1266,6 +1269,14 @@ zawierają odpowiedzi \textit{A, B} lub \textit{C}. Pytania są
 wyświetlane sekwencyjnie -- najpierw zadawane jest pytanie o typ bryły, potem o wzór na obliczenie
 jej pola powierzchni, a na końcu o wzór na obliczanie jej objętości.
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/stereometria_FLOW.png}
+    \caption{Diagram przepływu dla zadania 13 -- stereometria}
+    \label{stereometria:flow}
+\end{figure}
+\FloatBarrier
+
 Jeśli gracz pomyli się podczas udzielania odpowiedzi, kontroler ponownie wywoła funkcję odpowiedzialną
 za wybór kolejnej bryły. W takim przypadku może się ona pojawić ponownie w zadaniu,
 ale nie od razu po udzieleniu błędnej odpowiedzi. Jeśli gracz odpowie na wszystkie 3 pytania
@@ -1273,9 +1284,3 @@ prawidłowo, bryła zostaje uznana za zaliczoną i jest usuwana z puli dostępny
 brył. Gra kończy się kiedy gracz poprawnie odpowie na pytania dotyczące 3 różnych brył.
 Przebieg całego zadania został zaprezentowany w postaci diagramu przepływu na rysunku \ref{stereometria:flow}
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.7\textwidth]{images/stereometria_FLOW.png}
-    \caption{Diagram przepływu dla zadania 13 -- stereometria}
-    \label{stereometria:flow}
-\end{figure}

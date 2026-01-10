@@ -1,14 +1,14 @@
-[0] Config.pm:328> INFO - This is Biber 2.21
-[0] Config.pm:331> INFO - Logfile is 'PracaMagisterka.blg'
-[111] biber-MSWIN64:342> INFO - === 
-[148] Biber.pm:421> INFO - Reading 'PracaMagisterka.bcf'
-[269] Biber.pm:1002> INFO - Found 9 citekeys in bib section 0
-[284] Biber.pm:4487> INFO - Processing section 0
-[295] Biber.pm:4678> INFO - Looking for bibtex file 'bibliography/bibliography.bib' for section 0
-[339] bibtex.pm:1713> INFO - LaTeX decoding ...
-[349] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography/bibliography.bib'
-[420] UCollate.pm:68> INFO - Overriding locale 'pl-PL' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[420] UCollate.pm:68> INFO - Overriding locale 'pl-PL' defaults 'variable = shifted' with 'variable = non-ignorable'
-[420] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'pl-PL'
-[431] bbl.pm:676> INFO - Writing 'PracaMagisterka.bbl' with encoding 'UTF-8'
-[435] bbl.pm:779> INFO - Output to PracaMagisterka.bbl
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'PracaMagisterka.blg'
+[99] biber-MSWIN64:340> INFO - === 
+[128] Biber.pm:419> INFO - Reading 'PracaMagisterka.bcf'
+[220] Biber.pm:979> INFO - Found 11 citekeys in bib section 0
+[235] Biber.pm:4419> INFO - Processing section 0
+[276] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography/bibliography.bib' for section 0
+[312] bibtex.pm:1713> INFO - LaTeX decoding ...
+[335] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography/bibliography.bib'
+[444] UCollate.pm:68> INFO - Overriding locale 'pl-PL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[455] UCollate.pm:68> INFO - Overriding locale 'pl-PL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[456] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'pl-PL'
+[484] bbl.pm:660> INFO - Writing 'PracaMagisterka.bbl' with encoding 'UTF-8'
+[488] bbl.pm:763> INFO - Output to PracaMagisterka.bbl
