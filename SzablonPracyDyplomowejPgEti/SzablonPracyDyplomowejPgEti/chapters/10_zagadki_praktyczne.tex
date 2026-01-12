@@ -62,7 +62,7 @@ Każdy slot składa się z następujących elementów:
 
 \begin{itemize}
     \item wyróżnionego kolorem obszaru,
-    \item komponentu \texttt{Box Collision},
+    \item komponentu \texttt{BoxCollision},
     \item komponentu \texttt{Scene Component -- Point},
     \item oczekiwanego identyfikatora \texttt{ExpectedID},
     \item zmiennej typu bool \texttt{Slot[i]IsNoFull}, która informuje, czy slot jest zajęty (domyślnie ustawiona na \texttt{True}),
@@ -89,7 +89,7 @@ Każdy obiekt \texttt{BP\_FormulaBlock} składa się z:
 \begin{itemize}
     \item komponentu \texttt{StaticMesh},
     \item komponentu \texttt{TextRender} z odpowiednią formułą,
-    \item komponentu \texttt{Box Collision},
+    \item komponentu \texttt{BoxCollision},
     \item identyfikatora \texttt{FormulaID}.
 \end{itemize}
 
@@ -120,7 +120,7 @@ Po rozpoczęciu zadania gracz znajduje się w pokoju i widzi na panelu informacy
 „Połącz odpowiednie początki i końce wzorów skróconego mnożenia. Przeciągnij klocki we właściwe miejsca.”
 \end{quote}
 
-Jeżeli gracz podniesie obiekt z formułą i spróbuje umieścić go w slocie, w momencie wejścia obiektu w obszar \texttt{Box Collision} slotu, obiekt tymczasowo przejmuje materiał slotu. 
+Jeżeli gracz podniesie obiekt z formułą i spróbuje umieścić go w slocie, w momencie wejścia obiektu w obszar \texttt{BoxCollision} slotu, obiekt tymczasowo przejmuje materiał slotu. 
 Jeżeli w tym momencie gracz upuści obiekt, zostaje on automatycznie umieszczony w slocie. 
 Rozwiązanie to zostało zastosowane w celu ułatwienia precyzyjnego umieszczania obiektów. 
 Jeżeli gracz wyciągnie obiekt z obszaru kolizji slotu, jego materiał zostaje przywrócony do pierwotnego stanu.
@@ -662,7 +662,7 @@ Klawiatura sejfu zawiera (rys.~\ref{fig:Safe}):
 
 Gracz wchodzi w interakcję z sejfem poprzez naciskanie przycisków.
 Każdy przycisk sejfu składa się z komponentu wizualnego typu
-\texttt{StaticMesh} oraz komponentu \texttt{Box Collision}.
+\texttt{StaticMesh} oraz komponentu \texttt{BoxCollision}.
 Po wciśnięciu przycisku odtwarzana jest animacja oraz wywoływane jest zdarzenie
 przekazujące informację o wciśniętym elemencie do głównej logiki sejfu.
 
@@ -1045,7 +1045,7 @@ Gra kończy się w momencie, gdy gracz straci wszystkie 4~życia.
 Praktyczna realizacja zadania nie różni się zasadniczo od tego, co zostało
 zaplanowane w projekcie, a niewielkie zmiany zostały opisane poniżej.
 
-\subsubsection{Design pokoju}
+\subsection{Design pokoju}
 
 Modele trójwymiarowe wykorzystane w projekcie zostały pobrane z platformy
 Sketchfab\footnote{\url{https://sketchfab.com}}
@@ -1072,7 +1072,7 @@ zastosowano na obiektach ścian. Aby zwiększyć immersję gracza, dodano animac
 ruchu tekstury, dzięki czemu ściany sprawiają wrażenie dynamicznie poruszających
 się danych.
 
-\subsubsection{Obiekt sceny}
+\subsection{Obiekt sceny}
 
 Na scenie, oprócz stołu, krzesła oraz postaci Morfeusza, gracz widzi również tekst
 zagadki wyświetlany nad postacią, dwa pojemniki oraz zestaw 100 tabletek. Wygląd
@@ -1089,7 +1089,7 @@ kontenerów oraz ich interfejs użytkownika przedstawiono na rys.~\ref{fig:Conta
 
 Tabletki zostały zaimplementowane jako obiekty typu Blueprint Actor
 \texttt{BP\_Pil}. Każda tabletka posiada komponent wizualny \texttt{StaticMesh},
-komponent kolizji typu \texttt{Box Collision}, materiał w kolorze czerwonym lub
+komponent kolizji typu \texttt{BoxCollision}, materiał w kolorze czerwonym lub
 niebieskim oraz odpowiedni identyfikator.
 
 \paragraph{Przycisk sprawdzania -- \texttt{BP\_CheckButton}}
@@ -1097,7 +1097,7 @@ niebieskim oraz odpowiedni identyfikator.
 Na scenie znajduje się przycisk sprawdzania zaimplementowany jako obiekt typu
 Blueprint Actor \texttt{BP\_CheckButton}. Składa się on z komponentu
 \texttt{StaticMesh} w formie sfery oraz komponentu kolizji typu
-\texttt{Box Collision}.
+\texttt{BoxCollision}.
 
 Po spełnieniu warunków wstępnych obliczane jest prawdopodobieństwo wylosowania
 czerwonej pigułki według wzoru:
@@ -1121,7 +1121,77 @@ zaliczone.
 
 
 
-\section{Zadanie 11 – Optymalizacja i rachunek różniczkowy (Autor)}
+\section{Zadanie 11 – Optymalizacja i rachunek różniczkowy (Andrii Demyshyn)}
+\subsection{Problemy i różnice w realizacji zadania w praktyce}
+
+W projekcie zaplanowano, że gracz będzie łączył początek i koniec formuły pochodnych, jednak podczas realizacji zdecydowano, że takie rozwiązanie będzie zbyt łatwe. 
+W związku z tym podjęto decyzję o wykorzystaniu rzeczywistych funkcji oraz wyników ich pochodnych, które gracz będzie ze sobą łączył, aby podnieść poziom trudności zadania.
+
+Przy takim podejściu konieczne było odpowiednie dobranie funkcji w taki sposób, aby zapobiec konfliktom, w których wynik pochodnej mógłby być jednocześnie początkiem innej funkcji. 
+Przykładowo funkcja $\ln(x)$ ma pochodną $\frac{1}{x}$, a funkcja $\frac{1}{x}$ ma pochodną $-\frac{1}{x^2}$. 
+W takim przypadku wyrażenie $\frac{1}{x}$ mogłoby występować zarówno jako początek, jak i jako koniec pary, co mogłoby prowadzić do konfliktów w rozgrywce.
+
+Aby uniknąć takich sytuacji, wybrano następujące funkcje oraz ich pochodne:
+
+\begin{itemize}
+    \item $2x \rightarrow 2$
+    \item $x^3 \rightarrow 3x^2$
+    \item $\sqrt{x} \rightarrow \frac{1}{2\sqrt{x}}$
+    \item $e^x \rightarrow e^x$
+    \item $a^x \rightarrow a^x \cdot \ln(a)$
+    \item $\log_a x \rightarrow \frac{1}{x \cdot \ln a}$
+    \item $5x^2 \rightarrow 10x$
+    \item $2^x \rightarrow 2^x \cdot \ln 2$
+    \item $\ln(x^2) \rightarrow \frac{2}{x}$
+    \item $\log_{10} x \rightarrow \frac{1}{x \cdot \ln 10}$
+    \item $\frac{1}{3x} \rightarrow -\frac{1}{3x^2}$
+    \item $\log_5\left(\frac{x}{3}\right) \rightarrow \frac{1}{x \cdot \ln 5}$
+\end{itemize}
+
+\subsection{Przebieg zadania}
+
+W pokoju gracz widzi puste tabliczki oraz widżet z instrukcją „Połącz funkcje z jej pochodną”. 
+Widoczny jest również licznik „Połączono: 0/12”, gdzie liczba 0 oznacza liczbę poprawnie połączonych par, a 12 jest wynikiem, który należy osiągnąć.
+
+Po kliknięciu na tabliczkę obraca się ona, a gracz widzi wzór. Kolejne kliknięcia tej samej tabliczki nie wywołują reakcji. 
+Po kliknięciu na inną tabliczkę, również ona zostaje odwrócona i wyświetlana jest kolejna formuła.Nie można otworzyć jednocześnie więcej dwóch tabliczek.
+
+Jeżeli odkryte formuły stanowią funkcję oraz jej pochodną, tabliczki znikają, a licznik „Połączono” zostaje zwiększony. 
+W przeciwnym przypadku tabliczki wracają do pozycji wyjściowej. 
+Zadaniem gracza jest połączenie wszystkich funkcji z ich pochodnymi. 
+Widok pokoju przedstawiono na rysunku~\ref{fig:pochodneroom}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/pochodneroom.png}
+    \caption{Widok pokoju pochodnych}
+    \label{fig:pochodneroom}
+\end{figure}
+\subsection{Opis pokoju}
+
+\subsubsection{Tabliczka \texttt{BP\_Card}}
+
+Wszystkie tabliczki zostały zrealizowane jako obiekty typu Blueprint Actor \texttt{BP\_Card}. 
+Każdy obiekt posiada komponent \texttt{StaticMesh}, odpowiedzialny za wygląd trójwymiarowy, komponent kolizji typu \texttt{BoxCollision} oraz komponent typu \texttt{Widget}, który odpowiada za wyświetlanie tekstu funkcji.
+
+Obiekt zawiera również zmienną \texttt{PairID}, pełniącą rolę identyfikatora pary, oraz zmienną \texttt{FormulaText}, która przechowuje tekst formuły. 
+Początkowo tabliczki umieszczone są w pokoju stroną, na której formuła nie jest widoczna.
+
+Kiedy gracz wejdzie w obszar kolizji tabliczki, obiekt obraca się o 180 stopni, odsłaniając wzór, a interakcja z tym obiektem zostaje wyłączona.
+
+\subsubsection{Menedżer \texttt{BP\_PuzzleManager}}
+
+W pokoju znajduje się obiekt typu Blueprint Actor \texttt{BP\_PuzzleManager}. 
+Obiekt ten składa się z komponentu widżetu typu Blueprint Widget \texttt{WBP\_Status}, który jest wyświetlany nad tabliczkami i odpowiada za obsługę interakcji gracza.
+
+Po kliknięciu pierwszej tabliczki menedżer zapisuje ją w zmiennej \texttt{FirstCard}, natomiast po kliknięciu drugiej zapisuje ją w zmiennej \texttt{SecondCard}. 
+Następnie blokowana jest interakcja gracza z pozostałymi tabliczkami i porównywane są wartości zmiennej \texttt{PairID} obu obiektów.
+
+Jeżeli identyfikatory są zgodne, wyświetlany jest tekst „Para”, licznik „Połączono” zostaje zwiększony, a tabliczki znikają. 
+W przeciwnym przypadku wyświetlany jest tekst „Nie para”, a tabliczki wracają do pierwotnego położenia. 
+Po zakończeniu sprawdzania interakcja gracza z tabliczkami zostaje ponownie włączona.
+
+
+
 \section{Zadanie 12 – Układy równań (Andrii Demyshyn)}
 \subsection{Różnice realizacji zadania w praktyce}
 W tym zadaniu zrealizowano zagadkę matematyczną opartą na osiągnięciu zadanej wartości energetycznej niezbędnej do zapalenia żarówki. 
@@ -1163,7 +1233,7 @@ Zostały one zrealizowane za pomocą trzech blueprintów aktorów: \texttt{BR}, 
 Każdy obiekt kulki składa się z:
 \begin{itemize}
     \item komponentu \texttt{StaticMesh} w postaci sfery,
-    \item komponentu \texttt{Box Collision},
+    \item komponentu \texttt{BoxCollision},
     \item tagu \texttt{Ball},
     \item tagu odpowiadającego kolorowi kulki (\texttt{Green}, \texttt{Blue}, \texttt{Red}).
 \end{itemize}
@@ -1175,10 +1245,10 @@ Kulki są obiektami fizycznymi, które gracz może podnosić, przenosić oraz um
 W scenie zaimplementowano trzy kontenery w postaci obiektów typu Blueprint Actor:
 \texttt{BP\_Container\_Red}, \texttt{BP\_Container\_Blue} oraz \texttt{BP\_Container\_Green}.
 
-Ściany każdego kontenera składają się z czterech komponentów typu \texttt{StaticMesh} z materiałem szklanym, dna wykonanego z komponentu \texttt{StaticMesh} w odpowiednim kolorze oraz komponentu \texttt{Box Collision}.
+Ściany każdego kontenera składają się z czterech komponentów typu \texttt{StaticMesh} z materiałem szklanym, dna wykonanego z komponentu \texttt{StaticMesh} w odpowiednim kolorze oraz komponentu \texttt{BoxCollision}.
 
 Kontenery przyjmują oraz przekazują do żarówki wartości energetyczne kulek odpowiadającego im koloru. 
-Mechanizm ten został zrealizowany w taki sposób, że w momencie wejścia obiektu w obszar \texttt{Box Collision} kontener sprawdza, czy obiekt posiada tag \texttt{Ball} oraz tag odpowiadający kolorowi kontenera. 
+Mechanizm ten został zrealizowany w taki sposób, że w momencie wejścia obiektu w obszar \texttt{BoxCollision} kontener sprawdza, czy obiekt posiada tag \texttt{Ball} oraz tag odpowiadający kolorowi kontenera. 
 Jeżeli warunki są spełnione, kontener dodaje wartość energetyczną kulki do swojej łącznej wartości, która domyślnie wynosi 0. 
 W przeciwnym przypadku nie jest wykonywana żadna akcja.
 

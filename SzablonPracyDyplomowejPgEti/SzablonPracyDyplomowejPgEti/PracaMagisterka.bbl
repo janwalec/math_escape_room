@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{none/global//global/global}
-    \entry{lebiedz1}{inproceedings}{}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{lebiedz1}{inproceedings}{}{}
       \name{author}{5}{}{%
         {{hash=4fbd18aea7c628a01524d083a9d28121}{%
            family={Baziak},
@@ -49,10 +49,12 @@
       }
       \strng{namehash}{d505626a3918a017d9d6d7fba2bf8612}
       \strng{fullhash}{e52ce1bdc48963f3b50f2a7b39331b6c}
+      \strng{fullhashraw}{e52ce1bdc48963f3b50f2a7b39331b6c}
       \strng{bibnamehash}{e52ce1bdc48963f3b50f2a7b39331b6c}
       \strng{authorbibnamehash}{e52ce1bdc48963f3b50f2a7b39331b6c}
       \strng{authornamehash}{d505626a3918a017d9d6d7fba2bf8612}
       \strng{authorfullhash}{e52ce1bdc48963f3b50f2a7b39331b6c}
+      \strng{authorfullhashraw}{e52ce1bdc48963f3b50f2a7b39331b6c}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -71,7 +73,7 @@
       \verb https://event.mostwiedzy.pl/event/56/attachments/449/945/ZNWEiAPG_76.pdf#page=60
       \endverb
     \endentry
-    \entry{lebiedz2}{inproceedings}{}
+    \entry{lebiedz2}{inproceedings}{}{}
       \name{author}{2}{}{%
         {{hash=cb00acc449ef01d0d7ce73cd9fa8acb0}{%
            family={Żarek},
@@ -89,10 +91,12 @@
       }
       \strng{namehash}{9026c3e185b83d1a7b877200857d9a15}
       \strng{fullhash}{9026c3e185b83d1a7b877200857d9a15}
+      \strng{fullhashraw}{9026c3e185b83d1a7b877200857d9a15}
       \strng{bibnamehash}{9026c3e185b83d1a7b877200857d9a15}
       \strng{authorbibnamehash}{9026c3e185b83d1a7b877200857d9a15}
       \strng{authornamehash}{9026c3e185b83d1a7b877200857d9a15}
       \strng{authorfullhash}{9026c3e185b83d1a7b877200857d9a15}
+      \strng{authorfullhashraw}{9026c3e185b83d1a7b877200857d9a15}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -111,7 +115,7 @@
       \verb https://aisel.aisnet.org/isd2014/proceedings2025/education/5/
       \endverb
     \endentry
-    \entry{Zarzadzanie_Projektami_IT_Przewodnik_po_Metodykach}{book}{}
+    \entry{Zarzadzanie_Projektami_IT_Przewodnik_po_Metodykach}{book}{}{}
       \name{author}{1}{}{%
         {{hash=5e83cb778bf1a6ed73fb6391c634e2f4}{%
            family={Koszlajda},
@@ -124,10 +128,12 @@
       }
       \strng{namehash}{5e83cb778bf1a6ed73fb6391c634e2f4}
       \strng{fullhash}{5e83cb778bf1a6ed73fb6391c634e2f4}
+      \strng{fullhashraw}{5e83cb778bf1a6ed73fb6391c634e2f4}
       \strng{bibnamehash}{5e83cb778bf1a6ed73fb6391c634e2f4}
       \strng{authorbibnamehash}{5e83cb778bf1a6ed73fb6391c634e2f4}
       \strng{authornamehash}{5e83cb778bf1a6ed73fb6391c634e2f4}
       \strng{authorfullhash}{5e83cb778bf1a6ed73fb6391c634e2f4}
+      \strng{authorfullhashraw}{5e83cb778bf1a6ed73fb6391c634e2f4}
       \field{sortinit}{8}
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
@@ -135,7 +141,7 @@
       \field{title}{Zarządzanie projektami IT. Przewodnik po metodykach}
       \field{year}{2010}
     \endentry
-    \entry{github_about_git}{online}{}
+    \entry{github_about_git}{online}{}{}
       \name{author}{1}{}{%
         {{hash=b79b798b2812cfe1c1431894a617897d}{%
            family={GitHub},
@@ -145,10 +151,12 @@
       }
       \strng{namehash}{b79b798b2812cfe1c1431894a617897d}
       \strng{fullhash}{b79b798b2812cfe1c1431894a617897d}
+      \strng{fullhashraw}{b79b798b2812cfe1c1431894a617897d}
       \strng{bibnamehash}{b79b798b2812cfe1c1431894a617897d}
       \strng{authorbibnamehash}{b79b798b2812cfe1c1431894a617897d}
       \strng{authornamehash}{b79b798b2812cfe1c1431894a617897d}
       \strng{authorfullhash}{b79b798b2812cfe1c1431894a617897d}
+      \strng{authorfullhashraw}{b79b798b2812cfe1c1431894a617897d}
       \field{extraname}{1}
       \field{sortinit}{9}
       \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
@@ -167,7 +175,7 @@
       \verb https://docs.github.com/en/get-started/using-github
       \endverb
     \endentry
-    \entry{github_about_issues}{online}{}
+    \entry{github_about_issues}{online}{}{}
       \name{author}{1}{}{%
         {{hash=b79b798b2812cfe1c1431894a617897d}{%
            family={GitHub},
@@ -177,10 +185,12 @@
       }
       \strng{namehash}{b79b798b2812cfe1c1431894a617897d}
       \strng{fullhash}{b79b798b2812cfe1c1431894a617897d}
+      \strng{fullhashraw}{b79b798b2812cfe1c1431894a617897d}
       \strng{bibnamehash}{b79b798b2812cfe1c1431894a617897d}
       \strng{authorbibnamehash}{b79b798b2812cfe1c1431894a617897d}
       \strng{authornamehash}{b79b798b2812cfe1c1431894a617897d}
       \strng{authorfullhash}{b79b798b2812cfe1c1431894a617897d}
+      \strng{authorfullhashraw}{b79b798b2812cfe1c1431894a617897d}
       \field{extraname}{2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
@@ -199,7 +209,7 @@
       \verb https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues
       \endverb
     \endentry
-    \entry{git_branches}{online}{}
+    \entry{git_branches}{online}{}{}
       \name{author}{1}{}{%
         {{hash=d8dda73b95810ca1104b81dc2d69e5ff}{%
            family={community},
@@ -209,10 +219,12 @@
       }
       \strng{namehash}{d8dda73b95810ca1104b81dc2d69e5ff}
       \strng{fullhash}{d8dda73b95810ca1104b81dc2d69e5ff}
+      \strng{fullhashraw}{d8dda73b95810ca1104b81dc2d69e5ff}
       \strng{bibnamehash}{d8dda73b95810ca1104b81dc2d69e5ff}
       \strng{authorbibnamehash}{d8dda73b95810ca1104b81dc2d69e5ff}
       \strng{authornamehash}{d8dda73b95810ca1104b81dc2d69e5ff}
       \strng{authorfullhash}{d8dda73b95810ca1104b81dc2d69e5ff}
+      \strng{authorfullhashraw}{d8dda73b95810ca1104b81dc2d69e5ff}
       \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
@@ -231,7 +243,7 @@
       \verb https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
       \endverb
     \endentry
-    \entry{git_rulesets}{online}{}
+    \entry{git_rulesets}{online}{}{}
       \name{author}{1}{}{%
         {{hash=b79b798b2812cfe1c1431894a617897d}{%
            family={GitHub},
@@ -241,10 +253,12 @@
       }
       \strng{namehash}{b79b798b2812cfe1c1431894a617897d}
       \strng{fullhash}{b79b798b2812cfe1c1431894a617897d}
+      \strng{fullhashraw}{b79b798b2812cfe1c1431894a617897d}
       \strng{bibnamehash}{b79b798b2812cfe1c1431894a617897d}
       \strng{authorbibnamehash}{b79b798b2812cfe1c1431894a617897d}
       \strng{authornamehash}{b79b798b2812cfe1c1431894a617897d}
       \strng{authorfullhash}{b79b798b2812cfe1c1431894a617897d}
+      \strng{authorfullhashraw}{b79b798b2812cfe1c1431894a617897d}
       \field{extraname}{3}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
@@ -263,7 +277,7 @@
       \verb https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets
       \endverb
     \endentry
-    \entry{git_about_pull_requests}{online}{}
+    \entry{git_about_pull_requests}{online}{}{}
       \name{author}{1}{}{%
         {{hash=b79b798b2812cfe1c1431894a617897d}{%
            family={GitHub},
@@ -273,10 +287,12 @@
       }
       \strng{namehash}{b79b798b2812cfe1c1431894a617897d}
       \strng{fullhash}{b79b798b2812cfe1c1431894a617897d}
+      \strng{fullhashraw}{b79b798b2812cfe1c1431894a617897d}
       \strng{bibnamehash}{b79b798b2812cfe1c1431894a617897d}
       \strng{authorbibnamehash}{b79b798b2812cfe1c1431894a617897d}
       \strng{authornamehash}{b79b798b2812cfe1c1431894a617897d}
       \strng{authorfullhash}{b79b798b2812cfe1c1431894a617897d}
+      \strng{authorfullhashraw}{b79b798b2812cfe1c1431894a617897d}
       \field{extraname}{4}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
@@ -295,7 +311,7 @@
       \verb https://docs.github.com/en/pull-requests/collaborating-with-pull-requests
       \endverb
     \endentry
-    \entry{git_lfs}{online}{}
+    \entry{git_lfs}{online}{}{}
       \name{author}{1}{}{%
         {{hash=d8dda73b95810ca1104b81dc2d69e5ff}{%
            family={community},
@@ -305,10 +321,12 @@
       }
       \strng{namehash}{d8dda73b95810ca1104b81dc2d69e5ff}
       \strng{fullhash}{d8dda73b95810ca1104b81dc2d69e5ff}
+      \strng{fullhashraw}{d8dda73b95810ca1104b81dc2d69e5ff}
       \strng{bibnamehash}{d8dda73b95810ca1104b81dc2d69e5ff}
       \strng{authorbibnamehash}{d8dda73b95810ca1104b81dc2d69e5ff}
       \strng{authornamehash}{d8dda73b95810ca1104b81dc2d69e5ff}
       \strng{authorfullhash}{d8dda73b95810ca1104b81dc2d69e5ff}
+      \strng{authorfullhashraw}{d8dda73b95810ca1104b81dc2d69e5ff}
       \field{extraname}{2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
@@ -327,7 +345,7 @@
       \verb https://git-lfs.com/
       \endverb
     \endentry
-    \entry{rational-unified-process}{book}{}
+    \entry{rational-unified-process}{book}{}{}
       \name{author}{1}{}{%
         {{hash=63783a2ac07f1c9e2c5fa6eb9c77a98a}{%
            family={Kruchten},
@@ -340,10 +358,12 @@
       }
       \strng{namehash}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
       \strng{fullhash}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
+      \strng{fullhashraw}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
       \strng{bibnamehash}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
       \strng{authorbibnamehash}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
       \strng{authornamehash}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
       \strng{authorfullhash}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
+      \strng{authorfullhashraw}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -352,7 +372,7 @@
       \field{title}{The Rational Unified Process: An Introduction}
       \field{year}{2003}
     \endentry
-    \entry{kanban}{online}{}
+    \entry{kanban}{online}{}{}
       \name{author}{1}{}{%
         {{hash=d3c3cd30e78ce850a89ee1bbc2f82e04}{%
            family={Roman},
@@ -362,10 +382,12 @@
       }
       \strng{namehash}{d3c3cd30e78ce850a89ee1bbc2f82e04}
       \strng{fullhash}{d3c3cd30e78ce850a89ee1bbc2f82e04}
+      \strng{fullhashraw}{d3c3cd30e78ce850a89ee1bbc2f82e04}
       \strng{bibnamehash}{d3c3cd30e78ce850a89ee1bbc2f82e04}
       \strng{authorbibnamehash}{d3c3cd30e78ce850a89ee1bbc2f82e04}
       \strng{authornamehash}{d3c3cd30e78ce850a89ee1bbc2f82e04}
       \strng{authorfullhash}{d3c3cd30e78ce850a89ee1bbc2f82e04}
+      \strng{authorfullhashraw}{d3c3cd30e78ce850a89ee1bbc2f82e04}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
