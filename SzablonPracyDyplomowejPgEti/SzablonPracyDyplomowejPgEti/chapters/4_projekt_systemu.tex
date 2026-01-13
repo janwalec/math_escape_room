@@ -153,16 +153,26 @@ Gracz przebywa fizycznie w przestrzeni Laboratorium Zanurzonej Wizualizacji Prze
 Zaprojektowany model przypadków użycia odpowiada rzeczywistym funkcjonalnościom zaimplementowanym w aplikacji i zapewnia czytelny podział ról pomiędzy użytkownikiem końcowym a osobą nadzorującą system.
 \section{Projekt architektury systemu(Andrii Demyshyn)}
 Architektura projektowanej aplikacji została zaprojektowana z myślą o realizacji edukacyjnej gry typu escape room w środowisku rzeczywistości wirtualnej. System został zaimplementowany z wykorzystaniem silnika Unreal Engine i przystosowany do działania w środowisku CAVE, wykorzystywanym w Laboratorium Zanurzonej Wizualizacji Przestrzennej.
+
 Struktura aplikacji opiera się na kilku głównych komponentach odpowiedzialnych za poszczególne aspekty działania systemu. Centralnym elementem architektury jest moduł zarządzania rozgrywką zaimplementowanej jako obiekt typu Blueprint Actor MergeBP. MergeBP kontroluje aktualny etap gry, kolejność zagadek oraz postęp gracza. Moduł ten odpowiada również za przejścia pomiędzy kolejnymi etapami po poprawnym rozwiązaniu zagadek matematycznych.
+
 Logika zagadek matematycznych została podzielona na trzynaście niezależnych poziomów gry, każdy z których odpowiada jednej zagadce i jednemu działowi matematyki. Każda zagadka posiada własny mechanizm interakcji oraz weryfikacji poprawności rozwiązania, co umożliwia ich łatwą modyfikację lub rozbudowę bez ingerencji w pozostałą część systemu. Takie podejście upraszcza również proces testowania poszczególnych etapów gry.
+
 Istotnym elementem architektury aplikacji jest sposób realizacji środowiska gry. Cała rozgrywka odbywa się w jednej wspólnej przestrzeni wirtualnej, która dynamicznie zmienia się w zależności od aktualnego etapu gry. Poszczególne elementy pomieszczenia, obiekty zagadek oraz elementy interaktywne są ukrywane, usuwane, aktywowane lub teleportowane w odpowiednie miejsca po ukończeniu danego poziomu. Rozwiązanie to pozwala na zachowanie spójności środowiska oraz ograniczenie konieczności ładowania nowych scen.
+
 Moduł interakcji odpowiada za obsługę kontrolerów ruchu oraz systemów śledzenia pozycji użytkownika w przestrzeni CAVE. Umożliwia on graczowi poruszanie się po wirtualnym pomieszczeniu, manipulowanie obiektami oraz wykonywanie akcji wymaganych do rozwiązania zagadek. Równolegle system obsługuje tryb administratora, który działa z poziomu komputera sterującego i umożliwia nadzorowanie przebiegu rozgrywki oraz ingerencję w jej przebieg w sytuacjach awaryjnych.
+
 Zaprojektowana architektura systemu zapewnia stabilne działanie aplikacji w środowisku rzeczywistości wirtualnej oraz umożliwia jej dalszą rozbudowę, na przykład poprzez dodanie nowych zagadek matematycznych lub rozszerzenie scenariusza gry.
 
 
 \section{Projekt interfejsu użytkownika i środowiska gry(Andrii Demyshyn)}
+
 Projekt interfejsu użytkownika oraz środowiska gry został opracowany z myślą o specyfice rzeczywistości wirtualnej oraz warunkach pracy w systemie CAVE. Głównym założeniem było zapewnienie wysokiego poziomu immersji oraz intuicyjnej obsługi aplikacji przy jednoczesnym ograniczeniu elementów mogących rozpraszać uwagę gracza podczas rozwiązywania zagadek matematycznych.
+
 W projektowanej aplikacji zrezygnowano z klasycznego, dwuwymiarowego interfejsu graficznego w postaci menu czy stałych elementów HUD. Wszystkie informacje przekazywane użytkownikowi, takie jak komunikaty systemowe, treści zadań czy informacja o poprawności rozwiązania, prezentowane są bezpośrednio w przestrzeni trójwymiarowej jako elementy świata gry. Takie rozwiązanie pozwala na zachowanie spójności wizualnej oraz zwiększa poczucie obecności w środowisku wirtualnym.
+
 Środowisko gry zostało zaprojektowane jako jedna wspólna przestrzeń wirtualna, której wygląd i zawartość zmieniają się w zależności od aktualnego etapu rozgrywki. Poszczególne zagadki matematyczne realizowane są poprzez dynamiczne pojawianie się, ukrywanie lub modyfikowanie obiektów znajdujących się w pomieszczeniu. Dzięki temu możliwe było zachowanie jednolitej przestrzeni przy jednoczesnym wyraźnym rozróżnieniu kolejnych etapów gry.
+
 Interakcja gracza z otoczeniem realizowana jest poprzez kontrolery ruchu, umożliwiające wybieranie, naciskanie oraz przemieszczanie obiektów. Dodatkowo w aplikacji zaimplementowano możliwość obrotu całego pomieszczenia wraz z obiektami o 90 stopni, co pozwala na dostosowanie orientacji przestrzeni do preferencji użytkownika. Rozwiązanie to zwiększa komfort użytkowania aplikacji i ułatwia rozwiązywanie zagadek.
+
 Projekt interfejsu oraz środowiska gry został przetestowany w rzeczywistych warunkach Laboratorium Zanurzonej Wizualizacji Przestrzennej. Przeprowadzone testy pozwoliły na dopasowanie skali obiektów, czytelności komunikatów oraz sposobu interakcji do potrzeb użytkowników, zapewniając płynne i komfortowe korzystanie z aplikacji w środowisku VR.
