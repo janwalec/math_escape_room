@@ -1,6 +1,40 @@
 \chapter{Analiza istniejących rozwiązań (Jan Walczak)}
 \label{chap:algs}
 
+\section{\glqq Gravity Sketch\grqq}
+
+\subsection{Implementacja rozwiązania}
+Badanie, przeprowadzone na uczelni Tecnologico de Monterrey, miało charakter eksperymentalny i było przeprowadzone na studentach pierwszego roku \cite{Campos2022}.
+Opierało się o~zainstalowanie oprogramowania \glqq Gravity Sketch\grqq~na urządzeniu VR. Narzędzie służy w praktyce do trójwymiarowego projektowania 
+różnych obiektów w~wirtualnej przestrzeni. Aspektem, który wyróżnia oprogramowanie \glqq Gravity Sketch\grqq, jest
+umożliwienie rysowania obiektów opierających się o siatkę współrzędnych, a co za tym idzie, użyto go do 
+wizualizacji wektorów w przestrzeni trójwymiarowej \cite{Campos2022}. 
+
+Możliwość samodzielnego rysowania wektorów powinna ułatwić studentom wizualizację omawianego zagadnienia przez
+responsywność narzędzia i możliwość zmiany perspektywy (przez ruch użytkownika).
+
+
+\subsection{Przeprowadzone badania}
+Głównym celem badania było sprawdzenie jak technologia VR pomaga w nauce abstrakcyjnych pojęć matematycznych, które wymagają od ucznia wyobraźni przestrzennej. 
+Uczestnikami było 94 studentów, którzy zostali podzieleni na dwie grupy: kontrolną, która uczestniczyła w~standardowych
+zajęciach i eksperymentalną, która brała udział w zajęciach z użyciem technologii VR~\cite{Campos2022}.
+
+Obie grupy rozwiązywały dwa testy: przed rozpoczęciem i po zakończeniu zajęć. Obejmowały one zagadnienia związane z wektorami i dotykał problemów
+powiązanych z ich wizualizacją, takich jak obliczanie kątów. Dodatkowo grupa eksperymentalna wypełniała ankietę zawierającą pytania o~ich
+doznania przy podczas używania wirtualnej rzeczywistości \cite{Campos2022}. 
+
+\subsection{Wyniki}
+W badaniu opracowanym przez Esmeraldę Campos, Irvinga Hidrogo i Genaro Zavala w \cite{Campos2022} możemy przeczytać:
+\textit{\glqq We found that on those items in which the visualization was important, students in the experimental group, i.e., using
+VR, did better than those who did not use VR. We have evidence that VR can help students visualize angles and components that 
+help them solve problems better.\grqq}. Warto zauważyć, że w pytaniach dotyczących wizualizacji grupa, która korzystała z VR uzyskała znacznie lepszy przyrost wiedzy niż grupa
+kontrolna \cite{Campos2022}.
+
+Można więc założyć, że zagadnienia wymagające od ucznia wyobraźni przestrzennej mogą wymagać dodatkowego wsparcia 
+przez rozszerzenie standardowej formuły lekcji o aplikację opartą o technologię VR.
+
+
+
 \section{Wirtualny pokój zagadek z zakresu matematyki}
 
 \subsection{Projekt i implementacja}
@@ -12,7 +46,7 @@ Artykuł opisuje innowacyjny projekt edukacyjny, polegający na stworzeniu matem
 celem pracy było stworzenie aplikacji na platformie Unity, która miałaby działać w Laboratorium
 Zanurzonej Wizualizacji Przestrzennej i uatrakcyjnić studentom naukę matematyki \cite{lebiedz1}.
 
-Zagadka została podzielona na 4 pokoje, z czego pierwszy z nich był pokojem wprowadzającym,
+Escape room został podzielony na 4 pokoje, z czego pierwszy z nich był pokojem wprowadzającym,
 prowadził on do 3 kolejnych pokoi zawierających łącznie 13 zagadek. Pokoje były podzielone nie tylko
 ze względu na tematykę zagadnień, ale także ze względu na wystrój \cite{lebiedz1}. Podział ten wyglądał następująco:
 
@@ -28,9 +62,9 @@ Przy użyciu wcześniej omawianego rozwiązania został przeprowadzony eksperyme
 grupę 54 studentów. Badanie wykazało, że nauka poprzez rozwiązywanie zagadek w matematycznym
 escape roomie przynosi wymierne korzyści \cite{lebiedz1}.
 
-Badanie zostało rozszerzone i opisane w artykule \glqq Educational values of a virtual escape room in mathematics\grqq~\cite{lebiedz2}. Badanie polegało na podzieleniu studentów na 2 równe grupy, na których zostały zastosowane dwa
-oddzielne podejścia stosowane w różnej kolejności. Pierwsze podejście polegało na uczestnictwie grupy w tradycyjnej lekcji matematyki,
-a~drugie na przejściu matematycznego escape roomu w małych zespołach. Grupy brały udział w sesjach opartych o oba podejścia,
+Badanie zostało rozszerzone i opisane w artykule \glqq Educational values of a virtual escape room in mathematics\grqq~\cite{lebiedz2}. Badanie polegało na podzieleniu studentów na 2 równe grupy, 
+na których zostały zastosowane dwa oddzielne podejścia przeprowadzane w różnej kolejności. Pierwsze podejście polegało na uczestnictwie grupy w tradycyjnej lekcji matematyki,
+a~drugie na przejściu matematycznego escape roomu w małych zespołach. Grupy brały udział w sesjach opartych o~oba podejścia,
 z~czego jedna najpierw uczestniczyła w tradycyjnej lekcji, a druga najpierw uczestniczyła w~sesji w escape roomie.
 
 Wyniki zaprezentowane w artykule wskazują, że studenci uczestniczący w sesjach odbywających się w~wirtualnym escape
@@ -38,10 +72,62 @@ roomie wykazują się większym skupieniem i lepszym samopoczuciem. Największy 
 odnotowano w grupie, która najpierw uczestniczyła w tradycyjnej lekcji matematyki, a po kilku dniach
 wzięła udział w zajęciach przeprowadzanych przy użyciu omawianej aplikacji \cite{lebiedz2}.
 
+\section{\glqq Empiriusz 2.0\grqq}
+
+\subsection{Wykorzystane narzędzie}
+\glqq Empiriusz 2.0\grqq~\cite{nowa-era-empiriusz} to narzędzie opracowane przez wydawnictwo \glqq Nowa Era\grqq, które wykorzystuje technologię 
+VR do wsparcia nauki w szkołach podstawowych i ponadpodstawowych. Platforma, która jest udostępniana razem z~narzędziem,
+oferuje kilka aplikacji zatytułowanych kolejno:
+\begin{itemize}
+    \item \glqq Wirtualne laboratorium chemiczne\grqq
+    \item \glqq Wirtualny atlas anatomiczny\grqq
+    \item \glqq Geometria przestrzenną\grqq
+    \item \glqq Magiczna komnata\grqq
+    \item \glqq Pierwsza pomoc -- 4 HELP VR\grqq
+    \item \glqq Ziemia i Wszechświat PRO\grqq
+\end{itemize}
+Jak deklaruje wydawnictwo -- aplikacje są zgodne z podstawą programową, obowiązującą w szkołach podstawowych
+i~ponadpodstawowych \cite{nowa-era-empiriusz}.
+
+Urządzenia, na których działa platforma, to bezprzewodowe gogle VR i dwa kontrolery. Gracz wkracza do 
+wirtualnej przestrzeni roboczej, a jego działania są na bieżąco obserwowane przez nauczyciela oraz 
+pozostałych uczniów znajdujących się w klasie, dzięki wyświetlaniu obrazu z~perspektywy gracza, 
+np. na tablicy interaktywnej lub monitorze. Wydawnictwo dostarcza również materiały edukacyjne 
+i~karty pracy oraz oferuje szkolenia dla nauczycieli z obsługi platformy. Podkreślony jest również pozytywny
+charakter edukacyjny tego rozwiązania omawiany dalej w \ref{subsec:empiriusz-wartosc}. 
+
+\subsection{Aplikacja do nauki geometrii przestrzennej}
+Geometria przestrzenna jest jednym z tematów opracowanych na potrzeby platformy \glqq Empiriusz~2.0\grqq.~Oferuje pomoc dydaktyczną przez 
+rozszerzenie standardowej lekcji matematyki o~interaktywną aplikację z zadaniami dla szkół podstawowych i ponadpodstawowych \cite{nowa-era-geometria}.
+Na stronie internetowej wydawnictwa możemy przeczytać kilkukrotne wzmianki, o tym że: \textit{\glqq aplikacja zwiększa motywację młodych ludzi do nauki i~ułatwia 
+im przyswajanie zagadnień z zakresu geometrii\grqq}~\cite{nowa-era-geometria}. Teza ta pokrywa się z celami tej pracy omówionymi w~rozdziale
+numer \ref{chap:introduction} i jest dalej omawiana w~\ref{subsec:empiriusz-wartosc}.
+
+Na rysunku \ref{fig:geometria_empiriusz} możemy zobaczyć zakres tematyki, który obejmuje aplikacja. Dla szkół ponadpodstawowych
+wydawnictwo przewiduje szerszą tematykę i więcej funkcjonalności, w skład których wchodzą m.in. możliwość nauki o siatkach brył
+przestrzennych, ich przekroju, kątach w~bryłach i dostęp do interaktywnych wzorów.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/EMPIRIUSZ.jpg}
+    \caption{Skład zagadnień omawianych dla aplikacji o geometrii przestrzennej dostępnej na platformie \glqq Empiriusz 2.0\grqq~\cite{nowa-era-geometria}}
+    \label{fig:geometria_empiriusz}
+\end{figure}
+\FloatBarrier
+
+\subsection{Wartość edukacyjna narzędzia \glqq Empiriusz 2.0\grqq}
+\label{subsec:empiriusz-wartosc}
+Atrakcyjność i pozytywny wpływ aplikacji VR, w kontekście zastosowania narzędzia \glqq Empiriusz~2.0\grqq~są podkreślane
+wielokrotnie przez wydawnictwo. Platforma ma oferować nowoczesne narzędzie dydaktyczne, uatrakcyjniające
+naukę \cite{nowa-era-artykul}. Elementem, który wyróżnia to rozwiązanie jest ciągła obecność nauczyciela podczas lekcji, która
+odbywa się przy użyciu wirtualnej rzeczywistości. Może on komentować i omawiać poszczególne posunięcia ucznia, który wykonuje zadania.
+Dodatkowo nauczyciel jest wyposażony w materiały dydaktyczne, bezpośrednio powiązane z omawianymi zagadnieniami.
+
 \section{Wnioski z analizy dostępnych rozwiązań}
 
-Rozwiązanie omawiane w poprzednim podrozdziale pokazuje, że głęboka imersja, którą oferuje
-Laboratorium Zanurzonej Wizualizacji Przestrzennej, poprawia samopoczucie oraz nastrój studentów \cite{lebiedz2}.
+Omawiane rozwiązania pokazują, że technologia VR może pozytywnie wpływać nie tylko na efekty edukacyjne, ale także
+na samopoczucie i nastrój uczniów.
+
 Zgodnie z rozdziałem numer \ref{chap:introduction}. celem tej pracy jest stworzenie narzędzia, które będzie
 wspierać proces nauczania, a nie go zastępować. Ma zwiększyć zainteresowanie matematyką wśród uczniów szkół średnich
 poprzez ich samodzielne uczestnictwo w~angażującym środowisku.

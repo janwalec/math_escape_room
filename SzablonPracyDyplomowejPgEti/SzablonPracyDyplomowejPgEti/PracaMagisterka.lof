@@ -2,51 +2,52 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Skład zagadnień omawianych dla aplikacji o geometrii przestrzennej dostępnej na platformie \glqq Empiriusz 2.0\grqq ~\blx@tocontentsinit {0}\cite {nowa-era-geometria}}}{18}{figure.caption.6}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Zrzut ekranu z platformy GitHub -- tablica z przykładowymi Issues do projektu.}}{25}{figure.caption.6}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Zrzut ekranu z platformy GitHub -- tablica z przykładowym Pull Request}}{26}{figure.caption.7}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Zrzut ekranu z platformy Trello -- wizualizacja tablicy Kanban}}{27}{figure.caption.8}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Zrzut ekranu z platformy GitHub -- tablica z przykładowymi Issues do projektu.}}{27}{figure.caption.7}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Zrzut ekranu z platformy GitHub -- tablica z przykładowym Pull Request}}{28}{figure.caption.8}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Zrzut ekranu z platformy Trello -- wizualizacja tablicy Kanban}}{29}{figure.caption.9}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Przykładowy wygląd pierwszego zadania – wzory skróconego mnożenia}}{28}{figure.caption.9}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Przykładowy diagram zależności między figurami geometrycznymi.}}{29}{figure.caption.10}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Przykładowy wygląd tablicy z przecinającymi się wykresami}}{32}{figure.caption.11}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Przykładowy wygląd sejfu występującego w zadaniu}}{33}{figure.caption.12}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Ćwiartki układow jednostkowych ze znakami funkcji trygonometrycznych}}{35}{figure.caption.13}%
-\contentsline {figure}{\numberline {7.6}{\ignorespaces gra Duck Hunt}}{36}{figure.caption.14}%
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Przykładowy wygląd w zadaniu}}{37}{figure.caption.15}%
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Przykładowy wygląd zadania – dopasowanie funkcji do pochodnych}}{38}{figure.caption.16}%
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Przykładowy wygląd zadania}}{39}{figure.caption.17}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Przykładowy wygląd pierwszego zadania – wzory skróconego mnożenia}}{30}{figure.caption.10}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Przykładowy diagram zależności między figurami geometrycznymi.}}{31}{figure.caption.11}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Przykładowy wygląd tablicy z przecinającymi się wykresami}}{34}{figure.caption.12}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Przykładowy wygląd sejfu występującego w zadaniu}}{35}{figure.caption.13}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Ćwiartki układow jednostkowych ze znakami funkcji trygonometrycznych}}{37}{figure.caption.14}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces gra Duck Hunt}}{38}{figure.caption.15}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Przykładowy wygląd w zadaniu}}{39}{figure.caption.16}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Przykładowy wygląd zadania – dopasowanie funkcji do pochodnych}}{40}{figure.caption.17}%
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Przykładowy wygląd zadania}}{41}{figure.caption.18}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Wygląd BP\_MathBoard}}{42}{figure.caption.19}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Wygląd pokoju algebraicznego}}{43}{figure.caption.23}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Diagram UML zawierający najważniejsze elementy kontrolerów dla zadania 2 -- planimetria.}}{45}{figure.caption.24}%
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Diagram przepływu dla zadania 2 -- planimetria}}{46}{figure.caption.25}%
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Punkt kontrolny w pokoju 3}}{47}{figure.caption.26}%
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Ścieżki przejścia przez obie sekcje mostu dla każdego z układów nierówności}}{48}{figure.caption.27}%
-\contentsline {figure}{\numberline {8.7}{\ignorespaces Most podzielony na dwie sekcje w pokoju 3}}{49}{figure.caption.28}%
-\contentsline {figure}{\numberline {8.8}{\ignorespaces Przyciski do poruszania kostką w pokoju 3}}{49}{figure.caption.29}%
-\contentsline {figure}{\numberline {8.9}{\ignorespaces Rozwiązany pokój 3}}{49}{figure.caption.30}%
-\contentsline {figure}{\numberline {8.10}{\ignorespaces Zainicjowany układ współrzędnych wraz z jednym punktem, który gracz musi przeciąć wykresem funkcji w pokoju 4}}{51}{figure.caption.31}%
-\contentsline {figure}{\numberline {8.11}{\ignorespaces Wszystkie suwaki dostępne w ostatnim etapie w pokoju 4}}{51}{figure.caption.32}%
-\contentsline {figure}{\numberline {8.12}{\ignorespaces Zainicjowany układ współrzędnych wraz z przecinającymi się wykresami funkcji w pokoju 5}}{53}{figure.caption.33}%
-\contentsline {figure}{\numberline {8.13}{\ignorespaces Przyciski odpowiedzialne za współrzędną $X$ w pokoju 5}}{54}{figure.caption.34}%
-\contentsline {figure}{\numberline {8.14}{\ignorespaces Wygląd sejfu}}{56}{figure.caption.35}%
-\contentsline {figure}{\numberline {8.15}{\ignorespaces Zrzut ekranu -- skrzynia z zamkiem oraz podpowiedź na ścianie dla zadania 7.}}{57}{figure.caption.36}%
-\contentsline {figure}{\numberline {8.16}{\ignorespaces Diagram UML zawierający najważniejsze elementy dla zadania 7 -- liczby rzeczywiste i działania na zbiorach liczbowych.}}{58}{figure.caption.37}%
-\contentsline {figure}{\numberline {8.17}{\ignorespaces Diagram przepływu dla zadania 7 -- liczby rzeczywiste i działania na zbiorach liczbowych.}}{59}{figure.caption.38}%
-\contentsline {figure}{\numberline {8.18}{\ignorespaces Ruchome sześciany w pokoju 8}}{60}{figure.caption.39}%
-\contentsline {figure}{\numberline {8.19}{\ignorespaces Układ jednostkowy w pokoju 8}}{61}{figure.caption.40}%
-\contentsline {figure}{\numberline {8.20}{\ignorespaces Sześcian po wykryciu luki w pokoju 8}}{61}{figure.caption.41}%
-\contentsline {figure}{\numberline {8.21}{\ignorespaces Porównanie rysowania lasera w przypadku kontaktu z przykładowym elementem otoczenia i ścianą.}}{63}{figure.caption.42}%
-\contentsline {figure}{\numberline {8.22}{\ignorespaces Diagram UML zawierający najważniejsze elementy dla zadania 9 -- Ciągi liczbowe.}}{64}{figure.caption.43}%
-\contentsline {figure}{\numberline {8.23}{\ignorespaces Diagram przepływu dla zadania 9 -- Ciągi liczbowe }}{65}{figure.caption.44}%
-\contentsline {figure}{\numberline {8.24}{\ignorespaces Postać przed i po modyfikacji}}{66}{figure.caption.45}%
-\contentsline {figure}{\numberline {8.25}{\ignorespaces Wygląd kontenera}}{67}{figure.caption.46}%
-\contentsline {figure}{\numberline {8.26}{\ignorespaces Widok pokoju pochodnych}}{69}{figure.caption.49}%
-\contentsline {figure}{\numberline {8.27}{\ignorespaces Wygląd pokoju z kulkami}}{71}{figure.caption.56}%
-\contentsline {figure}{\numberline {8.28}{\ignorespaces Diagram UML zawierający najważniejsze elementy kontrolerów dla zadania 13 -- stereometria.}}{73}{figure.caption.57}%
-\contentsline {figure}{\numberline {8.29}{\ignorespaces Diagram przepływu dla zadania 13 -- stereometria}}{74}{figure.caption.58}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Wygląd BP\_MathBoard}}{44}{figure.caption.20}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Wygląd pokoju algebraicznego}}{45}{figure.caption.24}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Diagram UML zawierający najważniejsze elementy kontrolerów dla zadania 2 -- planimetria.}}{47}{figure.caption.25}%
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Diagram przepływu dla zadania 2 -- planimetria}}{48}{figure.caption.26}%
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Punkt kontrolny w pokoju 3}}{49}{figure.caption.27}%
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Ścieżki przejścia przez obie sekcje mostu dla każdego z układów nierówności}}{50}{figure.caption.28}%
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Most podzielony na dwie sekcje w pokoju 3}}{51}{figure.caption.29}%
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Przyciski do poruszania kostką w pokoju 3}}{51}{figure.caption.30}%
+\contentsline {figure}{\numberline {8.9}{\ignorespaces Rozwiązany pokój 3}}{51}{figure.caption.31}%
+\contentsline {figure}{\numberline {8.10}{\ignorespaces Zainicjowany układ współrzędnych wraz z jednym punktem, który gracz musi przeciąć wykresem funkcji w pokoju 4}}{53}{figure.caption.32}%
+\contentsline {figure}{\numberline {8.11}{\ignorespaces Wszystkie suwaki dostępne w ostatnim etapie w pokoju 4}}{53}{figure.caption.33}%
+\contentsline {figure}{\numberline {8.12}{\ignorespaces Zainicjowany układ współrzędnych wraz z przecinającymi się wykresami funkcji w pokoju 5}}{55}{figure.caption.34}%
+\contentsline {figure}{\numberline {8.13}{\ignorespaces Przyciski odpowiedzialne za współrzędną $X$ w pokoju 5}}{56}{figure.caption.35}%
+\contentsline {figure}{\numberline {8.14}{\ignorespaces Wygląd sejfu}}{58}{figure.caption.36}%
+\contentsline {figure}{\numberline {8.15}{\ignorespaces Zrzut ekranu -- skrzynia z zamkiem oraz podpowiedź na ścianie dla zadania 7.}}{59}{figure.caption.37}%
+\contentsline {figure}{\numberline {8.16}{\ignorespaces Diagram UML zawierający najważniejsze elementy dla zadania 7 -- liczby rzeczywiste i działania na zbiorach liczbowych.}}{60}{figure.caption.38}%
+\contentsline {figure}{\numberline {8.17}{\ignorespaces Diagram przepływu dla zadania 7 -- liczby rzeczywiste i działania na zbiorach liczbowych.}}{61}{figure.caption.39}%
+\contentsline {figure}{\numberline {8.18}{\ignorespaces Ruchome sześciany w pokoju 8}}{62}{figure.caption.40}%
+\contentsline {figure}{\numberline {8.19}{\ignorespaces Układ jednostkowy w pokoju 8}}{63}{figure.caption.41}%
+\contentsline {figure}{\numberline {8.20}{\ignorespaces Sześcian po wykryciu luki w pokoju 8}}{63}{figure.caption.42}%
+\contentsline {figure}{\numberline {8.21}{\ignorespaces Porównanie rysowania lasera w przypadku kontaktu z przykładowym elementem otoczenia i ścianą.}}{65}{figure.caption.43}%
+\contentsline {figure}{\numberline {8.22}{\ignorespaces Diagram UML zawierający najważniejsze elementy dla zadania 9 -- Ciągi liczbowe.}}{66}{figure.caption.44}%
+\contentsline {figure}{\numberline {8.23}{\ignorespaces Diagram przepływu dla zadania 9 -- Ciągi liczbowe }}{67}{figure.caption.45}%
+\contentsline {figure}{\numberline {8.24}{\ignorespaces Postać przed i po modyfikacji}}{68}{figure.caption.46}%
+\contentsline {figure}{\numberline {8.25}{\ignorespaces Wygląd kontenera}}{69}{figure.caption.47}%
+\contentsline {figure}{\numberline {8.26}{\ignorespaces Widok pokoju pochodnych}}{71}{figure.caption.50}%
+\contentsline {figure}{\numberline {8.27}{\ignorespaces Wygląd pokoju z kulkami}}{73}{figure.caption.57}%
+\contentsline {figure}{\numberline {8.28}{\ignorespaces Diagram UML zawierający najważniejsze elementy kontrolerów dla zadania 13 -- stereometria.}}{75}{figure.caption.58}%
+\contentsline {figure}{\numberline {8.29}{\ignorespaces Diagram przepływu dla zadania 13 -- stereometria}}{76}{figure.caption.59}%
 \addvspace {10\p@ }
 \contentsfinish 

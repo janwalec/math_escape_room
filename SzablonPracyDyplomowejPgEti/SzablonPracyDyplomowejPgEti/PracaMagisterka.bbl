@@ -19,6 +19,47 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
+    \entry{Campos2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=d246135c2f4b501b15a9074c2be1df94}{%
+           family={Campos},
+           familyi={C\bibinitperiod},
+           given={Esmeralda},
+           giveni={E\bibinitperiod}}}%
+        {{hash=65bb485f624e2b4d786f4b06d03ad7d6}{%
+           family={Hidrogo},
+           familyi={H\bibinitperiod},
+           given={Irving},
+           giveni={I\bibinitperiod}}}%
+        {{hash=4e9de80cdc61fec2d4fecad6db83023e}{%
+           family={Zavala},
+           familyi={Z\bibinitperiod},
+           given={Genaro},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{b719faaba867d7f2d2f9716cb9f27c3a}
+      \strng{fullhash}{cfe0d5a40d295547ada8dd6a6261296b}
+      \strng{fullhashraw}{cfe0d5a40d295547ada8dd6a6261296b}
+      \strng{bibnamehash}{cfe0d5a40d295547ada8dd6a6261296b}
+      \strng{authorbibnamehash}{cfe0d5a40d295547ada8dd6a6261296b}
+      \strng{authornamehash}{b719faaba867d7f2d2f9716cb9f27c3a}
+      \strng{authorfullhash}{cfe0d5a40d295547ada8dd6a6261296b}
+      \strng{authorfullhashraw}{cfe0d5a40d295547ada8dd6a6261296b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Education}
+      \field{title}{Impact of virtual reality use on the teaching and learning of vectors}
+      \field{volume}{7}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.frontiersin.org/articles/10.3389/feduc.2022.965640/full
+      \endverb
+      \verb{url}
+      \verb https://www.frontiersin.org/articles/10.3389/feduc.2022.965640/full
+      \endverb
+    \endentry
     \entry{lebiedz1}{inproceedings}{}{}
       \name{author}{5}{}{%
         {{hash=4fbd18aea7c628a01524d083a9d28121}{%
@@ -55,8 +96,8 @@
       \strng{authornamehash}{d505626a3918a017d9d6d7fba2bf8612}
       \strng{authorfullhash}{e52ce1bdc48963f3b50f2a7b39331b6c}
       \strng{authorfullhashraw}{e52ce1bdc48963f3b50f2a7b39331b6c}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Zeszyty Naukowe Wydzia{ł}u Elektrotechniki i Automatyki Politechniki Gdańskiej}
@@ -97,8 +138,8 @@
       \strng{authornamehash}{9026c3e185b83d1a7b877200857d9a15}
       \strng{authorfullhash}{9026c3e185b83d1a7b877200857d9a15}
       \strng{authorfullhashraw}{9026c3e185b83d1a7b877200857d9a15}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 33rd International Conference on Information Systems Development (ISD 2025)}
@@ -113,6 +154,80 @@
       \endverb
       \verb{url}
       \verb https://aisel.aisnet.org/isd2014/proceedings2025/education/5/
+      \endverb
+    \endentry
+    \entry{nowa-era-empiriusz}{online}{}{}
+      \list{publisher}{1}{%
+        {Nowa Era}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Empiriusz 2.0}
+      \field{urlday}{14}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.nowaera.pl/empiriusz
+      \endverb
+      \verb{url}
+      \verb https://www.nowaera.pl/empiriusz
+      \endverb
+    \endentry
+    \entry{nowa-era-geometria}{online}{}{}
+      \list{publisher}{1}{%
+        {Nowa Era}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Czas na geometrię w innym wymiarze!}
+      \field{urlday}{14}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.nowaera.pl/wirtualne-laboratorium/geometria
+      \endverb
+      \verb{url}
+      \verb https://www.nowaera.pl/wirtualne-laboratorium/geometria
+      \endverb
+    \endentry
+    \entry{nowa-era-artykul}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=fd9cfa3761a97e6ccec43f8d7ae84190}{%
+           family={Sołodki},
+           familyi={S\bibinitperiod},
+           given={Marcin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nowa Era}%
+      }
+      \strng{namehash}{fd9cfa3761a97e6ccec43f8d7ae84190}
+      \strng{fullhash}{fd9cfa3761a97e6ccec43f8d7ae84190}
+      \strng{fullhashraw}{fd9cfa3761a97e6ccec43f8d7ae84190}
+      \strng{bibnamehash}{fd9cfa3761a97e6ccec43f8d7ae84190}
+      \strng{authorbibnamehash}{fd9cfa3761a97e6ccec43f8d7ae84190}
+      \strng{authornamehash}{fd9cfa3761a97e6ccec43f8d7ae84190}
+      \strng{authorfullhash}{fd9cfa3761a97e6ccec43f8d7ae84190}
+      \strng{authorfullhashraw}{fd9cfa3761a97e6ccec43f8d7ae84190}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Okulary interaktywne dla uczniów. Jak działają i czy warto z nich korzystać podczas lekcji?}
+      \field{urlday}{14}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.nowaera.pl/okulary-interaktywne-dla-uczniow-jak-dzialaja-i-czy-warto-z-nich-korzystac-podczas-lekcji
+      \endverb
+      \verb{url}
+      \verb https://www.nowaera.pl/okulary-interaktywne-dla-uczniow-jak-dzialaja-i-czy-warto-z-nich-korzystac-podczas-lekcji
       \endverb
     \endentry
     \entry{Zarzadzanie_Projektami_IT_Przewodnik_po_Metodykach}{book}{}{}
@@ -134,8 +249,8 @@
       \strng{authornamehash}{5e83cb778bf1a6ed73fb6391c634e2f4}
       \strng{authorfullhash}{5e83cb778bf1a6ed73fb6391c634e2f4}
       \strng{authorfullhashraw}{5e83cb778bf1a6ed73fb6391c634e2f4}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Zarządzanie projektami IT. Przewodnik po metodykach}
@@ -158,8 +273,8 @@
       \strng{authorfullhash}{b79b798b2812cfe1c1431894a617897d}
       \strng{authorfullhashraw}{b79b798b2812cfe1c1431894a617897d}
       \field{extraname}{1}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{About Git}
@@ -192,8 +307,8 @@
       \strng{authorfullhash}{b79b798b2812cfe1c1431894a617897d}
       \strng{authorfullhashraw}{b79b798b2812cfe1c1431894a617897d}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{About issues}
@@ -226,8 +341,8 @@
       \strng{authorfullhash}{d8dda73b95810ca1104b81dc2d69e5ff}
       \strng{authorfullhashraw}{d8dda73b95810ca1104b81dc2d69e5ff}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Branches in a Nutshell}
@@ -260,8 +375,8 @@
       \strng{authorfullhash}{b79b798b2812cfe1c1431894a617897d}
       \strng{authorfullhashraw}{b79b798b2812cfe1c1431894a617897d}
       \field{extraname}{3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{About rulesets}
@@ -294,8 +409,8 @@
       \strng{authorfullhash}{b79b798b2812cfe1c1431894a617897d}
       \strng{authorfullhashraw}{b79b798b2812cfe1c1431894a617897d}
       \field{extraname}{4}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Pull requests}
@@ -328,8 +443,8 @@
       \strng{authorfullhash}{d8dda73b95810ca1104b81dc2d69e5ff}
       \strng{authorfullhashraw}{d8dda73b95810ca1104b81dc2d69e5ff}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Git LFS}
@@ -364,8 +479,8 @@
       \strng{authornamehash}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
       \strng{authorfullhash}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
       \strng{authorfullhashraw}{63783a2ac07f1c9e2c5fa6eb9c77a98a}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{3}
@@ -388,8 +503,8 @@
       \strng{authornamehash}{d3c3cd30e78ce850a89ee1bbc2f82e04}
       \strng{authorfullhash}{d3c3cd30e78ce850a89ee1bbc2f82e04}
       \strng{authorfullhashraw}{d3c3cd30e78ce850a89ee1bbc2f82e04}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Kanban (agile)}
