@@ -237,6 +237,9 @@ INPUT chapters\9_zagadki_teoretyczne.aux
 INPUT .\chapters\10_zagadki_praktyczne.aux
 INPUT .\chapters\10_zagadki_praktyczne.aux
 INPUT chapters\10_zagadki_praktyczne.aux
+INPUT .\chapters\12_raport_z_testowania.aux
+INPUT .\chapters\12_raport_z_testowania.aux
+INPUT chapters\12_raport_z_testowania.aux
 INPUT .\chapters\7_podsumowanie.aux
 INPUT .\chapters\7_podsumowanie.aux
 INPUT chapters\7_podsumowanie.aux
@@ -524,6 +527,12 @@ INPUT .\images\stereometria_UML.png
 INPUT .\images\stereometria_FLOW.png
 INPUT .\images\stereometria_FLOW.png
 INPUT .\images\stereometria_FLOW.png
+INPUT .\chapters\12_raport_z_testowania.tex
+INPUT .\chapters\12_raport_z_testowania.tex
+OUTPUT chapters\12_raport_z_testowania.aux
+INPUT .\chapters\12_raport_z_testowania.tex
+INPUT .\chapters\12_raport_z_testowania.tex
+INPUT chapters\12_raport_z_testowania.tex
 INPUT .\chapters\7_podsumowanie.tex
 INPUT .\chapters\7_podsumowanie.tex
 OUTPUT chapters\7_podsumowanie.aux
@@ -578,6 +587,9 @@ INPUT chapters\9_zagadki_teoretyczne.aux
 INPUT .\chapters\10_zagadki_praktyczne.aux
 INPUT .\chapters\10_zagadki_praktyczne.aux
 INPUT chapters\10_zagadki_praktyczne.aux
+INPUT .\chapters\12_raport_z_testowania.aux
+INPUT .\chapters\12_raport_z_testowania.aux
+INPUT chapters\12_raport_z_testowania.aux
 INPUT .\chapters\7_podsumowanie.aux
 INPUT .\chapters\7_podsumowanie.aux
 INPUT chapters\7_podsumowanie.aux

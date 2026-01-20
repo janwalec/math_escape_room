@@ -1,0 +1,76 @@
+\chapter{Raport z testowania (Jan Walczak)}
+\label{Raport_z_testowania}
+
+\section{Przebieg testów}
+
+Podczas implementacji aplikacji można wyróżnić trzy iteracje testowania, z których każda skupiała się na innej
+funkcjonalności. Głównym celem testów było sprawdzenie, jak zachowuje się przygotowana aplikacja w~warunkach laboratoryjnych
+w~LZWP.
+
+Pierwsza iteracja obejmowała testy podstawowych mechanizmów dotyczących poruszania się gracza. 
+Trwała ona dwa dni, podczas których odbyły się dwa spotkania w LZWP. Sprawdzono:
+\begin{itemize}
+    \item śledzenie ruchu gracza w LZWP,
+    \item poprawność wczytywania wejścia poprzez naciskanie odpowiednich przycisków na kontrolerze,
+    \item podstawowe interakcje z otoczeniem, takie jak używanie wskaźnika laserowego oraz chwytanie wirtualnych przedmiotów.
+\end{itemize}
+
+Druga iteracja testów miała na celu sprawdzenie funkcjonalności wszystkich opracowanych zagadek.
+Skupiała się na identyfikacji miejsc, w których aplikacja generowała błędy w środowisku docelowym.
+Zidentyfikowane błędy były poprawiane poza LZWP. Iteracja ta obejmowała trzy dni spotkań w LZWP.
+
+Ostatnia iteracja testów koncentrowała się na wielokrotnym budowaniu aplikacji oraz analizie różnic w działaniu pomiędzy
+wersją edytorską, testowaną w edytorze Unreal Engine, a wersją skompilowaną aplikacji (ang.~\textit{build}),
+która działała w~CAVE w~LZWP. Była to największa część testowania i zajęła dwa tygodnie.
+
+\section{Napotkane problemy}
+
+Najwięcej problemów napotkano podczas trzeciej iteracji testów. Okazało się, że skompilowana wersja aplikacji zachowywała się
+inaczej niż wersja edytorska. Wszelkie napotkane błędy wymagały wprowadzenia poprawek oraz ponownej kompilacji aplikacji, co
+było procesem czasochłonnym i znacząco wydłużyło tę część testowania.
+
+Głównym problemem, którego nie można było wykryć na etapie testów w edytorze, było pozycjonowanie kamery gracza oraz
+odpowiednia synchronizacja pozycji kontrolera w LZWP. Różnice te wynikały z nieprawidłowego nałożenia przesunięcia
+(ang.~\textit{offset}) oraz skali kamery, która reprezentowała gracza w wirtualnej przestrzeni. W konsekwencji dochodziło do
+niepoprawnego wyświetlania wirtualnego pokoju w~CAVE -- jego podłoga częściowo nachodziła na ściany, a ruch
+kontrolera nie był poprawnie przekazywany do aplikacji, przez co gracz nie był w stanie skutecznie poruszać się po
+wirtualnym pomieszczeniu. Rozwiązaniem było eksperymentalne ustawienie przesunięcia i skali kamery, tak aby granice
+ścian pokoju były poprawnie wyświetlane.
+
+Kolejnym problemem była synchronizacja obiektów generowanych w sposób pseudolosowy. Okazało się, że klaster komputerowy,
+na którym uruchamiana była aplikacja w LZWP, obliczał liczby pseudolosowe niezależnie na każdym komputerze. Skutkowało to
+desynchronizacją tych obiektów, a w konsekwencji ich niepoprawnym wyświetlaniem. Rozwiązaniem okazało się ustalenie
+wspólnego ziarna (ang.~\textit{seed}) dla wszystkich komputerów działających w klastrze.
+
+Ostatnim istotnym problemem była desynchronizacja obiektów w grze, na które oddziaływała grawitacja. Problem ten miał
+podobną naturę do poprzedniego — położenie takich obiektów było obliczane niezależnie na każdym komputerze klastra,
+przez co nie było wyznaczane jednoznacznie. Rozwiązaniem było ustawienie w edytorze Unreal Engine symulacji fizyki
+w tryb deterministyczny.
+
+\section{Wykryte błędy}
+Oprócz wyżej wymienionych problemów pojawiły się również błędy, które nie były związane z~działaniem aplikacji
+w~LZWP, lecz wynikały bezpośrednio z błędów implementacyjnych.
+
+Pierwszym wykrytym problemem była funkcja chwytania przedmiotów przez gracza. Kontroler, z którego korzysta użytkownik
+w~LZWP, wyposażony jest w analogowy spust, który po naciśnięciu zwraca wartości zmiennoprzecinkowe. W aplikacji mechanizm
+chwytania przedmiotów został natomiast zaprojektowany z myślą o wejściu zero-jedynkowym, odpowiadającym wciśnięciu
+klawisza na klawiaturze. Błąd ten okazał się na tyle istotny, że uniemożliwiał poprawne chwytanie obiektów.
+Rozwiązaniem było zmodyfikowanie obsługi wejścia w taki sposób, aby przyjmowała wartości zmiennoprzecinkowe.
+
+Drugim znaczącym błędem był sposób generowania figur w zadaniu opisanym w podrozdziale
+nr.~\ref{sec:planimetria_praktyka}. Figury były tworzone podczas inicjalizacji zadania w sposób nieprawidłowy.
+Obiekty należące do poszczególnych zadań były oznaczane odpowiednimi etykietami, co umożliwiało aplikacji
+rozpoznanie ich przynależności do konkretnego zadania. Generowane figury nie posiadały jednak takich etykiet,
+w wyniku czego nigdy nie znikały z wirtualnego pokoju. Kontroler odpowiedzialny za ich położenie zawierał
+referencje do instancji tych obiektów, przez co ukrywana była jedynie ich tekstura. Błąd ten okazał się szczególnie problematyczny, ponieważ niewidoczne figury wchodziły w kolizję z innymi obiektami
+znajdującymi się na scenie. Prowadziło to m.in. do niezamierzonego naciskania przycisków lub blokowania dostępu
+gracza do pozostałych elementów interaktywnych. Rozwiązaniem było dodanie odpowiednich etykiet do generowanych figur.
+
+Ostatnim istotnym błędem było niespójne oznaczanie przedmiotów, które mogły być chwytane przez gracza. Funkcjonalność
+chwytania opierała się na przyczepianiu chwytanych elementów do kontrolera, co realizowano poprzez dołączanie całych
+obiektów reprezentowanych w aplikacji przez aktorów. Część elementów została jednak zaprojektowana w sposób nieprawidłowy,
+tzn. podczas chwytania przenoszona była jedynie ich tekstura, natomiast obiekt aktora pozostawał w miejscu, z którego został
+zabrany. W konsekwencji obiekty te mogły zostać złapane tylko jeden raz, po czym ich tekstura ulegała oddzieleniu od obiektu aktora.
+Prowadziło to do niespójnego zachowania aplikacji oraz utrudniało dalszą interakcję z otoczeniem. Rozwiązaniem było
+ujednolicenie systemu chwytania przedmiotów oraz oparcie go na przyczepianiu do ręki pełnych obiektów aktorów.
+

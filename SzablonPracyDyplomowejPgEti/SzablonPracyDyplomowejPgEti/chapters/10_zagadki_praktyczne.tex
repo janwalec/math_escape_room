@@ -151,7 +151,7 @@ Gracz może ponawiać próby do momentu poprawnego rozwiązania zadania.
 \label{sec:planimetria_praktyka}
 
 \subsection{Problemy i różnice w realizacji zadania w praktyce}
-Podczas implementacji zadania, zgodnie z teorią opisaną w podrozdziale \ref{subsec:planimetria_teoria}, wystąpiło kilka
+Podczas implementacji zadania, zgodnie z projektem opisanym w podrozdziale \ref{subsec:planimetria_teoria}, wystąpiło kilka
 problemów. Przede wszystkim zauważono, że odpowiedzi są zero-jedynkowe. Przykładowo: uczeń
 ma do uzupełniania relację typu \glqq każdy kwadrat ... prostokątem\grqq. Jeśli odpowie niepoprawnie, tj.
 zaznaczy odpowiedź \glqq nie jest\grqq, a zostanie od razu zapytany ponownie, o tę samą relację,
@@ -172,7 +172,7 @@ Na środku zostały umieszczone dwa przyciski:
 \end{itemize}
 Uczeń zostaje poinstruowany, że po obu ścianach pokoju zostaną wyświetlone różne figury geometryczne.
 Po lewej stronie, patrząc od przycisków -- figury oznaczone kolorem czerwonym, po
-prawej stronie -- figury oznaczone kolorem zielonym. Liczba figur jest stała. Każdorazowo zbiór figur wyświetlanych 
+prawej stronie -- figury oznaczone kolorem zielonym. Liczba figur jest stała. Każdorazowo zbiór wyświetlanych 
 figur jest wybierany z określonej puli i wyświetlany w pseudolosowej konfiguracji -- losowane
 jest ich położenie, obrót oraz rozmiar. Zadaniem ucznia jest uzupełnianie kolejnych relacji
 poprzez wybieranie odpowiednich przycisków. Relacja, wyświetlana na ścianie pokoju, przedstawia
@@ -720,7 +720,7 @@ liczby:  \textit{15; π; 4,5; √2; ¼; -3; 1; -7; ⅓ ; 9}. Tym samym podzbiory
 (kolejność zgodna z podpowiedzią na rysunku \ref{rzeczywiste:screen}):
 \begin{itemize}
     \item \textit{N} (naturalne): \textit{15; 1; 9} – 3 liczby,
-    \item \textit{C} (całkowite):  \textit{15; 1; 9; -3; -7} – 5 liczb,
+    \item \textit{Z} (całkowite):  \textit{15; 1; 9; -3; -7} – 5 liczb,
     \item \textit{R} (rzeczywiste): wszystkie liczby – 10 liczb,
     \item \textit{Q} (wymierne): \textit{15; 1; 9; -3; -7; 4,5; ¼; ⅓} – 8 liczb,
     \item \textit{R\textbackslash{}Q} (niewymierne): \textit{π; √2} – 2 liczby.
@@ -747,7 +747,7 @@ Gracz ma do dyspozycji 6 bloczków:
 \end{itemize}
 Bloczki mają mu służyć do uzupełnienia dwóch relacji wymienionych wyżej. Po ułożeniu relacji,
 poprawnie bądź nie, bloczki pozostają do dyspozycji gracza. W relacji elementami stałymi są
-\glqq =\grqq i~litery reprezentujące zbiory liczb (nie można ich przestawiać).
+\glqq =\grqq~i~litery reprezentujące zbiory liczb (nie można ich przestawiać).
 
 \subsection{Implementacja zadania}
 
@@ -800,11 +800,12 @@ na rysunku \ref{rzeczywiste:FLOW}.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/real_FLOW.png}
+    \includegraphics[width=0.8\textwidth]{images/real_FLOW.png}
     \caption{Diagram przepływu dla zadania 7 -- liczby rzeczywiste i działania na zbiorach liczbowych.}
     \label{rzeczywiste:FLOW}
 \end{figure}
 \FloatBarrier
+\clearpage
 
 \subsection{Implementacja mechanizmu uzupełniania ścianki}
 Ścianka, czyli \verb|WallQuestion|, wykrywa kolizję z bloczkami, czyli \verb|Element|, w dwóch miejscach, 
@@ -972,8 +973,8 @@ jest pozycja początkowa, numer, który aktualnie jest na niej wyświetlany i wa
 czyli droga, którą pokona kaczka w każdej jednostce czasu w grze.
 
 Gracz zostaje również zapoznany z zasadami działania gry. Kiedy jest gotowy do rozpoczęcia
-gry naciska przycisk \glqq Start\grqq. Przycisk działa na tej samej
-zasadzie i również posiada dwustronną referencję do instancji kontrolera.
+gry naciska przycisk \glqq Start\grqq. Przycisk również posiada dwustronną referencję do
+instancji kontrolera.
 
 W zagadce występują jeszcze dwa komponenty: \verb|HitWall| i \verb|Life|. Główny kontroler zawiera tablicę
 referencji do 4 instancji obiektów \verb|Life|. Reprezentują ilość pozostałych żyć gracza i nie pełnią
@@ -1015,14 +1016,6 @@ obiektem. W obu przypadkach do kontrolera wysyłane jest powiadomienie odpowiedn
 kaczka została zestrzelona lub kaczka  zderzyła się z obiektem \verb|HitWall|. W powiadomieniu przekazana
 jest również liczba całkowita, która znajdowała się na danej kaczce. 
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{images/sequence_FLOW.png}
-    \caption{Diagram przepływu dla zadania 9 -- Ciągi liczbowe }
-    \label{sequence:flow}
-\end{figure}
-\FloatBarrier
-
 Kontroler po otrzymaniu w powiadomieniu liczby oraz informacji, czy dana kaczka została zestrzelona, 
 podejmuje decyzję:
 \begin{enumerate}
@@ -1036,6 +1029,16 @@ go na jednej z nich, ustawieniu dwóm pozostałym kaczkom błędnego wyrazu oraz
 ich do stanu początkowego. Najgorszym scenariuszem dla gracza jest niepoprawne zestrzelenie dwóch z trzech kaczek
 i pozwolenie, aby kaczka zawierająca poprawny numer uderzyła w obiekt \verb|HitWall|. W takim przypadku gracz straci aż 3 życia.
 Gra kończy się w momencie, gdy gracz straci wszystkie 4~życia.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/sequence_FLOW.png}
+    \caption{Diagram przepływu dla zadania 9 -- Ciągi liczbowe }
+    \label{sequence:flow}
+\end{figure}
+\FloatBarrier
+
+
 
 
 \clearpage
@@ -1308,7 +1311,7 @@ W zadaniu został zaimplementowany jeden główny kontroler \verb|SelectorContro
 jest inicjalizacja gry, zarządzanie przebiegiem gry, wyświetlanie tekstu i wybór odpowiednich pytań,
 wyświetlanych graczowi. Zawiera on dwustronną referencję do obiektu \verb|Stereometry|
 oraz dwustronną referencję do trzech obiektów \verb|Button| (takich, jak te opisane w podrozdziałach
-\ref{sec:planimetria_praktyka} i~\ref{sec:planimetria_praktyka}). Zawiera także predefiniowany zbiór pytań, dotyczących każdej z brył, reprezentowany
+\ref{sec:planimetria_praktyka} i~\ref{sec:ciągi_praktyka}). Zawiera także predefiniowany zbiór pytań, dotyczących każdej z brył, reprezentowany
 przez mapę typu \textit{pytanie:poprawna odpowiedź}. Powiązania kontrolera z pozostałymi komponentami w~zadaniu
 zostały zaprezentowane na rysunku \ref{stereometria:uml}.
 
@@ -1326,7 +1329,7 @@ na nim operacje, przez wywołanie odpowiednich funkcji.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/stereometria_UML.png}
+    \includegraphics[width=0.5\textwidth]{images/stereometria_UML.png}
     \caption{Diagram UML zawierający najważniejsze elementy kontrolerów dla zadania 13 -- stereometria.}
     \label{stereometria:uml}
 \end{figure}
@@ -1339,6 +1342,13 @@ zawierają odpowiedzi \textit{A, B} lub \textit{C}. Pytania są
 wyświetlane sekwencyjnie -- najpierw zadawane jest pytanie o typ bryły, potem o wzór na obliczenie
 jej pola powierzchni, a na końcu o wzór na obliczanie jej objętości.
 
+Jeśli gracz pomyli się podczas udzielania odpowiedzi, kontroler ponownie wywoła funkcję odpowiedzialną
+za wybór kolejnej bryły. W takim przypadku może się ona pojawić ponownie w zadaniu,
+ale nie od razu po udzieleniu błędnej odpowiedzi. Jeśli gracz odpowie na wszystkie 3 pytania
+prawidłowo, bryła zostaje uznana za zaliczoną i jest usuwana z puli dostępnych do wylosowania
+brył. Gra kończy się kiedy gracz poprawnie odpowie na pytania dotyczące 3 różnych brył.
+Przebieg całego zadania został zaprezentowany w postaci diagramu przepływu na rysunku \ref{stereometria:flow}
+
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{images/stereometria_FLOW.png}
@@ -1346,11 +1356,4 @@ jej pola powierzchni, a na końcu o wzór na obliczanie jej objętości.
     \label{stereometria:flow}
 \end{figure}
 \FloatBarrier
-
-Jeśli gracz pomyli się podczas udzielania odpowiedzi, kontroler ponownie wywoła funkcję odpowiedzialną
-za wybór kolejnej bryły. W takim przypadku może się ona pojawić ponownie w zadaniu,
-ale nie od razu po udzieleniu błędnej odpowiedzi. Jeśli gracz odpowie na wszystkie 3 pytania
-prawidłowo, bryła zostaje uznana za zaliczoną i jest usuwana z puli dostępnych do wylosowania
-brył. Gra kończy się kiedy gracz poprawnie odpowie na pytania dotyczące 3 różnych brył.
-Przebieg całego zadania został zaprezentowany w postaci diagramu przepływu na rysunku \ref{stereometria:flow}
 

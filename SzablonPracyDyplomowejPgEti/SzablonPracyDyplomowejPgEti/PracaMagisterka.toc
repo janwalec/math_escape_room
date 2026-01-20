@@ -110,15 +110,15 @@
 \contentsline {subsection}{\numberline {8.2.1}Problemy i różnice w realizacji zadania w praktyce}{46}{subsection.8.2.1}%
 \contentsline {subsection}{\numberline {8.2.2}Implementacja struktury danych przechowującej relację}{46}{subsection.8.2.2}%
 \contentsline {subsection}{\numberline {8.2.3}Implementacja kontrolerów}{47}{subsection.8.2.3}%
-\contentsline {subsection}{\numberline {8.2.4}Przebieg zadania}{48}{subsection.8.2.4}%
-\contentsline {section}{\numberline {8.3}Zadanie 3 – Nierówności (Konrad Czarnecki)}{49}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Problemy i różnice w realizacji zadania w praktyce}{49}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.2.4}Przebieg zadania}{47}{subsection.8.2.4}%
+\contentsline {section}{\numberline {8.3}Zadanie 3 – Nierówności (Konrad Czarnecki)}{48}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Problemy i różnice w realizacji zadania w praktyce}{48}{subsection.8.3.1}%
 \contentsline {subsection}{\numberline {8.3.2}Główny kontroler}{49}{subsection.8.3.2}%
 \contentsline {subsection}{\numberline {8.3.3}Wybór kafelków i układ nierówności}{49}{subsection.8.3.3}%
 \contentsline {subsection}{\numberline {8.3.4}Przebieg zadania}{50}{subsection.8.3.4}%
-\contentsline {section}{\numberline {8.4}Zadanie 4 – Funkcje (Konrad Czarnecki)}{52}{section.8.4}%
-\contentsline {subsection}{\numberline {8.4.1}Problemy i różnice w realizacji zadania w praktyce}{52}{subsection.8.4.1}%
-\contentsline {subsection}{\numberline {8.4.2}Wybór dostępnych punktów}{52}{subsection.8.4.2}%
+\contentsline {section}{\numberline {8.4}Zadanie 4 – Funkcje (Konrad Czarnecki)}{51}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Problemy i różnice w realizacji zadania w praktyce}{51}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Wybór dostępnych punktów}{51}{subsection.8.4.2}%
 \contentsline {subsection}{\numberline {8.4.3}Przebieg zadania}{52}{subsection.8.4.3}%
 \contentsline {section}{\numberline {8.5}Zadanie 5 – Geometria analityczna (Konrad Czarnecki)}{54}{section.8.5}%
 \contentsline {subsection}{\numberline {8.5.1}Problemy i różnice w realizacji zadania w praktyce}{54}{subsection.8.5.1}%
@@ -135,7 +135,7 @@
 \contentsline {subsection}{\numberline {8.7.1}Problemy i różnice w realizacji zadania w praktyce}{58}{subsection.8.7.1}%
 \contentsline {subsection}{\numberline {8.7.2}Implementacja zadania}{60}{subsection.8.7.2}%
 \contentsline {subsection}{\numberline {8.7.3}Przebieg zadania}{60}{subsection.8.7.3}%
-\contentsline {subsection}{\numberline {8.7.4}Implementacja mechanizmu uzupełniania ścianki}{61}{subsection.8.7.4}%
+\contentsline {subsection}{\numberline {8.7.4}Implementacja mechanizmu uzupełniania ścianki}{62}{subsection.8.7.4}%
 \contentsline {section}{\numberline {8.8}Zadanie 8 – Znaki funkcji trygonometrycznych (Konrad Czarnecki)}{62}{section.8.8}%
 \contentsline {subsection}{\numberline {8.8.1}Problemy i różnice w realizacji zadania w praktyce}{62}{subsection.8.8.1}%
 \contentsline {subsection}{\numberline {8.8.2}Implementacja sześcianów}{62}{subsection.8.8.2}%
@@ -169,11 +169,15 @@
 \contentsline {subsection}{\numberline {8.13.1}Problemy i różnice w realizacji zadania w praktyce}{74}{subsection.8.13.1}%
 \contentsline {subsection}{\numberline {8.13.2}Implementacja zadania}{74}{subsection.8.13.2}%
 \contentsline {subsection}{\numberline {8.13.3}Przebieg zadania}{74}{subsection.8.13.3}%
-\contentsline {chapter}{\numberline {9}Podsumowanie(Andrii Demyshyn)}{77}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Ocena realizacji celów}{77}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Propozycje rozwoju projektu}{77}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Wnioski końcowe}{79}{section.9.3}%
-\contentsline {chapter}{Wykaz literatury}{80}{chapter*.60}%
-\contentsline {chapter}{Spis rysunków}{82}{chapter*.61}%
-\contentsline {chapter}{Spis tabel}{83}{chapter*.62}%
+\contentsline {chapter}{\numberline {9}Raport z testowania (Jan Walczak)}{76}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Przebieg testów}{76}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Napotkane problemy}{76}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Wykryte błędy}{77}{section.9.3}%
+\contentsline {chapter}{\numberline {10}Podsumowanie(Andrii Demyshyn)}{78}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Ocena realizacji celów}{78}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Propozycje rozwoju projektu}{78}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Wnioski końcowe}{80}{section.10.3}%
+\contentsline {chapter}{Wykaz literatury}{81}{chapter*.60}%
+\contentsline {chapter}{Spis rysunków}{83}{chapter*.61}%
+\contentsline {chapter}{Spis tabel}{84}{chapter*.62}%
 \contentsfinish 
