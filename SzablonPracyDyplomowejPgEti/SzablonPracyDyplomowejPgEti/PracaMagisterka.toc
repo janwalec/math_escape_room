@@ -28,9 +28,9 @@
 \contentsline {subsection}{\numberline {4.1.1}Wymagania funkcjonalne}{19}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Wymagania niefunkcjonalne}{19}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Scenariusz gry (Konrad Czarnecki)}{20}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Model przypadków użycia(Andrii Demyshyn)}{21}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Projekt architektury systemu(Andrii Demyshyn)}{21}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Projekt interfejsu użytkownika i środowiska gry(Andrii Demyshyn)}{22}{section.4.5}%
+\contentsline {section}{\numberline {4.3}Model przypadków użycia (Andrii Demyshyn)}{21}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Projekt architektury systemu (Andrii Demyshyn)}{21}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Projekt interfejsu użytkownika i środowiska gry (Andrii Demyshyn)}{22}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Technologie i narzędzia (Konrad Czarnecki)}{24}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Silnik gry}{24}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Laboratorium Zanurzonej Wizualizacji Przestrzennej}{24}{section.5.2}%
@@ -93,8 +93,8 @@
 \contentsline {subsection}{\numberline {7.12.2}Zasady działania}{41}{subsection.7.12.2}%
 \contentsline {subsection}{\numberline {7.12.3}Zakończenie zadania}{41}{subsection.7.12.3}%
 \contentsline {section}{\numberline {7.13}Zadanie 13 – Stereometria (Jan Walczak)}{41}{section.7.13}%
-\contentsline {subsection}{\numberline {7.13.1}Cel zadania}{41}{subsection.7.13.1}%
-\contentsline {subsection}{\numberline {7.13.2}Zasady działania}{41}{subsection.7.13.2}%
+\contentsline {subsection}{\numberline {7.13.1}Cel zadania}{42}{subsection.7.13.1}%
+\contentsline {subsection}{\numberline {7.13.2}Zasady działania}{42}{subsection.7.13.2}%
 \contentsline {subsection}{\numberline {7.13.3}Zakończenie zadania}{42}{subsection.7.13.3}%
 \contentsline {chapter}{\numberline {8}Implementacja zagadek}{43}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Zadanie 1 – wzory skróconego mnożenia (Andrii Demyshyn)}{43}{section.8.1}%
@@ -173,7 +173,7 @@
 \contentsline {section}{\numberline {9.1}Przebieg testów}{76}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Napotkane problemy}{76}{section.9.2}%
 \contentsline {section}{\numberline {9.3}Wykryte błędy}{77}{section.9.3}%
-\contentsline {chapter}{\numberline {10}Podsumowanie(Andrii Demyshyn)}{78}{chapter.10}%
+\contentsline {chapter}{\numberline {10}Podsumowanie (Andrii Demyshyn)}{78}{chapter.10}%
 \contentsline {section}{\numberline {10.1}Ocena realizacji celów}{78}{section.10.1}%
 \contentsline {section}{\numberline {10.2}Propozycje rozwoju projektu}{78}{section.10.2}%
 \contentsline {section}{\numberline {10.3}Wnioski końcowe}{80}{section.10.3}%

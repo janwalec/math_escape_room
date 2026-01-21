@@ -142,19 +142,19 @@ motywacji użytkowników do ukończenia całej gry.
 %
 %Gracze w półmroku obracają na obrotowym podeście pojawiającą się bryłę przestrzenną, taką jak graniastosłup, ostrosłup, walec czy stożek. Muszą rozpoznać jej nazwę oraz wskazać właściwości, takie jak liczba ścian, wierzchołków, krawędzi, rodzaj podstawy czy kąty między elementami.
 
-\section{Model przypadków użycia(Andrii Demyshyn)}
+\section{Model przypadków użycia (Andrii Demyshyn)}
 Model przypadków użycia opisuje sposób interakcji użytkowników z projektowaną aplikacją edukacyjną typu escape room w środowisku rzeczywistości wirtualnej. W systemie wyróżniono dwóch aktorów: gracza oraz administratora systemu.
 
 Administrator systemu jest osobą nadzorującą przebieg rozgrywki z poziomu komputera sterującego, znajdującego się poza środowiskiem wirtualnym. Do zadań administratora należy uruchamianie i kończenie aplikacji, monitorowanie przebiegu gry oraz reagowanie na sytuacje awaryjne. Aby uniknąć jakichkolwiek problemów w aplikacji, administratorowi dodano możliwość pomijania zagadek w trakcie gry. Po otrzymaniu prośby lub wystąpieniu jakiegokolwiek błędu administrator może uznać poziom za zaliczony i przenieść gracza do następnej zagadki.
 To pozwala na zachowanie stabilności działania aplikacji w środowisku CAVE.
 
-Gracz przebywa fizycznie w przestrzeni Laboratorium Zanurzonej Wizualizacji Przestrzennej i korzysta z aplikacji w środowisku VR. Podczas rozgrywki porusza się po wirtualnym pomieszczeniu, wchodzi w interakcję z obiektami poprzez ich naciskanie, przemieszczanie czy wybieranie. Gracz odczytuje informacje tekstowe i komunikaty systemowe wyświetlane w przestrzeni trójwymiarowej oraz rozwiązuje zagadki matematyczne. Także dla wygody użytkowania gracz za pomocą wybranego przycisku może obracać pokój i wszystkie  obiekty w nim na 90 stopni, co pozwala dopasować pokój dla wygodniejszego korzystania.Na każdym etapie system na bieżąco informuje gracza o poprawności wprowadzanych rozwiązań, wyświetlając odpowiednie komunikaty w przestrzeni wirtualnej. Interakcja z aplikacją odbywa się bez wykorzystania klasycznego interfejsu graficznego, a wszystkie działania realizowane są bezpośrednio w przestrzeni trójwymiarowej. Po poprawnym rozwiązaniu zagadki system automatycznie przechodzi do kolejnego etapu rozgrywki, aż do ukończenia wszystkich trzynastu zagadek.
+Gracz przebywa fizycznie w przestrzeni Laboratorium Zanurzonej Wizualizacji Przestrzennej i korzysta z aplikacji w środowisku VR. Podczas rozgrywki porusza się po wirtualnym pomieszczeniu, wchodzi w interakcję z obiektami poprzez ich naciskanie, przemieszczanie czy wybieranie. Gracz odczytuje informacje tekstowe i komunikaty systemowe wyświetlane w przestrzeni trójwymiarowej oraz rozwiązuje zagadki matematyczne. Także dla wygody użytkowania gracz za pomocą wybranego przycisku może obracać pokój i wszystkie  obiekty w nim o 90 stopni, co pozwala dopasować pokój do wygodniejszego korzystania. Na każdym etapie system na bieżąco informuje gracza o poprawności wprowadzanych rozwiązań, wyświetlając odpowiednie komunikaty w przestrzeni wirtualnej. Interakcja z aplikacją odbywa się bez wykorzystania klasycznego interfejsu graficznego, a wszystkie działania realizowane są bezpośrednio w przestrzeni trójwymiarowej. Po poprawnym rozwiązaniu zagadki system automatycznie przechodzi do kolejnego etapu rozgrywki, aż do ukończenia wszystkich trzynastu zagadek.
 
 Zaprojektowany model przypadków użycia odpowiada rzeczywistym funkcjonalnościom zaimplementowanym w aplikacji i zapewnia czytelny podział ról pomiędzy użytkownikiem końcowym a osobą nadzorującą system.
-\section{Projekt architektury systemu(Andrii Demyshyn)}
+\section{Projekt architektury systemu (Andrii Demyshyn)}
 Architektura projektowanej aplikacji została zaprojektowana z myślą o realizacji edukacyjnej gry typu escape room w środowisku rzeczywistości wirtualnej. System został zaimplementowany z wykorzystaniem silnika Unreal Engine i przystosowany do działania w środowisku CAVE, wykorzystywanym w Laboratorium Zanurzonej Wizualizacji Przestrzennej.
 
-Struktura aplikacji opiera się na kilku głównych komponentach odpowiedzialnych za poszczególne aspekty działania systemu. Centralnym elementem architektury jest moduł zarządzania rozgrywką zaimplementowanej jako obiekt typu Blueprint Actor MergeBP. MergeBP kontroluje aktualny etap gry, kolejność zagadek oraz postęp gracza. Moduł ten odpowiada również za przejścia pomiędzy kolejnymi etapami po poprawnym rozwiązaniu zagadek matematycznych.
+Struktura aplikacji opiera się na kilku głównych komponentach odpowiedzialnych za poszczególne aspekty działania systemu. Centralnym elementem architektury jest moduł zarządzania rozgrywką zaimplementowany jako obiekt typu Blueprint Actor MergeBP. MergeBP kontroluje aktualny etap gry, kolejność zagadek oraz postęp gracza. Moduł ten odpowiada również za przejścia pomiędzy kolejnymi etapami po poprawnym rozwiązaniu zagadek matematycznych.
 
 Logika zagadek matematycznych została podzielona na trzynaście niezależnych poziomów gry, każdy z których odpowiada jednej zagadce i jednemu działowi matematyki. Każda zagadka posiada własny mechanizm interakcji oraz weryfikacji poprawności rozwiązania, co umożliwia ich łatwą modyfikację lub rozbudowę bez ingerencji w pozostałą część systemu. Takie podejście upraszcza również proces testowania poszczególnych etapów gry.
 
@@ -165,7 +165,7 @@ Moduł interakcji odpowiada za obsługę kontrolerów ruchu oraz systemów śled
 Zaprojektowana architektura systemu zapewnia stabilne działanie aplikacji w środowisku rzeczywistości wirtualnej oraz umożliwia jej dalszą rozbudowę, na przykład poprzez dodanie nowych zagadek matematycznych lub rozszerzenie scenariusza gry.
 
 
-\section{Projekt interfejsu użytkownika i środowiska gry(Andrii Demyshyn)}
+\section{Projekt interfejsu użytkownika i środowiska gry (Andrii Demyshyn)}
 
 Projekt interfejsu użytkownika oraz środowiska gry został opracowany z myślą o specyfice rzeczywistości wirtualnej oraz warunkach pracy w systemie CAVE. Głównym założeniem było zapewnienie wysokiego poziomu immersji oraz intuicyjnej obsługi aplikacji przy jednoczesnym ograniczeniu elementów mogących rozpraszać uwagę gracza podczas rozwiązywania zagadek matematycznych.
 

@@ -474,7 +474,7 @@ Uczestnik może jednocześnie odkryć maksymalnie dwie tabliczki. Jeżeli odkryt
     \label{fig:pochodne}
 \end{figure}
 
-Zadanie wymaga znajomości podstawowych wzorów na pochodne funkcji takich jak $x^n$, $\sqrt{x}$, $\ln x$, $e^x$, $a^x$ oraz $\frac{1}{x}$, a także umiejętności poprawnego rozpoznawania ich pochodnych.
+Zadanie wymaga znajomości podstawowych wzorów na pochodne funkcji, takich jak $x^n$, $\sqrt{x}$, $\ln x$, $e^x$, $a^x$ oraz $\frac{1}{x}$, a także umiejętności poprawnego rozpoznawania ich pochodnych.
 
 \subsection{Zakończenie zadania}
 Zadanie uznaje się za zakończone w momencie poprawnego dopasowania wszystkich funkcji do ich pochodnych. Prawidłowe wykonanie zadania potwierdza, że uczestnik posiada wymaganą wiedzę z zakresu rachunku różniczkowego oraz potrafi zastosować ją w praktyce poprzez analizę i rozpoznawanie zależności matematycznych.
@@ -484,8 +484,13 @@ Zadanie uznaje się za zakończone w momencie poprawnego dopasowania wszystkich 
 \section{Zadanie 12 – Układy równań (Andrii Demyshyn)}
 
 \subsection{Cel zadania}
-Na środku pomieszczenia znajduje się stół z trzema przezroczystymi pojemnikami, oznaczonymi kolorami: czerwonym (x), zielonym (y) oraz niebieskim (z). Bezpośrednio nad stołem, na ścianie, umieszczona jest duża żarówka, która zapala się, gdy gracze prawidłowo uzupełnią pojemniki (rys.~\ref{fig:Lamp}). Obok znajduje się instrukcja techniczna:
-„Aby uruchomić instalację świetlną, należy załadować dokładnie 12 kulek. Wszystkie kulki razem dają 12 jednostek energii. Czerwona kulka jest dwa razy bardziej wydajna niż zielona. Czerwona i dwie zielone razem dają o 9 jednostek energii więcej niż niebieska”.
+Na środku pomieszczenia znajduje się stół z trzema przezroczystymi pojemnikami oraz kulkami w trzech kolorach: czerwonym, zielonym oraz niebieskim. Bezpośrednio nad stołem, na ścianie, umieszczona jest duża żarówka, która zapala się, gdy gracze prawidłowo uzupełnią pojemniki (rys.~\ref{fig:Lamp}). Obok stołu znajduje się instrukcja techniczna opisująca zasady działania instalacji.
+
+Zadanie składa się z dwóch etapów. W pierwszym etapie gracz, na podstawie podanych zależności matematycznych, wyznacza energię generowaną przez pojedynczą kulkę każdego koloru. W drugim etapie, znając już wartości energetyczne kulek, gracz dobiera kulki do pojemników w taki sposób, aby spełnić warunek uruchomienia żarówki.
+
+Instrukcja techniczna wygląda następująco:
+
+„Aby uruchomić instalację świetlną, należy załadować dokładnie 12 kulek, które muszą łącznie generować 48 jednostek energii. Czerwona kulka jest dwa razy bardziej wydajna energetycznie niż zielona. Suma energii jednej kulki czerwonej oraz dwóch kulek zielonych jest o 9 jednostek większa niż energia jednej kulki niebieskiej. Suma energii kulki czerwonej, zielonej i niebieskiej wynosi 12 jednostek”.
 
 \subsection{Zasady działania}
 \begin{itemize}
@@ -502,28 +507,26 @@ x + y + z = 12
 \end{cases}
 \quad
 \begin{aligned}
-&x &&\text{– energia generowana przez kulki czerwone}, \\
-&y &&\text{– energia generowana przez kulki zielone}, \\
-&z &&\text{– energia generowana przez kulki niebieskie}.
+&x &&\text{– energia generowana przez jedną kulkę czerwoną}, \\
+&y &&\text{– energia generowana przez jedną kulkę zieloną}, \\
+&z &&\text{– energia generowana przez jedną kulkę niebieską}.
 \end{aligned}
 \]
 
 \begin{itemize}
-    \item Czerwony (x) = 6,
-    \item Zielony (y) = 3,
-    \item Niebieski (z) = 3.
+\item Energia jednej kulki czerwonej wynosi $x = 6$,
+\item energia jednej kulki zielonej wynosi $y = 3$,
+\item energia jednej kulki niebieskiej wynosi $z = 3$.
 \end{itemize}
-
+Po wyznaczeniu energii pojedynczych kulek gracz przechodzi do etapu doboru odpowiedniej konfiguracji kulek.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.4\textwidth]{images/Lamp.png}
     \caption{Przykładowy wygląd zadania}
     \label{fig:Lamp}
 \end{figure}
-
 \subsection{Zakończenie zadania}
 Po poprawnym ułożeniu żarówka zapala się nad stołem, sygnalizując zakończenie zadania.
-
 
 
 
