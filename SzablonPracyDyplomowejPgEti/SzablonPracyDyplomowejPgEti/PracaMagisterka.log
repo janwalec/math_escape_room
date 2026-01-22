@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.28)  21 JAN 2026 10:10
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.28)  22 JAN 2026 06:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -690,7 +690,7 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (PracaMagisterka.aux (chapters/0a_streszczenie.aux)
 Package babel Info: 'polish' activates 'polish' shorthands.
 (babel)             Reported on input line 10.
- (chapters/0b_spis_tresci.aux) (chapters/0c_wykaz_skrotow.aux) (chapters/1_wstep.aux) (chapters/2_wprowadzenie_do_dziedziny.aux) (chapters/3_analiza_istniejacych_rozwiazan.aux) (chapters/4_projekt_systemu.aux) (chapters/5_technologie_i_narzedzia.aux) (chapters/11_organizacja_pracy.aux) (chapters/9_zagadki_teoretyczne.aux) (chapters/10_zagadki_praktyczne.aux) (chapters/12_raport_z_testowania.aux) (chapters/7_podsumowanie.aux) (chapters/8_wykazy.aux))
+ (chapters/0b_spis_tresci.aux) (chapters/0c_wykaz_skrotow.aux) (chapters/1_wstep.aux) (chapters/2_wprowadzenie_do_dziedziny.aux) (chapters/3_analiza_istniejacych_rozwiazan.aux) (chapters/4_projekt_systemu.aux) (chapters/5_technologie_i_narzedzia.aux) (chapters/11_organizacja_pracy.aux) (chapters/9_zagadki_teoretyczne.aux) (chapters/10_zagadki_praktyczne.aux) (chapters/12_raport_z_testowania.aux) (chapters/13_sprawozdanie.aux) (chapters/7_podsumowanie.aux) (chapters/8_wykazy.aux))
 \openout1 = `PracaMagisterka.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -936,14 +936,79 @@ Overfull \hbox (2.24121pt too wide) detected at line 179
 \TU/Arial(0)/m/n/10 10.3. 
  []
 
+
+Overfull \hbox (2.24121pt too wide) detected at line 180
+\TU/Arial(0)/m/n/10 10.4. 
+ []
+
+
+Overfull \hbox (2.24121pt too wide) detected at line 181
+\TU/Arial(0)/m/n/10 10.5. 
+ []
+
+
+Overfull \hbox (2.24121pt too wide) detected at line 182
+\TU/Arial(0)/m/n/10 10.6. 
+ []
+
+
+Overfull \hbox (2.24121pt too wide) detected at line 183
+\TU/Arial(0)/m/n/10 10.7. 
+ []
+
+
+Overfull \hbox (2.24121pt too wide) detected at line 184
+\TU/Arial(0)/m/n/10 10.8. 
+ []
+
+[6]
+Overfull \hbox (2.24121pt too wide) detected at line 185
+\TU/Arial(0)/m/n/10 10.9. 
+ []
+
+
+Overfull \hbox (7.80273pt too wide) detected at line 186
+\TU/Arial(0)/m/n/10 10.10. 
+ []
+
+
+Overfull \hbox (7.06055pt too wide) detected at line 187
+\TU/Arial(0)/m/n/10 10.11. 
+ []
+
+
+Overfull \hbox (7.80273pt too wide) detected at line 188
+\TU/Arial(0)/m/n/10 10.12. 
+ []
+
+
+Overfull \hbox (7.80273pt too wide) detected at line 189
+\TU/Arial(0)/m/n/10 10.13. 
+ []
+
+
+Overfull \hbox (1.49902pt too wide) detected at line 191
+\TU/Arial(0)/m/n/10 11.1. 
+ []
+
+
+Overfull \hbox (1.49902pt too wide) detected at line 192
+\TU/Arial(0)/m/n/10 11.2. 
+ []
+
+
+Overfull \hbox (1.49902pt too wide) detected at line 193
+\TU/Arial(0)/m/n/10 11.3. 
+ []
+
 )
 \tf@toc=\write5
 \openout5 = `PracaMagisterka.toc'.
 
-) [6]
+) [7]
 \openout2 = `chapters/0c_wykaz_skrotow.aux'.
 
- (chapters/0c_wykaz_skrotow.tex) [7
+ (chapters/0c_wykaz_skrotow.tex) [8
 
 
 
@@ -953,7 +1018,7 @@ Overfull \hbox (2.24121pt too wide) detected at line 179
 
  (chapters/1_wstep.tex
 Rozdział 1.
-[8
+[9
 
 
 
@@ -991,22 +1056,22 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.91925pt on input line 31.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 31.
-) [9]
+) [10]
 \openout2 = `chapters/2_wprowadzenie_do_dziedziny.aux'.
 
  (chapters/2_wprowadzenie_do_dziedziny.tex
 Rozdział 2.
-[10
+[11
 
 
 
 
-] [11] [12] [13]
+] [12] [13] [14]
 Overfull \hbox (3.18172pt too wide) in paragraph at lines 87--88
 []\TU/Arial(0)/m/n/10 W przypadku zastosowań wirtualnej rzeczywistości, interaktywność przybiera różnorodne formy
  []
 
-) [14]
+) [15]
 \openout2 = `chapters/3_analiza_istniejacych_rozwiazan.aux'.
 
  (chapters/3_analiza_istniejacych_rozwiazan.tex
@@ -1016,25 +1081,25 @@ Overfull \hbox (1.37926pt too wide) in paragraph at lines 36--38
 \TU/Arial(0)/m/n/10 wymagać dodatkowego wsparcia przez rozszerzenie standardowej formuły lekcji o aplikację opartą
  []
 
-[15
+[16
 
 
 
 
-] [16]
+] [17]
 File: images/EMPIRIUSZ.jpg Graphic file (type bmp)
 <images/EMPIRIUSZ.jpg>
- [17]) [18]
+ [18]) [19]
 \openout2 = `chapters/4_projekt_systemu.aux'.
 
  (chapters/4_projekt_systemu.tex
 Rozdział 4.
-[19
+[20
 
 
 
 
-] [20] [21]) [22] [23]
+] [21] [22]) [23] [24]
 \openout2 = `chapters/5_technologie_i_narzedzia.aux'.
 
  (chapters/5_technologie_i_narzedzia.tex
@@ -1044,19 +1109,19 @@ Overfull \hbox (4.52684pt too wide) in paragraph at lines 28--32
 []\TU/Arial(0)/m/n/10 W procesie tworzenia aplikacji konieczne było opracowanie modeli 3D reprezentujących obiekty,
  []
 
-[24
+[25
 
 
 
 
-]) [25]
+]) [26]
 \openout2 = `chapters/11_organizacja_pracy.aux'.
 
  (chapters/11_organizacja_pracy.tex
 Rozdział 6.
 File: images/git_issues.png Graphic file (type bmp)
 <images/git_issues.png>
-[26
+[27
 
 
 
@@ -1066,10 +1131,10 @@ Overfull \hbox (1.12523pt too wide) in paragraph at lines 69--75
 []\TU/Arial(0)/m/n/10 W celu spełnienia zasady [][]\TU/lmtt/m/n/9 Require a pull request before merging []\TU/Arial(0)/m/n/10 każda wprowadzana zmiana
  []
 
-[27]
+[28]
 File: images/git_merged.png Graphic file (type bmp)
 <images/git_merged.png>
- [28]
+ [29]
 Overfull \hbox (6.21649pt too wide) in paragraph at lines 121--125
 \TU/Arial(0)/m/n/10 projekcie zastosowano narzędzie internetowe, służące do wizualizacji wykonywanych zadań. Każdy
  []
@@ -1081,30 +1146,30 @@ Overfull \hbox (3.94662pt too wide) in paragraph at lines 135--139
 []\TU/Arial(0)/m/n/10 Kolejnym, charakterystycznym elementem metodyki Kanban jest kontrola przepływu [[]15[]]. Dzięki
  []
 
-) [29]
+) [30]
 \openout2 = `chapters/9_zagadki_teoretyczne.aux'.
 
  (chapters/9_zagadki_teoretyczne.tex
 Rozdział 7.
 File: images/wzory.png Graphic file (type bmp)
 <images/wzory.png>
-[30
+[31
 
 
 
 
-] [31] [32]
+] [32] [33]
 File: images/przykładowy_wykres_funkcji.png Graphic file (type bmp)
 <images/przykładowy_wykres_funkcji.png>
- [33]
+ [34]
 File: images/sejf.png Graphic file (type bmp)
 <images/sejf.png>
- [34]
+ [35]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 271.
 
-[35]
+[36]
 
 LaTeX Warning: Command \textbackslash invalid in math mode on input line 312.
 
@@ -1116,26 +1181,26 @@ LaTeX Warning: Command \textbackslash invalid in math mode on input line 313.
 
 File: images/cwiartki_ukladow_jednostkowych.png Graphic file (type bmp)
 <images/cwiartki_ukladow_jednostkowych.png>
-[36]
+[37]
 File: images/duckhunt.jpg Graphic file (type bmp)
 <images/duckhunt.jpg>
- [37]
+ [38]
 File: images/morfeus.png Graphic file (type bmp)
 <images/morfeus.png>
- [38] [39]
+ [39] [40]
 File: images/pochodne.png Graphic file (type bmp)
 <images/pochodne.png>
- [40]
+ [41]
 File: images/Lamp.png Graphic file (type bmp)
 <images/Lamp.png>
- [41]) [42]
+ [42]) [43]
 \openout2 = `chapters/10_zagadki_praktyczne.aux'.
 
  (chapters/10_zagadki_praktyczne.tex
 Rozdział 8.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 18.
-[43
+[44
 
 
 
@@ -1148,7 +1213,7 @@ Overfull \hbox (8.71785pt too wide) in paragraph at lines 81--82
 []\TU/Arial(0)/m/n/10 W obiekcie \TU/lmtt/m/n/10 BP_MathBoard \TU/Arial(0)/m/n/10 zaimplementowano również funkcję \TU/lmtt/m/n/10 AreAllSlotsFilled\TU/Arial(0)/m/n/10 , która spraw-
  []
 
-[44]
+[45]
 File: images/algebraic.png Graphic file (type bmp)
 <images/algebraic.png>
 
@@ -1166,13 +1231,13 @@ Overfull \hbox (0.62079pt too wide) in paragraph at lines 120--121
 []\TU/Arial(0)/m/n/10 „Połącz odpowiednie początki i końce wzorów skróconego mnożenia. Przeciągnij klocki
  []
 
-[45] [46]
+[46] [47]
 File: images/planimetreia_UML.png Graphic file (type bmp)
 <images/planimetreia_UML.png>
- [47]
+ [48]
 File: images/planimetria_FLOW.png Graphic file (type bmp)
 <images/planimetria_FLOW.png>
- [48]
+ [49]
 File: images/punkt_kontrolny_pokoj_3.png Graphic file (type bmp)
 <images/punkt_kontrolny_pokoj_3.png>
 File: images/rozwiazanie1_pokoj_3.png Graphic file (type bmp)
@@ -1193,34 +1258,34 @@ File: images/rozwiazanie2_pokoj_3.png Graphic file (type bmp)
 <images/rozwiazanie2_pokoj_3.png>
 File: images/rozwiazanie3_pokoj_3.png Graphic file (type bmp)
 <images/rozwiazanie3_pokoj_3.png>
- [49]
+ [50]
 File: images/pozycja_poczatkowa_pokoj_3.png Graphic file (type bmp)
 <images/pozycja_poczatkowa_pokoj_3.png>
 File: images/przyciski_pokoj_3.png Graphic file (type bmp)
 <images/przyciski_pokoj_3.png>
 File: images/wygrana_pokoj_3.png Graphic file (type bmp)
 <images/wygrana_pokoj_3.png>
- [50] [51]
+ [51] [52]
 File: images/uklad_wspolrzednych_pokoj_4.png Graphic file (type bmp)
 <images/uklad_wspolrzednych_pokoj_4.png>
 File: images/wszystkie_suwaki_pokoj_4.png Graphic file (type bmp)
 <images/wszystkie_suwaki_pokoj_4.png>
- [52] [53]
+ [53] [54]
 Overfull \hbox (12.13773pt too wide) in paragraph at lines 531--536
 []\TU/Arial(0)/m/n/10 Podobnie jak w przypadku czwartej zagadki, zadanie rozpoczyna się zainicjalizowaniem i wstępną
  []
 
-[54]
+[55]
 File: images/uklad_wspolrzednych_pokoj_5.png Graphic file (type bmp)
 <images/uklad_wspolrzednych_pokoj_5.png>
 File: images/przyciski_x_pokoj_5.png Graphic file (type bmp)
 <images/przyciski_x_pokoj_5.png>
- [55]
+ [56]
 Overfull \hbox (6.26988pt too wide) in paragraph at lines 580--584
 []\TU/Arial(0)/m/n/10 Następnie treść wybranej zagadki wyświetlana jest za pomocą blueprintu aktora \TU/lmtt/m/n/10 BP_RiddleSafe\TU/Arial(0)/m/n/10 ,
  []
 
-[56]
+[57]
 Overfull \hbox (8.71304pt too wide) in paragraph at lines 612--615
 []\TU/Arial(0)/b/n/10 Zagadka 6: \TU/Arial(0)/m/n/10 „PIN to liczba wszystkich 4-cyfrowych kodów PIN będących palindromem (ABBA).”
  []
@@ -1232,38 +1297,38 @@ Overfull \hbox (16.65271pt too wide) in paragraph at lines 649--654
 
 File: images/sejf1.png Graphic file (type bmp)
 <images/sejf1.png>
-[57] [58]
+[58] [59]
 File: images/liczby_rzeczywiste_screen.png Graphic file (type bmp)
 <images/liczby_rzeczywiste_screen.png>
 
 
 LaTeX Warning: Command \textbackslash invalid in math mode on input line 738.
 
-[59]
+[60]
 File: images/real_UML.png Graphic file (type bmp)
 <images/real_UML.png>
- [60]
+ [61]
 File: images/real_FLOW.png Graphic file (type bmp)
 <images/real_FLOW.png>
- [61]
+ [62]
 File: images/szesciany_pokoj_8.png Graphic file (type bmp)
 <images/szesciany_pokoj_8.png>
 File: images/uklad_jednostkowy_pokoj_8.png Graphic file (type bmp)
 <images/uklad_jednostkowy_pokoj_8.png>
 File: images/wykryto_luke_pokoj_8.png Graphic file (type bmp)
 <images/wykryto_luke_pokoj_8.png>
- [62
+ [63
 
-] [63] [64]
+] [64] [65]
 File: images/sequence_laser.png Graphic file (type bmp)
 <images/sequence_laser.png>
- [65]
+ [66]
 File: images/sequence_UML.png Graphic file (type bmp)
 <images/sequence_UML.png>
- [66]
+ [67]
 File: images/sequence_FLOW.png Graphic file (type bmp)
 <images/sequence_FLOW.png>
- [67]
+ [68]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 1054.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
@@ -1272,12 +1337,12 @@ File: images/morpheus_before_after.png Graphic file (type bmp)
 <images/morpheus_before_after.png>
 File: images/container.png Graphic file (type bmp)
 <images/container.png>
- [68
+ [69
 
-] [69]
+] [70]
 File: images/pochodneroom.png Graphic file (type bmp)
 <images/pochodneroom.png>
- [70]
+ [71]
 Overfull \hbox (31.14847pt too wide) in paragraph at lines 1179--1181
 []\TU/Arial(0)/m/n/10 Obiekt zawiera również zmienną \TU/lmtt/m/n/10 PairID\TU/Arial(0)/m/n/10 , pełniącą rolę identyfikatora pary, oraz zmienną \TU/lmtt/m/n/10 FormulaText\TU/Arial(0)/m/n/10 ,
  []
@@ -1287,41 +1352,85 @@ Overfull \hbox (0.40921pt too wide) in paragraph at lines 1192--1195
 []\TU/Arial(0)/m/n/10 Jeżeli identyfikatory są zgodne, wyświetlany jest tekst „Para”, licznik „Połączono” zostaje zwięk-
  []
 
-[71]
+[72]
 Overfull \hbox (42.74814pt too wide) in paragraph at lines 1248--1250
 []\TU/Arial(0)/m/n/10 W scenie zaimplementowano trzy kontenery w postaci obiektów typu Blueprint Actor: \TU/lmtt/m/n/10 BP_Container_Red\TU/Arial(0)/m/n/10 ,
  []
 
-[72]
+[73]
 File: images/Lamp1.png Graphic file (type bmp)
 <images/Lamp1.png>
- [73]
+ [74]
 File: images/stereometria_UML.png Graphic file (type bmp)
 <images/stereometria_UML.png>
- [74]
+ [75]
 File: images/stereometria_FLOW.png Graphic file (type bmp)
 <images/stereometria_FLOW.png>
-) [75]
+) [76]
 \openout2 = `chapters/12_raport_z_testowania.aux'.
 
  (chapters/12_raport_z_testowania.tex
 Rozdział 9.
-[76
+[77
 
 
 
 
-]) [77]
+]) [78]
+\openout2 = `chapters/13_sprawozdanie.aux'.
+
+ (chapters/13_sprawozdanie.tex
+Rozdział 10.
+File: images/wzoryalg.jpg Graphic file (type bmp)
+<images/wzoryalg.jpg>
+[79
+
+
+
+
+]
+File: images/planimetria23.jpg Graphic file (type bmp)
+<images/planimetria23.jpg>
+File: images/most23.jpg Graphic file (type bmp)
+<images/most23.jpg>
+ [80]
+File: images/funkce23.jpg Graphic file (type bmp)
+<images/funkce23.jpg>
+File: images/geometria23.jpg Graphic file (type bmp)
+<images/geometria23.jpg>
+ [81]
+File: images/sejf23.jpg Graphic file (type bmp)
+<images/sejf23.jpg>
+ [82]
+File: images/liczby23.jpg Graphic file (type bmp)
+<images/liczby23.jpg>
+ [83]
+File: images/sin23.jpg Graphic file (type bmp)
+<images/sin23.jpg>
+File: images/kaczki23.jpg Graphic file (type bmp)
+<images/kaczki23.jpg>
+ [84]
+File: images/matrix23.jpg Graphic file (type bmp)
+<images/matrix23.jpg>
+File: images/pochodna23.jpg Graphic file (type bmp)
+<images/pochodna23.jpg>
+ [85]
+File: images/kulki23.jpg Graphic file (type bmp)
+<images/kulki23.jpg>
+ [86]
+File: images/bryla23.jpg Graphic file (type bmp)
+<images/bryla23.jpg>
+) [87] [88]
 \openout2 = `chapters/7_podsumowanie.aux'.
 
  (chapters/7_podsumowanie.tex
-Rozdział 10.
-[78
+Rozdział 11.
+[89
 
 
 
 
-] [79]) [80]
+] [90]) [91]
 \openout2 = `chapters/8_wykazy.aux'.
 
  (chapters/8_wykazy.tex
@@ -1365,41 +1474,61 @@ Package biblatex Warning: Bibliography string 'urldate' untranslated
 Package biblatex Warning: Bibliography string 'urldate' untranslated
 (biblatex)                at entry 'kanban' on input line 3.
 
-[81
+[92
 
 
 
 
-] (PracaMagisterka.lof [82
+] (PracaMagisterka.lof [93
 
-])
+]
+Overfull \hbox (2.02438pt too wide) detected at line 63
+\TU/Arial(0)/m/n/10 10.10 
+ []
+
+
+Overfull \hbox (1.2822pt too wide) detected at line 64
+\TU/Arial(0)/m/n/10 10.11 
+ []
+
+
+Overfull \hbox (2.02438pt too wide) detected at line 65
+\TU/Arial(0)/m/n/10 10.12 
+ []
+
+
+Overfull \hbox (2.02438pt too wide) detected at line 66
+\TU/Arial(0)/m/n/10 10.13 
+ []
+
+)
 \tf@lof=\write6
 \openout6 = `PracaMagisterka.lof'.
 
- [83] (PracaMagisterka.lot)
+ [94] (PracaMagisterka.lot)
 \tf@lot=\write7
 \openout7 = `PracaMagisterka.lot'.
 
-) [84
+) [95
 
-] (PracaMagisterka.aux (chapters/0a_streszczenie.aux) (chapters/0b_spis_tresci.aux) (chapters/0c_wykaz_skrotow.aux) (chapters/1_wstep.aux) (chapters/2_wprowadzenie_do_dziedziny.aux) (chapters/3_analiza_istniejacych_rozwiazan.aux) (chapters/4_projekt_systemu.aux) (chapters/5_technologie_i_narzedzia.aux) (chapters/11_organizacja_pracy.aux) (chapters/9_zagadki_teoretyczne.aux) (chapters/10_zagadki_praktyczne.aux) (chapters/12_raport_z_testowania.aux) (chapters/7_podsumowanie.aux) (chapters/8_wykazy.aux))
+] (PracaMagisterka.aux (chapters/0a_streszczenie.aux) (chapters/0b_spis_tresci.aux) (chapters/0c_wykaz_skrotow.aux) (chapters/1_wstep.aux) (chapters/2_wprowadzenie_do_dziedziny.aux) (chapters/3_analiza_istniejacych_rozwiazan.aux) (chapters/4_projekt_systemu.aux) (chapters/5_technologie_i_narzedzia.aux) (chapters/11_organizacja_pracy.aux) (chapters/9_zagadki_teoretyczne.aux) (chapters/10_zagadki_praktyczne.aux) (chapters/12_raport_z_testowania.aux) (chapters/13_sprawozdanie.aux) (chapters/7_podsumowanie.aux) (chapters/8_wykazy.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `PracaMagisterka.out' has not changed.
-(rerunfilecheck)             Checksum: 60C976ED64542C8B0729B426600C6F3A;36297.
+(rerunfilecheck)             Checksum: 1D2153698A43C763A0993113B9C27453;38799.
 Package logreq Info: Writing requests to 'PracaMagisterka.run.xml'.
 \openout1 = `PracaMagisterka.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24790 strings out of 402986
- 485753 string characters out of 5455747
- 1422940 words of memory out of 5000000
- 53077 multiletter control sequences out of 15000+600000
+ 24947 strings out of 402986
+ 489708 string characters out of 5455747
+ 1426717 words of memory out of 5000000
+ 53214 multiletter control sequences out of 15000+600000
  647445 words of font info for 127 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  88i,12n,107p,1722b,6689s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on PracaMagisterka.xdv (84 pages, 1985072 bytes).
+Output written on PracaMagisterka.xdv (95 pages, 2169500 bytes).
