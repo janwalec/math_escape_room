@@ -1,14 +1,14 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'PracaMagisterka.blg'
-[116] biber-MSWIN64:342> INFO - === 
-[155] Biber.pm:421> INFO - Reading 'PracaMagisterka.bcf'
-[280] Biber.pm:1002> INFO - Found 15 citekeys in bib section 0
-[296] Biber.pm:4487> INFO - Processing section 0
-[309] Biber.pm:4678> INFO - Looking for bibtex file 'bibliography/bibliography.bib' for section 0
-[361] bibtex.pm:1713> INFO - LaTeX decoding ...
-[391] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography/bibliography.bib'
-[482] UCollate.pm:68> INFO - Overriding locale 'pl-PL' defaults 'variable = shifted' with 'variable = non-ignorable'
-[482] UCollate.pm:68> INFO - Overriding locale 'pl-PL' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[482] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'pl-PL'
-[496] bbl.pm:676> INFO - Writing 'PracaMagisterka.bbl' with encoding 'UTF-8'
-[504] bbl.pm:779> INFO - Output to PracaMagisterka.bbl
+[231] biber-MSWIN64:342> INFO - === 
+[327] Biber.pm:421> INFO - Reading 'PracaMagisterka.bcf'
+[469] Biber.pm:1002> INFO - Found 15 citekeys in bib section 0
+[495] Biber.pm:4487> INFO - Processing section 0
+[516] Biber.pm:4678> INFO - Looking for bibtex file 'bibliography/bibliography.bib' for section 0
+[580] bibtex.pm:1713> INFO - LaTeX decoding ...
+[623] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography/bibliography.bib'
+[768] UCollate.pm:68> INFO - Overriding locale 'pl-PL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[768] UCollate.pm:68> INFO - Overriding locale 'pl-PL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[768] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'pl-PL'
+[820] bbl.pm:676> INFO - Writing 'PracaMagisterka.bbl' with encoding 'UTF-8'
+[827] bbl.pm:779> INFO - Output to PracaMagisterka.bbl
