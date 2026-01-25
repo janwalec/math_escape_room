@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.28)  22 JAN 2026 07:19
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.12.28)  25 JAN 2026 14:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/UnityGitHub/math_escape_room/SzablonPracyDyplomowejPgEti/SzablonPracyDyplomowejPgEti/PracaMagisterka.tex
-(d:/UnityGitHub/math_escape_room/SzablonPracyDyplomowejPgEti/SzablonPracyDyplomowejPgEti/PracaMagisterka.tex
+**s:/Unreal/Praca/SzablonPracyDyplomowejPgEti/SzablonPracyDyplomowejPgEti/PracaMagisterka.tex
+(s:/Unreal/Praca/SzablonPracyDyplomowejPgEti/SzablonPracyDyplomowejPgEti/PracaMagisterka.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
 (Szablon.cls
@@ -14,9 +14,9 @@ Document Class: Szablon 2016/02/01 Version 1.0 by Jakub Maksymiuk
 * beta version of Szablon - everything may change
 *
 ****
-(D:\latex2\tex/latex/base\report.cls
+(C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
-(D:\latex2\tex/latex/base\size10.clo
+(C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count271
@@ -31,26 +31,26 @@ File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-) (D:\latex2\tex/latex/polski\polski.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/polski\polski.sty
 Package: polski 2021/08/25 v1.3.6 Polish language package
-) (D:\latex2\tex/latex/base\fontenc.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 116.
- (D:\latex2\tex/latex/lm\t1lmr.fd
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)) (D:\latex2\tex/latex/psnfss\helvet.sty
+)) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\helvet.sty
 Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
- (D:\latex2\tex/latex/graphics\keyval.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-)) (D:\latex2\tex/latex/psnfss\mathpazo.sty
+)) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathpazo.sty
 Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
-) (D:\latex2\tex/latex/geometry\geometry.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (D:\latex2\tex/generic/iftex\ifvtex.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (D:\latex2\tex/generic/iftex\iftex.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
 \Gm@cnth=\count280
@@ -65,9 +65,9 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen155
 \Gm@layoutvoffset=\dimen156
 \Gm@dimlist=\toks18
- (D:\latex2\tex/latex/geometry\geometry.cfg)) (D:\latex2\tex/latex/tools\indentfirst.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
 Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
-) (D:\latex2\tex/latex/fancyhdr\fancyhdr.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip51
 \f@nch@offset@elh=\skip52
@@ -84,7 +84,7 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip63
 \f@nch@widthR=\skip64
 \@temptokenb=\toks19
-) (D:\latex2\tex/latex/titlesec\titlesec.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box53
 \beforetitleunit=\skip65
@@ -95,10 +95,10 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidth=\dimen159
 \titlewidthlast=\dimen160
 \titlewidthfirst=\dimen161
-) (D:\latex2\tex/latex/titlesec\titletoc.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titletoc.sty
 Package: titletoc 2025/01/04 v2.17 TOC entries
 \ttl@leftsep=\dimen162
-) (D:\latex2\tex/latex/enumitem\enumitem.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip67
 \enit@outerparindent=\dimen163
@@ -106,21 +106,21 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@inbox=\box54
 \enit@count@id=\count283
 \enitdp@description=\count284
-) (D:\latex2\tex/latex/amsmath\amsmath.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip68
 
 For additional information on amsmath, use the `?' option.
-(D:\latex2\tex/latex/amsmath\amstext.sty
+(C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
- (D:\latex2\tex/latex/amsmath\amsgen.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks22
 \ex@=\dimen164
-)) (D:\latex2\tex/latex/amsmath\amsbsy.sty
+)) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen165
-) (D:\latex2\tex/latex/amsmath\amsopn.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count285
@@ -170,16 +170,16 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks26
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
-) (D:\latex2\tex/latex/amsfonts\amssymb.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (D:\latex2\tex/latex/amsfonts\amsfonts.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup5
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (D:\latex2\tex/latex/amscls\amsthm.sty
+)) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks27
 \thm@bodyfont=\toks28
@@ -192,24 +192,24 @@ Package: amsthm 2020/05/29 v2.20.6
 \dth@everypar=\toks32
 )
 \c@definicja=\count297
- (D:\latex2\tex/latex/graphics\graphicx.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (D:\latex2\tex/latex/graphics\graphics.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (D:\latex2\tex/latex/graphics\trig.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (D:\latex2\tex/latex/graphics-cfg\graphics.cfg
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 106.
- (D:\latex2\tex/latex/graphics-def\xetex.def
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xetex.def
 File: xetex.def 2025/11/01 v5.0p Graphics/color driver for xetex
 ))
 \Gin@req@height=\dimen173
 \Gin@req@width=\dimen174
-) (D:\latex2\tex/latex/caption\caption.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (D:\latex2\tex/latex/caption\caption3.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen175
 \captionmargin=\dimen176
@@ -223,7 +223,7 @@ Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count298
 \c@continuedfloat=\count299
-) (D:\latex2\tex/latex/subfig\subfig.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 \c@KVtest=\count300
 \sf@farskip=\skip74
@@ -238,9 +238,9 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 \c@lotdepth=\count306
 \sf@top=\skip77
 \sf@bottom=\skip78
-) (D:\latex2\tex/latex/fontspec\fontspec.sty (D:\latex2\tex/latex/l3packages/xparse\xparse.sty (D:\latex2\tex/latex/l3kernel\expl3.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.sty (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
 Package: expl3 2025-12-24 L3 programming layer (loader) 
- (D:\latex2\tex/latex/l3backend\l3backend-xetex.def
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xetex.def
 File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
 \g__graphics_track_int=\count307
 \g__pdfannot_backend_int=\count308
@@ -249,7 +249,7 @@ File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
 Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
- (D:\latex2\tex/latex/fontspec\fontspec-xetex.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec-xetex.sty
 Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
 \l__fontspec_script_int=\count310
 \l__fontspec_language_int=\count311
@@ -265,9 +265,9 @@ Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
 \l__fontspec_tmpa_dim=\dimen184
 \l__fontspec_tmpb_dim=\dimen185
 \l__fontspec_tmpc_dim=\dimen186
- (D:\latex2\tex/latex/base\fontenc.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-) (D:\latex2\tex/latex/fontspec\fontspec.cfg)))
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.cfg)))
 
 Package fontspec Info: 
 (fontspec)             Font family 'fonts/arial.ttf(0)' created for font
@@ -311,35 +311,35 @@ Package fontspec Info:
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
 (fontspec)             <->"Arial/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
 
- (D:\latex2\tex/latex/placeins\placeins.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty
 Package: placeins 2005/04/18  v 2.2
-) (D:\latex2\tex/latex/biblatex\biblatex.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
- (D:\latex2\tex/generic/pdftexcmds\pdftexcmds.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (D:\latex2\tex/generic/infwarerr\infwarerr.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (D:\latex2\tex/generic/ltxcmds\ltxcmds.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
-) (D:\latex2\tex/latex/etoolbox\etoolbox.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count321
-) (D:\latex2\tex/latex/kvoptions\kvoptions.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (D:\latex2\tex/latex/kvsetkeys\kvsetkeys.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)) (D:\latex2\tex/latex/logreq\logreq.sty
+)) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count322
- (D:\latex2\tex/latex/logreq\logreq.def
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-)) (D:\latex2\tex/latex/base\ifthen.sty
+)) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-) (D:\latex2\tex/latex/url\url.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -402,7 +402,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \c@mincompwidth=\count368
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- (D:\latex2\tex/latex/biblatex\blx-dm.def
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
 File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
@@ -493,15 +493,15 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip100
 Package biblatex Info: Trying to load enhanced support for Unicode engines...
 Package biblatex Info: ... file 'blx-unicode.def' found.
- (D:\latex2\tex/latex/biblatex\blx-unicode.def)
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-unicode.def)
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- (D:\latex2\tex/latex/biblatex\blx-compat.def
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
 File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (D:\latex2\tex/latex/biblatex\biblatex.def
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 \c@textcitecount=\count437
 \c@textcitetotal=\count438
@@ -519,26 +519,26 @@ File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load bibliography style 'ieee'...
 Package biblatex Info: ... file 'ieee.bbx' found.
- (D:\latex2\tex/latex/biblatex-ieee\ieee.bbx
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-ieee\ieee.bbx
 File: ieee.bbx 2025-08-01 v1.4f biblatex bibliography style
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
- (D:\latex2\tex/latex/biblatex/bbx\numeric-comp.bbx
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric-comp.bbx
 File: numeric-comp.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
- (D:\latex2\tex/latex/biblatex/bbx\numeric.bbx
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx
 File: numeric.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- (D:\latex2\tex/latex/biblatex/bbx\standard.bbx
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count446
 \c@bbx:relatedtotal=\count447
 ))))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
- (D:\latex2\tex/latex/biblatex/cbx\numeric.cbx
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric.cbx
 File: numeric.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -554,7 +554,7 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (D:\latex2\tex/latex/biblatex\biblatex.cfg
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: XeTeX detected.
@@ -564,9 +564,9 @@ Package biblatex Info: ... and expl3
 (biblatex)             2025-12-24 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
- (D:\latex2\tex/latex/biblatex\blx-case-expl3.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
-))) (D:\latex2\tex/generic/babel\babel.sty
+))) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count448
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2068.
@@ -578,7 +578,7 @@ LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) o
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2101.
 \U@D=\dimen187
 \l@unhyphenated=\language80
- (D:\latex2\tex/generic/babel\xebabel.def)
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/generic/babel\xebabel.def)
 \bbl@readstream=\read3
 \bbl@dirlevel=\count449
 Package babel Info: Configuration files are deprecated, as
@@ -588,50 +588,50 @@ Package babel Info: Configuration files are deprecated, as
 *************************************
 * Local config file bblopts.cfg used
 *
-(D:\latex2\tex/latex/arabi\bblopts.cfg
+(C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (D:\latex2\tex/generic/babel/locale/pl\babel-polish.tex)
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/pl\babel-polish.tex)
 Package babel Info: Importing font and identification data for polish
 (babel)             from babel-pl.ini. Reported on input line 4320.
- (D:\latex2\tex/latex/babel-polish\polish.ldf
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/babel-polish\polish.ldf
 Language: polish 2022/03/12 1.3 Babel support for Polish
 Package babel Info: Making " an active character on input line 101.
-)) (D:\latex2\tex/latex/float\float.sty
+)) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count450
 \float@exts=\toks33
 \float@box=\box57
 \@float@everytoks=\toks34
 \@floatcapt=\box58
-) (D:\latex2\tex/latex/hyperref\hyperref.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
- (D:\latex2\tex/generic/kvdefinekeys\kvdefinekeys.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (D:\latex2\tex/generic/pdfescape\pdfescape.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (D:\latex2\tex/latex/hycolor\hycolor.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (D:\latex2\tex/latex/hyperref\nameref.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
- (D:\latex2\tex/latex/refcount\refcount.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (D:\latex2\tex/generic/gettitlestring\gettitlestring.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count451
-) (D:\latex2\tex/generic/stringenc\stringenc.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \@linkdim=\dimen188
 \Hy@linkcounter=\count452
 \Hy@pagecounter=\count453
- (D:\latex2\tex/latex/hyperref\pd1enc.def
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
-) (D:\latex2\tex/generic/intcalc\intcalc.sty
+) (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count454
- (D:\latex2\tex/latex/hyperref\puenc.def
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 )
 Package hyperref Info: Option `unicode' set `true' on input line 4066.
@@ -645,9 +645,9 @@ Package hyperref Info: Bookmarks ON on input line 4462.
 \c@Hy@tempcnt=\count455
 LaTeX Info: Redefining \url on input line 4801.
 \XeTeXLinkMargin=\dimen189
- (D:\latex2\tex/generic/bitset\bitset.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (D:\latex2\tex/generic/bigintcalc\bigintcalc.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count456
@@ -665,16 +665,16 @@ Package hyperref Info: PDF/A mode OFF on input line 6108.
 \c@Hfootnote=\count459
 )
 Package hyperref Info: Driver (autodetected): hxetex.
- (D:\latex2\tex/latex/hyperref\hxetex.def
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hxetex.def
 File: hxetex.def 2025-07-12 v7.01o Hyperref driver for XeTeX
 \pdfm@box=\box59
 \c@Hy@AnnotLevel=\count460
 \HyField@AnnotCount=\count461
 \Fld@listcount=\count462
 \c@bookmark@seq@number=\count463
- (D:\latex2\tex/latex/rerunfilecheck\rerunfilecheck.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
- (D:\latex2\tex/generic/uniquecounter\uniquecounter.sty
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
@@ -756,7 +756,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package biblatex Info: Trying to load language 'polish'...
 Package biblatex Info: ... file 'polish.lbx' found.
-(D:\latex2\tex/latex/biblatex/lbx\polish.lbx
+(C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\polish.lbx
 File: polish.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
 Package biblatex Info: XeTeX detected.
@@ -777,227 +777,227 @@ Package hyperref Info: Link coloring OFF on input line 27.
 
 \openout2 = `chapters/0a_streszczenie.aux'.
 
- (chapters/0a_streszczenie.tex [1
+ (chapters/0a_streszczenie.tex [2
 
 
 
-]) [2
+]) [3
 
 ]
 \openout2 = `chapters/0b_spis_tresci.aux'.
 
- (chapters/0b_spis_tresci.tex (PracaMagisterka.toc [3
+ (chapters/0b_spis_tresci.tex (PracaMagisterka.toc [4
 
 
 
 
 ]
-Overfull \hbox (2.24121pt too wide) detected at line 83
+Overfull \hbox (2.24121pt too wide) detected at line 84
 \TU/Arial(0)/m/n/10 7.10. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 84
+Overfull \hbox (0.58105pt too wide) detected at line 85
 \TU/Arial(0)/m/n/10 7.10.1. 
  []
 
-
-Overfull \hbox (0.58105pt too wide) detected at line 85
+[5]
+Overfull \hbox (0.58105pt too wide) detected at line 86
 \TU/Arial(0)/m/n/10 7.10.2. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 86
+Overfull \hbox (0.58105pt too wide) detected at line 87
 \TU/Arial(0)/m/n/10 7.10.3. 
  []
 
-[4]
-Overfull \hbox (1.49902pt too wide) detected at line 87
+
+Overfull \hbox (1.49902pt too wide) detected at line 88
 \TU/Arial(0)/m/n/10 7.11. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 91
+Overfull \hbox (2.24121pt too wide) detected at line 92
 \TU/Arial(0)/m/n/10 7.12. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 92
+Overfull \hbox (0.58105pt too wide) detected at line 93
 \TU/Arial(0)/m/n/10 7.12.1. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 93
+Overfull \hbox (0.58105pt too wide) detected at line 94
 \TU/Arial(0)/m/n/10 7.12.2. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 94
+Overfull \hbox (0.58105pt too wide) detected at line 95
 \TU/Arial(0)/m/n/10 7.12.3. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 95
+Overfull \hbox (2.24121pt too wide) detected at line 96
 \TU/Arial(0)/m/n/10 7.13. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 96
+Overfull \hbox (0.58105pt too wide) detected at line 97
 \TU/Arial(0)/m/n/10 7.13.1. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 97
+Overfull \hbox (0.58105pt too wide) detected at line 98
 \TU/Arial(0)/m/n/10 7.13.2. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 98
+Overfull \hbox (0.58105pt too wide) detected at line 99
 \TU/Arial(0)/m/n/10 7.13.3. 
  []
 
-[5]
-Overfull \hbox (2.24121pt too wide) detected at line 148
+[6]
+Overfull \hbox (2.24121pt too wide) detected at line 149
 \TU/Arial(0)/m/n/10 8.10. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 149
+Overfull \hbox (0.58105pt too wide) detected at line 150
 \TU/Arial(0)/m/n/10 8.10.1. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 150
+Overfull \hbox (0.58105pt too wide) detected at line 151
 \TU/Arial(0)/m/n/10 8.10.2. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 151
+Overfull \hbox (0.58105pt too wide) detected at line 152
 \TU/Arial(0)/m/n/10 8.10.3. 
  []
 
 
-Overfull \hbox (1.49902pt too wide) detected at line 154
+Overfull \hbox (1.49902pt too wide) detected at line 155
 \TU/Arial(0)/m/n/10 8.11. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 160
+Overfull \hbox (2.24121pt too wide) detected at line 161
 \TU/Arial(0)/m/n/10 8.12. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 161
+Overfull \hbox (0.58105pt too wide) detected at line 162
 \TU/Arial(0)/m/n/10 8.12.1. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 162
+Overfull \hbox (0.58105pt too wide) detected at line 163
 \TU/Arial(0)/m/n/10 8.12.2. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 167
+Overfull \hbox (0.58105pt too wide) detected at line 168
 \TU/Arial(0)/m/n/10 8.12.3. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 168
+Overfull \hbox (2.24121pt too wide) detected at line 169
 \TU/Arial(0)/m/n/10 8.13. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 169
+Overfull \hbox (0.58105pt too wide) detected at line 170
 \TU/Arial(0)/m/n/10 8.13.1. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 170
+Overfull \hbox (0.58105pt too wide) detected at line 171
 \TU/Arial(0)/m/n/10 8.13.2. 
  []
 
 
-Overfull \hbox (0.58105pt too wide) detected at line 171
+Overfull \hbox (0.58105pt too wide) detected at line 172
 \TU/Arial(0)/m/n/10 8.13.3. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 177
+Overfull \hbox (2.24121pt too wide) detected at line 178
 \TU/Arial(0)/m/n/10 10.1. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 178
+Overfull \hbox (2.24121pt too wide) detected at line 179
 \TU/Arial(0)/m/n/10 10.2. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 179
+Overfull \hbox (2.24121pt too wide) detected at line 180
 \TU/Arial(0)/m/n/10 10.3. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 180
+Overfull \hbox (2.24121pt too wide) detected at line 181
 \TU/Arial(0)/m/n/10 10.4. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 181
+Overfull \hbox (2.24121pt too wide) detected at line 182
 \TU/Arial(0)/m/n/10 10.5. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 182
+Overfull \hbox (2.24121pt too wide) detected at line 183
 \TU/Arial(0)/m/n/10 10.6. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 183
+Overfull \hbox (2.24121pt too wide) detected at line 184
 \TU/Arial(0)/m/n/10 10.7. 
  []
 
 
-Overfull \hbox (2.24121pt too wide) detected at line 184
+Overfull \hbox (2.24121pt too wide) detected at line 185
 \TU/Arial(0)/m/n/10 10.8. 
  []
 
-[6]
-Overfull \hbox (2.24121pt too wide) detected at line 185
+[7]
+Overfull \hbox (2.24121pt too wide) detected at line 186
 \TU/Arial(0)/m/n/10 10.9. 
  []
 
 
-Overfull \hbox (7.80273pt too wide) detected at line 186
+Overfull \hbox (7.80273pt too wide) detected at line 187
 \TU/Arial(0)/m/n/10 10.10. 
  []
 
 
-Overfull \hbox (7.06055pt too wide) detected at line 187
+Overfull \hbox (7.06055pt too wide) detected at line 188
 \TU/Arial(0)/m/n/10 10.11. 
  []
 
 
-Overfull \hbox (7.80273pt too wide) detected at line 188
+Overfull \hbox (7.80273pt too wide) detected at line 189
 \TU/Arial(0)/m/n/10 10.12. 
  []
 
 
-Overfull \hbox (7.80273pt too wide) detected at line 189
+Overfull \hbox (7.80273pt too wide) detected at line 190
 \TU/Arial(0)/m/n/10 10.13. 
  []
 
 
-Overfull \hbox (1.49902pt too wide) detected at line 191
+Overfull \hbox (1.49902pt too wide) detected at line 192
 \TU/Arial(0)/m/n/10 11.1. 
  []
 
 
-Overfull \hbox (1.49902pt too wide) detected at line 192
+Overfull \hbox (1.49902pt too wide) detected at line 193
 \TU/Arial(0)/m/n/10 11.2. 
  []
 
 
-Overfull \hbox (1.49902pt too wide) detected at line 193
+Overfull \hbox (1.49902pt too wide) detected at line 194
 \TU/Arial(0)/m/n/10 11.3. 
  []
 
@@ -1005,10 +1005,10 @@ Overfull \hbox (1.49902pt too wide) detected at line 193
 \tf@toc=\write5
 \openout5 = `PracaMagisterka.toc'.
 
-) [7]
+) [8]
 \openout2 = `chapters/0c_wykaz_skrotow.aux'.
 
- (chapters/0c_wykaz_skrotow.tex) [8
+ (chapters/0c_wykaz_skrotow.tex) [9
 
 
 
@@ -1018,30 +1018,30 @@ Overfull \hbox (1.49902pt too wide) detected at line 193
 
  (chapters/1_wstep.tex
 Rozdział 1.
-[9
+[10
 
 
 
 
 ]
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 31.
- (D:\latex2\tex/latex/psnfss\ot1ppl.fd
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 31.
- (D:\latex2\tex/latex/psnfss\omlzplm.fd
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 31.
- (D:\latex2\tex/latex/psnfss\omszplm.fd
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 31.
- (D:\latex2\tex/latex/psnfss\omxzplm.fd
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 31.
- (D:\latex2\tex/latex/psnfss\ot1zplm.fd
+ (C:\Users\jasia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -1056,22 +1056,22 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.91925pt on input line 31.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 31.
-) [10]
+) [11]
 \openout2 = `chapters/2_wprowadzenie_do_dziedziny.aux'.
 
  (chapters/2_wprowadzenie_do_dziedziny.tex
 Rozdział 2.
-[11
+[12
 
 
 
 
-] [12] [13] [14]
+] [13] [14] [15]
 Overfull \hbox (3.18172pt too wide) in paragraph at lines 87--88
 []\TU/Arial(0)/m/n/10 W przypadku zastosowań wirtualnej rzeczywistości, interaktywność przybiera różnorodne formy
  []
 
-) [15]
+) [16]
 \openout2 = `chapters/3_analiza_istniejacych_rozwiazan.aux'.
 
  (chapters/3_analiza_istniejacych_rozwiazan.tex
@@ -1081,25 +1081,25 @@ Overfull \hbox (1.37926pt too wide) in paragraph at lines 36--38
 \TU/Arial(0)/m/n/10 wymagać dodatkowego wsparcia przez rozszerzenie standardowej formuły lekcji o aplikację opartą
  []
 
-[16
+[17
 
 
 
 
-] [17]
+] [18]
 File: images/EMPIRIUSZ.jpg Graphic file (type bmp)
 <images/EMPIRIUSZ.jpg>
- [18]) [19]
+ [19]) [20]
 \openout2 = `chapters/4_projekt_systemu.aux'.
 
  (chapters/4_projekt_systemu.tex
 Rozdział 4.
-[20
+[21
 
 
 
 
-] [21] [22]) [23] [24]
+] [22] [23]) [24] [25]
 \openout2 = `chapters/5_technologie_i_narzedzia.aux'.
 
  (chapters/5_technologie_i_narzedzia.tex
@@ -1109,19 +1109,19 @@ Overfull \hbox (4.52684pt too wide) in paragraph at lines 28--32
 []\TU/Arial(0)/m/n/10 W procesie tworzenia aplikacji konieczne było opracowanie modeli 3D reprezentujących obiekty,
  []
 
-[25
+[26
 
 
 
 
-]) [26]
+]) [27]
 \openout2 = `chapters/11_organizacja_pracy.aux'.
 
  (chapters/11_organizacja_pracy.tex
 Rozdział 6.
 File: images/git_issues.png Graphic file (type bmp)
 <images/git_issues.png>
-[27
+[28
 
 
 
@@ -1131,10 +1131,10 @@ Overfull \hbox (1.12523pt too wide) in paragraph at lines 69--75
 []\TU/Arial(0)/m/n/10 W celu spełnienia zasady [][]\TU/lmtt/m/n/9 Require a pull request before merging []\TU/Arial(0)/m/n/10 każda wprowadzana zmiana
  []
 
-[28]
+[29]
 File: images/git_merged.png Graphic file (type bmp)
 <images/git_merged.png>
- [29]
+ [30]
 Overfull \hbox (6.21649pt too wide) in paragraph at lines 121--125
 \TU/Arial(0)/m/n/10 projekcie zastosowano narzędzie internetowe, służące do wizualizacji wykonywanych zadań. Każdy
  []
@@ -1146,30 +1146,30 @@ Overfull \hbox (3.94662pt too wide) in paragraph at lines 135--139
 []\TU/Arial(0)/m/n/10 Kolejnym, charakterystycznym elementem metodyki Kanban jest kontrola przepływu [[]15[]]. Dzięki
  []
 
-) [30]
+) [31]
 \openout2 = `chapters/9_zagadki_teoretyczne.aux'.
 
  (chapters/9_zagadki_teoretyczne.tex
 Rozdział 7.
 File: images/wzory.png Graphic file (type bmp)
 <images/wzory.png>
-[31
+[32
 
 
 
 
-] [32] [33]
+] [33] [34]
 File: images/przykładowy_wykres_funkcji.png Graphic file (type bmp)
 <images/przykładowy_wykres_funkcji.png>
- [34]
+ [35]
 File: images/sejf.png Graphic file (type bmp)
 <images/sejf.png>
- [35]
+ [36]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 271.
 
-[36]
+[37]
 
 LaTeX Warning: Command \textbackslash invalid in math mode on input line 312.
 
@@ -1181,26 +1181,26 @@ LaTeX Warning: Command \textbackslash invalid in math mode on input line 313.
 
 File: images/cwiartki_ukladow_jednostkowych.png Graphic file (type bmp)
 <images/cwiartki_ukladow_jednostkowych.png>
-[37]
+[38]
 File: images/duckhunt.jpg Graphic file (type bmp)
 <images/duckhunt.jpg>
- [38]
+ [39]
 File: images/morfeus.png Graphic file (type bmp)
 <images/morfeus.png>
- [39] [40]
+ [40] [41]
 File: images/pochodne.png Graphic file (type bmp)
 <images/pochodne.png>
- [41]
+ [42]
 File: images/Lamp.png Graphic file (type bmp)
 <images/Lamp.png>
- [42]) [43]
+ [43]) [44]
 \openout2 = `chapters/10_zagadki_praktyczne.aux'.
 
  (chapters/10_zagadki_praktyczne.tex
 Rozdział 8.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 18.
-[44
+[45
 
 
 
@@ -1213,7 +1213,7 @@ Overfull \hbox (8.71785pt too wide) in paragraph at lines 81--82
 []\TU/Arial(0)/m/n/10 W obiekcie \TU/lmtt/m/n/10 BP_MathBoard \TU/Arial(0)/m/n/10 zaimplementowano również funkcję \TU/lmtt/m/n/10 AreAllSlotsFilled\TU/Arial(0)/m/n/10 , która spraw-
  []
 
-[45]
+[46]
 File: images/algebraic.png Graphic file (type bmp)
 <images/algebraic.png>
 
@@ -1231,13 +1231,13 @@ Overfull \hbox (0.62079pt too wide) in paragraph at lines 120--121
 []\TU/Arial(0)/m/n/10 „Połącz odpowiednie początki i końce wzorów skróconego mnożenia. Przeciągnij klocki
  []
 
-[46] [47]
+[47] [48]
 File: images/planimetreia_UML.png Graphic file (type bmp)
 <images/planimetreia_UML.png>
- [48]
+ [49]
 File: images/planimetria_FLOW.png Graphic file (type bmp)
 <images/planimetria_FLOW.png>
- [49]
+ [50]
 File: images/punkt_kontrolny_pokoj_3.png Graphic file (type bmp)
 <images/punkt_kontrolny_pokoj_3.png>
 File: images/rozwiazanie1_pokoj_3.png Graphic file (type bmp)
@@ -1258,34 +1258,34 @@ File: images/rozwiazanie2_pokoj_3.png Graphic file (type bmp)
 <images/rozwiazanie2_pokoj_3.png>
 File: images/rozwiazanie3_pokoj_3.png Graphic file (type bmp)
 <images/rozwiazanie3_pokoj_3.png>
- [50]
+ [51]
 File: images/pozycja_poczatkowa_pokoj_3.png Graphic file (type bmp)
 <images/pozycja_poczatkowa_pokoj_3.png>
 File: images/przyciski_pokoj_3.png Graphic file (type bmp)
 <images/przyciski_pokoj_3.png>
 File: images/wygrana_pokoj_3.png Graphic file (type bmp)
 <images/wygrana_pokoj_3.png>
- [51] [52]
+ [52] [53]
 File: images/uklad_wspolrzednych_pokoj_4.png Graphic file (type bmp)
 <images/uklad_wspolrzednych_pokoj_4.png>
 File: images/wszystkie_suwaki_pokoj_4.png Graphic file (type bmp)
 <images/wszystkie_suwaki_pokoj_4.png>
- [53] [54]
+ [54] [55]
 Overfull \hbox (12.13773pt too wide) in paragraph at lines 531--536
 []\TU/Arial(0)/m/n/10 Podobnie jak w przypadku czwartej zagadki, zadanie rozpoczyna się zainicjalizowaniem i wstępną
  []
 
-[55]
+[56]
 File: images/uklad_wspolrzednych_pokoj_5.png Graphic file (type bmp)
 <images/uklad_wspolrzednych_pokoj_5.png>
 File: images/przyciski_x_pokoj_5.png Graphic file (type bmp)
 <images/przyciski_x_pokoj_5.png>
- [56]
+ [57]
 Overfull \hbox (6.26988pt too wide) in paragraph at lines 580--584
 []\TU/Arial(0)/m/n/10 Następnie treść wybranej zagadki wyświetlana jest za pomocą blueprintu aktora \TU/lmtt/m/n/10 BP_RiddleSafe\TU/Arial(0)/m/n/10 ,
  []
 
-[57]
+[58]
 Overfull \hbox (8.71304pt too wide) in paragraph at lines 612--615
 []\TU/Arial(0)/b/n/10 Zagadka 6: \TU/Arial(0)/m/n/10 „PIN to liczba wszystkich 4-cyfrowych kodów PIN będących palindromem (ABBA).”
  []
@@ -1297,38 +1297,38 @@ Overfull \hbox (16.65271pt too wide) in paragraph at lines 649--654
 
 File: images/sejf1.png Graphic file (type bmp)
 <images/sejf1.png>
-[58] [59]
+[59] [60]
 File: images/liczby_rzeczywiste_screen.png Graphic file (type bmp)
 <images/liczby_rzeczywiste_screen.png>
 
 
 LaTeX Warning: Command \textbackslash invalid in math mode on input line 738.
 
-[60]
+[61]
 File: images/real_UML.png Graphic file (type bmp)
 <images/real_UML.png>
- [61]
+ [62]
 File: images/real_FLOW.png Graphic file (type bmp)
 <images/real_FLOW.png>
- [62]
+ [63]
 File: images/szesciany_pokoj_8.png Graphic file (type bmp)
 <images/szesciany_pokoj_8.png>
 File: images/uklad_jednostkowy_pokoj_8.png Graphic file (type bmp)
 <images/uklad_jednostkowy_pokoj_8.png>
 File: images/wykryto_luke_pokoj_8.png Graphic file (type bmp)
 <images/wykryto_luke_pokoj_8.png>
- [63
+ [64
 
-] [64] [65]
+] [65] [66]
 File: images/sequence_laser.png Graphic file (type bmp)
 <images/sequence_laser.png>
- [66]
+ [67]
 File: images/sequence_UML.png Graphic file (type bmp)
 <images/sequence_UML.png>
- [67]
+ [68]
 File: images/sequence_FLOW.png Graphic file (type bmp)
 <images/sequence_FLOW.png>
- [68]
+ [69]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 1054.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
@@ -1337,12 +1337,12 @@ File: images/morpheus_before_after.png Graphic file (type bmp)
 <images/morpheus_before_after.png>
 File: images/container.png Graphic file (type bmp)
 <images/container.png>
- [69
+ [70
 
-] [70]
+] [71]
 File: images/pochodneroom.png Graphic file (type bmp)
 <images/pochodneroom.png>
- [71]
+ [72]
 Overfull \hbox (31.14847pt too wide) in paragraph at lines 1179--1181
 []\TU/Arial(0)/m/n/10 Obiekt zawiera również zmienną \TU/lmtt/m/n/10 PairID\TU/Arial(0)/m/n/10 , pełniącą rolę identyfikatora pary, oraz zmienną \TU/lmtt/m/n/10 FormulaText\TU/Arial(0)/m/n/10 ,
  []
@@ -1352,38 +1352,38 @@ Overfull \hbox (0.40921pt too wide) in paragraph at lines 1192--1195
 []\TU/Arial(0)/m/n/10 Jeżeli identyfikatory są zgodne, wyświetlany jest tekst „Para”, licznik „Połączono” zostaje zwięk-
  []
 
-[72]
+[73]
 Overfull \hbox (42.74814pt too wide) in paragraph at lines 1248--1250
 []\TU/Arial(0)/m/n/10 W scenie zaimplementowano trzy kontenery w postaci obiektów typu Blueprint Actor: \TU/lmtt/m/n/10 BP_Container_Red\TU/Arial(0)/m/n/10 ,
  []
 
-[73]
+[74]
 File: images/Lamp1.png Graphic file (type bmp)
 <images/Lamp1.png>
- [74]
+ [75]
 File: images/stereometria_UML.png Graphic file (type bmp)
 <images/stereometria_UML.png>
- [75]
+ [76]
 File: images/stereometria_FLOW.png Graphic file (type bmp)
 <images/stereometria_FLOW.png>
-) [76]
+) [77]
 \openout2 = `chapters/12_raport_z_testowania.aux'.
 
  (chapters/12_raport_z_testowania.tex
 Rozdział 9.
-[77
+[78
 
 
 
 
-]) [78]
+]) [79]
 \openout2 = `chapters/13_sprawozdanie.aux'.
 
  (chapters/13_sprawozdanie.tex
 Rozdział 10.
 File: images/wzoryalg.jpg Graphic file (type bmp)
 <images/wzoryalg.jpg>
-[79
+[80
 
 
 
@@ -1393,44 +1393,44 @@ File: images/planimetria23.jpg Graphic file (type bmp)
 <images/planimetria23.jpg>
 File: images/most23.jpg Graphic file (type bmp)
 <images/most23.jpg>
- [80]
+ [81]
 File: images/funkce23.jpg Graphic file (type bmp)
 <images/funkce23.jpg>
 File: images/geometria23.jpg Graphic file (type bmp)
 <images/geometria23.jpg>
- [81]
+ [82]
 File: images/sejf23.jpg Graphic file (type bmp)
 <images/sejf23.jpg>
- [82]
+ [83]
 File: images/liczby23.jpg Graphic file (type bmp)
 <images/liczby23.jpg>
- [83]
+ [84]
 File: images/sin23.jpg Graphic file (type bmp)
 <images/sin23.jpg>
 File: images/kaczki23.jpg Graphic file (type bmp)
 <images/kaczki23.jpg>
- [84]
+ [85]
 File: images/matrix23.jpg Graphic file (type bmp)
 <images/matrix23.jpg>
 File: images/pochodna23.jpg Graphic file (type bmp)
 <images/pochodna23.jpg>
- [85]
+ [86]
 File: images/kulki23.jpg Graphic file (type bmp)
 <images/kulki23.jpg>
- [86]
+ [87]
 File: images/bryla23.jpg Graphic file (type bmp)
 <images/bryla23.jpg>
-) [87] [88]
+) [88] [89]
 \openout2 = `chapters/7_podsumowanie.aux'.
 
  (chapters/7_podsumowanie.tex
 Rozdział 11.
-[89
+[90
 
 
 
 
-] [90]) [91]
+] [91]) [92]
 \openout2 = `chapters/8_wykazy.aux'.
 
  (chapters/8_wykazy.tex
@@ -1474,12 +1474,12 @@ Package biblatex Warning: Bibliography string 'urldate' untranslated
 Package biblatex Warning: Bibliography string 'urldate' untranslated
 (biblatex)                at entry 'kanban' on input line 3.
 
-[92
+[93
 
 
 
 
-] (PracaMagisterka.lof [93
+] (PracaMagisterka.lof [94
 
 ]
 Overfull \hbox (2.02438pt too wide) detected at line 63
@@ -1505,11 +1505,11 @@ Overfull \hbox (2.02438pt too wide) detected at line 66
 \tf@lof=\write6
 \openout6 = `PracaMagisterka.lof'.
 
- [94] (PracaMagisterka.lot)
+ [95] (PracaMagisterka.lot)
 \tf@lot=\write7
 \openout7 = `PracaMagisterka.lot'.
 
-) [95
+) [96
 
 ] (PracaMagisterka.aux (chapters/0a_streszczenie.aux) (chapters/0b_spis_tresci.aux) (chapters/0c_wykaz_skrotow.aux) (chapters/1_wstep.aux) (chapters/2_wprowadzenie_do_dziedziny.aux) (chapters/3_analiza_istniejacych_rozwiazan.aux) (chapters/4_projekt_systemu.aux) (chapters/5_technologie_i_narzedzia.aux) (chapters/11_organizacja_pracy.aux) (chapters/9_zagadki_teoretyczne.aux) (chapters/10_zagadki_praktyczne.aux) (chapters/12_raport_z_testowania.aux) (chapters/13_sprawozdanie.aux) (chapters/7_podsumowanie.aux) (chapters/8_wykazy.aux))
  ***********
@@ -1517,18 +1517,18 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `PracaMagisterka.out' has not changed.
-(rerunfilecheck)             Checksum: 1D2153698A43C763A0993113B9C27453;38799.
+(rerunfilecheck)             Checksum: 0E2F0019E6B7B3A861FD417368155798;39054.
 Package logreq Info: Writing requests to 'PracaMagisterka.run.xml'.
 \openout1 = `PracaMagisterka.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  24947 strings out of 402986
- 489708 string characters out of 5455747
- 1426717 words of memory out of 5000000
+ 492845 string characters out of 5448502
+ 1426725 words of memory out of 5000000
  53214 multiletter control sequences out of 15000+600000
  647445 words of font info for 127 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 88i,12n,107p,1722b,6689s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,12n,107p,1706b,6689s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on PracaMagisterka.xdv (95 pages, 2177068 bytes).
+Output written on PracaMagisterka.xdv (95 pages, 2179588 bytes).
